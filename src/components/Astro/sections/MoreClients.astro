@@ -1,0 +1,55 @@
+---
+const clients = [
+  {
+    text: 'We booked Deluxe for our wedding in Anaheim and had a really good experience. The limo was beautiful and clean. Our driver was punctual and professional.',
+    name: 'Vanessa R.',
+    city: 'Wedding • Anaheim',
+  },
+  {
+    text: 'I rented a limo for my birthday in Yorba Linda and everything was great. The booking process was easy and the ride was smooth and luxurious.',
+    name: 'Miguel A.',
+    city: 'Birthday • Yorba Linda',
+  },
+  {
+    text: 'Booked a limo for a concert in Anaheim with friends. Made the night so much easier — no parking, no traffic stress, just a great time.',
+    name: 'Brian C.',
+    city: 'Concert • Anaheim',
+  },
+  {
+    text: 'We needed a ride from Orange County to LAX early in the morning and Deluxe was right on time. Courteous driver, spotless car, great value.',
+    name: 'Dana W.',
+    city: 'Airport • Orange County',
+  },
+  {
+    text: 'We booked transportation for homecoming in Brea and had a great experience. The limo was clean, the driver was friendly, and the whole night went perfectly.',
+    name: 'Sarah L.',
+    city: 'Homecoming • Brea',
+  },
+  {
+    text: 'We needed a car for a business meeting in Irvine and wanted something professional for our guests. Deluxe exceeded all our expectations.',
+    name: 'James P.',
+    city: 'Corporate • Irvine',
+  },
+];
+---
+
+<section class="py-16 bg-ink-soft">
+  <div class="mx-auto w-full max-w-[1240px] px-5">
+    <h2 class="font-serif-display text-2xl md:text-3xl font-bold text-white text-center">More from our clients</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+      {clients.map((c) => (
+        <div class="bg-ink-raised border border-line rounded-xl p-6 transition-colors duration-300 hover:border-gold">
+          <div class="text-gold tracking-[0.15em] mb-3">★★★★★</div>
+          <p class="text-white/75 text-sm leading-[1.7] m-0">"{c.text}"</p>
+          <div class="mt-5 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-gold text-black font-bold flex items-center justify-center">{c.name.charAt(0)}</div>
+            <div>
+              <div class="text-white text-sm font-semibold">{c.name}</div>
+              <div class="text-white/50 text-xs">{c.city}</div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

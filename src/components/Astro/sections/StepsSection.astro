@@ -1,0 +1,30 @@
+---
+interface Props {
+  heading?: string;
+  steps?: { title: string; desc: string }[];
+}
+const {
+  heading = 'From call to curb in four steps',
+  steps = [
+    { title: 'Call or Book Online', desc: 'Tell us your date, occasion, and vehicle preference. We respond in minutes, 24/7.' },
+    { title: 'Get Your Free Quote', desc: 'Transparent, all-inclusive pricing with no hidden fees. Lock in your rate instantly.' },
+    { title: 'We Arrive Early', desc: 'Your chauffeur arrives ahead of schedule, assists with doors, and handles every detail.' },
+    { title: 'Ride in Luxury', desc: 'Sit back with premium sound, lighting, and refreshments while we handle the road.' },
+  ],
+} = Astro.props;
+---
+
+<section class="py-20 bg-ink-soft">
+  <div class="mx-auto w-full max-w-[1240px] px-5">
+    <h2 class="font-serif-display text-2xl md:text-3xl font-bold leading-snug text-white text-center">{heading}</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+      {steps.map((s, i) => (
+        <div class="bg-ink-raised border border-line rounded-xl px-6 py-8 relative transition-colors duration-300 hover:border-gold">
+          <span class="font-serif-display text-3xl font-bold text-gold/85">{String(i + 1).padStart(2, '0')}</span>
+          <h3 class="font-serif-display text-white text-[1.05rem] mt-3 mb-2">{s.title}</h3>
+          <p class="text-white/70 text-[0.88rem] leading-[1.65] m-0">{s.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

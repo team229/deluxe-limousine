@@ -1,0 +1,78 @@
+---
+---
+
+<section class="py-20 bg-ink-soft border-y border-line">
+  <div class="mx-auto w-full max-w-[1240px] px-5">
+    <div class="text-center max-w-[700px] mx-auto mb-12">
+      <span class="block text-gold uppercase text-xs font-bold tracking-[0.15em] mb-2">The Deluxe Difference</span>
+      <h2 class="font-serif-display text-2xl md:text-3xl font-bold text-white">Why Discriminating Clients Choose Us</h2>
+      <p class="text-white/60 text-[0.95rem] mt-3">
+        Not all limousine companies are created equal. Here is how we compare to the industry standard and why we have
+        earned our reputation as Southern California's premier transportation partner.
+      </p>
+    </div>
+
+    <div class="overflow-x-auto rounded-xl">
+      <table class="w-full border-collapse text-left min-w-[800px]">
+        <thead>
+          <tr>
+            <th class="py-5 px-6 bg-ink text-white text-[0.9rem] font-bold uppercase tracking-[0.08em]">Feature / Service</th>
+            <th class="py-5 px-6 bg-gold/[0.05] text-gold text-[0.9rem] font-bold uppercase tracking-[0.08em] border-x-2 border-gold">Deluxe Limousine Service</th>
+            <th class="py-5 px-6 bg-ink text-white text-[0.9rem] font-bold uppercase tracking-[0.08em]">Typical Operators</th>
+          </tr>
+        </thead>
+        <tbody>
+          {[
+            {
+              feature: 'Pricing Model',
+              yes: '✔ All-Inclusive & Transparent',
+              yesDesc: 'What we quote is what you pay. Fuel, tolls, and standard service fees are integrated upfront. No surprise charges.',
+              no: '✘ Variable Rates & Hidden Fees',
+              noDesc: 'Low base rates supplemented post-ride with admin surcharges, fuel index fees, and booking commissions.',
+            },
+            {
+              feature: 'Chauffeur Quality',
+              yes: '✔ Background-Checked Professionals',
+              yesDesc: 'Career chauffeurs in full uniform who undergo rigorous defensive driving certifications and background reviews.',
+              no: '✘ Part-Time/Gig Drivers',
+              noDesc: 'Sub-contractors or casual drivers unfamiliar with executive etiquette, using personal navigation apps.',
+            },
+            {
+              feature: 'Booking & Dispatch',
+              yes: '✔ 24/7 Live Operators & Tracking',
+              yesDesc: 'A dedicated dispatch office available 24/7. Passengers receive live GPS tracking links for their incoming ride.',
+              no: '✘ Voicemails & Limited Hours',
+              noDesc: 'Office closes at 6 PM. If your late-night flight is delayed or rescheduled, customer support is unavailable.',
+            },
+            {
+              feature: 'Fleet Standards',
+              yes: '✔ Late-Model, In-House Detailing',
+              yesDesc: 'Our entire fleet is owned by us, garaged, and detailed before every single run. No wear-and-tear or stale odors.',
+              no: '✘ Aging, Brokered Vehicles',
+              noDesc: 'Many companies broker rides to third-party owners, resulting in unpredictable vehicle models and condition.',
+            },
+            {
+              feature: 'Occasion Customization',
+              yes: '✔ Complimentary Amenity Packages',
+              yesDesc: 'Free bar setup (ice, waters, sodas), themed decorations, red-carpet rollout for weddings, and personalized support.',
+              no: '✘ Basic Transportation Only',
+              noDesc: 'Additional charges for ice, refreshments, or simple decorations, with minimal customer personalization.',
+            },
+          ].map((row) => (
+            <tr class="border-b border-line">
+              <td class="py-5 px-6 font-semibold text-white text-[0.9rem] w-[20%] align-top">{row.feature}</td>
+              <td class="py-5 px-6 bg-gold/[0.02] border-x-2 border-gold w-[40%] align-top">
+                <span class="block text-gold-accent font-semibold text-[0.9rem] mb-2">{row.yes}</span>
+                <p class="text-white/60 text-[0.8rem] leading-[1.5] m-0">{row.yesDesc}</p>
+              </td>
+              <td class="py-5 px-6 w-[40%] align-top">
+                <span class="block text-white/50 font-semibold text-[0.9rem] mb-2">{row.no}</span>
+                <p class="text-white/60 text-[0.8rem] leading-[1.5] m-0">{row.noDesc}</p>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

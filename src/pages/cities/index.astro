@@ -1,0 +1,104 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const extractedDir = path.resolve(process.cwd(), 'src/data/extracted');
+const NON_CITIES = new Set([
+  '_index', 'blog', 'about-us', 'contact-us', '404-page', 'thank-you', 'gallery', 'cities',
+  'wedding', 'quinceanera', 'prom', 'corporates', 'bachelor', 'concerts',
+  'limo-service-orange-county', 'party-bus-rental', 'sprinter-limo', 'black-car-service',
+  'hummer-limo-service', 'sprinter-limo-service', 'luxury-car-service',
+  'airport-transportation-service', 'shuttle-van-service', 'special-events-limo-service',
+  'corporates-event-limo-service',
+]);
+
+const cityFiles = fs
+  .readdirSync(extractedDir)
+  .filter((f) => f.endsWith('.json'))
+  .map((f) => f.replace(/\.json$/, ''))
+  .filter((b) => !b.includes('__') && !NON_CITIES.has(b))
+  .sort();
+
+const cities = cityFiles.map((slug) => ({
+  slug,
+  name: slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()),
+}));
+---
+
+<Layout
+  title="Cities Served | Deluxe Limousine Service"
+  description="Explore all cities served by Deluxe Limousine Service. Premium limousine service across Orange County, Los Angeles and Southern California. Call (714) 313-9173."
+>
+  <section class="py-24 border-b border-line bg-linear-to-b from-ink-raised to-ink text-center">
+    <div class="mx-auto w-full max-w-[1240px] px-5">
+      <span class="text-gold uppercase text-xs font-bold tracking-[0.15em]">Deluxe Limousine</span>
+      <h1 class="font-serif-display text-4xl md:text-5xl font-bold mt-4">
+        Luxury <span class="text-gold">Transportation</span> Across Southern California
+      </h1>
+      <span class="block h-[3px] w-24 mx-auto mt-6 bg-linear-to-r from-transparent via-gold to-transparent"></span>
+      <p class="text-white/60 max-w-[700px] mx-auto mt-6">
+        Southern California's luxury limousine provider — serving {cities.length}+ municipalities and major airport hubs
+        across Orange County, Los Angeles, and beyond. Wedding transfers, airport rides, corporate events, and special occasions.
+      </p>
+      <div class="flex justify-center gap-4 flex-wrap mt-8">
+        <a href="/gallery/" class="inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline bg-gold text-black border border-gold shadow-[0_8px_25px_rgba(212,175,55,0.2)] hover:-translate-y-px hover:bg-gold-soft hover:border-gold-soft">View Our Fleet</a>
+        <a href="#cities" class="inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline border border-gold text-gold bg-transparent hover:bg-gold hover:text-black">Find Your City</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-b border-line bg-ink">
+    <div class="mx-auto w-full max-w-[1240px] px-5 py-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
+      {[
+        { num: '15+', label: 'Years Experience' },
+        { num: '7', label: 'Vehicle Types' },
+        { num: `${cities.length}+`, label: 'Cities Served' },
+        { num: '24/7', label: 'Availability' },
+        { num: '5\u2605', label: 'Customer Rating' },
+      ].map((stat) => (
+        <div class="text-center">
+          <div class="font-serif-display text-2xl font-bold text-gold">{stat.num}</div>
+          <div class="text-white/50 text-[0.78rem] uppercase tracking-[0.1em] mt-1">{stat.label}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="py-20 bg-ink" id="cities">
+    <div class="mx-auto w-full max-w-[1240px] px-5">
+      <div class="text-center mb-10">
+        <span class="text-gold uppercase text-xs font-bold tracking-[0.15em]">Service Areas</span>
+        <h2 class="font-serif-display text-3xl font-bold mt-2">We Serve {cities.length}+ Cities</h2>
+        <p class="text-white/60 max-w-[600px] mx-auto mt-3">Select your city to explore available services, attractions, and venues.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        {cities.map((city) => (
+          <a href={`/${city.slug}/`} class="group relative flex flex-col items-center text-center gap-3 p-8 rounded-[14px] border border-line bg-linear-145 from-[#1a1a1a] to-[#141414] overflow-hidden no-underline transition-all duration-300 hover:-translate-y-1.5 hover:border-gold/40 hover:shadow-[0_12px_35px_rgba(212,175,55,0.12)]">
+            <span class="absolute top-0 left-0 right-0 h-[3px] bg-linear-to-r from-transparent via-gold to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
+            <span class="flex items-center justify-center w-[52px] h-[52px] rounded-full bg-gold/10 border border-gold/25 font-serif-display text-[1.2rem] font-bold text-gold capitalize transition-all duration-300 group-hover:bg-gold group-hover:text-black group-hover:border-gold">{city.name.charAt(0)}</span>
+            <h3 class="font-serif-display text-[1.15rem] font-semibold text-white capitalize m-0">{city.name}</h3>
+            <span class="text-gold text-[0.85rem] font-medium tracking-[0.5px] inline-flex items-center gap-2">
+              Explore Services
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="transition-transform duration-300 group-hover:translate-x-1"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-ink-soft border-t border-line">
+    <div class="mx-auto w-full max-w-[900px] px-5 text-center">
+      <h2 class="font-serif-display text-3xl font-bold">Don't See Your City Listed?</h2>
+      <p class="text-white/60 max-w-[600px] mx-auto mt-4">
+        We serve all of Southern California, including smaller towns, residential pickups, and custom winery tours.
+        Get in touch with our booking office to confirm dispatch to your location.
+      </p>
+      <div class="flex justify-center gap-5 flex-wrap mt-8">
+        <a href="/contact-us/" class="inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline bg-gold text-black border border-gold shadow-[0_8px_25px_rgba(212,175,55,0.2)] hover:-translate-y-px hover:bg-gold-soft hover:border-gold-soft">Inquire Now</a>
+        <a href="tel:7143139173" class="inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline border border-gold text-gold bg-transparent hover:bg-gold hover:text-black">Call (714) 313-9173</a>
+      </div>
+    </div>
+  </section>
+</Layout>

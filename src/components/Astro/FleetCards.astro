@@ -1,0 +1,48 @@
+---
+interface Vehicle {
+  name: string;
+  tagline: string;
+  image: string;
+  link: string;
+}
+
+const vehicles: Vehicle[] = [
+  { name: 'Black Chrysler', tagline: 'Our Select Choice For All Events', image: '/cbm-assets/deluxe-limousine/homepage/black-chrysler-stretch-limo-2.webp', link: '/limo-service-orange-county/' },
+  { name: 'White Chrysler', tagline: 'Ideal for weddings and Parties', image: '/cbm-assets/deluxe-limousine/homepage/image-19-3.webp', link: '/limousine-service/' },
+  { name: 'Executive SUV', tagline: 'Need A Ride To The Airport?', image: '/cbm-assets/deluxe-limousine/homepage/suv-suburban-4.webp', link: '/black-car-service/' },
+  { name: 'Hummer', tagline: 'An Alternative For Larger Events', image: '/cbm-assets/deluxe-limousine/homepage/party-bus-7.webp', link: '/limousine-service/' },
+  { name: 'Sprinter Van', tagline: 'Great For Corporate Events', image: '/cbm-assets/deluxe-limousine/homepage/luxury-sprinter-limo-6.webp', link: '/sprinter-limo/' },
+  { name: 'Party Bus', tagline: 'The Party Begins When You Step In The Bus', image: '/cbm-assets/deluxe-limousine/homepage/party-bus-7.webp', link: '/party-bus-rental/' },
+];
+
+interface Props {
+  heading?: string;
+  subheading?: string;
+}
+const { heading = 'Our Full Fleet', subheading = '' } = Astro.props;
+---
+
+<section class="py-20 bg-ink">
+  <div class="mx-auto w-full max-w-[1240px] px-5">
+    <div class="text-center mb-12">
+      <span class="text-gold uppercase text-xs font-bold tracking-[0.2em]">Our Fleet</span>
+      <h2 class="font-serif-display text-3xl md:text-4xl font-bold mt-3">{heading}</h2>
+      {subheading && <p class="text-white/60 max-w-[640px] mx-auto mt-4">{subheading}</p>}
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {vehicles.map((v) => (
+        <a href={v.link} class="group flex flex-col items-center text-center no-underline">
+          <div class="w-full rounded-xl overflow-hidden border border-line mb-5 transition-all duration-300 group-hover:border-gold group-hover:shadow-[0_18px_40px_rgba(212,175,55,0.12)]">
+            <img src={v.image} alt={v.name} loading="lazy" width="480" height="320" class="w-full h-[220px] object-cover block transition-transform duration-500 group-hover:scale-[1.05]" />
+          </div>
+          <h3 class="font-serif-display text-2xl text-white mb-2">{v.name}</h3>
+          <p class="text-white/60 text-sm">{v.tagline}</p>
+          <span class="inline-flex items-center justify-center gap-2 rounded-lg px-6 py-2.5 text-xs font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline border border-gold text-gold bg-transparent mt-5 group-hover:bg-gold group-hover:text-black">
+            Learn More
+          </span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

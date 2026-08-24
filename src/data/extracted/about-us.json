@@ -1,0 +1,22 @@
+{
+ "path": "/about-us/",
+ "title": "about us - Deluxe Limousine Service",
+ "description": "About Us | Deluxe Limousine Service",
+ "ogImage": "",
+ "sections": [
+  {
+   "type": "prose",
+   "headings": [
+    {
+     "level": "H1",
+     "text": "about us"
+    }
+   ],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "faqs": []
+  }
+ ]
+}

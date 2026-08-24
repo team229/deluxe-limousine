@@ -1,0 +1,243 @@
+{
+ "path": "/black-car-service/",
+ "title": "Black Car Service Anaheim & LAX | Deluxe Limousine Service",
+ "description": "Deluxe Limousine Service offers premium Black Car Service from Anaheim to LAX and beyond. Licensed & insured, professional chauffeurs, 24/7 availability. No hidden fees. Call now to reserve your ride!",
+ "ogImage": "/wp-content/uploads/2026/07/cities-5.png",
+ "sections": [
+  {
+   "type": "hero",
+   "headings": [
+    {
+     "level": "H1",
+     "text": "Executive SUV & Black Car Service"
+    }
+   ],
+   "paragraphs": [
+    "We offer Luxury SUV Service, Black Car Service, Executive Car Service, Sprinter Limo, Party Bus, Hummer Limo, and Stretched Limousine services for all your transportation needs.",
+    "Elevate your travel experience with our upscale Executive SUV service, specialized in seamless airport transportation. Trust Deluxe Limousine Service for reliable and comfortable rides in Anaheim and Orange County. Book your Service with us now and enjoy unmatched comfort and limo service for your next journey!"
+   ],
+   "buttons": [],
+   "images": [],
+   "bgImage": "/wp-content/uploads/2026/05/SUV-Suburban-.png",
+   "bgVideo": null
+  },
+  {
+   "type": "fleet",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Our Full Fleet"
+    }
+   ],
+   "paragraphs": [
+    "From the Black Chrysler 300 to the Party Bus, find the perfect vehicle for your event."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [
+    {
+     "title": "Black Chrysler 300",
+     "meta": "Up to 10 passengers",
+     "image": "/wp-content/uploads/2026/07/cities-5.png"
+    },
+    {
+     "title": "White Chrysler 300",
+     "meta": "Up to 10 passengers",
+     "image": "/wp-content/uploads/2026/07/cities-1.png"
+    },
+    {
+     "title": "Executive SUV",
+     "meta": "Up to 8 passengers",
+     "image": "/wp-content/uploads/2026/07/cities-7.png"
+    },
+    {
+     "title": "Hummer",
+     "meta": "Up to 16 passengers",
+     "image": "/wp-content/uploads/2026/07/cities-4.png"
+    },
+    {
+     "title": "Sprinter Van",
+     "meta": "Up to 14 passengers",
+     "image": "/wp-content/uploads/2026/07/cities-2.png"
+    },
+    {
+     "title": "Party Bus",
+     "meta": "Up to 20 passengers",
+     "image": "/wp-content/uploads/2026/07/cities-3.png"
+    }
+   ],
+   "faqs": []
+  },
+  {
+   "type": "services",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Executive SUV & Black Car Services"
+    }
+   ],
+   "paragraphs": [
+    "Complete luxury transportation solutions for every event and occasion."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [
+    {
+     "title": "💒Wedding Transportation"
+    },
+    {
+     "title": "✈️Airport Transportation"
+    },
+    {
+     "title": "💼Corporate Transportation"
+    },
+    {
+     "title": "💼Executive Transportation"
+    },
+    {
+     "title": "🎓Prom Transportation"
+    },
+    {
+     "title": "🎓Homecoming Transportation"
+    },
+    {
+     "title": "🎵Concert Transportation"
+    },
+    {
+     "title": "🏟️Sporting Event Transportation"
+    },
+    {
+     "title": "🎉Birthday Transportation"
+    },
+    {
+     "title": "👰Bachelor Party Transportation"
+    },
+    {
+     "title": "👰Bachelorette Party Transportation"
+    },
+    {
+     "title": "🏆Graduation Transportation"
+    },
+    {
+     "title": "❤️Anniversary Transportation"
+    },
+    {
+     "title": "🎊Quinceañera Transportation"
+    },
+    {
+     "title": "🎊Sweet 16 Transportation"
+    },
+    {
+     "title": "🚌Group Transportation"
+    },
+    {
+     "title": "🥂Night Out Transportation"
+    },
+    {
+     "title": "🏖️Luxury Resort Transportation"
+    },
+    {
+     "title": "🌟Special Event Transportation"
+    },
+    {
+     "title": "🏠Winery & Brewery Tours"
+    }
+   ],
+   "faqs": []
+  },
+  {
+   "type": "columns",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Executive SUV Coverage"
+    }
+   ],
+   "paragraphs": [
+    "We provide premium executive SUV and black car service to all major destinations throughout Southern California."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [
+    {
+     "title": "Black Car Service Features",
+     "items": [
+      "Executive SUVs & Sedans",
+      "Corporate Travel Solutions",
+      "Airport Transfers",
+      "SNA & LAX Service",
+      "Professional Chauffeurs",
+      "Complimentary Amenities",
+      "24/7 Availability",
+      "Real-Time Flight Tracking",
+      "Meet & Greet Service",
+      "Bottled Water & WiFi"
+     ]
+    },
+    {
+     "title": "Areas We Serve",
+     "items": [
+      "Anaheim",
+      "Orange County",
+      "Los Angeles",
+      "LAX Airport",
+      "John Wayne Airport (SNA)",
+      "Long Beach",
+      "Irvine",
+      "Newport Beach",
+      "Santa Ana",
+      "Huntington Beach"
+     ]
+    }
+   ],
+   "faqs": []
+  },
+  {
+   "type": "faq",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Frequently Asked Questions"
+    }
+   ],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [],
+   "faqs": [
+    {
+     "q": "What areas does your black car service cover?",
+     "a": "+ We provide black car service throughout Anaheim, Orange County, Los Angeles, and all major airports including LAX and SNA. Our executive transportation covers all of Southern California."
+    },
+    {
+     "q": "Do you offer airport transfer services?",
+     "a": "+ Yes, we specialize in airport transfers to and from LAX, John Wayne (SNA), Long Beach (LGB), and Ontario (ONT). Our chauffeurs monitor flight status for on-time pickups."
+    },
+    {
+     "q": "Can I set up a corporate account?",
+     "a": "+ Absolutely. We offer corporate accounts with monthly billing, dedicated account management, and priority booking for business clients. Contact us to set up your corporate account today."
+    },
+    {
+     "q": "What is your pricing for black car service?",
+     "a": "+ Our pricing varies based on vehicle type, distance, and duration. We offer competitive rates with no hidden fees. Contact us for a free, no-obligation quote tailored to your needs."
+    },
+    {
+     "q": "How far in advance should I reserve?",
+     "a": "+ We recommend booking 2-4 weeks in advance for special events and airport transfers. However, we accommodate last-minute requests whenever possible based on availability."
+    },
+    {
+     "q": "What types of vehicles are available for black car service?",
+     "a": "+ Our black car fleet includes luxury SUVs, executive sedans, stretched limousines, Mercedes Sprinters, and party buses. Each vehicle is meticulously maintained and professionally cleaned."
+    },
+    {
+     "q": "Are your chauffeurs professionally trained?",
+     "a": "+ Yes, all our chauffeurs are professionally trained, licensed, and insured. They provide door-to-door service, handle luggage, and ensure a premium experience from start to finish."
+    }
+   ]
+  }
+ ]
+}

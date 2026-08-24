@@ -1,0 +1,341 @@
+{
+ "path": "/dana-point/",
+ "title": "Dana Point Limousine Service - Deluxe Limousine Service",
+ "description": "A beautiful harbor town known for Dana Point Harbor, Doheny State Beach, and luxury resorts. Premium limousine and party bus services for weddings, proms,",
+ "ogImage": "/wp-content/uploads/2026/05/Chrsyler-Limousine-.png",
+ "sections": [
+  {
+   "type": "hero",
+   "headings": [
+    {
+     "level": "H1",
+     "text": "Dana Point Limousine Service"
+    }
+   ],
+   "paragraphs": [
+    "A beautiful harbor town known for Dana Point Harbor, Doheny State Beach, and luxury resorts. Premium limousine and party bus services for weddings, proms, corporate events, and special occasions."
+   ],
+   "lists": [],
+   "buttons": [
+    {
+     "label": "← Back to All Cities",
+     "href": "/cities/"
+    },
+    {
+     "label": "Home",
+     "href": "/"
+    }
+   ],
+   "images": [],
+   "cards": [],
+   "faqs": []
+  },
+  {
+   "type": "stats",
+   "headings": [],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [
+    {
+     "title": "15+ Years Experience"
+    },
+    {
+     "title": "15+"
+    },
+    {
+     "title": "7 Vehicle Types"
+    },
+    {
+     "title": "7"
+    },
+    {
+     "title": "24/7 Availability"
+    },
+    {
+     "title": "24/7"
+    },
+    {
+     "title": "5☆ Customer Rating"
+    },
+    {
+     "title": "5☆"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Luxury Vehicles for Every Occasion"
+    },
+    {
+     "level": "H3",
+     "text": "Chrysler 300 Stretch"
+    },
+    {
+     "level": "H3",
+     "text": "Black Chrysler Stretch"
+    },
+    {
+     "level": "H3",
+     "text": "Hummer H2 Stretch"
+    },
+    {
+     "level": "H3",
+     "text": "Mercedes Sprinter"
+    },
+    {
+     "level": "H3",
+     "text": "Party Bus"
+    },
+    {
+     "level": "H3",
+     "text": "Cadillac Escalade"
+    }
+   ],
+   "paragraphs": [
+    "From sleek stretch limos to spacious party buses, choose the perfect ride for your Dana Point event.",
+    "Up to 10 passengers",
+    "Up to 16 passengers",
+    "Up to 14 passengers",
+    "Up to 20 passengers",
+    "Up to 8 passengers"
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [],
+   "faqs": []
+  },
+  {
+   "type": "services",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Services in Dana Point"
+    }
+   ],
+   "paragraphs": [
+    "Complete luxury transportation solutions for every event and occasion."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [
+    {
+     "title": "💒 Wedding Transportation"
+    },
+    {
+     "title": "✈️ Airport Transportation"
+    },
+    {
+     "title": "💼 Corporate Transportation"
+    },
+    {
+     "title": "💼 Executive Transportation"
+    },
+    {
+     "title": "🎓 Prom Transportation"
+    },
+    {
+     "title": "🎓 Homecoming Transportation"
+    },
+    {
+     "title": "🎵 Concert Transportation"
+    },
+    {
+     "title": "🏟️ Sporting Event Transportation"
+    },
+    {
+     "title": "🎉 Birthday Transportation"
+    },
+    {
+     "title": "👰 Bachelor Party Transportation"
+    },
+    {
+     "title": "👰 Bachelorette Party Transportation"
+    },
+    {
+     "title": "🏆 Graduation Transportation"
+    },
+    {
+     "title": "❤️ Anniversary Transportation"
+    },
+    {
+     "title": "🎊 Quinceañera Transportation"
+    },
+    {
+     "title": "🎊 Sweet 16 Transportation"
+    },
+    {
+     "title": "🚌 Group Transportation"
+    },
+    {
+     "title": "🥂 Night Out Transportation"
+    },
+    {
+     "title": "🏖️ Luxury Resort Transportation"
+    },
+    {
+     "title": "🌟 Special Event Transportation"
+    },
+    {
+     "title": "🏠 Winery & Brewery Tours"
+    }
+   ],
+   "faqs": []
+  },
+  {
+   "type": "banner",
+   "headings": [],
+   "paragraphs": [
+    "Whether it’s an intimate ride for two or a party bus for twenty, we have the perfect vehicle waiting for you in Dana Point.",
+    "Book Now"
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [],
+   "faqs": []
+  },
+  {
+   "type": "columns",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Popular Destinations"
+    }
+   ],
+   "paragraphs": [
+    "We provide luxury transportation to all major attractions, hotels, and venues in Dana Point."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [
+    {
+     "title": "Major Attractions",
+     "items": [
+      "Dana Point Harbor",
+      "Doheny State Beach",
+      "Salt Creek Beach",
+      "Dana Point Strands Beach",
+      "Headlands Reserve",
+      "Ocean Institute",
+      "Dana Point Nature Interpretive Center",
+      "Blue Whale at Ocean Institute",
+      "Lantern Bay Park",
+      "Heritage Park",
+      "Sea Terrace Park",
+      "Pines Park"
+     ]
+    },
+    {
+     "title": "Hotels & Resorts",
+     "items": [
+      "Waldorf Astoria Monarch Beach Resort",
+      "Laguna Cliffs Marriott Resort & Spa",
+      "The Ritz-Carlton Laguna Niguel",
+      "DoubleTree Dana Point",
+      "Capistrano Surfside Inn",
+      "Best Western Dana Point",
+      "Holiday Inn Express Dana Point",
+      "Lantern Bay Resort"
+     ]
+    },
+    {
+     "title": "Wedding Venues",
+     "items": [
+      "Waldorf Astoria Monarch Beach",
+      "Laguna Cliffs Marriott Resort & Spa",
+      "The Ritz-Carlton Laguna Niguel",
+      "Dana Point Harbor",
+      "Doheny State Beach",
+      "Strands Beach",
+      "Ocean Institute",
+      "Salt Creek Beach"
+     ]
+    },
+    {
+     "title": "Airports We Serve",
+     "items": [
+      "SNA",
+      "LGB",
+      "LAX"
+     ]
+    }
+   ],
+   "faqs": []
+  },
+  {
+   "type": "faq",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Frequently Asked Questions"
+    }
+   ],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [],
+   "faqs": [
+    {
+     "q": "Do you provide limousine service throughout Dana Point?",
+     "a": "Yes, we provide comprehensive limousine service throughout Dana Point and surrounding areas. Our fleet is available for all occasions."
+    },
+    {
+     "q": "Do you offer airport transportation from Dana Point?",
+     "a": "Absolutely! We provide reliable airport transportation to and from all major airports including John Wayne, LAX, Long Beach, and more."
+    },
+    {
+     "q": "Can I reserve transportation to Dana Point venues?",
+     "a": "Yes, we offer transportation to all major venues and attractions in the Dana Point area."
+    },
+    {
+     "q": "Do you offer wedding limousine service in Dana Point?",
+     "a": "We offer premium wedding limousine packages including decorated vehicles, red carpet service, and professional chauffeurs."
+    },
+    {
+     "q": "Do you provide party bus rentals in Dana Point?",
+     "a": "Yes, our party buses are perfect for birthdays, proms, bachelor parties, and group events in Dana Point."
+    },
+    {
+     "q": "Do you offer executive transportation for Dana Point businesses?",
+     "a": "We provide corporate and executive transportation services throughout Orange County."
+    },
+    {
+     "q": "How far in advance should I reserve a limousine?",
+     "a": "We recommend booking 2-4 weeks in advance for special events. However, we accommodate last-minute requests when available."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Ready to Book Your Ride in Dana Point?"
+    }
+   ],
+   "paragraphs": [
+    "Experience luxury transportation with our premium fleet and professional chauffeurs. Contact us today for a free, no-obligation quote.",
+    "Call (714) 313-9173"
+   ],
+   "lists": [],
+   "buttons": [
+    {
+     "label": "Call (714) 313-9173",
+     "href": "tel:+17143139173"
+    }
+   ],
+   "images": [],
+   "cards": [],
+   "faqs": []
+  }
+ ]
+}

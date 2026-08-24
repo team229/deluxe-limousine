@@ -1,0 +1,348 @@
+{
+ "path": "/aliso-viejo/",
+ "title": "Aliso Viejo Limousine Service - Deluxe Limousine Service",
+ "description": "Premium limousine and party bus services in Aliso Viejo, California. Luxury transportation for weddings, proms, corporate events, and special occasions.",
+ "ogImage": "/wp-content/uploads/2026/05/Chrsyler-Limousine-.png",
+ "sections": [
+  {
+   "type": "hero",
+   "headings": [
+    {
+     "level": "H1",
+     "text": "Aliso Viejo Limousine Service"
+    }
+   ],
+   "paragraphs": [
+    "Premium limousine and party bus services in Aliso Viejo, California. Luxury transportation for weddings, proms, corporate events, and special occasions."
+   ],
+   "lists": [],
+   "buttons": [
+    {
+     "label": "← Back to All Cities",
+     "href": "/cities/"
+    },
+    {
+     "label": "Home",
+     "href": "/"
+    }
+   ],
+   "images": [],
+   "cards": [],
+   "faqs": []
+  },
+  {
+   "type": "stats",
+   "headings": [],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [
+    {
+     "title": "15+ Years Experience"
+    },
+    {
+     "title": "15+"
+    },
+    {
+     "title": "7 Vehicle Types"
+    },
+    {
+     "title": "7"
+    },
+    {
+     "title": "24/7 Availability"
+    },
+    {
+     "title": "24/7"
+    },
+    {
+     "title": "5★ Customer Rating"
+    },
+    {
+     "title": "5★"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Luxury Vehicles for Every Occasion"
+    },
+    {
+     "level": "H3",
+     "text": "Chrysler 300 Stretch"
+    },
+    {
+     "level": "H3",
+     "text": "Black Chrysler Stretch"
+    },
+    {
+     "level": "H3",
+     "text": "Hummer H2 Stretch"
+    },
+    {
+     "level": "H3",
+     "text": "Mercedes Sprinter"
+    },
+    {
+     "level": "H3",
+     "text": "Party Bus"
+    },
+    {
+     "level": "H3",
+     "text": "Cadillac Escalade"
+    }
+   ],
+   "paragraphs": [
+    "From sleek stretch limos to spacious party buses, choose the perfect ride for your Aliso Viejo event.",
+    "Up to 10 passengers",
+    "Up to 16 passengers",
+    "Up to 14 passengers",
+    "Up to 20 passengers",
+    "Up to 8 passengers"
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [],
+   "faqs": []
+  },
+  {
+   "type": "services",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Services in Aliso Viejo"
+    }
+   ],
+   "paragraphs": [
+    "Complete luxury transportation solutions for every event and occasion."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [
+    {
+     "title": "💒 Wedding Transportation"
+    },
+    {
+     "title": "✈️ Airport Transportation"
+    },
+    {
+     "title": "💼 Corporate Transportation"
+    },
+    {
+     "title": "💼 Executive Transportation"
+    },
+    {
+     "title": "🎓 Prom Transportation"
+    },
+    {
+     "title": "🎓 Homecoming Transportation"
+    },
+    {
+     "title": "🎵 Concert Transportation"
+    },
+    {
+     "title": "🏟️ Sporting Event Transportation"
+    },
+    {
+     "title": "🎉 Birthday Transportation"
+    },
+    {
+     "title": "👰 Bachelor Party Transportation"
+    },
+    {
+     "title": "👰 Bachelorette Party Transportation"
+    },
+    {
+     "title": "🏆 Graduation Transportation"
+    },
+    {
+     "title": "❤️ Anniversary Transportation"
+    },
+    {
+     "title": "🎊 Quinceañera Transportation"
+    },
+    {
+     "title": "🎊 Sweet 16 Transportation"
+    },
+    {
+     "title": "🚌 Group Transportation"
+    },
+    {
+     "title": "🥂 Night Out Transportation"
+    },
+    {
+     "title": "🏖️ Luxury Resort Transportation"
+    },
+    {
+     "title": "🌟 Special Event Transportation"
+    },
+    {
+     "title": "🏠 Winery & Brewery Tours"
+    }
+   ],
+   "faqs": []
+  },
+  {
+   "type": "banner",
+   "headings": [],
+   "paragraphs": [
+    "Whether it’s an intimate ride for two or a party bus for twenty, we have the perfect vehicle waiting for you in Aliso Viejo.",
+    "Book Now"
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [],
+   "faqs": []
+  },
+  {
+   "type": "columns",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Popular Destinations"
+    }
+   ],
+   "paragraphs": [
+    "We provide luxury transportation to all major attractions, hotels, and venues in Aliso Viejo."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [
+    {
+     "title": "Major Attractions",
+     "items": [
+      "Aliso Viejo Town Center",
+      "Aliso & Wood Canyons Wilderness Park",
+      "Soka Performing Arts Center",
+      "Grand Park",
+      "Aliso Viejo Country Club",
+      "Aliso Viejo Aquatic Center",
+      "Laguna Niguel Regional Park",
+      "Laguna Beach",
+      "Heisler Park",
+      "Top of the World",
+      "Irvine Spectrum Center",
+      "FivePoint Amphitheatre"
+     ]
+    },
+    {
+     "title": "Hotels & Resorts",
+     "items": [
+      "Renaissance ClubSport Aliso Viejo Laguna Beach",
+      "Homewood Suites by Hilton Aliso Viejo Laguna Beach",
+      "Hilton Garden Inn Irvine Spectrum Lake Forest",
+      "Ayres Hotel Laguna Woods",
+      "Laguna Cliffs Marriott Resort & Spa",
+      "Waldorf Astoria Monarch Beach Resort & Club"
+     ]
+    },
+    {
+     "title": "Wedding Venues",
+     "items": [
+      "Aliso Viejo Country Club",
+      "Renaissance ClubSport",
+      "Arroyo Trabuco Golf Club",
+      "Tijeras Creek Golf Club",
+      "Waldorf Astoria Monarch Beach Resort & Club",
+      "The Ritz-Carlton, Laguna Niguel",
+      "Seven-Degrees"
+     ]
+    },
+    {
+     "title": "Airports We Serve",
+     "items": [
+      "SNA",
+      "LGB",
+      "LAX",
+      "BUR",
+      "ONT"
+     ]
+    }
+   ],
+   "faqs": []
+  },
+  {
+   "type": "faq",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Frequently Asked Questions"
+    }
+   ],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [],
+   "faqs": [
+    {
+     "q": "Do you provide limousine service throughout Aliso Viejo?",
+     "a": "Yes, we provide comprehensive limousine service throughout Aliso Viejo and surrounding areas."
+    },
+    {
+     "q": "Do you offer airport transportation from Aliso Viejo?",
+     "a": "Absolutely! We provide reliable airport transportation to and from all major airports."
+    },
+    {
+     "q": "Can I reserve a limousine to Soka Performing Arts Center?",
+     "a": "Yes, we offer transportation to Soka Performing Arts Center and all major venues."
+    },
+    {
+     "q": "Do you provide transportation to Aliso Viejo Country Club?",
+     "a": "Yes, we specialize in wedding and event transportation to Aliso Viejo Country Club."
+    },
+    {
+     "q": "Do you offer wedding limousine service in Aliso Viejo?",
+     "a": "We offer premium wedding limousine packages including decorated vehicles and professional chauffeurs."
+    },
+    {
+     "q": "Can I reserve transportation to Laguna Beach?",
+     "a": "Yes, we provide luxury transportation to Laguna Beach and all Orange County destinations."
+    },
+    {
+     "q": "Do you provide party bus rentals in Aliso Viejo?",
+     "a": "Yes, our party buses are perfect for birthdays, proms, and group events."
+    },
+    {
+     "q": "Do you offer executive transportation for Aliso Viejo businesses?",
+     "a": "We provide corporate and executive transportation services throughout Orange County."
+    },
+    {
+     "q": "How far in advance should I reserve a limousine?",
+     "a": "We recommend booking 2-4 weeks in advance for special events."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Ready to Book Your Ride in Aliso Viejo?"
+    }
+   ],
+   "paragraphs": [
+    "Experience luxury transportation with our premium fleet and professional chauffeurs. Contact us today for a free, no-obligation quote.",
+    "Call (714) 313-9173"
+   ],
+   "lists": [],
+   "buttons": [
+    {
+     "label": "Call (714) 313-9173",
+     "href": "tel:+17143139173"
+    }
+   ],
+   "images": [],
+   "cards": [],
+   "faqs": []
+  }
+ ]
+}

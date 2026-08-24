@@ -1,0 +1,129 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FaqAccordion from '../React/FaqAccordion.tsx';
+import type { OccasionPage } from '../../data/occasion-pages';
+
+const CONTAINER = 'mx-auto w-full max-w-[1240px] px-5';
+const { page } = Astro.props;
+
+// Split sections: features (has 3 cards), steps (2 cards), faq (question cards)
+const features = page.sections.find((s) => /Crafted|Built|Hottest|Designed/i.test(s.title) && s.cards.length >= 3);
+const steps = page.sections.find((s) => /Coverage|Packages|Tailored/i.test(s.title) && s.cards.length === 2);
+const faq = page.sections.find((s) => /FAQ|Questions/i.test(s.title) && s.cards.length >= 2);
+// fallback assign if detection missed
+const featureSec = features ?? page.sections[1] ?? page.sections[0];
+const stepSec = steps ?? page.sections[2];
+const faqSec = faq ?? page.sections[3];
+
+const faqItems = (faqSec?.cards ?? []).map((c) => ({ question: c.title, answer: c.desc }));
+
+const icons = ['car', 'user', 'clock'];
+const iconSvg: Record<string, string> = {
+  car: '<path d="M5 16l1.5-4.5A2 2 0 0 1 8.4 10h7.2a2 2 0 0 1 1.9 1.5L19 16"/><circle cx="7.5" cy="16.5" r="1.5"/><circle cx="16.5" cy="16.5" r="1.5"/><rect x="3" y="16" width="18" height="3" rx="1"/>',
+  user: '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',
+  clock: '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
+};
+---
+
+<Layout title={`${page.header} | Deluxe Limousine Service`} description={page.heroP.slice(0, 155)} url={`https://deluxelimousineservice.com/${page.slug}/`}>
+  <!-- HERO -->
+  <section class="py-20 bg-ink">
+    <div class={`${CONTAINER} grid grid-cols-1 lg:grid-cols-2 gap-12 items-center`}>
+      <div>
+        <a href="/" class="inline-flex items-center gap-2 no-underline text-white/60 hover:text-gold text-[0.8rem] font-medium uppercase tracking-[0.1em] mb-5 transition-colors">
+          <span class="text-gold">←</span> Back to Occasions
+        </a>
+        <h1 class="font-serif-display text-[clamp(2rem,4.5vw,3.4rem)] text-white leading-[1.15]">{page.header}</h1>
+        <p class="text-white/70 leading-[1.85] mt-6">{page.heroP}</p>
+        <div class="flex gap-4 flex-wrap mt-8">
+          <a href="tel:7143139173" class="inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline bg-gold text-black border border-gold shadow-[0_8px_25px_rgba(212,175,55,0.2)] hover:-translate-y-px hover:bg-gold-soft">☎ Call (714) 313-9173</a>
+          <a href="#quote" class="inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline border border-gold text-gold bg-transparent hover:bg-gold hover:text-black">Request a Quote</a>
+        </div>
+      </div>
+      <div class="rounded-2xl overflow-hidden border border-line shadow-[0_24px_60px_rgba(0,0,0,0.5)]">
+        <img src={page.heroImg} alt={page.header} loading="eager" class="w-full h-[380px] object-cover block" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  {featureSec && (
+    <section class="py-20 bg-ink-soft border-y border-line">
+      <div class={CONTAINER}>
+        <div class="text-center mb-12">
+          {featureSec.pill && <span class="inline-block px-4 py-1.5 rounded-full bg-gold/10 border border-gold/40 text-gold text-xs font-bold uppercase tracking-[0.15em]">{featureSec.pill}</span>}
+          <h2 class="font-serif-display text-3xl md:text-4xl font-bold mt-4">{featureSec.title}</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {featureSec.cards.map((card, i) => (
+            <div class="bg-ink-raised border border-line rounded-xl p-8 text-center transition-all duration-300 hover:border-gold">
+              <div class="w-14 h-14 rounded-xl bg-gold/10 border border-gold/40 text-gold flex items-center justify-center mx-auto mb-6">
+                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" set:html={iconSvg[icons[i % icons.length]]} />
+              </div>
+              <h3 class="font-serif-display text-white text-xl mb-3">{card.title}</h3>
+              <p class="text-white/70 text-sm leading-[1.7]">{card.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- STEPS / COVERAGE -->
+  {stepSec && (
+    <section class="py-20 bg-ink">
+      <div class={CONTAINER}>
+        <div class="text-center mb-12">
+          {stepSec.pill && <span class="inline-block px-4 py-1.5 rounded-full bg-gold/10 border border-gold/40 text-gold text-xs font-bold uppercase tracking-[0.15em]">{stepSec.pill}</span>}
+          <h2 class="font-serif-display text-3xl md:text-4xl font-bold mt-4">{stepSec.title}</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {stepSec.cards.map((card, i) => (
+            <div class="bg-ink-raised border border-line rounded-xl overflow-hidden transition-all duration-300 hover:border-gold">
+              <div class="px-8 pt-7 pb-5">
+                <span class="text-gold uppercase tracking-[0.12em] text-xs font-bold">0{i + 1}</span>
+                <h3 class="font-serif-display text-white text-2xl mt-2">{card.title}</h3>
+                <p class="text-white/70 text-sm leading-[1.75] mt-4">{card.desc}</p>
+              </div>
+              <div class="h-1 bg-linear-to-r from-gold to-transparent"></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- FAQ -->
+  {faqItems.length >= 1 && (
+    <section class="py-20 bg-ink-soft" id="quote">
+      <div class="mx-auto w-full max-w-[860px] px-5">
+        <div class="text-center mb-10">
+          {faqSec?.pill && <span class="inline-block px-4 py-1.5 rounded-full bg-gold/10 border border-gold/40 text-gold text-xs font-bold uppercase tracking-[0.15em]">{faqSec.pill}</span>}
+          <h2 class="font-serif-display text-3xl md:text-4xl font-bold mt-4">{faqSec?.title ?? 'Frequently Asked Questions'}</h2>
+        </div>
+        <FaqAccordion client:load items={faqItems} />
+      </div>
+    </section>
+  )}
+
+  <!-- CTA -->
+  {page.ctaTitle && (
+    <section class="py-20 bg-ink">
+      <div class={CONTAINER}>
+        <div class="max-w-[760px] mx-auto bg-ink-raised border border-gold/30 rounded-2xl px-8 md:px-12 py-12 text-center">
+          <h2 class="font-serif-display text-3xl md:text-4xl font-bold">{page.ctaTitle}</h2>
+          {page.ctaText && <p class="text-white/70 leading-[1.8] mt-5">{page.ctaText}</p>}
+          <div class="flex gap-4 justify-center flex-wrap mt-8">
+            {page.ctaButtons.map((b) => (
+              <a href={b.href.startsWith('tel') ? b.href : b.href} class={b.href.startsWith('tel')
+                ? 'inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline bg-gold text-black border border-gold shadow-[0_8px_25px_rgba(212,175,55,0.2)] hover:-translate-y-px hover:bg-gold-soft'
+                : 'inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline border border-gold text-gold bg-transparent hover:bg-gold hover:text-black'}>
+                {b.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+</Layout>

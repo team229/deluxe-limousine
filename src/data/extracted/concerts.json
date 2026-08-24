@@ -1,0 +1,113 @@
+{
+ "path": "/concerts/",
+ "title": "concerts - Deluxe Limousine Service",
+ "description": "From your driveway to the stadium gates, we handle every mile. No driving after the third beer, no paying $80 for premium parking, no walking 14 blocks from",
+ "ogImage": "/wp-content/uploads/2026/06/concert-sports-limo.jpeg",
+ "sections": [
+  {
+   "type": "gallery",
+   "headings": [
+    {
+     "level": "H1",
+     "text": "Skip The Traffic. Skip The Parking."
+    },
+    {
+     "level": "H2",
+     "text": "The Smart Way To Get To The Game"
+    },
+    {
+     "level": "H3",
+     "text": "Door-To-Door Service"
+    },
+    {
+     "level": "H3",
+     "text": "Tailgate-Ready Cargo Space"
+    },
+    {
+     "level": "H3",
+     "text": "Zero Parking Fees"
+    },
+    {
+     "level": "H2",
+     "text": "Built For Every Venue"
+    },
+    {
+     "level": "H3",
+     "text": "SoFi, Honda Center, BMO & More"
+    },
+    {
+     "level": "H3",
+     "text": "Coachella, Stagecoach & Arena Tours"
+    },
+    {
+     "level": "H2",
+     "text": "Concert & Sports FAQs"
+    },
+    {
+     "level": "H3",
+     "text": "Can you drop us off and pick us up after the event?"
+    },
+    {
+     "level": "H3",
+     "text": "What is your cancellation policy for games and concerts?"
+    },
+    {
+     "level": "H3",
+     "text": "Do you service venues outside of Orange County?"
+    },
+    {
+     "level": "H2",
+     "text": "Don't Miss A Single Play"
+    }
+   ],
+   "paragraphs": [
+    "The pre-show tailgate, the post-game victory lap, the 90-minute concert run — none of it should be spent hunting for parking or waiting in a rideshare queue. Deluxe Limousine Service drops you and your group at the front door of SoFi Stadium, Honda Center, Crypto.com Arena, Kia Forum, BMO Stadium, and every major Southern California venue. Ride in, ride out, and never miss a single play.",
+    "From your driveway to the stadium gates, we handle every mile. No driving after the third beer, no paying $80 for premium parking, no walking 14 blocks from the overflow lot. Just step out and walk straight in.",
+    "Bring coolers, grills, lawn chairs, banners, and oversized jerseys. Our SUVs, party buses, and sprinter vans have the cargo capacity rideshares can never match. Pre-game in style right in the parking lot.",
+    "SoFi charges up to $100 per vehicle, Crypto.com runs $50+, and Honda Center hovers around $30. A group of 8 in a party bus pays a fraction of that per person — and you keep the keys, the cooler, and the convenience.",
+    "Skip the post-game rideshare surge and walk out to a clean, climate-controlled vehicle waiting at the designated rideshare zone. Our chauffeurs track the event end time in real time, so the moment the final whistle blows or the encore ends, we're already pulled up. We service every major venue from San Diego to Los Angeles, including SoFi Stadium, Crypto.com Arena, Honda Center, Kia Forum, BMO Stadium, and the Rose Bowl.",
+    "Multi-day music festivals and late-night concert runs are our specialty. Pre-book a sprinter van or party bus for the entire run, and we become your private shuttle between the venue, your hotel, and every after-party. For SoCal stadium tours and amphitheater runs (Pacific Amphitheatre, Irvine Meadows, Yaamava'), we coordinate with venue security for direct curb access.",
+    "Absolutely — split round-trips are our most popular concert and sports package. We drop your group at the venue entrance, return to the lot, and pick you up curbside when the event ends. You only pay for the time the vehicle is in service, not idle time.",
+    "Reservations can be cancelled up to 72 hours before the event for a full refund. Same-day cancellations due to event postponement, weather, or team performance are rescheduled free of charge. We understand schedules change — we're flexible.",
+    "Yes. We cover all of Southern California including Los Angeles, San Diego, Long Beach, Riverside, and San Bernardino counties. Long-distance trips to Las Vegas, Phoenix, and other destination events are available with custom pricing.",
+    "Game day traffic, sold-out parking lots, and post-event rideshare surges are officially over. Call Sal to reserve a luxury ride to your next concert, game, or festival and experience the event the way it was meant to be enjoyed."
+   ],
+   "lists": [],
+   "buttons": [
+    {
+     "label": "☎ Call (714) 313-9173",
+     "href": "tel:7143139173"
+    },
+    {
+     "label": "Book Game Day",
+     "href": "/contact-us/"
+    },
+    {
+     "label": "☎ Call (714) 313-9173",
+     "href": "tel:7143139173"
+    },
+    {
+     "label": "Reserve Game Day",
+     "href": "/contact-us/"
+    }
+   ],
+   "images": [
+    {
+     "src": "/wp-content/uploads/2026/06/concert-sports-limo.jpeg",
+     "alt": "Group of fans heading to a stadium in a limo"
+    },
+    {
+     "src": "/wp-content/uploads/2026/06/concert-stadium-drop.jpeg",
+     "alt": "Limousine drop-off at a stadium entrance"
+    },
+    {
+     "src": "/wp-content/uploads/2026/06/concert-festival-shuttle.jpeg",
+     "alt": "Festival shuttle bus for concert-goers"
+    }
+   ],
+   "faqs": [],
+   "bgImage": null,
+   "bgVideo": null
+  }
+ ]
+}

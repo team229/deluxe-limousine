@@ -1,0 +1,25 @@
+---
+interface Props {
+  heading?: string;
+  text?: string;
+}
+const {
+  heading = 'Lock in your free hour',
+  text = 'Book any fleet option for 4+ hours and get your 1st hour completely free — plus chilled sodas & refreshments on every ride.',
+} = Astro.props;
+---
+
+<section class="py-14 bg-linear-135 from-gold/[0.14] to-transparent to-60% bg-ink-raised border-y border-gold">
+  <div class="mx-auto w-full max-w-[1240px] px-5 flex items-center justify-between gap-8 flex-wrap">
+    <div>
+      <h2 class="font-serif-display text-white text-[1.8rem] m-0 mb-2">{heading}</h2>
+      <p class="text-white/70 m-0 max-w-[520px] leading-[1.6]">{text}</p>
+    </div>
+    <div class="flex flex-col items-center gap-2">
+      <a href="/contact-us/" class="inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline bg-gold text-black border border-gold shadow-[0_8px_25px_rgba(212,175,55,0.2)] hover:-translate-y-px hover:bg-gold-soft hover:border-gold-soft">
+        Get My Free Quote
+      </a>
+      <a href="tel:7143139173" class="text-gold text-[0.9rem]">or call (714) 313-9173</a>
+    </div>
+  </div>
+</section>

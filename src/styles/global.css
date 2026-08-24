@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* Color Palette */
+  --color-ink: #000000;
+  --color-ink-soft: #0a0a0a;
+  --color-ink-raised: #141414;
+  --color-gold: #d4af37;
+  --color-gold-accent: #e2b93c;
+  --color-gold-hover: #c19a2d;
+  --color-gold-soft: #e8c87a;
+  --color-cream: #f3f0ea;
+  --color-line: #222222;
+  --color-line-hover: #333333;
+
+  /* Fonts */
+  --font-serif-display: "Libre Baskerville", serif;
+  --font-sans-body: "Montserrat", sans-serif;
+  --font-header: "Outfit", sans-serif;
+
+  /* Animations */
+  --animate-ticker: lux-ticker-scroll 20s linear infinite;
+
+  @keyframes lux-ticker-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink text-white font-sans-body antialiased;
+  }
+
+  ::selection {
+    @apply bg-gold text-black;
+  }
+}

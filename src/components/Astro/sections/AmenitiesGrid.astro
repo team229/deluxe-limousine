@@ -1,0 +1,47 @@
+---
+interface Amenity {
+  title: string;
+  desc: string;
+  icon: string;
+}
+const amenities: Amenity[] = [
+  {
+    title: 'Premium Sound System',
+    desc: 'Crystal clear audio for your party playlist',
+    icon: '<path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>',
+  },
+  {
+    title: 'Flat-screen TVs',
+    desc: 'Entertainment for your entire group',
+    icon: '<rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>',
+  },
+  {
+    title: 'Luxury Seating',
+    desc: 'Plush leather seats for maximum comfort',
+    icon: '<path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3"/><path d="M2 11v5a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H6v-2a2 2 0 0 0-4 0Z"/><path d="M4 18v2"/><path d="M20 18v2"/>',
+  },
+  {
+    title: 'Party Atmosphere',
+    desc: 'LED lighting and dance poles on select models',
+    icon: '<circle cx="12" cy="12" r="10"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/>',
+  },
+];
+const heading = Astro.props.heading ?? 'First-Class Luxury Inside Every Ride';
+---
+
+<section class="py-20">
+  <div class="mx-auto w-full max-w-[1240px] px-5">
+    <h2 class="font-serif-display text-2xl md:text-3xl font-bold leading-snug text-white text-center">{heading}</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+      {amenities.map((a) => (
+        <div class="bg-ink-raised border border-line rounded-xl px-6 py-8 text-center transition-all duration-300 hover:-translate-y-1 hover:border-gold">
+          <div class="inline-flex p-3.5 border border-gold rounded-full text-gold mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" set:html={a.icon} />
+          </div>
+          <h3 class="font-serif-display text-white text-base m-0 mb-2">{a.title}</h3>
+          <p class="text-white/70 text-[0.88rem] leading-[1.6] m-0">{a.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

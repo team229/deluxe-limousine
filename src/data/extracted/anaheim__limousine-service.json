@@ -1,0 +1,24 @@
+{
+ "path": "/anaheim/limousine-service/",
+ "title": "Anaheim Premier Limousine Service - Deluxe Limousine Service",
+ "description": "For more than ten years, Deluxe Limousine Service has provided Anaheim with the top choice in Limousine Services. Our Anaheim Limousine Services cover any",
+ "ogImage": "/wp-content/uploads/2022/09/Logo-3-1024x605.png",
+ "sections": [
+  {
+   "type": "prose",
+   "headings": [
+    {
+     "level": "H1",
+     "text": "Anaheim Premier Limousine Service"
+    }
+   ],
+   "paragraphs": [
+    "For more than ten years, Deluxe Limousine Service has provided Anaheim with the top choice in Limousine Services. Our Anaheim Limousine Services cover any event from weddings to proms to corporate functions, airport transportation and even a night out on the town. We focus on providing a five-star transportation experience for our customers. We promise our team will be on time, professional and will provide a luxurious experience from the moment you book to the moment you exit the vehicle."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "faqs": []
+  }
+ ]
+}

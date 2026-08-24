@@ -1,0 +1,113 @@
+{
+ "path": "/corporates/",
+ "title": "corporates - Deluxe Limousine Service",
+ "description": "We monitor flight data, traffic patterns, and meeting schedules in real time. Our chauffeurs arrive 15 minutes early, track your flight if it's delayed, and",
+ "ogImage": "/wp-content/uploads/2026/06/corporate-limo.png",
+ "sections": [
+  {
+   "type": "gallery",
+   "headings": [
+    {
+     "level": "H1",
+     "text": "Executive-Class Service For Business Excellence."
+    },
+    {
+     "level": "H2",
+     "text": "Built For Business Standards"
+    },
+    {
+     "level": "H3",
+     "text": "Punctual, Every Time"
+    },
+    {
+     "level": "H3",
+     "text": "Discreet & Professional"
+    },
+    {
+     "level": "H3",
+     "text": "Productive On The Road"
+    },
+    {
+     "level": "H2",
+     "text": "Scalable Solutions"
+    },
+    {
+     "level": "H3",
+     "text": "SNA, LAX, LGB Airport Service"
+    },
+    {
+     "level": "H3",
+     "text": "Convention & Event Shuttles"
+    },
+    {
+     "level": "H2",
+     "text": "Corporate Account FAQs"
+    },
+    {
+     "level": "H3",
+     "text": "Do you offer corporate billing and net-30 invoicing?"
+    },
+    {
+     "level": "H3",
+     "text": "How do you ensure chauffeur professionalism and security?"
+    },
+    {
+     "level": "H3",
+     "text": "Can you scale up for multi-day conferences with 100+ passengers?"
+    },
+    {
+     "level": "H2",
+     "text": "Partner With A Team That Gets Business"
+    }
+   ],
+   "paragraphs": [
+    "First impressions start in the parking lot. Deluxe Limousine Service partners with Fortune 500 executives, conference organizers, and entertainment industry leaders to provide discreet, punctual, and professionally managed corporate transportation throughout Anaheim, Irvine, and all of Orange County. From single VIP airport pickups to multi-vehicle convention shuttles, we deliver the polish and reliability your business demands.",
+    "We monitor flight data, traffic patterns, and meeting schedules in real time. Our chauffeurs arrive 15 minutes early, track your flight if it's delayed, and adjust routes instantly so your executives never wait.",
+    "Our chauffeurs sign NDAs, dress in black suits, and open doors without conversation unless engaged. Vehicles are unmarked when requested, with tinted windows for confidential rides to board meetings and investor dinners.",
+    "Tinted partitions, charging ports, complimentary Wi-Fi hotspots, and quiet cabins turn transit time into work time. Your team arrives at the conference refreshed, prepared, and ready to close the deal.",
+    "Curbside meet-and-greet with a printed name placard, luggage handling, and a waiting vehicle no matter how long customs takes. We service all Southern California airports including John Wayne (SNA), LAX, Long Beach, and Ontario. Corporate accounts receive itemized monthly invoicing and priority dispatch.",
+    "Hosting 50 attendees or 5,000? We deploy coordinated fleets with GPS-tracked routing, dedicated dispatchers, and branded signage at pickup zones. Past clients include Anaheim Convention Center expos, NAMM, D23, and major product launches throughout the OC.",
+    "Yes. Approved corporate accounts receive itemized monthly invoices with detailed trip logs, passenger manifests, and accounting-friendly expense codes. We also integrate with popular travel and expense platforms like Concur and Expensify.",
+    "All chauffeurs pass comprehensive background checks, drug screening, and defensive driving certification. They are trained in executive etiquette, confidentiality protocols, and corporate event procedures. We also offer NDA-signing chauffeurs for high-profile clients.",
+    "Absolutely. We routinely coordinate fleets of 10 to 30 vehicles for multi-day conventions. A dedicated account manager is assigned to your event, with a shared Slack or Teams channel for real-time updates and last-minute schedule changes.",
+    "From a single executive ride to a 500-person convention, Deluxe Limousine Service scales with your needs. Reach out to Sal to open a corporate account and receive a custom rate sheet tailored to your travel volume."
+   ],
+   "lists": [],
+   "buttons": [
+    {
+     "label": "☎ Call (714) 313-9173",
+     "href": "tel:7143139173"
+    },
+    {
+     "label": "Open a Corporate Account",
+     "href": "/contact-us/"
+    },
+    {
+     "label": "☎ Call (714) 313-9173",
+     "href": "tel:7143139173"
+    },
+    {
+     "label": "Request Corporate Rates",
+     "href": "/contact-us/"
+    }
+   ],
+   "images": [
+    {
+     "src": "/wp-content/uploads/2026/06/corporate-limo.png",
+     "alt": "Black executive sedan and limousine for corporate clients"
+    },
+    {
+     "src": "/wp-content/uploads/2026/06/corporate-limo.png",
+     "alt": "Executive airport transfer in black sedan"
+    },
+    {
+     "src": "/wp-content/uploads/2026/06/corporate-limo.png",
+     "alt": "Convention shuttle fleet for corporate events"
+    }
+   ],
+   "faqs": [],
+   "bgImage": null,
+   "bgVideo": null
+  }
+ ]
+}

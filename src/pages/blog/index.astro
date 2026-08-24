@@ -1,0 +1,73 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+const posts = await getCollection('blog');
+const sortedPosts = posts.sort((a, b) => {
+  return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
+});
+---
+
+<Layout
+  title="Luxury Travel Blog & Travel Tips | Deluxe Limousine Service"
+  description="Read articles, guidebooks, and transport guides from Deluxe Limousine Service. Learn about Orange County luxury travel trends, wedding tips, and airport transfer guidelines."
+>
+  <!-- Page Header -->
+  <section class="py-24 border-b border-line bg-linear-to-b from-ink-raised to-ink">
+    <div class="mx-auto w-full max-w-[1240px] px-5 text-center">
+      <span class="text-gold uppercase text-xs font-bold tracking-[0.15em]">Travel Insights</span>
+      <h1 class="font-serif-display text-4xl font-bold mt-2">The Deluxe Blog</h1>
+      <p class="text-white/60 max-w-[600px] mx-auto mt-4">Guides, news, and tips for executive and special event limousine travel in Southern California.</p>
+    </div>
+  </section>
+
+  <!-- Blog Grid Section -->
+  <section class="py-20 bg-ink">
+    <div class="mx-auto w-full max-w-[1240px] px-5">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {sortedPosts.map(post => {
+          const formattedDate = new Date(post.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+          const detailLink = `/blog/${post.id}`;
+          return (
+            <article class="flex flex-col rounded-lg overflow-hidden h-full border border-line bg-ink-raised/60 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-gold">
+              <a href={detailLink} class="block">
+                <div class="relative aspect-video bg-ink overflow-hidden">
+                  {post.data.featuredImage ? (
+                    <img src={post.data.featuredImage} alt={post.data.title} loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-600 hover:scale-[1.08]" />
+                  ) : (
+                    <div class="absolute inset-0 flex items-center justify-center bg-linear-to-br from-ink-raised to-black">
+                      <span class="text-gold text-[0.95rem] font-bold tracking-[0.1em]">DELUXE LIMO</span>
+                    </div>
+                  )}
+                </div>
+              </a>
+              <div class="p-6 flex flex-col flex-1">
+                <span class="text-gold text-[0.75rem] font-semibold uppercase tracking-[0.05em] mb-2">{formattedDate}</span>
+                <h3 class="text-[1.25rem] leading-snug mb-3 font-sans-body font-bold">
+                  <a href={detailLink} class="text-white hover:text-gold no-underline transition-colors">{post.data.title}</a>
+                </h3>
+                <p class="text-white/60 text-[0.85rem] mb-6 flex-1 leading-[1.6]">{post.data.description}</p>
+                <a href={detailLink} class="text-gold text-sm font-semibold no-underline inline-flex items-center gap-1.5 group">
+                  Read Article
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="transition-transform duration-300 group-hover:translate-x-1"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-ink-soft border-t border-line">
+    <div class="mx-auto w-full max-w-[1240px] px-5 text-center">
+      <h2 class="font-serif-display text-3xl font-bold">Planning a Reservation?</h2>
+      <p class="text-white/60 max-w-[600px] mx-auto mt-4">Consult with our transport coordinators. We will help map out travel times, vehicle requirements, and beverages lists for your entire party.</p>
+      <div class="flex justify-center gap-6 flex-wrap mt-8">
+        <a href="/contact-us" class="inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline bg-gold text-black border border-gold shadow-[0_8px_25px_rgba(212,175,55,0.2)] hover:-translate-y-px hover:bg-gold-soft hover:border-gold-soft">Contact Booking Office</a>
+        <a href="tel:7143139173" class="inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline border border-gold text-gold bg-transparent hover:bg-gold hover:text-black">Call (714) 313-9173</a>
+      </div>
+    </div>
+  </section>
+</Layout>

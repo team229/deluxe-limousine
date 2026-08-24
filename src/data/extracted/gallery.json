@@ -1,0 +1,184 @@
+{
+ "path": "/gallery/",
+ "title": "Limousine Photos Anaheim | Deluxe Limousine Service Gallery",
+ "description": "Browse the Deluxe Limousine Service gallery and explore our luxury fleet of limousines, party buses, Hummer limos, and executive SUVs in Anaheim. See our vehicles up close before you book. Call now!",
+ "ogImage": "/wp-content/uploads/2026/06/3.png",
+ "sections": [
+  {
+   "type": "prose",
+   "headings": [
+    {
+     "level": "H1",
+     "text": "Limousine Photos Anaheim"
+    }
+   ],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "faqs": [],
+   "bgImage": null,
+   "bgVideo": null
+  },
+  {
+   "type": "prose",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Explore Our Luxury Limousine Photos in Anaheim & Orange County"
+    }
+   ],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "faqs": [],
+   "bgImage": null,
+   "bgVideo": null
+  },
+  {
+   "type": "gallery",
+   "headings": [],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [
+    {
+     "src": "/wp-content/uploads/2026/06/3-1024x682.png",
+     "alt": ""
+    },
+    {
+     "src": "/wp-content/uploads/2026/06/1-1024x682.png",
+     "alt": ""
+    },
+    {
+     "src": "/wp-content/uploads/2026/06/7-1024x682.png",
+     "alt": ""
+    }
+   ],
+   "faqs": [],
+   "bgImage": null,
+   "bgVideo": null
+  },
+  {
+   "type": "gallery",
+   "headings": [],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [
+    {
+     "src": "/wp-content/uploads/2026/04/Deluxe-Black-Chrysler-Limo.webp",
+     "alt": "Deluxe Black Chrysler Limo"
+    },
+    {
+     "src": "/wp-content/uploads/2026/04/image-19.jpg",
+     "alt": ""
+    },
+    {
+     "src": "/wp-content/uploads/2026/04/White-Cadillac-Escalade-Limo.webp",
+     "alt": "White Limousine"
+    }
+   ],
+   "faqs": [],
+   "bgImage": null,
+   "bgVideo": null
+  },
+  {
+   "type": "gallery",
+   "headings": [],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [
+    {
+     "src": "/wp-content/uploads/2023/11/thumbnail_IMG_3975-1-1024x731.jpg",
+     "alt": "Deluxe Executive SUV & Car Service"
+    },
+    {
+     "src": "/wp-content/uploads/2023/11/thumbnail_16552-1024x768.jpg",
+     "alt": "Luxury Sprinter Limo"
+    },
+    {
+     "src": "/wp-content/uploads/2023/10/301571662_413290304205089_1727909683294932370_n1-1024x768.jpg",
+     "alt": "Hummer Limo"
+    }
+   ],
+   "faqs": [],
+   "bgImage": null,
+   "bgVideo": null
+  },
+  {
+   "type": "gallery",
+   "headings": [],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [
+    {
+     "src": "/wp-content/uploads/2022/06/7-1024x684.jpg",
+     "alt": "Deluxe Party Bus Rental"
+    },
+    {
+     "src": "/wp-content/uploads/2023/11/2021-suburban-airport-03.webp",
+     "alt": "Luxury SUV Service"
+    },
+    {
+     "src": "/wp-content/uploads/2023/11/contact1.png",
+     "alt": ""
+    }
+   ],
+   "faqs": [],
+   "bgImage": null,
+   "bgVideo": null
+  },
+  {
+   "type": "gallery",
+   "headings": [],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [
+    {
+     "src": "/wp-content/uploads/2023/11/1383452670000-AP-LAX-Shooting-TSA-Officer-1024x578.webp",
+     "alt": ""
+    },
+    {
+     "src": "/wp-content/uploads/2023/11/29c7b4_f1b00971fe0e4aefa09ee2f1cbec58cbmv2.webp",
+     "alt": "quinceanera limo rental"
+    },
+    {
+     "src": "/wp-content/uploads/2023/11/049c983d-06c1-45d9-86fa-e40b77751409-The_Weeknd_SBM_005-1024x683.webp",
+     "alt": ""
+    }
+   ],
+   "faqs": [],
+   "bgImage": null,
+   "bgVideo": null
+  },
+  {
+   "type": "gallery",
+   "headings": [],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [
+    {
+     "src": "/wp-content/uploads/2023/11/LEIGH-ANNE-PINNOCK-310723-default-1024x576.webp",
+     "alt": "Wedding | Stretch Limo"
+    },
+    {
+     "src": "/wp-content/uploads/2023/11/Image-8-1024x576.jpeg",
+     "alt": "Chrysler Limousine interior white"
+    },
+    {
+     "src": "/wp-content/uploads/2023/11/IMG_9110.webp",
+     "alt": ""
+    }
+   ],
+   "faqs": [],
+   "bgImage": null,
+   "bgVideo": null
+  }
+ ]
+}

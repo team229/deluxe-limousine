@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import GalleryFilter from '../components/React/GalleryFilter';
+---
+
+<Layout 
+  title="Gallery | Deluxe Limousine Service Orange County" 
+  description="Browse photos of our pristine fleet of stretch limos, luxury Hummers, corporate Sprinters, and luxury wedding arrivals in Southern California."
+>
+  <!-- Page Header -->
+  <section class="py-24 border-b border-line bg-linear-to-b from-ink-raised to-ink">
+    <div class="mx-auto w-full max-w-[1240px] px-5 text-center">
+      <span class="text-gold uppercase text-xs font-bold tracking-[0.15em]">Our Gallery</span>
+      <h1 class="font-serif-display text-4xl font-bold mt-2">Luxury on Display</h1>
+      <p class="text-white/60 max-w-[600px] mx-auto mt-4">Explore our real fleet, wedding rollouts, and executive transport setups.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="py-20 bg-ink">
+    <div class="mx-auto w-full max-w-[1240px] px-5">
+      <GalleryFilter client:load />
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-ink-soft border-t border-line">
+    <div class="mx-auto w-full max-w-[1240px] px-5 text-center">
+      <h2 class="font-serif-display text-3xl font-bold">Like What You See?</h2>
+      <p class="text-white/60 max-w-[600px] mx-auto mt-4">Reserve your preferred vehicle today. Contact our dispatch line for availability and customized package details.</p>
+      <div class="flex justify-center gap-5 flex-wrap mt-8">
+        <a href="/contact-us" class="inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline bg-gold text-black border border-gold shadow-[0_8px_25px_rgba(212,175,55,0.2)] hover:-translate-y-px hover:bg-gold-soft hover:border-gold-soft">Book a Vehicle</a>
+        <a href="tel:7143139173" class="inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline border border-gold text-gold bg-transparent hover:bg-gold hover:text-black">Call (714) 313-9173</a>
+      </div>
+    </div>
+  </section>
+</Layout>

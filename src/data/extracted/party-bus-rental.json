@@ -1,0 +1,242 @@
+{
+ "path": "/party-bus-rental/",
+ "title": "Party Bus Rental Anaheim | Deluxe Limousine Service",
+ "description": "Party in style with Deluxe Limousine Service's Party Bus Rental in Anaheim! Perfect for birthdays, bachelor parties, proms, and concerts. Affordable rates, 5-star rated, 24/7 availability. Book your party bus today!",
+ "ogImage": "/wp-content/uploads/2026/07/cities-5.png",
+ "sections": [
+  {
+   "type": "hero",
+   "headings": [
+    {
+     "level": "H1",
+     "text": "Party Bus Rental Anaheim, OC"
+    }
+   ],
+   "paragraphs": [
+    "Party bus rental is the most requested limo in our fleet. Built on the history of being an ultimate entertainment limousine. Our party buses go far beyond the limits of any traditional limousine. Fully equipped with state-of-the-art amenities such as a large LCD TV screen, premium stereo system, and iPod hookup. When renting a Limo Bus, you will have a large space for dancing with laser lights and much more! We offer one of the most affordable Limo prices on the market!"
+   ],
+   "buttons": [],
+   "images": [],
+   "bgImage": "/wp-content/uploads/2026/07/cities-3.png",
+   "bgVideo": null
+  },
+  {
+   "type": "fleet",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Our Full Fleet"
+    }
+   ],
+   "paragraphs": [
+    "From the Black Chrysler 300 to the Party Bus, find the perfect vehicle for your event."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [
+    {
+     "title": "Black Chrysler 300",
+     "meta": "Up to 10 passengers",
+     "image": "/wp-content/uploads/2026/07/cities-5.png"
+    },
+    {
+     "title": "White Chrysler 300",
+     "meta": "Up to 10 passengers",
+     "image": "/wp-content/uploads/2026/07/cities-1.png"
+    },
+    {
+     "title": "Executive SUV",
+     "meta": "Up to 8 passengers",
+     "image": "/wp-content/uploads/2026/07/cities-7.png"
+    },
+    {
+     "title": "Hummer",
+     "meta": "Up to 16 passengers",
+     "image": "/wp-content/uploads/2026/07/cities-4.png"
+    },
+    {
+     "title": "Sprinter Van",
+     "meta": "Up to 14 passengers",
+     "image": "/wp-content/uploads/2026/07/cities-2.png"
+    },
+    {
+     "title": "Party Bus",
+     "meta": "Up to 20 passengers",
+     "image": "/wp-content/uploads/2026/07/cities-3.png"
+    }
+   ],
+   "faqs": []
+  },
+  {
+   "type": "services",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Party Bus Services in Anaheim"
+    }
+   ],
+   "paragraphs": [
+    "Complete luxury transportation solutions for every event and occasion."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [
+    {
+     "title": "💒Wedding Transportation"
+    },
+    {
+     "title": "✈️Airport Transportation"
+    },
+    {
+     "title": "💼Corporate Transportation"
+    },
+    {
+     "title": "💼Executive Transportation"
+    },
+    {
+     "title": "🎓Prom Transportation"
+    },
+    {
+     "title": "🎓Homecoming Transportation"
+    },
+    {
+     "title": "🎵Concert Transportation"
+    },
+    {
+     "title": "🏟️Sporting Event Transportation"
+    },
+    {
+     "title": "🎉Birthday Transportation"
+    },
+    {
+     "title": "👰Bachelor Party Transportation"
+    },
+    {
+     "title": "👰Bachelorette Party Transportation"
+    },
+    {
+     "title": "🏆Graduation Transportation"
+    },
+    {
+     "title": "❤️Anniversary Transportation"
+    },
+    {
+     "title": "🎊Quinceañera Transportation"
+    },
+    {
+     "title": "🎊Sweet 16 Transportation"
+    },
+    {
+     "title": "🚌Group Transportation"
+    },
+    {
+     "title": "🥂Night Out Transportation"
+    },
+    {
+     "title": "🏖️Luxury Resort Transportation"
+    },
+    {
+     "title": "🌟Special Event Transportation"
+    },
+    {
+     "title": "🏠Winery & Brewery Tours"
+    }
+   ],
+   "faqs": []
+  },
+  {
+   "type": "columns",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Everything You Need to Know"
+    }
+   ],
+   "paragraphs": [
+    "From premium amenities to the perfect event, our party bus delivers an unforgettable experience."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [
+    {
+     "title": "Party Bus Amenities",
+     "items": [
+      "Large LCD TV screen",
+      "Premium stereo system",
+      "iPod / smartphone hookup",
+      "Laser light show",
+      "Dance floor space",
+      "Leather seating",
+      "Beverage bar",
+      "Tinted windows for privacy",
+      "Climate control",
+      "Professional chauffeur"
+     ]
+    },
+    {
+     "title": "Perfect for Any Event",
+     "items": [
+      "Wedding celebrations",
+      "Birthday parties",
+      "Prom night",
+      "Bachelor / Bachelorette parties",
+      "Concert transportation",
+      "Night out on the town",
+      "Winery tours",
+      "Corporate events",
+      "Sporting events",
+      "Graduation celebrations"
+     ]
+    }
+   ],
+   "faqs": []
+  },
+  {
+   "type": "faq",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Frequently Asked Questions"
+    }
+   ],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [],
+   "faqs": [
+    {
+     "q": "How many passengers can your party bus accommodate?",
+     "a": "+ Our party bus can accommodate up to 20 passengers comfortably, with plenty of space for dancing and socializing."
+    },
+    {
+     "q": "What amenities are included in the party bus?",
+     "a": "+ Our party bus features a large LCD TV, premium stereo system, iPod/smartphone hookup, laser lights, dance floor, leather seating, beverage bar, tinted windows, and climate control."
+    },
+    {
+     "q": "How much does it cost to rent a party bus?",
+     "a": "+ Pricing depends on the rental duration, distance, and time of year. Contact us for a free, no-obligation quote tailored to your specific needs."
+    },
+    {
+     "q": "Can we bring alcohol on the party bus?",
+     "a": "+ Yes, you are welcome to bring your own beverages. Our professional chauffeur will ensure a safe and responsible experience for your group."
+    },
+    {
+     "q": "How far in advance should I book a party bus?",
+     "a": "+ We recommend booking 2–4 weeks in advance, especially during peak seasons like prom and wedding season. We also accommodate last-minute requests when available."
+    },
+    {
+     "q": "What events are party buses best for?",
+     "a": "+ Party buses are perfect for weddings, bachelor/bachelorette parties, prom, birthdays, concerts, winery tours, corporate events, and any group celebration."
+    },
+    {
+     "q": "Do you provide party bus service to and from airports?",
+     "a": "+ Absolutely! We provide party bus transportation to and from all major airports including John Wayne (SNA), LAX, Long Beach (LGB), and Ontario (ONT)."
+    }
+   ]
+  }
+ ]
+}

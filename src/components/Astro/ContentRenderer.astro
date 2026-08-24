@@ -1,0 +1,282 @@
+---
+import FaqAccordion from '../React/FaqAccordion.tsx';
+import ReservationForm from '../React/ReservationForm';
+import FleetCards from './FleetCards.astro';
+
+interface Card {
+  title?: string;
+  meta?: string;
+  image?: string;
+  items?: string[];
+  text?: string;
+}
+interface ExtractButton {
+  label: string;
+  href: string;
+}
+interface ExtractSection {
+  type?: string;
+  bgImage?: string | null;
+  bgVideo?: string | null;
+  headings?: { level: string; text: string }[];
+  paragraphs?: string[];
+  lists?: { ordered: boolean; items: string[] }[];
+  images?: { src: string; alt: string }[];
+  buttons?: ExtractButton[];
+  faqs?: { q: string; a: string }[];
+  cards?: Card[];
+}
+interface Props {
+  sections: ExtractSection[];
+}
+const { sections } = Astro.props;
+
+const BTN_GOLD =
+  'inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline bg-gold text-black border border-gold shadow-[0_8px_25px_rgba(212,175,55,0.2)] hover:-translate-y-px hover:bg-gold-soft hover:border-gold-soft';
+const BTN_OUTLINE =
+  'inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline border border-gold text-gold bg-transparent hover:bg-gold hover:text-black';
+const HEADING = 'font-serif-display text-2xl md:text-3xl font-bold leading-snug text-white';
+const CONTAINER = 'mx-auto w-full max-w-[1240px] px-5';
+
+function localize(href: string) {
+  return href.replace('https://deluxelimousineservice.com', '');
+}
+function isTel(b: ExtractButton) {
+  return b.href.startsWith('tel:') || b.href.startsWith('&tel:');
+}
+function btnClass(b: ExtractButton) {
+  return isTel(b) ? BTN_OUTLINE : BTN_GOLD;
+}
+function btnHref(b: ExtractButton) {
+  return isTel(b) ? 'tel:7143139173' : localize(b.href);
+}
+
+function headingText(headings: { level: string; text: string }[], center = false) {
+  const node = headings.map((h) => h.text).join(' ');
+  return node;
+}
+---
+
+{sections.map((sec, i) => {
+  const type = sec.type || 'prose';
+  const headings = sec.headings ?? [];
+  const paragraphs = sec.paragraphs ?? [];
+  const buttons = sec.buttons ?? [];
+  const images = sec.images ?? [];
+  const renderButtons = (center = false) =>
+    buttons.length ? (
+      <div class={`flex gap-4 mt-8 flex-wrap ${center ? 'justify-center' : ''}`}>
+        {buttons.map((b) => (
+          <a href={btnHref(b)} class={btnClass(b)}>{b.label}</a>
+        ))}
+      </div>
+    ) : null;
+
+  return (
+    <>
+      {type === 'hero' && (
+        <section class="relative min-h-[68vh] flex items-center overflow-hidden bg-black">
+          {sec.bgVideo ? (
+            <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline poster={sec.bgImage ?? ''}>
+              <source src={sec.bgVideo} type="video/mp4" />
+            </video>
+          ) : sec.bgImage ? (
+            <div class="absolute inset-0 bg-cover bg-center" style={`background-image:url('${sec.bgImage}')`}></div>
+          ) : (
+            <div class="absolute inset-0 bg-linear-to-br from-ink-raised to-black"></div>
+          )}
+          <div class="absolute inset-0 bg-linear-to-b from-black/70 via-black/50 to-black/80"></div>
+          <div class={`${CONTAINER} relative z-10 text-center py-24`}>
+            <span class="text-gold uppercase text-xs font-bold tracking-[0.2em] mb-4 block">Deluxe Limousine Service</span>
+            {headings.map((h) =>
+              h.level === 'H1' ? (
+                <h1 class="font-serif-display text-[clamp(2rem,4.5vw,3.2rem)] text-white leading-[1.18] max-w-[860px] mx-auto">{h.text}</h1>
+              ) : (
+                <h2 class={HEADING + ' max-w-[760px] mx-auto'} set:html={h.text} />
+              )
+            )}
+            {paragraphs.slice(0, 2).map((p) => <p class="text-white/75 max-w-[720px] mx-auto mt-5 leading-[1.75]">{p}</p>)}
+            {renderButtons(true)}
+          </div>
+        </section>
+      )}
+
+      {type === 'stats' && (
+        <section class="py-14 bg-ink-soft border-y border-gold/20">
+          <div class={`${CONTAINER} grid grid-cols-2 md:grid-cols-4 gap-8`}>
+            {(sec.cards ?? []).map((c) => {
+              const m = (c.title || c.text || '').match(/^([\d\s+%/.]+)\s*(.*)$/);
+              const num = m ? m[1].trim() : (c.title || '');
+              const label = m ? m[2].trim() : '';
+              return (
+                <div class="text-center">
+                  <span class="block font-serif-display text-4xl font-bold text-gold">{num}</span>
+                  <span class="block text-white/60 text-xs uppercase tracking-[0.08em] mt-2">{label || '\u00a0'}</span>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      {type === 'fleet' && (
+        <FleetCards heading={headings[0]?.text || 'Our Full Fleet'} subheading={paragraphs[0] ?? ''} />
+      )}
+
+      {type === 'services' && (
+        <section class="py-20 bg-ink-soft">
+          <div class={CONTAINER}>
+            {headings.slice(0, 1).map((h) => <h2 class={HEADING + ' text-center'} set:html={h.text} />)}
+            <p class="text-white/60 text-center max-w-[640px] mx-auto mt-4">{paragraphs[0]}</p>
+            <div class="flex flex-wrap justify-center gap-4 mt-10">
+              {(sec.cards ?? []).map((c) => (
+                <a href="/contact-us/" class="flex items-center gap-2.5 px-5 py-3 rounded-full border border-gold/30 bg-ink-raised text-white/85 hover:border-gold hover:text-gold transition-all duration-300 no-underline">
+                  <span>{c.title}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {type === 'occasions' && (
+        <section class="py-20 bg-ink">
+          <div class={CONTAINER}>
+            {headings.slice(0, 1).map((h) => <h2 class={HEADING + ' text-center'} set:html={h.text} />)}
+            {(() => {
+              const labels = (sec.cards ?? []).map((c) => c.title);
+              const headingLabels = headings.slice(1).map((h) => h.text);
+              const rows = labels.length ? labels : headingLabels;
+              return rows.length ? (
+                <div class="flex flex-wrap justify-center gap-x-10 gap-y-5 mt-10">
+                  {rows.map((label) => (
+                    <span class="text-gold text-sm md:text-base font-semibold uppercase tracking-[0.08em] text-center">{label}</span>
+                  ))}
+                </div>
+              ) : null;
+            })()}
+          </div>
+        </section>
+      )}
+
+      {type === 'columns' && (
+        <section class="py-20 bg-ink">
+          <div class={CONTAINER}>
+            {headings.map((h) => <h2 class={HEADING + ' text-center'} set:html={h.text} />)}
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+              {(sec.cards ?? []).map((c) => (
+                <div class="bg-ink-raised border border-line rounded-xl p-8">
+                  <h3 class="font-serif-display text-gold text-xl mb-5">{c.title}</h3>
+                  <ul class="space-y-3">
+                    {(c.items ?? []).map((item) => (
+                      <li class="flex items-start gap-3 text-white/75 text-[0.95rem]">
+                        <svg class="w-4 h-4 mt-1 shrink-0 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {type === 'banner' && (
+        <section class="relative py-24 overflow-hidden">
+          {sec.bgImage && <div class="absolute inset-0 bg-cover bg-center" style={`background-image:url('${sec.bgImage}')`}></div>}
+          <div class="absolute inset-0 bg-black/75"></div>
+          <div class={`${CONTAINER} relative z-10 text-center`}>
+            {headings.map((h) => <h2 class={HEADING + ' text-center'} set:html={h.text} />)}
+            {paragraphs.map((p) => <p class="text-white/80 max-w-[700px] mx-auto mt-5 leading-[1.75]">{p}</p>)}
+            {renderButtons(true)}
+          </div>
+        </section>
+      )}
+
+      {type === 'faq' && (
+        <section class="py-20 bg-ink">
+          <div class="mx-auto w-full max-w-[850px] px-5">
+            {headings.map((h) => <h2 class={HEADING + ' text-center'} set:html={h.text} />)}
+            <div class="mt-10">
+              <FaqAccordion client:load items={(sec.faqs ?? []).map((f) => ({ question: f.q, answer: f.a.replace(/^\+\s*/, '') }))} />
+            </div>
+          </div>
+        </section>
+      )}
+
+      {type === 'cta' && (
+        <section class="py-20 bg-ink-soft border-t border-line">
+          <div class={`${CONTAINER} text-center`}>
+            {headings.map((h) => <h2 class={HEADING} set:html={h.text} />)}
+            {paragraphs.map((p) => <p class="text-white/65 max-w-[640px] mx-auto mt-5 leading-[1.75]">{p}</p>)}
+            {renderButtons(true)}
+          </div>
+        </section>
+      )}
+
+      {type === 'airports' && (
+        <section class="py-20 bg-ink-soft">
+          <div class={CONTAINER}>
+            <h2 class={HEADING + ' text-center'} set:html={headingText(headings) || 'Airports We Serve'} />
+            <div class="flex flex-wrap justify-center gap-4 mt-8">
+              {(sec.cards ?? []).map((c) => (
+                <span class="px-6 py-3 rounded-full border border-gold/30 bg-ink-raised text-white/85 text-sm font-semibold">{c.title || c.text}</span>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {type === 'booking' && (
+        <section class="py-20 bg-ink">
+          <div class={`${CONTAINER} grid grid-cols-1 lg:grid-cols-2 gap-12 items-start`}>
+            <div>
+              {headings.map((h) => <h2 class={HEADING} set:html={h.text} />)}
+              {paragraphs.map((p) => <p class="text-white/70 leading-[1.8] mt-4">{p}</p>)}
+            </div>
+            <div class="bg-ink-raised border border-line rounded-xl p-6 md:p-8">
+              <ReservationForm client:visible />
+            </div>
+          </div>
+        </section>
+      )}
+
+      {type === 'gallery' && (
+        <section class="py-20 bg-ink">
+          <div class={CONTAINER}>
+            {headings.map((h) => <h2 class={HEADING + ' text-center'} set:html={h.text} />)}
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+              {images.map((img) => (
+                <figure class="m-0 rounded-xl overflow-hidden border border-line">
+                  <img src={localize(img.src)} alt={img.alt} loading="lazy" class="w-full h-[240px] object-cover block" />
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {type === 'prose' && (
+        <section class="py-16">
+          <div class={`${CONTAINER} ${paragraphs.length <= 2 ? 'max-w-[860px]' : ''}`}>
+            {headings.map((h) =>
+              h.level === 'H1' ? (
+                <h1 class="font-serif-display text-3xl md:text-4xl font-bold text-white mb-6">{h.text}</h1>
+              ) : (
+                <h2 class={HEADING + ' mb-5 mt-6 first:mt-0'}>{h.text}</h2>
+              )
+            )}
+            {paragraphs.map((p) => <p class="text-white/70 leading-[1.85] mb-5">{p}</p>)}
+            {(sec.lists ?? []).map((l) => (
+              <ul class={`text-white/70 leading-[1.9] mb-5 ml-5 list-disc ${l.items.length > 8 ? 'columns-2 gap-10' : ''}`}>
+                {l.items.map((item) => <li>{item}</li>)}
+              </ul>
+            ))}
+            {renderButtons()}
+          </div>
+        </section>
+      )}
+    </>
+  );
+})}

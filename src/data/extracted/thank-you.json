@@ -1,0 +1,24 @@
+{
+ "path": "/thank-you/",
+ "title": "Thank You for Your Inquiry! - Deluxe Limousine Service",
+ "description": "Thank you for contacting Deluxe Limousine Service! Our team has successfully received your request, and we’re excited to help you plan an unforgettable luxury",
+ "ogImage": "",
+ "sections": [
+  {
+   "type": "prose",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Thank You for Your Inquiry! Your Request Has Been Received"
+    }
+   ],
+   "paragraphs": [
+    "Thank you for contacting Deluxe Limousine Service! Our team has successfully received your request, and we’re excited to help you plan an unforgettable luxury transportation experience. A member of our team will review your request and reach out to you shortly to confirm availability, discuss your event details, and provide you with the best party bus or limousine options for your occasion."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "faqs": []
+  }
+ ]
+}

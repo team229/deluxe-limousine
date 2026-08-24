@@ -1,0 +1,29 @@
+---
+import FaqAccordion from '../../React/FaqAccordion.tsx';
+
+interface Props {
+  faqs?: { q: string; a: string }[];
+  heading?: string;
+}
+const {
+  heading = 'FAQs - Deluxe Limousine Service',
+  faqs = [
+    { q: 'How much does it cost to rent a Limousine Service?', a: 'Pricing depends on the vehicle, duration, and date. Hourly rates typically start around $95-$150/hour with 3-hour minimums on most vehicles. Call us at (714) 313-9173 for an exact free quote.' },
+    { q: 'Can I book an Anaheim Limo Service for Disneyland visits?', a: 'Absolutely. We provide luxurious drop-off and pick-up service to Disneyland and all Anaheim attractions, perfect for families who want a stress-free magical day.' },
+    { q: 'Is Deluxe Limousine Service available for rides across Southern California?', a: 'Yes. We serve all of Orange County, Los Angeles, San Diego, Temecula wine country, Santa Barbara, and beyond - anywhere in Southern California.' },
+    { q: 'How many passengers can fit inside your largest limousine?', a: 'Our stretch limousines seat up to 10 passengers comfortably, while our party buses accommodate up to 20+ guests with room to spare.' },
+    { q: 'Do you offer hourly limo rentals or only fixed-route trips?', a: 'Both! We offer flexible hourly charters as well as fixed-rate point-to-point transfers including airport runs.' },
+    { q: 'What premium amenities are included inside your Anaheim limos?', a: 'Every ride includes plush leather seating, premium sound systems, LED mood lighting, flat-screen TVs on select models, and complimentary refreshments.' },
+    { q: 'Is your Orange County Limo Service available for same-day bookings?', a: 'Same-day availability depends on fleet scheduling, but we recommend booking at least 48 hours ahead. Call us anytime - we operate 24/7.' },
+  ],
+} = Astro.props;
+---
+
+<section class="py-20">
+  <div class="mx-auto w-full max-w-[850px] px-5">
+    <h2 class="font-serif-display text-2xl md:text-3xl font-bold leading-snug text-white text-center">{heading}</h2>
+    <div class="mt-8">
+      <FaqAccordion client:load items={faqs.map((f) => ({ question: f.q, answer: f.a }))} />
+    </div>
+  </div>
+</section>

@@ -1,0 +1,78 @@
+{
+ "path": "/airport-transportation-service/",
+ "title": "Airport Transportation Service Anaheim | Deluxe Limousine Service",
+ "description": "Deluxe Limousine Service provides reliable Airport Transportation from Anaheim to LAX, SNA, and all major airports. Professional chauffeurs, on-time service, no hidden fees. Same day booking available. Call now!",
+ "ogImage": "",
+ "sections": [
+  {
+   "type": "prose",
+   "headings": [
+    {
+     "level": "H1",
+     "text": "Airport Transportation Service"
+    },
+    {
+     "level": "H2",
+     "text": "Premium Airport Transportation Service Anaheim OC"
+    }
+   ],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "faqs": [],
+   "bgImage": null,
+   "bgVideo": null
+  },
+  {
+   "type": "prose",
+   "headings": [],
+   "paragraphs": [
+    "Getting to and from the airport should be the easiest part of your trip. At Deluxe Limousine Service, we make sure it is. We provide reliable, professional airport transportation from Anaheim and all of Orange County to LAX, SNA John Wayne Airport, Long Beach Airport, and every major Southern California airport.",
+    "No surge pricing. No guessing if your driver will show up. No circling terminals. Just a clean, luxury vehicle and a professional chauffeur waiting for you — on time, every time.",
+    "Our drivers track your flight in real time, so whether your flight lands early or runs late, we adjust accordingly. For departures, we time your pickup based on your flight schedule and current traffic so you never have to stress about making it to the gate.",
+    "We offer a full fleet for airport transfers — executive SUVs, stretch limousines, sprinter vans, and shuttle vans — so whether you’re traveling solo or with a group, we have the right vehicle ready.",
+    "Available 24/7, licensed, insured, and serving Anaheim, Irvine, Santa Ana, Huntington Beach, Costa Mesa, and all of Orange County."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "faqs": [],
+   "bgImage": null,
+   "bgVideo": null
+  },
+  {
+   "type": "prose",
+   "headings": [
+    {
+     "level": "H3",
+     "text": "Get in Touch"
+    },
+    {
+     "level": "H4",
+     "text": "Call us NOW and Reserve"
+    },
+    {
+     "level": "H3",
+     "text": "Message Us"
+    }
+   ],
+   "paragraphs": [],
+   "lists": [
+    {
+     "ordered": false,
+     "items": [
+      "714-313-9173",
+      "deluxelimousine22@gmail.com",
+      "Anaheim, California 92804"
+     ]
+    }
+   ],
+   "buttons": [],
+   "images": [],
+   "faqs": [],
+   "bgImage": null,
+   "bgVideo": null
+  }
+ ]
+}

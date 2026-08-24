@@ -1,0 +1,42 @@
+---
+interface Props {
+  heading?: string;
+  subheading?: string;
+  paragraphs?: string[];
+}
+const {
+  heading = 'ORANGE COUNTY LUXURY LIMOUSINE SERVICE',
+  subheading = 'Premier limousine service for weddings, quinceañeras, proms, and executive travel.',
+  paragraphs = [
+    'Welcome to Deluxe Limousine Service, the premier provider of luxury limousine service throughout Orange County and beyond. Whether you are celebrating a wedding, quinceañera, prom night, corporate event, or simply desire an unforgettable night out, our professional chauffeurs and impeccable fleet guarantee a first-class experience from start to finish.',
+  ],
+} = Astro.props;
+---
+
+<section class="py-20">
+  <div class="mx-auto w-full max-w-[1240px] px-5 grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
+    <div>
+      <h2 class="font-serif-display text-2xl md:text-3xl font-bold leading-snug text-white">{heading}</h2>
+      <p class="text-gold font-semibold text-[1.05rem] mt-4">{subheading}</p>
+      {paragraphs.map((p) => <p class="text-white/70 leading-[1.8] mt-4">{p}</p>)}
+      <div class="flex gap-4 mt-6 flex-wrap">
+        <a href="tel:7143139173" class="inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline border border-gold text-gold bg-transparent hover:bg-gold hover:text-black">
+          ☎ Call (714) 313-9173
+        </a>
+        <a href="/contact-us/" class="inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline bg-gold text-black border border-gold shadow-[0_8px_25px_rgba(212,175,55,0.2)] hover:-translate-y-px hover:bg-gold-soft hover:border-gold-soft">
+          Get My Quote
+        </a>
+      </div>
+    </div>
+    <div>
+      <img
+        src="/cbm-assets/deluxe-limousine/homepage/deluxe-limousine-service-luxury-wedding-fleet-for-bridal-and-wedding-party-transportation-in-anaheim-and-orange-county-8.webp"
+        alt="Deluxe Limousine Service luxury fleet"
+        loading="lazy"
+        width="800"
+        height="533"
+        class="w-full rounded-xl border border-line shadow-[0_20px_50px_rgba(0,0,0,0.45)]"
+      />
+    </div>
+  </div>
+</section>

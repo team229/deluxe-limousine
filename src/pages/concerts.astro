@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro';
+import OccasionPage from '../components/Astro/OccasionPage.astro';
+import { occasionPages } from '../data/occasion-pages';
+
+const page = occasionPages['concerts'];
+---
+
+<OccasionPage page={page} />

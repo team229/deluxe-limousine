@@ -1,0 +1,371 @@
+{
+ "path": "/newport-beach/",
+ "title": "Newport Beach Limousine Service - Deluxe Limousine Service",
+ "description": "A stunning coastal city known for its harbor, Balboa Island, and Fashion Island. Premium limousine and party bus services for weddings, proms, corporate",
+ "ogImage": "/wp-content/uploads/2026/05/Chrsyler-Limousine-.png",
+ "sections": [
+  {
+   "type": "hero",
+   "headings": [
+    {
+     "level": "H1",
+     "text": "Newport Beach Limousine Service"
+    }
+   ],
+   "paragraphs": [
+    "A stunning coastal city known for its harbor, Balboa Island, and Fashion Island. Premium limousine and party bus services for weddings, proms, corporate events, and special occasions."
+   ],
+   "lists": [],
+   "buttons": [
+    {
+     "label": "← Back to All Cities",
+     "href": "/cities/"
+    },
+    {
+     "label": "Home",
+     "href": "/"
+    }
+   ],
+   "images": [],
+   "cards": [],
+   "faqs": []
+  },
+  {
+   "type": "stats",
+   "headings": [],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [
+    {
+     "title": "15+ Years Experience"
+    },
+    {
+     "title": "15+"
+    },
+    {
+     "title": "7 Vehicle Types"
+    },
+    {
+     "title": "7"
+    },
+    {
+     "title": "24/7 Availability"
+    },
+    {
+     "title": "24/7"
+    },
+    {
+     "title": "5☆ Customer Rating"
+    },
+    {
+     "title": "5☆"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Luxury Vehicles for Every Occasion"
+    },
+    {
+     "level": "H3",
+     "text": "Chrysler 300 Stretch"
+    },
+    {
+     "level": "H3",
+     "text": "Black Chrysler Stretch"
+    },
+    {
+     "level": "H3",
+     "text": "Hummer H2 Stretch"
+    },
+    {
+     "level": "H3",
+     "text": "Mercedes Sprinter"
+    },
+    {
+     "level": "H3",
+     "text": "Party Bus"
+    },
+    {
+     "level": "H3",
+     "text": "Cadillac Escalade"
+    }
+   ],
+   "paragraphs": [
+    "From sleek stretch limos to spacious party buses, choose the perfect ride for your Newport Beach event.",
+    "Up to 10 passengers",
+    "Up to 16 passengers",
+    "Up to 14 passengers",
+    "Up to 20 passengers",
+    "Up to 8 passengers"
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [
+    {
+     "src": "/wp-content/uploads/2026/05/Chrsyler-Limousine-.png",
+     "alt": "Limo"
+    },
+    {
+     "src": "/wp-content/uploads/2026/04/Deluxe-Black-Chrysler-Limo.webp",
+     "alt": "Limo"
+    },
+    {
+     "src": "/wp-content/uploads/2026/05/Hummer-Limousine-2-.png",
+     "alt": "Limo"
+    },
+    {
+     "src": "/wp-content/uploads/2026/04/Sprinter-Limo.webp",
+     "alt": "Limo"
+    },
+    {
+     "src": "/wp-content/uploads/2026/06/concerts-limo-1.png",
+     "alt": "Limo"
+    },
+    {
+     "src": "/wp-content/uploads/2026/04/White-Cadillac-Escalade-Limo.webp",
+     "alt": "Limo"
+    }
+   ],
+   "cards": [],
+   "faqs": []
+  },
+  {
+   "type": "services",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Services in Newport Beach"
+    }
+   ],
+   "paragraphs": [
+    "Complete luxury transportation solutions for every event and occasion."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [
+    {
+     "title": "💒 Wedding Transportation"
+    },
+    {
+     "title": "✈️ Airport Transportation"
+    },
+    {
+     "title": "💼 Corporate Transportation"
+    },
+    {
+     "title": "💼 Executive Transportation"
+    },
+    {
+     "title": "🎓 Prom Transportation"
+    },
+    {
+     "title": "🎓 Homecoming Transportation"
+    },
+    {
+     "title": "🎵 Concert Transportation"
+    },
+    {
+     "title": "🏟️ Sporting Event Transportation"
+    },
+    {
+     "title": "🎉 Birthday Transportation"
+    },
+    {
+     "title": "👰 Bachelor Party Transportation"
+    },
+    {
+     "title": "👰 Bachelorette Party Transportation"
+    },
+    {
+     "title": "🏆 Graduation Transportation"
+    },
+    {
+     "title": "❤️ Anniversary Transportation"
+    },
+    {
+     "title": "🎊 Quinceañera Transportation"
+    },
+    {
+     "title": "🎊 Sweet 16 Transportation"
+    },
+    {
+     "title": "🚌 Group Transportation"
+    },
+    {
+     "title": "🥂 Night Out Transportation"
+    },
+    {
+     "title": "🏖️ Luxury Resort Transportation"
+    },
+    {
+     "title": "🌟 Special Event Transportation"
+    },
+    {
+     "title": "🏠 Winery & Brewery Tours"
+    }
+   ],
+   "faqs": []
+  },
+  {
+   "type": "banner",
+   "headings": [],
+   "paragraphs": [
+    "Whether it’s an intimate ride for two or a party bus for twenty, we have the perfect vehicle waiting for you in Newport Beach.",
+    "Book Now"
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [
+    {
+     "src": "/wp-content/uploads/2026/06/Limousine_Service_Orange_County.jpg",
+     "alt": "Deluxe Limousine Fleet"
+    }
+   ],
+   "cards": [],
+   "faqs": []
+  },
+  {
+   "type": "columns",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Popular Destinations"
+    }
+   ],
+   "paragraphs": [
+    "We provide luxury transportation to all major attractions, hotels, and venues in Newport Beach."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [
+    {
+     "title": "Major Attractions",
+     "items": [
+      "Fashion Island",
+      "Newport Harbor",
+      "Balboa Island",
+      "Balboa Peninsula",
+      "Balboa Fun Zone",
+      "Newport Beach Pier",
+      "The Wedge",
+      "Corona del Mar Beach",
+      "Crystal Cove State Park",
+      "Upper Newport Bay",
+      "Fashion Island Shopping Center",
+      "Lido Marina Village"
+     ]
+    },
+    {
+     "title": "Hotels & Resorts",
+     "items": [
+      "The Resort at Pelican Hill",
+      "Hyatt Regency Newport Beach",
+      "Newport Beach Marriott",
+      "Balboa Bay Resort",
+      "Pelican Hill Resort",
+      "Island Hotel Newport Beach",
+      "Fashion Island Hotel",
+      "Lido House Newport Beach"
+     ]
+    },
+    {
+     "title": "Wedding Venues",
+     "items": [
+      "The Resort at Pelican Hill",
+      "Balboa Bay Resort",
+      "Hyatt Regency Newport Beach",
+      "Crystal Cove State Park",
+      "Newport Beach Pier",
+      "Corona del Mar Beach",
+      "Balboa Island",
+      "Newport Harbor"
+     ]
+    },
+    {
+     "title": "Airports We Serve",
+     "items": [
+      "SNA",
+      "LGB",
+      "LAX"
+     ]
+    }
+   ],
+   "faqs": []
+  },
+  {
+   "type": "faq",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Frequently Asked Questions"
+    }
+   ],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [],
+   "faqs": [
+    {
+     "q": "Do you provide limousine service throughout Newport Beach?",
+     "a": "Yes, we provide comprehensive limousine service throughout Newport Beach and surrounding areas. Our fleet is available for all occasions."
+    },
+    {
+     "q": "Do you offer airport transportation from Newport Beach?",
+     "a": "Absolutely! We provide reliable airport transportation to and from all major airports including John Wayne, LAX, Long Beach, and more."
+    },
+    {
+     "q": "Can I reserve transportation to Newport Beach venues?",
+     "a": "Yes, we offer transportation to all major venues and attractions in the Newport Beach area."
+    },
+    {
+     "q": "Do you offer wedding limousine service in Newport Beach?",
+     "a": "We offer premium wedding limousine packages including decorated vehicles, red carpet service, and professional chauffeurs."
+    },
+    {
+     "q": "Do you provide party bus rentals in Newport Beach?",
+     "a": "Yes, our party buses are perfect for birthdays, proms, bachelor parties, and group events in Newport Beach."
+    },
+    {
+     "q": "Do you offer executive transportation for Newport Beach businesses?",
+     "a": "We provide corporate and executive transportation services throughout Orange County."
+    },
+    {
+     "q": "How far in advance should I reserve a limousine?",
+     "a": "We recommend booking 2-4 weeks in advance for special events. However, we accommodate last-minute requests when available."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Ready to Book Your Ride in Newport Beach?"
+    }
+   ],
+   "paragraphs": [
+    "Experience luxury transportation with our premium fleet and professional chauffeurs. Contact us today for a free, no-obligation quote.",
+    "Call (714) 313-9173"
+   ],
+   "lists": [],
+   "buttons": [
+    {
+     "label": "Call (714) 313-9173",
+     "href": "tel:+17143139173"
+    }
+   ],
+   "images": [],
+   "cards": [],
+   "faqs": []
+  }
+ ]
+}

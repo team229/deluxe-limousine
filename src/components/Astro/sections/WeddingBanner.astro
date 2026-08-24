@@ -1,0 +1,38 @@
+---
+interface Props {
+  heading?: string;
+  paragraphs?: string[];
+}
+const {
+  heading = 'Your Wedding Day. Arrive in Timeless Luxury.',
+  paragraphs = [
+    'Make your wedding unforgettable from the very first moment. Deluxe Limousine Service provides elegant bridal transportation, wedding party shuttles, and luxury fleet packages across Anaheim and Orange County. From the ceremony to the reception and beyond, we handle every detail with white-glove care.',
+    'Limited availability on peak wedding dates — we recommend booking at least 3–6 months in advance to secure your preferred vehicle and time.',
+  ],
+} = Astro.props;
+---
+
+<section class="relative py-24 overflow-hidden">
+  <div
+    class="absolute inset-0 bg-cover bg-center"
+    style="background-image: url('/cbm-assets/deluxe-limousine/homepage/occasions-weddings.jpeg');"
+  >
+  </div>
+  <div class="absolute inset-0 bg-black/75"></div>
+  <div class="container relative z-10 text-center">
+    <h2 class="font-serif-display text-3xl md:text-4xl font-bold text-white max-w-[760px] mx-auto">
+      {heading}
+    </h2>
+    {paragraphs.map((p) => (
+      <p class="text-white/80 leading-relaxed max-w-[720px] mx-auto mt-5">{p}</p>
+    ))}
+    <div class="flex gap-4 justify-center flex-wrap mt-8">
+      <a href="tel:7143139173" class="inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline border border-gold text-gold bg-transparent hover:bg-gold hover:text-black">
+        ☎ Call (714) 313-9173
+      </a>
+      <a href="/contact-us/" class="inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline bg-gold text-black border border-gold shadow-[0_8px_25px_rgba(212,175,55,0.2)] hover:-translate-y-px hover:bg-gold-soft hover:border-gold-soft">
+        Get my Wedding Quote
+      </a>
+    </div>
+  </div>
+</section>

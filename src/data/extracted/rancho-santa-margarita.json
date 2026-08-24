@@ -1,0 +1,342 @@
+{
+ "path": "/rancho-santa-margarita/",
+ "title": "Rancho Santa Margarita Limousine Service - Deluxe Limousine Service",
+ "description": "A master-planned community with beautiful lakes, parks, and the Tijeras Creek Golf Club. Premium limousine and party bus services for weddings, proms,",
+ "ogImage": "/wp-content/uploads/2026/05/Chrsyler-Limousine-.png",
+ "sections": [
+  {
+   "type": "hero",
+   "headings": [
+    {
+     "level": "H1",
+     "text": "Rancho Santa Margarita Limousine Service"
+    }
+   ],
+   "paragraphs": [
+    "A master-planned community with beautiful lakes, parks, and the Tijeras Creek Golf Club. Premium limousine and party bus services for weddings, proms, corporate events, and special occasions."
+   ],
+   "lists": [],
+   "buttons": [
+    {
+     "label": "← Back to All Cities",
+     "href": "/cities/"
+    },
+    {
+     "label": "Home",
+     "href": "/"
+    }
+   ],
+   "images": [],
+   "cards": [],
+   "faqs": []
+  },
+  {
+   "type": "stats",
+   "headings": [],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [
+    {
+     "title": "15+ Years Experience"
+    },
+    {
+     "title": "15+"
+    },
+    {
+     "title": "7 Vehicle Types"
+    },
+    {
+     "title": "7"
+    },
+    {
+     "title": "24/7 Availability"
+    },
+    {
+     "title": "24/7"
+    },
+    {
+     "title": "5☆ Customer Rating"
+    },
+    {
+     "title": "5☆"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Luxury Vehicles for Every Occasion"
+    },
+    {
+     "level": "H3",
+     "text": "Chrysler 300 Stretch"
+    },
+    {
+     "level": "H3",
+     "text": "Black Chrysler Stretch"
+    },
+    {
+     "level": "H3",
+     "text": "Hummer H2 Stretch"
+    },
+    {
+     "level": "H3",
+     "text": "Mercedes Sprinter"
+    },
+    {
+     "level": "H3",
+     "text": "Party Bus"
+    },
+    {
+     "level": "H3",
+     "text": "Cadillac Escalade"
+    }
+   ],
+   "paragraphs": [
+    "From sleek stretch limos to spacious party buses, choose the perfect ride for your Rancho Santa Margarita event.",
+    "Up to 10 passengers",
+    "Up to 16 passengers",
+    "Up to 14 passengers",
+    "Up to 20 passengers",
+    "Up to 8 passengers"
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [],
+   "faqs": []
+  },
+  {
+   "type": "services",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Services in Rancho Santa Margarita"
+    }
+   ],
+   "paragraphs": [
+    "Complete luxury transportation solutions for every event and occasion."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [
+    {
+     "title": "💒 Wedding Transportation"
+    },
+    {
+     "title": "✈️ Airport Transportation"
+    },
+    {
+     "title": "💼 Corporate Transportation"
+    },
+    {
+     "title": "💼 Executive Transportation"
+    },
+    {
+     "title": "🎓 Prom Transportation"
+    },
+    {
+     "title": "🎓 Homecoming Transportation"
+    },
+    {
+     "title": "🎵 Concert Transportation"
+    },
+    {
+     "title": "🏟️ Sporting Event Transportation"
+    },
+    {
+     "title": "🎉 Birthday Transportation"
+    },
+    {
+     "title": "👰 Bachelor Party Transportation"
+    },
+    {
+     "title": "👰 Bachelorette Party Transportation"
+    },
+    {
+     "title": "🏆 Graduation Transportation"
+    },
+    {
+     "title": "❤️ Anniversary Transportation"
+    },
+    {
+     "title": "🎊 Quinceañera Transportation"
+    },
+    {
+     "title": "🎊 Sweet 16 Transportation"
+    },
+    {
+     "title": "🚌 Group Transportation"
+    },
+    {
+     "title": "🥂 Night Out Transportation"
+    },
+    {
+     "title": "🏖️ Luxury Resort Transportation"
+    },
+    {
+     "title": "🌟 Special Event Transportation"
+    },
+    {
+     "title": "🏠 Winery & Brewery Tours"
+    }
+   ],
+   "faqs": []
+  },
+  {
+   "type": "banner",
+   "headings": [],
+   "paragraphs": [
+    "Whether it’s an intimate ride for two or a party bus for twenty, we have the perfect vehicle waiting for you in Rancho Santa Margarita.",
+    "Book Now"
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [],
+   "faqs": []
+  },
+  {
+   "type": "columns",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Popular Destinations"
+    }
+   ],
+   "paragraphs": [
+    "We provide luxury transportation to all major attractions, hotels, and venues in Rancho Santa Margarita."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [
+    {
+     "title": "Major Attractions",
+     "items": [
+      "RSM Central Park",
+      "Rancho Santa Margarita Lake",
+      "Tijeras Creek Golf Club",
+      "O’Neill Regional Park",
+      "Coto de Caza Golf Club",
+      "Arroyo Trabuco Golf Club",
+      "RSV Recreational Center",
+      "Samlarc Park",
+      "Wagon Train Park",
+      "Rancho Santa Margarita Library",
+      "Bell Tower Regional Park",
+      "Cox Sports Park"
+     ]
+    },
+    {
+     "title": "Hotels & Resorts",
+     "items": [
+      "Embassy Suites RSM",
+      "Hilton Garden Inn RSM",
+      "Hyatt House RSM",
+      "Best Western RSM",
+      "Residence Inn RSM",
+      "Courtyard RSM",
+      "Extended Stay America RSM",
+      "Hampton Inn RSM"
+     ]
+    },
+    {
+     "title": "Wedding Venues",
+     "items": [
+      "Tijeras Creek Golf Club",
+      "Coto de Caza Golf Club",
+      "Arroyo Trabuco Golf Club",
+      "RSM Lake",
+      "Central Park RSM",
+      "Bell Tower Regional Park",
+      "O’Neill Regional Park",
+      "Strawberry Farms Golf Club"
+     ]
+    },
+    {
+     "title": "Airports We Serve",
+     "items": [
+      "SNA",
+      "LGB",
+      "LAX",
+      "ONT"
+     ]
+    }
+   ],
+   "faqs": []
+  },
+  {
+   "type": "faq",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Frequently Asked Questions"
+    }
+   ],
+   "paragraphs": [],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "cards": [],
+   "faqs": [
+    {
+     "q": "Do you provide limousine service throughout Rancho Santa Margarita?",
+     "a": "Yes, we provide comprehensive limousine service throughout Rancho Santa Margarita and surrounding areas. Our fleet is available for all occasions."
+    },
+    {
+     "q": "Do you offer airport transportation from Rancho Santa Margarita?",
+     "a": "Absolutely! We provide reliable airport transportation to and from all major airports including John Wayne, LAX, Long Beach, and more."
+    },
+    {
+     "q": "Can I reserve transportation to Rancho Santa Margarita venues?",
+     "a": "Yes, we offer transportation to all major venues and attractions in the Rancho Santa Margarita area."
+    },
+    {
+     "q": "Do you offer wedding limousine service in Rancho Santa Margarita?",
+     "a": "We offer premium wedding limousine packages including decorated vehicles, red carpet service, and professional chauffeurs."
+    },
+    {
+     "q": "Do you provide party bus rentals in Rancho Santa Margarita?",
+     "a": "Yes, our party buses are perfect for birthdays, proms, bachelor parties, and group events in Rancho Santa Margarita."
+    },
+    {
+     "q": "Do you offer executive transportation for Rancho Santa Margarita businesses?",
+     "a": "We provide corporate and executive transportation services throughout Orange County."
+    },
+    {
+     "q": "How far in advance should I reserve a limousine?",
+     "a": "We recommend booking 2-4 weeks in advance for special events. However, we accommodate last-minute requests when available."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Ready to Book Your Ride in Rancho Santa Margarita?"
+    }
+   ],
+   "paragraphs": [
+    "Experience luxury transportation with our premium fleet and professional chauffeurs. Contact us today for a free, no-obligation quote.",
+    "Call (714) 313-9173"
+   ],
+   "lists": [],
+   "buttons": [
+    {
+     "label": "Call (714) 313-9173",
+     "href": "tel:+17143139173"
+    }
+   ],
+   "images": [],
+   "cards": [],
+   "faqs": []
+  }
+ ]
+}

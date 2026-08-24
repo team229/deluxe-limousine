@@ -1,0 +1,60 @@
+---
+import Layout from './Layout.astro';
+
+interface Props {
+  frontmatter: {
+    title: string;
+    date: string;
+    description: string;
+    featuredImage?: string;
+    slug: string;
+  }
+}
+
+const { frontmatter } = Astro.props;
+const formattedDate = new Date(frontmatter.date).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+});
+---
+
+<Layout 
+  title={`${frontmatter.title} | Deluxe Limousine Service Blog`} 
+  description={frontmatter.description}
+  image={frontmatter.featuredImage}
+>
+  <article class="py-24 bg-ink">
+    <div class="mx-auto w-full max-w-[800px] px-5">
+      <a href="/blog" class="inline-flex items-center gap-2 text-gold hover:text-white text-[0.85rem] font-medium uppercase tracking-[0.05em] mb-16 no-underline transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Back to Blog
+      </a>
+
+      <header class="mb-16">
+        <span class="inline-block text-gold text-[0.85rem] font-semibold uppercase tracking-[0.05em] mb-3">{formattedDate}</span>
+        <h1 class="text-white font-serif-display text-[2.75rem] leading-[1.15] max-[768px]:text-[2rem]">{frontmatter.title}</h1>
+      </header>
+
+      {frontmatter.featuredImage && (
+        <div class="mb-14 rounded-xl overflow-hidden border border-line shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
+          <img src={frontmatter.featuredImage} alt={frontmatter.title} class="w-full h-auto max-h-[480px] object-cover block" />
+        </div>
+      )}
+
+      <div class="prose prose-invert max-w-none text-white/80 text-[1.05rem] prose-headings:font-serif-display prose-headings:text-white prose-a:text-gold prose-a:no-underline prose-a:underline prose-a:underline-offset-2 prose-strong:text-white prose-blockquote:border-gold prose-blockquote:text-white mt-4">
+        <slot />
+      </div>
+
+      <div class="post-footer mt-20 p-12 max-[768px]:p-8 bg-ink-soft border border-line rounded-xl text-center">
+        <h3 class="text-white font-serif-display text-2xl mb-3">Need Professional Transportation?</h3>
+        <p class="text-white/70 max-w-[550px] mx-auto mb-8">Whether you're planning a special event or need a reliable ride to the airport, Deluxe Limousine Service is here to help. Get in touch with our team today.</p>
+        <div class="flex justify-center gap-6 flex-wrap">
+          <a href="/contact-us" class="inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline bg-gold text-black border border-gold shadow-[0_8px_25px_rgba(212,175,55,0.2)] hover:-translate-y-px hover:bg-gold-soft hover:border-gold-soft">Get a Free Quote</a>
+          <a href="tel:7143139173" class="inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline border border-gold text-gold bg-transparent hover:bg-gold hover:text-black">Call Now</a>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>
+

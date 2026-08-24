@@ -1,0 +1,94 @@
+{
+ "path": "/sprinter-limo-service/",
+ "title": "Sprinter Limo Service - Deluxe Limousine Service",
+ "description": "Experience premium Sprinter Limo rentals in Anaheim and Orange County. Our Mercedes Sprinter offers spacious, luxurious transportation for corporate events,",
+ "ogImage": "/wp-content/uploads/2026/04/Sprinter-Limo.webp",
+ "sections": [
+  {
+   "type": "prose",
+   "headings": [],
+   "paragraphs": [
+    "Experience premium Sprinter Limo rentals in Anaheim and Orange County. Our Mercedes Sprinter offers spacious, luxurious transportation for corporate events, airport transfers, weddings, and group outings. Travel in style with the best rates guaranteed.",
+    "★ Licensed & Insured — Best Price Guaranteed — Serving Orange County & Los Angeles"
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [
+    {
+     "src": "/wp-content/uploads/2026/04/Sprinter-Limo.webp",
+     "alt": "Mercedes Sprinter Limo"
+    }
+   ],
+   "faqs": []
+  },
+  {
+   "type": "prose",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "About Our Sprinter Limo Service"
+    }
+   ],
+   "paragraphs": [
+    "Travel in style with Deluxe Limousine Service’s Sprinter Limo Rental in Anaheim. Our Mercedes Sprinter is the perfect choice for corporate events, airport transfers, weddings, and group outings. With spacious seating for up to 14 passengers, premium amenities, and professional chauffeurs, every journey becomes an experience.",
+    "We pride ourselves on punctuality, cleanliness, and exceptional service. Whether you’re heading to LAX, SNA, or a special event in Orange County, our Sprinter limo delivers unmatched comfort and reliability."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "faqs": []
+  },
+  {
+   "type": "prose",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Premium Features"
+    },
+    {
+     "level": "H3",
+     "text": "Premium Sound System"
+    },
+    {
+     "level": "H3",
+     "text": "Flat-Screen TVs"
+    },
+    {
+     "level": "H3",
+     "text": "LED Ambiance Lighting"
+    },
+    {
+     "level": "H3",
+     "text": "Complimentary Refreshments"
+    }
+   ],
+   "paragraphs": [
+    "Every Sprinter limo is equipped with top-tier amenities for an unparalleled travel experience.",
+    "Crystal clear audio for your journey with high-end speakers and Bluetooth connectivity.",
+    "Entertainment for your entire group with multiple LED screens throughout the cabin.",
+    "Customizable mood lighting to match the atmosphere of your event or occasion.",
+    "Chilled sodas and bottled water included with every booking to keep you refreshed."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "faqs": []
+  },
+  {
+   "type": "prose",
+   "headings": [
+    {
+     "level": "H2",
+     "text": "Ready to Book Your Sprinter Limo?"
+    }
+   ],
+   "paragraphs": [
+    "Contact us today for a free, no-obligation quote. Our team is available 24/7 to help you find the perfect vehicle for your occasion."
+   ],
+   "lists": [],
+   "buttons": [],
+   "images": [],
+   "faqs": []
+  }
+ ]
+}

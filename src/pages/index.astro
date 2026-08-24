@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Astro/sections/Hero.astro';
+import ReservationIncludes from '../components/Astro/sections/ReservationIncludes.astro';
+import FreeHourBanner from '../components/Astro/sections/FreeHourBanner.astro';
+import StatsSection from '../components/Astro/sections/StatsSection.astro';
+import FleetShowcase from '../components/Astro/sections/FleetShowcase.astro';
+import WeddingBanner from '../components/Astro/sections/WeddingBanner.astro';
+import AboutCta from '../components/Astro/sections/AboutCta.astro';
+import AmenitiesGrid from '../components/Astro/sections/AmenitiesGrid.astro';
+import StorySection from '../components/Astro/sections/StorySection.astro';
+import ReviewsSection from '../components/Astro/sections/ReviewsSection.astro';
+import MoreClients from '../components/Astro/sections/MoreClients.astro';
+import OccasionsGrid from '../components/Astro/sections/OccasionsGrid.astro';
+import StepsSection from '../components/Astro/sections/StepsSection.astro';
+import ComparisonTable from '../components/Astro/ComparisonTable.astro';
+import CitiesStrip from '../components/Astro/sections/CitiesStrip.astro';
+import FaqSection from '../components/Astro/sections/FaqSection.astro';
+import CtaBanner from '../components/Astro/sections/CtaBanner.astro';
+
+const title = 'Limousine Service Anaheim | Deluxe Limousine Service';
+const description =
+  'Looking for the best Limousine Service Anaheim? Deluxe Limousine Service offers professional chauffeurs, a wide luxury fleet, and affordable rates. Licensed & insured. 24/7 availability. Call now for a free quote.';
+---
+
+<Layout title={title} description={description} url="https://deluxelimousineservice.com/">
+  <Hero />
+  <ReservationIncludes />
+  <FreeHourBanner />
+  <StatsSection />
+  <FleetShowcase />
+
+  <section class="py-16 bg-ink text-center">
+    <div class="mx-auto w-full max-w-[820px] px-5">
+      <h3 class="font-serif-display text-white text-[clamp(1.3rem,2.5vw,1.8rem)] mb-4">
+        The Best Limousine Service in Anaheim
+      </h3>
+      <p class="text-white/70 leading-[1.8]">
+        Whether you need a limousine for a special event, a night out, or to visit one of your favorite Orange County
+        destinations, our chauffeurs deliver five-star service on every ride — punctual, polished, and professional.
+      </p>
+    </div>
+  </section>
+
+  <WeddingBanner />
+  <AboutCta />
+  <AmenitiesGrid />
+  <StorySection />
+  <ReviewsSection />
+  <MoreClients />
+  <OccasionsGrid />
+  <StepsSection />
+  <ComparisonTable />
+  <CitiesStrip />
+  <FaqSection />
+  <CtaBanner />
+</Layout>
