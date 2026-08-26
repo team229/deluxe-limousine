@@ -29,8 +29,8 @@ const navLinks = [
   { href: '/gallery/', label: 'Gallery' },
   { href: '/blog/', label: 'Blog' },
   { href: '/about-us/', label: 'About' },
-  { href: '/contact-us/', label: 'Contact' },
-];
+  { href: '/contact-us/', label: 'Contact Us' },
+].map((link) => ({ ...link, label: link.label.toUpperCase() }));
 ---
 
 <header class="font-header sticky top-0 z-[99999] w-full">
@@ -86,12 +86,12 @@ const navLinks = [
       </a>
 
       <!-- DESKTOP NAVIGATION -->
-      <nav class="hidden lg:flex items-center gap-6 xl:gap-9" aria-label="Desktop Navigation">
+      <nav class="hidden lg:flex items-center gap-6 xl:gap-9 uppercase" aria-label="Desktop Navigation">
         <a href="/" class={NAV_LINK}>Home</a>
 
         {[
-          { label: 'Fleet', links: fleetLinks },
-          { label: 'Services', links: serviceLinks },
+          { label: 'Fleet'.toUpperCase(), links: fleetLinks },
+          { label: 'Services'.toUpperCase(), links: serviceLinks },
         ].map((dropdown) => (
           <div class="relative group">
             <button
@@ -118,7 +118,7 @@ const navLinks = [
       </nav>
 
       <!-- ACTION BUTTONS -->
-      <div class="hidden lg:flex items-center gap-3.5">
+      <div class="hidden lg:flex items-center gap-3.5 uppercase">
         <a href="tel:7143139173" class="flex items-center gap-2 text-white hover:text-gold px-5 py-3 rounded-[10px] bg-white/[0.03] border border-white/10 hover:border-gold/40 text-[14.5px] font-medium transition-all duration-300">
           <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"/></svg>
           Call Now
@@ -145,7 +145,7 @@ const navLinks = [
   <!-- MOBILE NAVIGATION MENU -->
   <div
     id="luxMobileMenu"
-    class="hidden lg:hidden flex-col bg-ink-soft w-full max-h-[calc(100vh-70px)] overflow-y-auto px-6 pt-[30px] pb-[120px] border-t border-white/[0.05] absolute top-full left-0 shadow-[0_30px_60px_rgba(0,0,0,0.8)] opacity-0 -translate-y-2.5 transition-[opacity,transform] duration-300 pointer-events-none"
+    class="hidden lg:hidden flex-col bg-ink-soft w-full max-h-[calc(100vh-70px)] overflow-y-auto px-6 pt-[30px] pb-[120px] border-t border-white/[0.05] absolute top-full left-0 shadow-[0_30px_60px_rgba(0,0,0,0.8)] opacity-0 -translate-y-2.5 transition-[opacity,transform] duration-300 pointer-events-none uppercase"
   >
     <a href="/" class={MOBILE_LINK}>Home</a>
 

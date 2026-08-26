@@ -19,7 +19,7 @@ export default function ReservationForm() {
   });
 
   const [loading, setLoading] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
+  const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
 
   const occasions = [
@@ -65,8 +65,8 @@ export default function ReservationForm() {
 
       if (!res.ok) throw new Error('Submission failed');
 
-      // Redirect to the thank-you page (no client-side success state)
-      window.location.href = '/oc/thank-you/';
+      // Show an inline confirmation on the same page (no navigation away)
+      setSuccess(true);
     } catch {
       setError('Something went wrong. Please call us directly at (714) 313-9173 to book your ride.');
       setLoading(false);
@@ -75,8 +75,17 @@ export default function ReservationForm() {
 
   return (
     <div className="rounded-xl">
-      <form onSubmit={handleSubmit}>
-        <h3 className="font-serif-display text-lg text-white font-bold">Tell Us the Occasion</h3>
+      {success ? (
+        <div className="text-center py-10">
+          <div className="mx-auto w-14 h-14 rounded-full bg-gold/15 border border-gold/40 text-gold flex items-center justify-center mb-5">
+            <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <h3 className="font-serif-display text-2xl text-white font-bold">Request Received!</h3>
+          <p className="text-white/70 text-sm mt-3 max-w-[420px] mx-auto">Thank you — our dispatch team has your details and will reach out shortly to confirm your luxury ride. For immediate assistance, call <a href="tel:7143139173" className="text-gold hover:text-gold-soft no-underline">(714) 313-9173</a>.</p>
+        </div>
+      ) : (
+        <form onSubmit={handleSubmit}>
+          <h3 className="font-serif-display text-lg text-white font-bold">Tell Us the Occasion</h3>
           <p className="text-white/60 text-sm mt-1 mb-5">We will handle all the details. Request a free quote in seconds.</p>
 
           {error && <div className="mb-4 px-4 py-3 rounded-lg bg-red-500/10 border border-red-500/30 text-red-300 text-sm">{error}</div>}
@@ -143,6 +152,7 @@ export default function ReservationForm() {
             {loading ? 'Processing...' : 'Get My Free Quote'}
           </button>
         </form>
+      )}
     </div>
   );
 }

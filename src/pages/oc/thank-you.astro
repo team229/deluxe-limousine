@@ -1,0 +1,9 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+
+const file = path.resolve(process.cwd(), 'public/oc/thank-you/index.html');
+const html = fs.readFileSync(file, 'utf8');
+---
+
+<html set:html={html}></html>
