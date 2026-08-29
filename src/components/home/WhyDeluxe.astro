@@ -1,0 +1,35 @@
+---
+const rows = [
+  { feat: "Who answers the phone", us: "The owner", them: "Call Center / Voicemail / Employee" },
+  { feat: "Pricing", us: "Honest Up-Front Prices", them: "Fees added after pickup" },
+  { feat: "Reply time", us: "Minutes", them: "Hours to days" },
+  { feat: "Chauffeur", us: "Hand-picked, vetted", them: "Whoever's free" },
+  { feat: "Local to North Orange County", us: true, them: false },
+  { feat: "Red carpet & stocked bar", us: "Included", them: "Extra or none", usPlus: true },
+  { feat: "Fleet condition", us: "Detailed before every ride", them: "Whatever's parked" },
+  { feat: "Deposit & payment", us: "Simple, secure, upfront", them: "No secure checkout" },
+  { feat: "Years serving OC", us: "Since 2010", them: "Varies / unclear" },
+];
+---
+
+<section class="bg-black px-6 py-14 font-sans-body">
+  <div class="mx-auto max-w-[1140px]">
+    <div class="text-center text-[12px] font-medium uppercase tracking-[0.32em] text-[#C9973F]">Why Deluxe</div>
+    <h2 class="mb-7 mt-2 text-center font-serif-display text-[28px] font-normal text-white sm:text-[44px]">The Deluxe difference</h2>
+
+    <div class="overflow-hidden rounded-[14px] border border-gold/15">
+      <div class="grid grid-cols-[1.4fr_1fr_1fr] items-center bg-[#0a0a0a]">
+        <div class="p-4 text-[12px] uppercase tracking-[0.12em] text-[#C9C4BA]"></div>
+        <div class="p-4 text-center font-serif-display text-[#E8C87A]">Deluxe Limousine</div>
+        <div class="p-4 text-center text-[12px] uppercase tracking-[0.12em] text-[#7d828a]">Typical Limo Service</div>
+      </div>
+      {rows.map((r) => (
+        <div class="grid grid-cols-[1.4fr_1fr_1fr] items-center border-t border-white/[0.06]">
+          <div class="p-4 text-[13.5px] text-[#C9C4BA]">{r.feat}</div>
+          <div class="bg-gold/[0.06] p-4 text-center text-[13.5px] text-white">{typeof r.us === 'boolean' ? (r.us ? '✓' : '✕') : r.us}{r.usPlus ? ' Included' : ''}</div>
+          <div class="p-4 text-center text-[13.5px] text-[#8A9099]">{typeof r.them === 'boolean' ? (r.them ? '✓' : '✕') : r.them}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

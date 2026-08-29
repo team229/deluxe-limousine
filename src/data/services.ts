@@ -19,7 +19,7 @@ export const servicesList: PageData[] = [
     subtitle: "Premium group transportation in Southern California",
     metaTitle: "Mercedes Sprinter Limo Rental Anaheim & Orange County | Deluxe",
     metaDescription: "Rent a luxury Mercedes Sprinter Limo in Orange County and Anaheim. Premium sound, stand-up headroom, and custom seating for 10-14 passengers. Get a free quote.",
-    heroImage: "https://deluxelimousineservice.com/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4-2.png",
+    heroImage: "/images/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4-2.png",
     tagline: "The Modern standard for group travel.",
     introduction: "Our Mercedes Sprinter Limos are the perfect solution for medium-sized groups who want to travel together without compromising on luxury. Featuring spacious headroom, state-of-the-art audio and video, and premium wrap-around leather seating, it feels like a private lounge on wheels.",
     features: [
@@ -43,7 +43,7 @@ export const servicesList: PageData[] = [
     subtitle: "Chauffeured town cars and SUVs for corporate & personal travel",
     metaTitle: "Executive Black Car Service Orange County | Deluxe Limousine",
     metaDescription: "Reliable, professional, and discreet black car service in Anaheim, Irvine, and Orange County. Perfect for corporate travel, SNA, and LAX airport transfers.",
-    heroImage: "https://deluxelimousineservice.com/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4.png",
+    heroImage: "/images/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4.png",
     tagline: "Reliable. Professional. Discreet.",
     introduction: "For business travel, airport transfers, or personal trips where punctuality and discretion are paramount, our Executive Black Car Service is the gold standard. Travel in quiet comfort in our late-model luxury SUVs and sedans.",
     features: [
@@ -67,7 +67,7 @@ export const servicesList: PageData[] = [
     subtitle: "A private nightclub on wheels for up to 30 passengers",
     metaTitle: "Party Bus Rental Anaheim & Orange County | Deluxe Limousine",
     metaDescription: "Book the ultimate Party Bus in Anaheim and Orange County. Features laser light shows, premium sound, dual bars, and room for 20-30 guests. Get your quote today.",
-    heroImage: "https://deluxelimousineservice.com/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-1-6.png",
+    heroImage: "/images/2022/09/Deluxe-Limousine-Service-adds-1-6.png",
     tagline: "Keep the party moving.",
     introduction: "Our Luxury Party Buses are designed to bring the nightclub experience directly to the road. Featuring high-output sound systems, club-style LED lighting, flat-screen TVs, and built-in bars, it is the ultimate way to celebrate with a large group.",
     features: [
@@ -91,7 +91,7 @@ export const servicesList: PageData[] = [
     subtitle: "Punctual, stress-free airport rides to LAX, SNA, and LGB",
     metaTitle: "Airport Limo Service Orange County & LAX | Deluxe Limousine",
     metaDescription: "Book a luxury limo or black car for airport transfers to LAX, SNA (John Wayne), and Long Beach Airport. Reliable, on-time pickups with flight tracking.",
-    heroImage: "https://deluxelimousineservice.com/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4.png",
+    heroImage: "/images/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4.png",
     tagline: "Arrive on time, every time.",
     introduction: "Traveling can be stressful, but getting to and from the airport doesn't have to be. Our Airport Transfer Service offers curbside pickups, luggage assistance, and flight tracking to ensure a smooth, worry-free connection.",
     features: [
@@ -115,7 +115,7 @@ export const servicesList: PageData[] = [
     subtitle: "Bold styling and spacious luxury for major occasions",
     metaTitle: "Hummer Limo Service Anaheim & Orange County | Deluxe Limousine",
     metaDescription: "Make a statement with a Hummer Limo rental in Orange County and Anaheim. Perfect for proms, bachelor parties, and birthdays. Call for special offers.",
-    heroImage: "https://deluxelimousineservice.com/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-hummer-1-3-1.png",
+    heroImage: "/cbm-assets/deluxe-limousine/hummer-limo.jpeg",
     tagline: "Bold style. Maximum impact.",
     introduction: "Nothing makes an impression like our Hummer and SUV Stretch Limousines. Built for groups who want to stand out, these massive luxury vehicles offer incredible interior volume, custom entertainment stations, and spectacular lighting arrangements.",
     features: [
@@ -139,7 +139,7 @@ export const servicesList: PageData[] = [
     subtitle: "Elegant transportation for your special day",
     metaTitle: "Wedding Limo Service Orange County & Anaheim | Deluxe",
     metaDescription: "Elegant wedding limo rentals in Orange County. Red carpet service, luxury stretch limos, and professional chauffeurs for your perfect wedding day.",
-    heroImage: "https://deluxelimousineservice.com/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-1-6-1-1.png",
+    heroImage: "/images/2022/09/Deluxe-Limousine-Service-adds-1-6-1-1.png",
     tagline: "Your perfect day deserve a perfect ride.",
     introduction: "On your wedding day, every detail matters. Our Wedding Limousine Service ensures that you, your wedding party, and your guests arrive in classic elegance, on time, and completely relaxed.",
     features: [
@@ -163,7 +163,7 @@ export const servicesList: PageData[] = [
     subtitle: "Safe, exciting, and unforgettable arrivals for students",
     metaTitle: "Prom Limo Rental Anaheim & Orange County | Deluxe Limousine",
     metaDescription: "Rent a prom limo or party bus in Orange County. Safe, reliable chauffeurs and exciting stretch limos. Lock in your free hour for prom bookings.",
-    heroImage: "https://deluxelimousineservice.com/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-hummer-1-3-1.png",
+    heroImage: "/cbm-assets/deluxe-limousine/hummer-limo.jpeg",
     tagline: "Arrive in style. Return home safely.",
     introduction: "Prom is one of the most anticipated nights of high school. Our Prom Limo Service offers students an unforgettable VIP arrival experience while providing parents with complete peace of mind.",
     features: [

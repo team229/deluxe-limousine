@@ -1,0 +1,50 @@
+---
+const promoVideo = "/cbm-assets/deluxe-limousine/homepage/deluxe-limousine-promo-720p-compressed.mp4";
+const promoPoster = "/cbm-assets/deluxe-limousine/homepage/deluxe-limousine-service-luxury-wedding-fleet-for-bridal-and-wedding-party-transportation-in-anaheim-and-orange-county-8.webp";
+---
+
+<section class="relative overflow-hidden bg-black text-white">
+  <div class="pointer-events-none absolute inset-0" style="background-image:repeating-linear-gradient(0deg,transparent,transparent 38px,rgba(255,255,255,0.02) 38px,rgba(255,255,255,0.02) 40px),repeating-linear-gradient(90deg,transparent,transparent 38px,rgba(255,255,255,0.02) 38px,rgba(255,255,255,0.02) 40px);"></div>
+
+  <div class="relative z-[1] mx-auto max-w-[1200px] px-6 py-20">
+    <!-- Luxury intro -->
+    <div class="mb-12 text-center">
+      <h2 class="m-0 mb-4 border-b border-white/10 pb-5 font-serif-display text-[28px] font-bold uppercase leading-[1.2] tracking-[0.5px] text-[#B19540] sm:text-[36px]">
+        <span class="text-gold">Orange County Luxury Limousine Service</span>
+      </h2>
+      <p class="m-0 text-[16px] text-white/60">Premier limousine service for weddings, quinceañeras, proms, and executive travel.</p>
+    </div>
+
+    <div class="grid grid-cols-1 items-start gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+      <div>
+        <p class="mb-6 text-[15px] leading-[1.75] text-[#c9c9c9]">
+          Welcome to <strong class="font-bold text-white">Deluxe Limousine Service</strong>, the premier provider of luxury limousine service throughout Orange County — including Anaheim, Fullerton, Santa Ana, Newport Beach, Costa Mesa, and surrounding Southern California. Whether you're planning an executive corporate event, an elegant wedding, or a milestone celebration, every detail is engineered to make your journey flawless. Our meticulously maintained fleet ensures you travel in absolute comfort and VIP style.
+        </p>
+        <p class="mb-6 text-[15px] leading-[1.75] text-[#c9c9c9]">
+          "From our signature stretch limousines to executive SUVs and Sprinters, every vehicle is professionally chauffeured and detailed before each reservation. We deliver first-class service with transparent, all-inclusive pricing — no hidden fees, ever. Reserve your limousine today and arrive exactly the way you intended.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="tel:7143139173" class="rounded-md bg-gold px-6 py-3.5 text-[14px] font-bold uppercase tracking-[0.06em] text-black transition-colors hover:bg-gold-soft">☎ Call (714) 313-9173</a>
+          <a href="/contact-us/" class="rounded-md border border-white/30 px-6 py-3.5 text-[14px] font-bold uppercase tracking-[0.06em] text-white transition-colors hover:border-gold hover:bg-gold hover:text-black">Get My Quote</a>
+        </div>
+      </div>
+      <div class="overflow-hidden rounded-2xl border border-white/10">
+        <video title="Deluxe Limousine Service Fleet Video" controls playsinline preload="metadata" poster={promoPoster} class="aspect-video w-full bg-[#111115] object-cover" src={promoVideo}></video>
+        <div class="bg-black/60 px-4 py-2 text-[12px] uppercase tracking-[0.1em] text-gold">Luxury Fleet Video</div>
+      </div>
+    </div>
+
+    <!-- Our Story -->
+    <div class="mt-20 grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+      <div>
+        <h2 class="mb-5 font-serif-display text-[32px] font-bold text-white">Our Story</h2>
+        <p class="text-[15px] leading-[1.8] text-white/70">
+          Deluxe Limousine Service was established with one simple, yet powerful mission: to set a new standard for luxury transportation by consistently exceeding the expectations of our clients while providing elegant, dependable, and safe travel throughout Southern California. As the leading <strong class="font-bold text-white">Limousine Service in Anaheim</strong>, <strong class="font-bold text-[#b19540]">Orange County</strong> we promise to deliver the fundamentals – punctual pickup and safe arrival in impeccably maintained vehicles – as well as the intangibles. Professionally dressed, courteous chauffeurs who know the best routes and most efficient shortcuts, so you can sit back, free of worry, knowing you'll arrive cool, calm, and collected.
+        </p>
+      </div>
+      <div class="overflow-hidden rounded-2xl border border-white/10">
+        <img src="/cbm-assets/deluxe-limousine/inline-images/inline-6b2fda693234.webp" alt="Deluxe Limousine Service" loading="lazy" class="w-full object-cover" />
+      </div>
+    </div>
+  </div>
+</section>

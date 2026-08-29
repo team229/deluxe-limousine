@@ -1,0 +1,27 @@
+---
+const stats = [
+  { to: 2010, label: "Serving since" },
+  { to: 3000, suffix: "+", label: "Clients served" },
+  { to: 170, suffix: "+", label: "Cities covered" },
+  { to: 12, label: "Vehicles available" },
+];
+---
+
+<section class="stats-section relative overflow-hidden bg-[#0b0d12] px-6 py-14">
+  <div class="relative z-[2] mx-auto max-w-[820px]">
+    <div class="text-center text-[11px] font-medium uppercase tracking-[0.34em] text-[#C9973F]">Deluxe Limousine Service</div>
+    <h2 class="text-center font-serif-display text-[clamp(26px,3.4vw,38px)] font-normal text-white">Sixteen years on the road.</h2>
+    <div class="mt-10 grid grid-cols-2 gap-px bg-gold/25 sm:grid-cols-4">
+      {stats.map((s) => (
+        <div class="flex flex-col items-center justify-center bg-[#0b0d12] px-4 py-10">
+          <div
+            class="count-up font-serif-display text-[40px] font-bold text-gold sm:text-[52px]"
+            data-to={s.to}
+            data-suffix={s.suffix ?? ""}
+          >0</div>
+          <div class="mt-2 text-center text-[12px] uppercase tracking-[0.12em] text-white/60">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

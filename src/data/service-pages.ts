@@ -56,7 +56,7 @@ export const servicePages: Record<string, ServicePage> = {
     heroWord: 'Limo',
     heroBreadcrumb: 'HOME / SPRINTER LIMO',
     heroSubtitle: 'Mercedes Sprinter Limousine',
-    heroBg: '/wp-content/uploads/2026/07/cities-2.png',
+    heroBg: '/images/2026/07/cities-2.png',
     heroIntro: [
       'Trust Deluxe Limousine Service, your top Anaheim limo company, for a magical ride to and from Disneyland Hotel. Our professional drivers ensure comfort and satisfaction. For larger groups, choose our 10 Passenger Sprinter Limo. Experience luxury and style with timely arrivals.',
       'Book our Mercedes Sprinter Limo for an unforgettable travel experience. We cover weddings, funerals, parties, corporate events, and Quinceañeras. Count on us for reliable and memorable rides.',
@@ -73,7 +73,7 @@ export const servicePages: Record<string, ServicePage> = {
     ],
     servicesHeading: 'Sprinter Limo Services',
     services: ['Complete Luxury Transportation for any event', 'Airport Transportation', 'Corporate Transportation', 'Executive Transportation', 'Prom Transportation', 'Homecoming Transportation', 'Concert Transportation', 'Sporting Event Transportation', 'Birthday Transportation', 'Bachelor Party Transportation', 'Bachelorette Party Transportation', 'Graduation Transportation', 'Anniversary Transportation', 'Quinceañera Transportation', 'Sweet 16 Transportation', 'Group Transportation', 'Night Out Transportation', 'Luxury Resort Transportation', 'Special Event Transportation', 'Winery & Brewery Tours'],
-    highlight: { title: 'Spacious Luxury for Your Group', text: 'Our Mercedes Sprinter Limo combines premium comfort with generous space. Perfectly designed for groups who want to travel together in style, with leather seating, climate control, and premium entertainment throughout.', image: '/wp-content/uploads/2026/07/cities-6.png' },
+    highlight: { title: 'Spacious Luxury for Your Group', text: 'Our Mercedes Sprinter Limo combines premium comfort with generous space. Perfectly designed for groups who want to travel together in style, with leather seating, climate control, and premium entertainment throughout.', image: '/images/2026/07/cities-6.png' },
     columns: defaultColumns,
     airports: defaultAirports,
     faqs: sprinterFaqs,
@@ -86,7 +86,7 @@ export const servicePages: Record<string, ServicePage> = {
     heroTitle: 'Executive SUV & Black Car Service',
     heroWord: 'Black Car',
     heroSubtitle: 'Private Luxury Transportation',
-    heroBg: '/wp-content/uploads/2026/05/SUV-Suburban-.png',
+    heroBg: '/images/2026/05/SUV-Suburban-.png',
     heroIntro: [
       'We offer Luxury SUV Service, Black Car Service, Executive Car Service, Sprinter Limo, Party Bus, Hummer Limo, and Stretch Limo. Experience the ease of executive luxury transportation.',
     ],
@@ -106,7 +106,7 @@ export const servicePages: Record<string, ServicePage> = {
     heroTitle: 'Hummer Limo Service Anaheim',
     heroWord: 'Limo',
     heroSubtitle: 'Extended Hummer Limousine',
-    heroBg: '/wp-content/uploads/2026/05/Hummer-Limousine-.png',
+    heroBg: '/cbm-assets/deluxe-limousine/hummer-limo.jpeg',
     heroIntro: [
       'Extended Hummer Limo Service Anaheim is one of our most popular limos. It is perfect for proms because of the large spacious interior, premium sound system, and party atmosphere.',
     ],
@@ -126,7 +126,7 @@ export const servicePages: Record<string, ServicePage> = {
     heroTitle: 'Party Bus Rental Anaheim, OC',
     heroWord: 'Bus',
     heroSubtitle: 'The Ultimate Party Experience',
-    heroBg: '/wp-content/uploads/2026/07/cities-3.png',
+    heroBg: '/images/2026/07/cities-3.png',
     heroIntro: [
       'Party bus rental is the most requested limo in our fleet. Built on the history of being an ultimate entertainment limousine, our party buses bring the nightlife to you.',
     ],
@@ -146,7 +146,7 @@ export const servicePages: Record<string, ServicePage> = {
     heroTitle: 'Chrysler 300 Limo Service Orange County',
     heroWord: 'Limo',
     heroSubtitle: 'Modern Luxury Limousine',
-    heroBg: '/wp-content/uploads/2026/05/Chrsyler-Limousine-.png',
+    heroBg: '/images/2026/05/Chrsyler-Limousine-.png',
     heroIntro: [
       'Our Chrysler 300 limo service in Orange County is one of our most popular choices for elegant transportation. With seating for up to 10 passengers, it is perfect for weddings, nights out, and corporate events.',
     ],

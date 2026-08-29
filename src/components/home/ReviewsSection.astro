@@ -1,0 +1,93 @@
+---
+const reviews = [
+  { initials: "EI", name: "Eli Isho", meta: "Verified Client", text: "Excellent experience with Deluxe Limousine Service. Sal was professional, punctual, and made the entire process easy from booking to drop-off. The Chrysler 300 stretch limousine was spotless, comfortable, and perfect for our event." },
+  { initials: "JR", name: "Joel Romero", meta: "Verified Client", text: "I had a great experience with this limo service. Booking was easy and everything went smoothly. The driver Sal arrived 10 minutes early, helped with our bags, and the car was spotless inside. Sal was friendly and very professional." },
+  { initials: "SJ", name: "Sena Ji", meta: "Local Guide", text: "Amazing experience! I needed this limo service for a bachelorette party with my girlfriends. The chauffeur was respectful and kind. The limo itself was luxurious and clean. My friends and I felt safe during the ride." },
+  { initials: "ED", name: "Edward", meta: "Verified Client", text: "Absolutely outstanding experience with this Orange County limousine service! Sal went above and beyond to make our ride smooth, professional, and luxurious from start to finish. The limo was spotless and arrived perfectly on time." },
+  { initials: "MK", name: "Majeda Khlaifat", meta: "Verified Client", text: "We used Deluxe Limousine Service for my daughter's birthday, and the experience was fantastic. Sal was easy to communicate with, answered all of our questions, and made sure everything was perfectly taken care of ahead of time." },
+  { initials: "SA", name: "Sabrina Ayoub", meta: "Verified Client", text: "DELUXE service without the DELUXE prices. You can't beat that! Overall, had a great experience with this company. We did a little wine tasting for my 30th and Sal the driver was fantastic and very professional." },
+  { initials: "RH", name: "Rema Hilo", meta: "Verified Client", text: "Great service, very punctual and the limo was very nice. Highly recommend. Thank you Sal for making my son's day very memorable and helping create an absolute lifelong memory for our family." },
+];
+
+const wall = [
+  { name: "Emily R.", meta: "Wedding · Anaheim", text: "We booked Deluxe for our wedding in Anaheim and had a really good experience. The limo was beautiful, our driver showed up early, and everything went smoothly." },
+  { name: "Jessica L.", meta: "Birthday · Yorba Linda", text: "I rented a limo for my birthday in Yorba Linda and everything was great. The booking process was easy and the driver was on time. We had a lot of fun riding around Orange County." },
+  { name: "Marco T.", meta: "Prom · Fullerton", text: "Our prom night was unforgettable. The Hummer limo was spotless and the chauffeur kept the vibe perfect the whole night. Highly recommend Deluxe." },
+  { name: "Priya S.", meta: "Corporate · Irvine", text: "Used Deluxe for client airport transfers. Always on time, professional, and the black car was immaculate. Our go-to for executive travel now." },
+  { name: "David K.", meta: "Wine Tour · Temecula", text: "Booked the Sprinter for a wine tour with friends. Sal handled the routing, we just relaxed. Best way to spend a day in OC." },
+  { name: "Nina R.", meta: "Quinceañera · Santa Ana", text: "They made my daughter's quinceañera transport so special. Red carpet, decorations, and a driver who genuinely cared. Thank you Deluxe!" },
+];
+---
+
+<section class="relative overflow-hidden border-t border-white/5 bg-black text-white">
+  <div class="pointer-events-none absolute inset-0" style="background-image:repeating-linear-gradient(0deg,transparent,transparent 38px,rgba(255,255,255,0.01) 38px,rgba(255,255,255,0.01) 40px),repeating-linear-gradient(90deg,transparent,transparent 38px,rgba(255,255,255,0.01) 38px,rgba(255,255,255,0.01) 40px);"></div>
+
+  <div class="relative z-[1] mx-auto flex max-w-[1200px] flex-col gap-10 px-6 py-20">
+    <div class="mx-auto flex max-w-[800px] flex-col items-center gap-5 text-center">
+      <div class="flex flex-col items-center gap-3">
+        <h2 class="m-0 font-serif-display text-[30px] font-bold leading-[1.3] text-white sm:text-[42px]">
+          Unmatched luxury travel, endorsed and <span class="text-gold">top-rated on Google</span>
+        </h2>
+        <a target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.08em] text-gold transition-colors hover:text-gold-soft" href="https://www.google.com/search?q=Deluxe+Limousine+Service+Anaheim+reviews">
+          <span>View all our Google Reviews</span>
+          <svg viewBox="0 0 24 24" class="h-3.5 w-3.5 fill-none stroke-current stroke-[2] stroke-linecap-round stroke-linejoin-round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"></path></svg>
+        </a>
+      </div>
+      <div class="flex items-center justify-center gap-4">
+        <button id="dlRevPrev" aria-label="Previous Review" class="flex h-12 w-12 items-center justify-center rounded-full border-[1.5px] border-white/20 bg-white/[0.03] transition-colors hover:border-gold hover:bg-gold/10">
+          <svg viewBox="0 0 24 24" class="h-[22px] w-[22px] fill-none stroke-white stroke-[2] stroke-linecap-round stroke-linejoin-round"><path d="M15 18l-6-6 6-6"></path></svg>
+        </button>
+        <button id="dlRevNext" aria-label="Next Review" class="flex h-12 w-12 items-center justify-center rounded-full border-[1.5px] border-white/20 bg-white/[0.03] transition-colors hover:border-gold hover:bg-gold/10">
+          <svg viewBox="0 0 24 24" class="h-[22px] w-[22px] fill-none stroke-white stroke-[2] stroke-linecap-round stroke-linejoin-round"><path d="M9 18l6-6-6-6"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="dlReviewsWindow" class="flex snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth pb-3 [scrollbar-width:none]">
+      {reviews.map((r) => (
+        <div class="flex w-[320px] shrink-0 snap-start flex-col justify-between gap-6 rounded-[14px] border border-white/[0.08] bg-white/[0.03] p-7 transition-colors hover:border-gold/25 sm:w-[360px]">
+          <div class="flex flex-col gap-4">
+            <div class="flex gap-1">
+              {[0,1,2,3,4].map(() => (
+                <svg viewBox="0 0 12 12" class="h-4 w-4" fill="#d4af37"><path d="M6 1l1.4 2.8L10.5 4 8.3 6l.6 3.2L6 7.8 3.1 9.2 3.7 6 1.5 4l3.1-.2z"></path></svg>
+              ))}
+            </div>
+            <p class="m-0 text-[15px] leading-[1.6] text-white/85">"{r.text}"</p>
+          </div>
+          <div class="flex items-center gap-3.5 border-t border-white/[0.06] pt-5">
+            <div class="flex h-11 w-11 items-center justify-center rounded-full border border-gold/40 bg-gold/15 text-[16px] font-bold text-gold">{r.initials}</div>
+            <div class="flex flex-col gap-0.5 text-left">
+              <span class="text-[15px] font-semibold text-white">{r.name}</span>
+              <span class="text-[11px] uppercase tracking-[0.05em] text-white/40">{r.meta}</span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {wall.map((w) => (
+        <div class="flex flex-col gap-3 rounded-xl border border-gold/15 bg-gradient-to-br from-gold/[0.06] to-white/[0.02] p-5">
+          <div class="text-[12px] tracking-[0.16em] text-gold">★★★★★</div>
+          <p class="m-0 text-[13px] leading-[1.55] text-white/85">{w.text}</p>
+          <div class="mt-1 flex items-center gap-2.5">
+            <div class="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-[#E8C87A] to-[#C9973F] font-serif-display text-[14px] text-[#0b0b0b]">{w.name.charAt(0)}</div>
+            <div>
+              <div class="text-[13px] text-white">{w.name}</div>
+              <div class="text-[10px] uppercase tracking-[0.1em] text-white/40">{w.meta}</div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  const win = document.getElementById('dlReviewsWindow');
+  const prev = document.getElementById('dlRevPrev');
+  const next = document.getElementById('dlRevNext');
+  const step = () => (win?.querySelector('.snap-start')?.offsetWidth ?? 360) + 24;
+  prev?.addEventListener('click', () => win?.scrollBy({ left: -step(), behavior: 'smooth' }));
+  next?.addEventListener('click', () => win?.scrollBy({ left: step(), behavior: 'smooth' }));
+</script>

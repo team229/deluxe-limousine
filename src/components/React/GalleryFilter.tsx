@@ -8,14 +8,14 @@ interface GalleryItem {
 }
 
 const items: GalleryItem[] = [
-  { id: 1, title: 'SUV Stretch Hummer Limousine', category: 'fleet', image: '/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-hummer-1-3-1.png' },
-  { id: 2, title: 'Lincoln MKT Stretch Limo', category: 'fleet', image: '/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-1-6-1-1.png' },
-  { id: 3, title: 'Executive Mercedes Sprinter', category: 'fleet', image: '/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4-2.png' },
-  { id: 4, title: 'Lincoln MKT Town Car Detail', category: 'fleet', image: '/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4.png' },
-  { id: 5, title: 'Classic Wedding Rollout', category: 'weddings', image: '/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-1-6.png' },
-  { id: 6, title: 'Coastal Tour Shuttle', category: 'events', image: '/wp-content/uploads/2026/07/Whats-Driving-Orange-Countys-Shift-Toward-Limousine-Travel.webp' },
-  { id: 7, title: 'LAX Terminal Shuttle Ride', category: 'airport', image: '/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4.png' },
-  { id: 8, title: 'Wedding Reception Transfer', category: 'weddings', image: '/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-1-6-1-1.png' },
+  { id: 1, title: 'SUV Stretch Hummer Limousine', category: 'fleet', image: '/cbm-assets/deluxe-limousine/hummer-limo.jpeg' },
+  { id: 2, title: 'Lincoln MKT Stretch Limo', category: 'fleet', image: '/images/2022/09/Deluxe-Limousine-Service-adds-1-6-1-1.png' },
+  { id: 3, title: 'Executive Mercedes Sprinter', category: 'fleet', image: '/images/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4-2.png' },
+  { id: 4, title: 'Lincoln MKT Town Car Detail', category: 'fleet', image: '/images/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4.png' },
+  { id: 5, title: 'Classic Wedding Rollout', category: 'weddings', image: '/images/2022/09/Deluxe-Limousine-Service-adds-1-6.png' },
+  { id: 6, title: 'Coastal Tour Shuttle', category: 'events', image: '/images/2026/07/Whats-Driving-Orange-Countys-Shift-Toward-Limousine-Travel.webp' },
+  { id: 7, title: 'LAX Terminal Shuttle Ride', category: 'airport', image: '/images/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4.png' },
+  { id: 8, title: 'Wedding Reception Transfer', category: 'weddings', image: '/images/2022/09/Deluxe-Limousine-Service-adds-1-6-1-1.png' },
 ];
 
 const categories = [

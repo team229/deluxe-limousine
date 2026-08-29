@@ -2,7 +2,7 @@
 title: "Beyond the Rideshare: What’s Driving Orange County’s Shift Toward Limousine Travel"
 date: 2026-07-15
 description: "Searching for a Limousine Service Orange County that actually fits your group? See why Sprinter limos are becoming the top pick for bachelor/bachelorette parties, weddings, birthdays, and corporate outings — spacious seating for 10–14, clean interiors, and drivers who know the area."
-featuredImage: "/wp-content/uploads/2026/07/Whats-Driving-Orange-Countys-Shift-Toward-Limousine-Travel-1024x683.webp"
+featuredImage: "/images/2026/07/Whats-Driving-Orange-Countys-Shift-Toward-Limousine-Travel-1024x683.webp"
 category: "blog"
 author: "Saliba"
 ---

@@ -33,6 +33,32 @@
     scroll-behavior: smooth;
   }
 
+  @keyframes gold-shimmer {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+  .gold-shimmer-btn {
+    background-size: 200% 100%;
+    animation: gold-shimmer 3.5s linear infinite;
+  }
+  .dls-btn-pulse-wrapper .dls-btn-pulse,
+  .dls-btn-pulse {
+    position: relative;
+  }
+  .dls-btn-pulse::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.5);
+    animation: dls-pulse 2.2s ease-out infinite;
+  }
+  @keyframes dls-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.5); }
+    70% { box-shadow: 0 0 0 16px rgba(212, 175, 55, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+  }
+
   body {
     @apply bg-ink text-white font-sans-body antialiased;
   }

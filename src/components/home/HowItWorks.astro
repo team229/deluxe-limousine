@@ -1,0 +1,27 @@
+---
+const steps = [
+  { n: "1", t: "You Call", d: "The owner picks up — not a call center. Tell us the date, the group, and the occasion.", badge: "Owner answers" },
+  { n: "2", t: "Your Quote", d: "One all-in price, quoted upfront. No surprise fees, no itemized guesswork.", badge: "In minutes" },
+  { n: "3", t: "You Reserve", d: "A simple deposit locks in your date and your vehicle. Confirmation sent straight to you.", badge: "Date secured" },
+  { n: "4", t: "You Ride", d: "Your hand-picked chauffeur arrives early, red carpet out, bar stocked. Just step in.", badge: "Arrive in style" },
+];
+---
+
+<section class="bg-black px-6 py-14 font-sans-body">
+  <div class="mx-auto max-w-[1100px]">
+    <div class="text-center text-[12px] font-medium uppercase tracking-[0.32em] text-[#C9973F]">How It Works</div>
+    <h2 class="mb-9 mt-2 text-center font-serif-display text-[28px] font-normal text-white sm:text-[44px]">From call to curb in four steps</h2>
+
+    <div class="relative grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="absolute left-[12%] right-[12%] top-[30px] hidden h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent lg:block"></div>
+      {steps.map((s) => (
+        <div class="relative z-[1] rounded-[14px] border border-gold/15 bg-gradient-to-br from-gold/[0.05] to-white/[0.015] p-8 text-center transition-all hover:-translate-y-2 hover:border-gold/45">
+          <div class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full border border-gold/40 bg-[radial-gradient(circle_at_35%_30%,#1a1c22,#000)] font-serif-display text-[24px] text-[#E8C87A]">{s.n}</div>
+          <div class="mb-3 text-[15px] font-semibold uppercase tracking-[0.03em] text-white">{s.t}</div>
+          <p class="mb-4 text-[13px] leading-[1.6] text-[#9BA2AB]">{s.d}</p>
+          <span class="inline-block rounded-full border border-gold/25 px-3 py-1 text-[9.5px] uppercase tracking-[0.14em] text-[#E8C87A]">{s.badge}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

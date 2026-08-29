@@ -1,0 +1,28 @@
+---
+const faqs = [
+  { q: "How much does it cost to rent a Limousine Service in Anaheim for one night?", a: "Pricing varies by vehicle and duration. Our Anaheim Limousine Service offers competitive, transparent rates with absolutely no hidden fees guaranteed." },
+  { q: "Can I book an Anaheim Limo Service for Disneyland visits and special family trips?", a: "Yes. Our Limo Service in Anaheim provides luxurious, stress-free transportation to Disneyland and other popular destinations for families and special occasions." },
+  { q: "Is Deluxe Limousine Service available for rides across all of Orange County areas?", a: "Absolutely. Our Orange County Limousine Service covers Irvine, Newport Beach, Huntington Beach, Santa Ana, Fullerton, and surrounding communities throughout Orange County." },
+  { q: "How many passengers can fit inside your largest limousine or party bus comfortably?", a: "Our party buses and Hummer limousines can accommodate large groups for weddings, proms, birthdays, corporate events, and other special occasions throughout Southern California." },
+  { q: "Do you offer hourly limo rentals or only fixed-route transportation packages for clients?", a: "We offer both hourly and fixed-route transportation packages, giving clients the flexibility to customize their Orange County limo service experience." },
+  { q: "What premium amenities are included inside your Anaheim Limousine Service vehicles?", a: "Our Anaheim limo vehicles feature luxury interiors, premium sound systems, mood lighting, chilled refreshments, and more. Features may vary depending on the vehicle you select." },
+  { q: "Is your Orange County Limo Service available for same-day and last-minute bookings?", a: "Yes — we do our best to accommodate same-day and last-minute requests across Orange County, subject to vehicle availability. Call us and we'll make it work." },
+];
+---
+
+<section class="bg-black px-6 py-16">
+  <div class="mx-auto max-w-[900px]">
+    <h3 class="mb-8 text-center font-serif-display text-[28px] font-bold text-white">FAQs - Deluxe Limousine Service</h3>
+    <div class="flex flex-col gap-3">
+      {faqs.map((f, i) => (
+        <details class="group rounded-lg border border-white/10 bg-white/[0.02]" open={i === 0}>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-[15px] font-semibold text-white marker:hidden">
+            <span>{f.q}</span>
+            <svg class="h-4 w-4 shrink-0 fill-none stroke-gold stroke-[2] transition-transform group-open:rotate-90" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"></path></svg>
+          </summary>
+          <div class="border-t border-white/[0.06] px-5 py-4 text-[14px] leading-[1.7] text-white/70">{f.a}</div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

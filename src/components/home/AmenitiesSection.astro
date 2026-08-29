@@ -1,0 +1,51 @@
+---
+const amenities = [
+  {
+    title: "Premium Sound System",
+    desc: "Crystal clear audio for your party playlist",
+    icon: `<path d="M12 5.74c0-1.29-1.51-1.99-2.5-1.16L5.22 8H3c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h2.22l4.28 3.42c.99.83 2.5.13 2.5-1.16V5.74z"></path><path d="M17.54 8.46a4.5 4.5 0 0 1 0 7.07M20.36 5.64a8.5 8.5 0 0 1 0 12.72" opacity="0.85"></path>`,
+  },
+  {
+    title: "Flat-screen TVs",
+    desc: "Entertainment for your entire group",
+    icon: `<rect x="2" y="3" width="20" height="13" rx="2"></rect><path d="M7 21h10M12 16v5"></path>`,
+  },
+  {
+    title: "Luxury Seating",
+    desc: "Plush leather seats for maximum comfort",
+    icon: `<path d="M19 10V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v5M3 14v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"></path><path d="M2 10h20v4H2z" opacity="0.9"></path>`,
+  },
+  {
+    title: "Party Atmosphere",
+    desc: "LED lighting and dance poles on select models",
+    icon: `<path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path><circle cx="12" cy="12" r="2" fill="#d4af37"></circle>`,
+  },
+];
+---
+
+<section class="relative overflow-hidden border-t border-white/5 bg-black text-white">
+  <div class="pointer-events-none absolute inset-0" style="background-image:repeating-linear-gradient(0deg,transparent,transparent 38px,rgba(255,255,255,0.01) 38px,rgba(255,255,255,0.01) 40px),repeating-linear-gradient(90deg,transparent,transparent 38px,rgba(255,255,255,0.01) 38px,rgba(255,255,255,0.01) 40px);"></div>
+
+  <div class="relative z-[1] mx-auto flex max-w-[1200px] flex-col gap-12 px-6 py-20">
+    <div class="mx-auto flex max-w-[700px] flex-col items-center gap-4 text-center">
+      <div class="inline-flex items-center rounded border border-gold/40 bg-gold/[0.12] px-4 py-1.5">
+        <span class="text-[11px] font-bold uppercase tracking-[0.18em] text-gold">VIP Amenities</span>
+      </div>
+      <h2 class="m-0 font-serif-display text-[30px] font-bold leading-[1.2] text-white sm:text-[42px]">
+        First-Class Luxury <span class="text-gold">Inside Every Ride</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {amenities.map((a) => (
+        <div class="group flex flex-col items-center gap-5 rounded-[14px] border border-white/[0.08] bg-white/[0.03] p-10 text-center transition-all hover:-translate-y-1 hover:border-gold/40 hover:bg-gold/[0.04]">
+          <div class="flex h-16 w-16 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] transition-colors group-hover:border-gold group-hover:bg-gold/15">
+            <svg viewBox="0 0 24 24" class="h-7 w-7 fill-none stroke-gold stroke-[1.5] stroke-linecap-round stroke-linejoin-round" set:html={a.icon}></svg>
+          </div>
+          <h3 class="m-0 font-serif-display text-[19px] font-bold text-gold">{a.title}</h3>
+          <p class="m-0 text-[14px] leading-[1.5] text-white/70">{a.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,32 @@
+---
+const cities = [
+  { n: "Anaheim", s: "anaheim" }, { n: "Fullerton", s: "fullerton" }, { n: "Brea", s: "brea" },
+  { n: "Placentia", s: "placentia" }, { n: "Yorba Linda", s: "yorba-linda" }, { n: "La Habra", s: "la-habra" },
+  { n: "Buena Park", s: "buena-park" }, { n: "Cypress", s: "cypress" }, { n: "Garden Grove", s: "garden-grove" },
+  { n: "Orange", s: "orange" }, { n: "Villa Park", s: "villa-park" }, { n: "Santa Ana", s: "santa-ana" },
+  { n: "Tustin", s: "tustin" }, { n: "Irvine", s: "irvine" }, { n: "Costa Mesa", s: "costa-mesa" },
+  { n: "Newport Beach", s: "newport-beach" }, { n: "Huntington Beach", s: "huntington-beach" }, { n: "La Mirada", s: "la-mirada" },
+  { n: "Seal Beach", s: "seal-beach" }, { n: "Fountain Valley", s: "fountain-valley" }, { n: "Westminster", s: "westminster" },
+  { n: "Mission Viejo", s: "mission-viejo" }, { n: "Lake Forest", s: "lake-forest" }, { n: "San Clemente", s: "san-clemente" },
+];
+---
+
+<section class="bg-black px-6 py-14 font-sans-body">
+  <div class="relative mx-auto max-w-[1260px]">
+    <div class="text-center text-[14px] font-medium uppercase tracking-[0.3em] text-[#C9973F]">Service Areas</div>
+    <h2 class="mb-3 mt-4 text-center font-serif-display text-[32px] font-normal text-white sm:text-[46px]">
+      We serve <span class="text-[#E8C87A]"><span class="count-up" data-to="34" data-suffix="+">0</span> cities</span>
+    </h2>
+    <p class="mb-10 text-center text-[15.5px] text-[#9BA2AB]">Select your city to see services and venues.</p>
+
+    <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+      {cities.map((c) => (
+        <a href={`/${c.s}/`} class="flex flex-col items-center gap-2.5 rounded-lg border border-gold/15 bg-white/[0.022] p-6 text-center transition-all hover:-translate-y-0.5 hover:border-gold/55 hover:bg-gold/[0.06]">
+          <span class="flex h-9 w-9 items-center justify-center rounded-full border border-gold/35 font-serif-display text-[15px] text-[#E8C87A]">{c.n.charAt(0)}</span>
+          <span class="text-[15.5px] leading-[1.3] text-[#E4E2DD]">{c.n}</span>
+        </a>
+      ))}
+    </div>
+    <p class="mt-7 text-center text-[12.5px] tracking-[0.06em] text-[#6C737C]">Don't see your city? We travel — just ask.</p>
+  </div>
+</section>

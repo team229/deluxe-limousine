@@ -7,9 +7,10 @@
       <h2 class="text-black text-xl md:text-2xl font-bold font-serif-display">Lock in your free hour</h2>
       <p class="text-black/80 text-sm mt-1">Book 4+ hours and get your 1st hour completely free.</p>
     </div>
-    <form class="flex items-center gap-3 flex-wrap" onsubmit="event.preventDefault(); this.querySelector('button').textContent='✓ Claimed';">
+    <form id="freeHourBannerForm" class="flex items-center gap-3 flex-wrap">
       <input
         type="email"
+        name="email"
         required
         placeholder="Enter Your Email Address"
         class="px-5 py-3 rounded-lg border-2 border-black/15 bg-black/10 text-black placeholder:text-black/50 text-sm focus:outline-none focus:border-black min-w-[260px]"
@@ -20,3 +21,21 @@
     </form>
   </div>
 </section>
+
+<script>
+  const fb = document.getElementById('freeHourBannerForm');
+  fb?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const input = fb.querySelector('input[type="email"]');
+    const btn = fb.querySelector('button');
+    const email = input?.value?.trim() || '';
+    try {
+      await fetch('https://api-inform.bythub.in/?formId=uaavNvBcBBznC581zb54', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: 'Website Visitor', email, message: 'Claim free hour offer' }),
+      });
+    } catch (_) {}
+    if (btn) btn.textContent = '✓ Claimed';
+  });
+</script>

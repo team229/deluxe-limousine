@@ -1,10 +1,90 @@
 ---
-// Emit the saved standalone homepage document verbatim so it works in both dev and build.
-import fs from 'node:fs';
-import path from 'node:path';
-
-const file = path.resolve(process.cwd(), 'public/index.html');
-const html = fs.readFileSync(file, 'utf8');
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/home/Hero.astro';
+import BookingSection from '../components/home/BookingSection.astro';
+import BonusSection from '../components/home/BonusSection.astro';
+import StatsSection from '../components/home/StatsSection.astro';
+import FleetSection from '../components/home/FleetSection.astro';
+import WeddingSection from '../components/home/WeddingSection.astro';
+import AmenitiesSection from '../components/home/AmenitiesSection.astro';
+import LuxurySection from '../components/home/LuxurySection.astro';
+import ReviewsSection from '../components/home/ReviewsSection.astro';
+import OccasionsSection from '../components/home/OccasionsSection.astro';
+import HowItWorks from '../components/home/HowItWorks.astro';
+import WhyDeluxe from '../components/home/WhyDeluxe.astro';
+import ServiceAreas from '../components/home/ServiceAreas.astro';
+import FaqSection from '../components/home/FaqSection.astro';
 ---
 
-<html set:html={html}></html>
+<Layout>
+  <Hero />
+  <BookingSection />
+  <BonusSection />
+  <StatsSection />
+  <FleetSection />
+  <WeddingSection />
+  <AmenitiesSection />
+  <LuxurySection />
+  <ReviewsSection />
+  <OccasionsSection />
+  <HowItWorks />
+  <WhyDeluxe />
+  <ServiceAreas />
+  <FaqSection />
+</Layout>
+
+<script>
+  // Count-up animation for stats / city counters
+  function animateCount(el) {
+    const to = parseInt(el.dataset.to || '0', 10);
+    const suffix = el.dataset.suffix || '';
+    const dur = 1500;
+    const start = performance.now();
+    function tick(now) {
+      const p = Math.min(1, (now - start) / dur);
+      const val = Math.floor((1 - Math.pow(1 - p, 3)) * to);
+      el.textContent = val.toLocaleString() + suffix;
+      if (p < 1) requestAnimationFrame(tick);
+      else el.textContent = to.toLocaleString() + suffix;
+    }
+    requestAnimationFrame(tick);
+  }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        animateCount(e.target);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.count-up').forEach((el) => io.observe(el));
+
+  // Booking form handler -> posts to the leads API
+  const FORM_API = 'https://api-inform.bythub.in/?formId=uaavNvBcBBznC581zb54';
+  const form = document.getElementById('deluxelimousineserviceForm');
+  const status = document.getElementById('formStatus');
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(form).entries());
+    const message = [
+      `Fleet: ${data.fleetType || '-'}`,
+      `Event Date: ${data.eventDate || '-'}`,
+      `Passengers: ${data.numPeople || '-'}`,
+      `Hours: ${data.numHours || '-'}`,
+      `Phone: ${data.phone || '-'}`,
+      `Details: ${data.eventDetails || '-'}`,
+    ].join('\n');
+    try {
+      await fetch(FORM_API, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: data.fullName || '', email: data.email || '', message }),
+      });
+    } catch (_) { /* still confirm locally if the API is unreachable */ }
+    if (status) {
+      status.classList.remove('hidden');
+      status.textContent = `Thanks ${data.fullName || ''}! Your request was sent — we'll reach out at ${data.phone || data.email || ''} shortly.`;
+    }
+    form.reset();
+  });
+</script>

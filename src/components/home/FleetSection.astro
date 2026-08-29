@@ -1,0 +1,44 @@
+---
+const fleet = [
+  { name: "Black Chrysler 300 Limo", img: "/cbm-assets/deluxe-limousine/inline-images/inline-be707992c9c7.jpg", desc: "Our Select Choice For All Events", href: "/limo-service-orange-county/" },
+  { name: "White Chrysler 300 Limo", img: "/cbm-assets/deluxe-limousine/inline-images/inline-242d37c19555.jpg", desc: "Ideal for weddings and Parties", href: "/limousine-service/" },
+  { name: "Executive SUV Service", img: "/cbm-assets/deluxe-limousine/inline-images/inline-66abc4808baf.jpg", desc: "Need A Ride To The Airport?", href: "/black-car-service/" },
+  { name: "Lincoln MKT Limo", img: "/cbm-assets/deluxe-limousine/inline-images/inline-6b55fadc6404.jpg", desc: "An Alternative Preferred Limo", href: "/limousine-service/" },
+  { name: "Mercedes Sprinter", img: "/cbm-assets/deluxe-limousine/inline-images/inline-65576183c6b5.jpg", desc: "Mercedes Sprinter For Corporate Events", href: "/sprinter-limo/" },
+  { name: "Party Bus", img: "/cbm-assets/deluxe-limousine/inline-images/inline-0367dc25fbcf.jpg", desc: "The Party Begins When You Step In The Bus", href: "/party-bus-rental/" },
+];
+---
+
+<section class="bg-black px-6 py-16">
+  <div class="mx-auto max-w-[1400px] px-4">
+    <div class="flex items-center justify-center gap-4">
+      <span class="h-px w-[110px] max-w-[110px] bg-gold/50"></span>
+      <span class="text-[11px] font-bold uppercase tracking-[0.18em] text-gold">Our Limousine Fleet</span>
+      <span class="h-px w-[110px] max-w-[110px] bg-gold/50"></span>
+    </div>
+    <h2 class="mt-4 text-center font-serif-display text-[36px] font-normal text-white sm:text-[44px]">Six ways to arrive.</h2>
+
+    <div class="mx-auto mt-4 max-w-[760px] text-center">
+      <h3 class="mb-3 font-sans-body text-[22px] font-bold text-white"><br />The Best Limousine Service in Anaheim</h3>
+      <p class="m-0 text-[15px] leading-[1.6] text-white/70">
+        Whether you need a limousine for a special event, a night out, or to visit one of your favorite attractions, we have the limo for you. Our spacious and luxurious limousines are fully air conditioned, cleaned and immaculately presented. Most noteworthy, we are fully licensed and bonded. We are waiting to make your special day an unforgettable experience, call us today.
+      </p>
+    </div>
+  </div>
+
+  <div class="mx-auto mt-12 grid max-w-[1400px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {fleet.map((c) => (
+      <div class="flex flex-col rounded-xl border border-white/10 bg-[#0a0a0a] p-5 transition-colors hover:border-gold/40">
+        <a href={c.href} class="block overflow-hidden rounded-lg">
+          <img src={c.img} alt={c.name} loading="lazy" class="aspect-[350/200] w-full rounded-lg object-cover" />
+        </a>
+        <h5 class="mt-5 mb-3 text-[17px] font-semibold text-white"><a href={c.href} class="no-underline hover:text-gold">{c.name}</a></h5>
+        <div class="mb-3 h-px w-full bg-white/10"></div>
+        <p class="mb-5 text-[14px] text-white/60">{c.desc}</p>
+        <a href={c.href} class="mt-auto inline-block rounded-md border border-white/30 px-6 py-3 text-center text-[13px] font-bold uppercase tracking-[0.12em] text-white transition-colors hover:border-gold hover:bg-gold hover:text-black">
+          Book Now
+        </a>
+      </div>
+    ))}
+  </div>
+</section>

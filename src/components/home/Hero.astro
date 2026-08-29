@@ -1,0 +1,62 @@
+---
+const videoSrc = "/cbm-assets/deluxe-limousine/homepage/home-hero-video.mp4";
+const poster = "/cbm-assets/deluxe-limousine/inline-images/inline-88fbb26b0c60.png";
+---
+
+<section class="relative w-full min-h-[86vh] flex items-center justify-center overflow-hidden bg-black">
+  <video
+    data-hero-video
+    class="absolute inset-0 h-full w-full object-cover"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    poster={poster}
+    src={videoSrc}
+  ></video>
+  <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/45 to-black/85"></div>
+
+  <div class="relative z-10 mx-auto w-full max-w-[1180px] px-6 text-center">
+    <h1 class="font-serif-display font-bold leading-[1.05] tracking-[-0.01em] text-white text-[34px] sm:text-[48px] lg:text-[64px]">
+      Orange County's Top-Rated Limousine Service
+      <span class="mt-2 block font-normal italic text-gold-soft">— Chauffeured Luxury for Every Occasion</span>
+    </h1>
+    <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+      <a
+        href="tel:7143139173"
+        class="rounded-[10px] bg-gold px-7 py-3.5 text-[15px] font-semibold tracking-wide text-black transition-colors hover:bg-gold-soft"
+        >Call Now</a
+      >
+      <a
+        href="#deluxelimousineserviceForm"
+        class="rounded-[10px] border border-white/40 px-7 py-3.5 text-[15px] font-semibold tracking-wide text-white transition-colors hover:border-gold hover:text-gold"
+        >Book a Ride</a
+      >
+    </div>
+  </div>
+</section>
+
+<script>
+  function playHeroVideo() {
+    const v = document.querySelector('video[data-hero-video]');
+    if (!v) return;
+    v.muted = true;
+    v.defaultMuted = true;
+    const p = v.play();
+    if (p && typeof p.catch === 'function') p.catch(() => {});
+  }
+  playHeroVideo();
+  document.addEventListener('astro:page-load', playHeroVideo);
+</script>
+
+
+<section class="bg-black px-6 py-11">
+  <div class="mx-auto flex max-w-[1180px] items-center justify-center gap-4">
+    <span class="h-px w-12 bg-gold/40"></span>
+    <span class="font-sans-body text-[13px] font-semibold uppercase tracking-[0.18em] text-gold sm:text-[14px]"
+      >Anaheim &amp; Orange County · Available 24/7</span
+    >
+    <span class="h-px w-12 bg-gold/40"></span>
+  </div>
+</section>

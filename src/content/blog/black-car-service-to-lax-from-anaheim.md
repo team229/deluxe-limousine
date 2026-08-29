@@ -2,7 +2,7 @@
 title: "Black Car Service to Lax from Anaheim"
 date: 2026-06-12
 description: "Need a reliable Black Car Service LAX from Anaheim? Deluxe Limousine Service provides luxury airport transportation, flight tracking, flat rates, and 24/7 service."
-featuredImage: "/wp-content/uploads/2026/06/Black_Car_Service_to_LAX_from_Anaheim-1024x572.png"
+featuredImage: "/images/2026/06/Black_Car_Service_to_LAX_from_Anaheim-1024x572.png"
 category: "blog"
 author: "Saliba"
 ---

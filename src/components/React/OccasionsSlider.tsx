@@ -13,42 +13,42 @@ export default function OccasionsSlider() {
     {
       id: 1,
       title: "Weddings",
-      image: "https://deluxelimousineservice.com/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-1-6-1-1.png",
+      image: "/images/2022/09/Deluxe-Limousine-Service-adds-1-6-1-1.png",
       description: "Arrive in classic elegance. Complimentary champagne toast, red carpet rollout, and decorations tailored to your wedding theme.",
       link: "/wedding"
     },
     {
       id: 2,
       title: "Proms & Homecomings",
-      image: "https://deluxelimousineservice.com/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-hummer-1-3-1.png",
+      image: "/cbm-assets/deluxe-limousine/hummer-limo.jpeg",
       description: "Safe, supervised, and spectacular group travel for students. Parents rest easy, teens ride in absolute style.",
       link: "/prom"
     },
     {
       id: 3,
       title: "Airport Transfers",
-      image: "https://deluxelimousineservice.com/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4.png",
+      image: "/images/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4.png",
       description: "Stress-free, punctual transport to LAX, SNA, and LGB with real-time flight tracking and curbside passenger meet-and-greets.",
       link: "/airport-transportation-service"
     },
     {
       id: 4,
       title: "Quinceañeras",
-      image: "https://deluxelimousineservice.com/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-1-6.png",
+      image: "/images/2022/09/Deluxe-Limousine-Service-adds-1-6.png",
       description: "A royal celebration. Elegant stretch limousines and custom decorations to make her 15th birthday party truly historic.",
       link: "/wedding" // Or quinceanera, mapping to wedding layout since they share styling
     },
     {
       id: 5,
       title: "Corporate Outings",
-      image: "https://deluxelimousineservice.com/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4-2.png",
+      image: "/images/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4-2.png",
       description: "Executive travel, airport transfers, and team event shuttles. Quiet, modern vehicles equipped for mobile business needs.",
       link: "/black-car-service"
     },
     {
       id: 6,
       title: "Concerts & Sports",
-      image: "https://deluxelimousineservice.com/wp-content/uploads/2022/09/Deluxe-Limousine-Service-adds-1-6.png",
+      image: "/images/2022/09/Deluxe-Limousine-Service-adds-1-6.png",
       description: "Skip traffic jams and crowded parking lot queues. Your party starts the moment you step into our custom sound-equipped vehicles.",
       link: "/party-bus-rental"
     }

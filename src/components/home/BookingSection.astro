@@ -1,0 +1,75 @@
+---
+const fleetOptions = [
+  "Stretch Limousine",
+  "Executive SUV",
+  "Help me choose",
+];
+const paxOptions = ["1 – 6 passengers","7 – 10 passengers","11 – 14 passengers","15 – 20 passengers","21 – 30 passengers","More than 30","Not sure yet"];
+const hoursOptions = ["3 hours","4 hours","5 hours — most popular","6 hours","7 hours","8 hours or more","Not sure yet"];
+---
+
+<section id="booking" class="bg-[#0d0d0d] px-6 py-20 sm:px-10">
+  <div class="mx-auto grid w-full max-w-[1240px] grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-10">
+    <!-- Info column -->
+    <div class="flex flex-col">
+      <span class="mb-6 text-[14px] font-bold uppercase tracking-[0.18em] text-[#cca43b]">Premium Transportation, Transparently Priced</span>
+      <h2 class="mb-6 font-sans-body text-[40px] font-bold leading-[1.1] tracking-[-0.01em] text-white lg:text-[48px]">
+        Luxury Limousine Experiences Across <span class="bg-black font-serif-display text-[36px] uppercase tracking-[0.5px] text-gold">Orange County</span>
+      </h2>
+      <p class="m-0 font-sans-body text-[16px] leading-[1.6] text-white">
+        Discover top-tier luxury limousine service across Orange County. Whether it's an elegant wedding or a seamless corporate arrival, we're dedicated to curating an extraordinary journey.
+      </p>
+
+      <div class="mt-9 w-full rounded-lg border border-gold/20 bg-gradient-to-br from-[#141414] to-[#1a1a1a] p-7 shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
+        <h4 class="m-0 mb-5 text-[18px] font-bold text-white">Every Deluxe Reservation Includes:</h4>
+        <ul class="m-0 mb-4 list-none p-0">
+          <li class="relative mb-3.5 pl-7 text-[15px] leading-[1.6] text-[#e0e0e0] [border-left:3px_solid_#cca43b] [background:rgba(204,164,59,0.08)] py-2 pl-7">
+            <strong class="font-semibold text-white">First Hour on Us*</strong> – Special introductory offer for featured packages (5 hours or more)
+          </li>
+          <li class="relative mb-3.5 pl-7 text-[15px] leading-[1.6] text-[#e0e0e0] before:absolute before:left-0 before:font-black before:text-[#cca43b] before:content-['✓'] before:[text-shadow:0_0_8px_rgba(204,164,59,0.6)]">
+            <strong class="font-semibold text-white">Chilled Sodas &amp; Refreshments</strong> – Fully stocked and complimentary
+          </li>
+          <li class="relative mb-3.5 pl-7 text-[15px] leading-[1.6] text-[#e0e0e0] before:absolute before:left-0 before:font-black before:text-[#cca43b] before:content-['✓'] before:[text-shadow:0_0_8px_rgba(204,164,59,0.6)]">
+            <strong class="font-semibold text-white">VIP Red Carpet Service</strong> – Make a truly spectacular entrance
+          </li>
+          <li class="relative mb-3.5 pl-7 text-[15px] leading-[1.6] text-[#e0e0e0] before:absolute before:left-0 before:font-black before:text-[#cca43b] before:content-['✓'] before:[text-shadow:0_0_8px_rgba(204,164,59,0.6)]">
+            <strong class="font-semibold text-white">Custom Birthday Decorations</strong> – Free setup to match your celebration style
+          </li>
+        </ul>
+        <p class="m-0 mt-4 text-[14px] italic text-[#cca43b]">…plus many more custom options to create memories that last.</p>
+      </div>
+
+      <p class="mt-6 text-[14px] font-medium text-white/70">Proudly serving Southern California: Orange County, Los Angeles County, and surrounding regions.</p>
+    </div>
+
+    <!-- Form column -->
+    <div class="rounded-lg border border-[#1c1c1c] bg-[#111111] p-8 shadow-[0_20px_40px_rgba(0,0,0,0.7)] sm:p-10">
+      <h2 class="m-0 mb-1 text-[22px] font-bold text-white"><strong>Tell us the occasion.</strong> <strong class="tracking-[0.02em]">We'll handle the rest.</strong></h2>
+      <p class="mb-6 text-[15px] text-white/60">Date, headcount, and what you're celebrating is all we need.</p>
+
+      <form id="deluxelimousineserviceForm" class="flex flex-col gap-4">
+        <input type="text" id="fullName" placeholder="Full Name" required class="w-full rounded-md border border-white/10 bg-[#0a0a0a] px-4 py-3.5 text-[15px] text-white placeholder:text-white/40 focus:border-gold focus:outline-none" />
+        <input type="email" id="email" placeholder="Email Address" required class="w-full rounded-md border border-white/10 bg-[#0a0a0a] px-4 py-3.5 text-[15px] text-white placeholder:text-white/40 focus:border-gold focus:outline-none" />
+        <input type="tel" id="phone" placeholder="Phone Number" required class="w-full rounded-md border border-white/10 bg-[#0a0a0a] px-4 py-3.5 text-[15px] text-white placeholder:text-white/40 focus:border-gold focus:outline-none" />
+        <select id="fleetType" required class="w-full rounded-md border border-white/10 bg-[#0a0a0a] px-4 py-3.5 text-[15px] text-white focus:border-gold focus:outline-none">
+          <option value="" disabled selected hidden>Select Fleet Type</option>
+          {fleetOptions.map((o) => <option value={o}>{o}</option>)}
+        </select>
+        <input type="text" id="eventDate" placeholder="Event Date" required class="w-full rounded-md border border-white/10 bg-[#0a0a0a] px-4 py-3.5 text-[15px] text-white placeholder:text-white/40 focus:border-gold focus:outline-none" />
+        <select id="numPeople" required class="w-full rounded-md border border-white/10 bg-[#0a0a0a] px-4 py-3.5 text-[15px] text-white focus:border-gold focus:outline-none">
+          <option value="" disabled selected hidden>Number of Passengers</option>
+          {paxOptions.map((o) => <option value={o}>{o}</option>)}
+        </select>
+        <select id="numHours" required class="w-full rounded-md border border-white/10 bg-[#0a0a0a] px-4 py-3.5 text-[15px] text-white focus:border-gold focus:outline-none">
+          <option value="" disabled selected hidden>Number of Hours</option>
+          {hoursOptions.map((o) => <option value={o}>{o}</option>)}
+        </select>
+        <textarea id="eventDetails" rows="4" placeholder="Anything else? Pick-up location, occasion, special requests" required class="w-full rounded-md border border-white/10 bg-[#0a0a0a] px-4 py-3.5 text-[15px] text-white placeholder:text-white/40 focus:border-gold focus:outline-none"></textarea>
+        <button type="submit" class="gold-shimmer-btn mt-1 rounded-md bg-gradient-to-br from-[#E5C158] via-gold to-[#C79A28] px-6 py-4 text-[15px] font-bold uppercase tracking-[0.08em] text-black transition-transform hover:-translate-y-px">
+          <span>Book Now</span>
+        </button>
+        <div id="formStatus" class="hidden text-[14px] text-gold"></div>
+      </form>
+    </div>
+  </div>
+</section>
