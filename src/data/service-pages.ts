@@ -86,7 +86,7 @@ export const servicePages: Record<string, ServicePage> = {
     heroTitle: 'Executive SUV & Black Car Service',
     heroWord: 'Black Car',
     heroSubtitle: 'Private Luxury Transportation',
-    heroBg: '/images/2026/05/SUV-Suburban-.png',
+    heroBg: '/cbm-assets/deluxe-limousine/black-car-service.jpeg',
     heroIntro: [
       'We offer Luxury SUV Service, Black Car Service, Executive Car Service, Sprinter Limo, Party Bus, Hummer Limo, and Stretch Limo. Experience the ease of executive luxury transportation.',
     ],

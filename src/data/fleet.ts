@@ -34,7 +34,7 @@ export const fleetList: Vehicle[] = [
     id: "suburban-suv",
     name: "Suburban SUV",
     capacity: 6,
-    image: "/images/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4.png",
+    image: "/cbm-assets/deluxe-limousine/black-car-service.jpeg",
     tagline: "Executive Travel & Discretion",
     description: "Perfect for airport runs to LAX, John Wayne (SNA), or corporate transport. Blends class-leading safety with executive-level comfort.",
     link: "/black-car-service",

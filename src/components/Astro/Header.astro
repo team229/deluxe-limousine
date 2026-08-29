@@ -145,7 +145,7 @@ const navLinks = [
   <!-- MOBILE NAVIGATION MENU -->
   <div
     id="luxMobileMenu"
-    class="hidden lg:hidden flex-col bg-ink-soft w-full max-h-[calc(100vh-70px)] overflow-y-auto px-6 pt-[30px] pb-[120px] border-t border-white/[0.05] absolute top-full left-0 shadow-[0_30px_60px_rgba(0,0,0,0.8)] opacity-0 -translate-y-2.5 transition-[opacity,transform] duration-300 pointer-events-none uppercase"
+    class="flex lg:hidden flex-col bg-ink-soft w-full max-h-[calc(100vh-70px)] overflow-y-auto px-6 pt-[30px] pb-[120px] border-t border-white/[0.05] absolute top-full left-0 shadow-[0_30px_60px_rgba(0,0,0,0.8)] opacity-0 -translate-y-2.5 transition-[opacity,transform] duration-300 pointer-events-none uppercase"
   >
     <a href="/" class={MOBILE_LINK}>Home</a>
 
@@ -189,6 +189,7 @@ const navLinks = [
   const bars = toggle?.querySelectorAll('span');
 
   const MENU_OPEN_CLASSES = ['opacity-100', 'translate-y-0', 'pointer-events-auto'];
+  const MENU_CLOSED_CLASSES = ['opacity-0', '-translate-y-2.5', 'pointer-events-none'];
 
   toggle?.addEventListener('click', () => {
     const isOpen = toggle.getAttribute('aria-expanded') === 'true';
@@ -197,8 +198,10 @@ const navLinks = [
 
     if (isOpen) {
       MENU_OPEN_CLASSES.forEach((c) => menu.classList.remove(c));
+      MENU_CLOSED_CLASSES.forEach((c) => menu.classList.add(c));
       bars?.forEach((b) => b.classList.remove('translate-y-[11px]', 'rotate-45', 'opacity-0', '-translate-y-[10.5px]', '-rotate-45'));
     } else {
+      MENU_CLOSED_CLASSES.forEach((c) => menu.classList.remove(c));
       MENU_OPEN_CLASSES.forEach((c) => menu.classList.add(c));
       bars?.[0]?.classList.add('translate-y-[11px]', 'rotate-45');
       midBar?.classList.add('opacity-0');

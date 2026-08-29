@@ -43,7 +43,7 @@ export const servicesList: PageData[] = [
     subtitle: "Chauffeured town cars and SUVs for corporate & personal travel",
     metaTitle: "Executive Black Car Service Orange County | Deluxe Limousine",
     metaDescription: "Reliable, professional, and discreet black car service in Anaheim, Irvine, and Orange County. Perfect for corporate travel, SNA, and LAX airport transfers.",
-    heroImage: "/images/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4.png",
+    heroImage: "/cbm-assets/deluxe-limousine/black-car-service.jpeg",
     tagline: "Reliable. Professional. Discreet.",
     introduction: "For business travel, airport transfers, or personal trips where punctuality and discretion are paramount, our Executive Black Car Service is the gold standard. Travel in quiet comfort in our late-model luxury SUVs and sedans.",
     features: [
