@@ -12,9 +12,19 @@ const {
 ---
 
 <section class="relative min-h-[88vh] flex items-center overflow-hidden bg-black">
-  <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline poster={poster}>
+  <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline preload="auto" poster={poster}>
     <source src={video} type="video/mp4" />
   </video>
+  <script is:inline>
+    (() => {
+      const v = document.currentScript?.previousElementSibling;
+      if (v && v.tagName === 'VIDEO') {
+        v.muted = true;
+        const p = v.play();
+        if (p && p.catch) p.catch(() => {});
+      }
+    })();
+  </script>
   <div class="absolute inset-0 bg-linear-to-b from-black/55 via-black/35 to-black/75"></div>
   <div class="container relative z-10 text-center py-16">
     <h1 class="font-serif-display text-white text-[clamp(1.9rem,4.5vw,3.4rem)] leading-[1.25] max-w-[900px] mx-auto mb-8 [text-shadow:0_2px_20px_rgba(0,0,0,0.6)]">

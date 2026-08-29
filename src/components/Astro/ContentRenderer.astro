@@ -77,7 +77,7 @@ function headingText(headings: { level: string; text: string }[], center = false
       {type === 'hero' && (
         <section class="relative min-h-[68vh] flex items-center overflow-hidden bg-black">
           {sec.bgVideo ? (
-            <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline poster={sec.bgImage ?? ''}>
+            <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline preload="auto" poster={sec.bgImage ?? ''}>
               <source src={sec.bgVideo} type="video/mp4" />
             </video>
           ) : sec.bgImage ? (
