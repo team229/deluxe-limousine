@@ -2,23 +2,6 @@
 ---
 
 <footer class="bg-ink border-t border-line font-sans-body">
-  <!-- Newsletter Offer Banner -->
-  <div class="py-12 bg-linear-135 from-gold/[0.12] to-transparent to-55% border-b border-gold/25">
-    <div class="mx-auto w-full max-w-[1240px] px-5 flex items-center justify-between gap-6 flex-wrap">
-      <div>
-        <span class="inline-block px-3 py-1 rounded-full bg-gold/15 text-gold text-xs font-bold uppercase tracking-wide mb-3">Limited Time Offer</span>
-        <h3 class="font-serif-display text-white text-2xl m-0">Lock In Your Free Hour!</h3>
-        <p class="text-white/70 mt-2 max-w-[480px]">
-          Book any fleet option for 4+ hours and get your 1st hour completely free. Plus chilled sodas & refreshments.
-        </p>
-      </div>
-      <form id="freeHourForm" class="free-hour-form flex items-center gap-3 flex-wrap">
-        <input type="email" name="email" required placeholder="Enter Your Email Address" class="px-5 py-3 rounded-lg bg-ink border border-line text-white placeholder:text-white/40 text-sm focus:outline-none focus:border-gold min-w-[260px]" />
-        <button type="submit" class="px-6 py-3 rounded-lg bg-gold text-black text-sm font-bold hover:bg-gold-soft transition-colors cursor-pointer">Claim Free Hour</button>
-      </form>
-    </div>
-  </div>
-
   <!-- Main Footer Content -->
   <div class="mx-auto w-full max-w-[1240px] px-5 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
     <!-- Col 1: About & Trust -->
@@ -100,21 +83,3 @@
     </div>
   </div>
 </footer>
-
-<script>
-  const fh = document.getElementById('freeHourForm');
-  fh?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const input = fh.querySelector('input[type="email"]');
-    const btn = fh.querySelector('button');
-    const email = input?.value?.trim() || '';
-    try {
-      await fetch('https://api-inform.bythub.in/?formId=uaavNvBcBBznC581zb54', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: 'Website Visitor', email, message: 'Claim free hour offer' }),
-      });
-    } catch (_) {}
-    if (btn) btn.textContent = '✓ Claimed';
-  });
-</script>
