@@ -15,7 +15,7 @@ const faqs = [
     <h3 class="mb-8 text-center font-serif-display text-[28px] font-bold text-white">FAQs - Deluxe Limousine Service</h3>
     <div class="flex flex-col gap-3">
       {faqs.map((f, i) => (
-        <details class="group rounded-lg border border-white/10 bg-white/[0.02]" open={i === 0}>
+        <details class="group rounded-lg border border-white/10 bg-white/[0.02]">
           <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-[15px] font-semibold text-white marker:hidden">
             <span>{f.q}</span>
             <svg class="h-4 w-4 shrink-0 fill-none stroke-gold stroke-[2] transition-transform group-open:rotate-90" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"></path></svg>
