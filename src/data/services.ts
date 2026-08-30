@@ -16,7 +16,7 @@ export const servicesList: PageData[] = [
   {
     slug: "sprinter-limo",
     title: "Mercedes Sprinter Limo Service",
-    subtitle: "Premium group transportation in Southern California",
+    subtitle: "Premium group transportation in Orange County",
     metaTitle: "Mercedes Sprinter Limo Rental Anaheim & Orange County | Deluxe",
     metaDescription: "Rent a luxury Mercedes Sprinter Limo in Orange County and Anaheim. Premium sound, stand-up headroom, and custom seating for 10-14 passengers. Get a free quote.",
     heroImage: "/images/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4-2.png",
@@ -53,7 +53,7 @@ export const servicesList: PageData[] = [
       "Airport Permits: Direct curbside pickup at LAX, SNA, LGB, and SAN."
     ],
     detailsHtml: `
-      <p>Arrive relaxed and ready for your meetings or flight. Our black car service eliminates the hassle of navigating Southern California's unpredictable freeways or dealing with airport parking lots.</p>
+      <p>Arrive relaxed and ready for your meetings or flight. Our black car service eliminates the hassle of navigating Orange County's unpredictable freeways or dealing with airport parking lots.</p>
       <p>We serve major corporations, executives, and discerning travelers throughout Irvine, Anaheim, Newport Beach, and surrounding cities. WiFi and phone chargers are available in every vehicle.</p>
     `,
     faqs: [

@@ -106,7 +106,7 @@ export const servicePages: Record<string, ServicePage> = {
     heroTitle: 'Hummer Limo Service Anaheim',
     heroWord: 'Limo',
     heroSubtitle: 'Extended Hummer Limousine',
-    heroBg: '/cbm-assets/deluxe-limousine/hummer-limo.jpeg',
+    heroBg: '/cbm-assets/deluxe-limousine/hummer-limo-hero.png',
     heroIntro: [
       'Extended Hummer Limo Service Anaheim is one of our most popular limos. It is perfect for proms because of the large spacious interior, premium sound system, and party atmosphere.',
     ],

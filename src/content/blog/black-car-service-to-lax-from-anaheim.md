@@ -102,4 +102,4 @@ Call or book online for a quote. We’ll give you a flat rate upfront, no surpri
 
 At Deluxe Limousine Service, we’ve built our reputation one ride at a time. Every client who books a Black Car Service LAX with us and shows up at their terminal relaxed, on time, and without a parking ticket to deal with — that’s the result we’re after, every single booking.
 
-Serving Anaheim, Orange County, Irvine, Riverside, Santa Ana, Costa Mesa, Mission Viejo, Laguna Niguel, and all of Southern California.Your flight won’t wait — but with Deluxe, you won’t have to worry about that.
+Serving Anaheim, Orange County, Irvine, Riverside, Santa Ana, Costa Mesa, Mission Viejo, Laguna Niguel, and all of Orange County.Your flight won’t wait — but with Deluxe, you won’t have to worry about that.

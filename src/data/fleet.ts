@@ -26,7 +26,7 @@ export const fleetList: Vehicle[] = [
     capacity: 12,
     image: "/images/2022/09/Deluxe-Limousine-Service-adds-1-6-1-1.png",
     tagline: "The Classic Luxury Experience",
-    description: "Elegant, sophisticated, and timeless. The standard of elegance for weddings, corporate executives, and wine tours in Southern California.",
+    description: "Elegant, sophisticated, and timeless. The standard of elegance for weddings, corporate executives, and wine tours in Orange County.",
     link: "/hummer-limo-service",
     amenities: ["Up to 12 Passengers", "Plush Leather Seating", "Chilled Drink Stations", "LCD Screens", "Climate Control"]
   },
