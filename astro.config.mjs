@@ -9,6 +9,10 @@ export default defineConfig({
   integrations: [react()],
   vite: {
     plugins: [tailwindcss()],
+    server: {
+      allowedHosts: true,
+      host: true,
+    },
   },
   redirects: {
     '/limousine-service': '/limo-service-orange-county/',

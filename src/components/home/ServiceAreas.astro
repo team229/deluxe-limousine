@@ -21,7 +21,7 @@ const cities = [
 
     <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
       {cities.map((c) => (
-        <a href={`/${c.s}/`} class="flex flex-col items-center gap-2.5 rounded-lg border border-gold/15 bg-white/[0.022] p-6 text-center transition-all hover:-translate-y-0.5 hover:border-gold/55 hover:bg-gold/[0.06]">
+        <a href={`/${c.s}/`} class="dlx-city flex flex-col items-center gap-2.5 rounded-lg border border-gold/15 bg-white/[0.022] p-6 text-center transition-all hover:-translate-y-0.5 hover:border-gold/55 hover:bg-gold/[0.06]">
           <span class="flex h-9 w-9 items-center justify-center rounded-full border border-gold/35 font-serif-display text-[15px] text-[#E8C87A]">{c.n.charAt(0)}</span>
           <span class="text-[15.5px] leading-[1.3] text-[#E4E2DD]">{c.n}</span>
         </a>

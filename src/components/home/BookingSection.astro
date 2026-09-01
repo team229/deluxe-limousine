@@ -65,7 +65,7 @@ const hoursOptions = ["3 hours","4 hours","5 hours — most popular","6 hours","
           {hoursOptions.map((o) => <option value={o}>{o}</option>)}
         </select>
         <textarea id="eventDetails" rows="4" placeholder="Anything else? Pick-up location, occasion, special requests" required class="w-full rounded-md border border-white/10 bg-[#0a0a0a] px-4 py-3.5 text-[15px] text-white placeholder:text-white/40 focus:border-gold focus:outline-none"></textarea>
-        <button type="submit" class="gold-shimmer-btn mt-1 rounded-md bg-gradient-to-br from-[#E5C158] via-gold to-[#C79A28] px-6 py-4 text-[15px] font-bold uppercase tracking-[0.08em] text-black transition-transform hover:-translate-y-px">
+        <button type="submit" class="dlx-btn mt-1 rounded-md bg-gold px-6 py-4 text-[15px] font-bold uppercase tracking-[0.08em] text-black transition-all hover:bg-gold-soft">
           <span>Book Now</span>
         </button>
         <div id="formStatus" class="hidden text-[14px] text-gold"></div>
