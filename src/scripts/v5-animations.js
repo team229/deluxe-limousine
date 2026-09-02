@@ -99,31 +99,10 @@
       window.addEventListener('scroll', onScroll, {passive:true});
       onScroll();
     }
-    const dt=document.getElementById('eventDate');
-    if(dt){
-      const hidden=document.createElement('input');
-      hidden.type='date';
-      hidden.setAttribute('aria-hidden','true');
-      hidden.tabIndex=-1;
-      hidden.style.cssText='position:absolute;opacity:0;pointer-events:none;width:1px;height:1px;left:0;bottom:0;border:0;padding:0;';
-      dt.parentNode.appendChild(hidden);
-      dt.setAttribute('readonly','readonly');
-      dt.style.cursor='pointer';
-      const openPicker=(ev)=>{
-        if(ev) ev.preventDefault();
-        dt.blur();
-        if(hidden.showPicker){ try{ hidden.showPicker(); return; }catch(e){} }
-        hidden.focus(); hidden.click();
-      };
-      dt.addEventListener('click', openPicker);
-      dt.addEventListener('focus', openPicker);
-      hidden.addEventListener('change',()=>{
-        if(!hidden.value){ dt.value=''; return; }
-        const parts=hidden.value.split('-');
-        const d=new Date(+parts[0], +parts[1]-1, +parts[2]);
-        dt.value=d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
-        dt.dataset.iso=hidden.value;
-      });
-    }
+    // eventDate picker is handled by BookingSection.astro via flatpickr
+    (function(){
+      var dt=document.getElementById('eventDate');
+      if(dt) dt.style.cursor='pointer';
+    })();
   });
 })();

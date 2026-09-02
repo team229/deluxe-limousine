@@ -43,9 +43,9 @@ const wall = [
       </div>
     </div>
 
-    <div id="dlReviewsWindow" class="flex snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth pb-3 [scrollbar-width:none]">
-      {reviews.map((r) => (
-        <div class="flex w-[320px] shrink-0 snap-start flex-col justify-between gap-6 rounded-[14px] border border-white/[0.08] bg-white/[0.03] p-7 transition-colors hover:border-gold/25 sm:w-[360px]">
+    <div id="dlReviewsWindow" class="flex gap-6 overflow-x-auto pb-3 [scrollbar-width:none]">
+      {[...reviews, ...reviews].map((r) => (
+        <div class="flex w-[320px] shrink-0 flex-col justify-between gap-6 rounded-[14px] border border-white/[0.08] bg-white/[0.03] p-7 transition-colors hover:border-gold/25 sm:w-[360px]">
           <div class="flex flex-col gap-4">
             <div class="flex gap-1">
               {[0,1,2,3,4].map(() => (
@@ -84,10 +84,60 @@ const wall = [
 </section>
 
 <script>
-  const win = document.getElementById('dlReviewsWindow');
+  const win = document.getElementById('dlReviewsWindow') as HTMLElement | null;
   const prev = document.getElementById('dlRevPrev');
   const next = document.getElementById('dlRevNext');
-  const step = () => (win?.querySelector('.snap-start')?.offsetWidth ?? 360) + 24;
-  prev?.addEventListener('click', () => win?.scrollBy({ left: -step(), behavior: 'smooth' }));
-  next?.addEventListener('click', () => win?.scrollBy({ left: step(), behavior: 'smooth' }));
+  if (win) {
+    const card = win.firstElementChild as HTMLElement | null;
+    const step = () => (card?.offsetWidth ?? 344) + 24;
+    const halfScroll = () => win.scrollWidth / 2;
+    let raf: number | null = null;
+    let paused = false;
+    let lastTime = 0;
+    const speed = 0.35; // px per ms — smooth continuous drift (~1 card / sec)
+
+    const tick = (now: number) => {
+      if (!paused && !document.hidden) {
+        const dt = lastTime ? now - lastTime : 0;
+        win.scrollLeft += speed * (dt || 16);
+        if (win.scrollLeft >= halfScroll()) {
+          win.scrollLeft -= halfScroll();
+        }
+      }
+      lastTime = now;
+      raf = requestAnimationFrame(tick);
+    };
+
+    const start = () => { if (raf === null) { lastTime = 0; raf = requestAnimationFrame(tick); } };
+    const stop = () => { if (raf !== null) { cancelAnimationFrame(raf); raf = null; } };
+
+    // Seamless: if user scrolls manually near the end, wrap without jump
+    win.addEventListener('scroll', () => {
+      if (win.scrollLeft >= halfScroll()) win.scrollLeft -= halfScroll();
+      else if (win.scrollLeft <= 0 && win.scrollLeft < 1) {
+        // allow natural scroll at start — no wrap needed when scrolling left past 0
+      }
+    }, { passive: true });
+
+    prev?.addEventListener('click', () => {
+      paused = true;
+      const target = win.scrollLeft - step();
+      win.scrollTo({ left: target < 0 ? halfScroll() + target : target, behavior: 'smooth' });
+      setTimeout(() => { paused = false; }, 600);
+    });
+    next?.addEventListener('click', () => {
+      paused = true;
+      win.scrollBy({ left: step(), behavior: 'smooth' });
+      setTimeout(() => { paused = false; }, 600);
+    });
+
+    win.addEventListener('mouseenter', () => { paused = true; });
+    win.addEventListener('mouseleave', () => { paused = false; });
+    win.addEventListener('touchstart', () => { paused = true; }, { passive: true });
+    win.addEventListener('touchend', () => setTimeout(() => { paused = false; }, 1200), { passive: true });
+    win.addEventListener('focusin', () => { paused = true; });
+    win.addEventListener('focusout', () => { paused = false; });
+
+    start();
+  }
 </script>

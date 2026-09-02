@@ -40,7 +40,7 @@
 .dlx-btn:hover::after{animation-duration:1.5s}
 .dlx-btn>*{position:relative;z-index:2}
 @keyframes dlxbtnpass{0%{left:-45%}55%{left:130%}100%{left:130%}}
-.dlx-card{position:relative}
+.dlx-card{position:relative;overflow:hidden}
 .dlx-card::before{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;z-index:3;pointer-events:none;
  background:linear-gradient(100deg,transparent,rgba(232,200,122,.16) 45%,rgba(246,228,180,.26) 50%,rgba(232,200,122,.16) 55%,transparent);
  filter:blur(8px);transform:skewX(-16deg);opacity:0;transition:left .8s cubic-bezier(.2,.7,.3,1),opacity .25s}

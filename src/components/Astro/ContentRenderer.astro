@@ -51,6 +51,19 @@ function btnHref(b: ExtractButton) {
   return isTel(b) ? 'tel:7143139173' : localize(b.href);
 }
 
+function fleetImage(src: string, idx: number): string {
+  const fallback = [
+    '/cbm-assets/deluxe-limousine/homepage/black-chrysler-stretch-limo-2.webp',
+    '/cbm-assets/deluxe-limousine/homepage/black-chrysler-stretch-limo-2.webp',
+    '/cbm-assets/deluxe-limousine/hummer-limo.jpeg',
+    '/cbm-assets/deluxe-limousine/homepage/luxury-sprinter-limo-6.webp',
+    '/cbm-assets/deluxe-limousine/homepage/party-bus-7.webp',
+    '/cbm-assets/deluxe-limousine/black-car-service.jpeg',
+  ];
+  if (!src || src.includes('wp-content')) return fallback[idx] ?? fallback[0];
+  return localize(src);
+}
+
 function headingText(headings: { level: string; text: string }[], center = false) {
   const node = headings.map((h) => h.text).join(' ');
   return node;
@@ -105,13 +118,21 @@ function headingText(headings: { level: string; text: string }[], center = false
         <section class="py-14 bg-ink-soft border-y border-gold/20">
           <div class={`${CONTAINER} grid grid-cols-2 md:grid-cols-4 gap-8`}>
             {(sec.cards ?? []).map((c) => {
-              const m = (c.title || c.text || '').match(/^([\d\s+%/.]+)\s*(.*)$/);
-              const num = m ? m[1].trim() : (c.title || '');
-              const label = m ? m[2].trim() : '';
+              const raw = (c.title || c.text || '').trim();
+              const m = raw.match(/^(\d+)([+★☆]?)(\s*)(.*)$/);
+              const numVal = m ? parseInt(m[1], 10) : null;
+              const symbol = m ? m[2] : '';
+              const label = m ? m[4].trim() : '';
+              const isStatic = raw.includes('/');
+              const isCountable = numVal !== null && !isStatic;
               return (
                 <div class="text-center">
-                  <span class="block font-serif-display text-4xl font-bold text-gold">{num}</span>
-                  <span class="block text-white/60 text-xs uppercase tracking-[0.08em] mt-2">{label || '\u00a0'}</span>
+                  {isCountable ? (
+                    <span class="count-up block font-serif-display text-4xl font-bold text-gold" data-to={numVal} data-suffix={symbol}>0{symbol}</span>
+                  ) : (
+                    <span class="block font-serif-display text-4xl font-bold text-gold">{raw}</span>
+                  )}
+                  <span class="block text-white/60 text-xs uppercase tracking-[0.08em] mt-2">{isStatic ? '\u00a0' : (label || '\u00a0')}</span>
                 </div>
               );
             })}
@@ -257,26 +278,66 @@ function headingText(headings: { level: string; text: string }[], center = false
         </section>
       )}
 
-      {type === 'prose' && (
-        <section class="py-16">
-          <div class={`${CONTAINER} ${paragraphs.length <= 2 ? 'max-w-[860px]' : ''}`}>
-            {headings.map((h) =>
-              h.level === 'H1' ? (
-                <h1 class="font-serif-display text-3xl md:text-4xl font-bold text-white mb-6">{h.text}</h1>
-              ) : (
-                <h2 class={HEADING + ' mb-5 mt-6 first:mt-0'}>{h.text}</h2>
-              )
-            )}
-            {paragraphs.map((p) => <p class="text-white/70 leading-[1.85] mb-5">{p}</p>)}
-            {(sec.lists ?? []).map((l) => (
-              <ul class={`text-white/70 leading-[1.9] mb-5 ml-5 list-disc ${l.items.length > 8 ? 'columns-2 gap-10' : ''}`}>
-                {l.items.map((item) => <li>{item}</li>)}
-              </ul>
-            ))}
-            {renderButtons()}
-          </div>
-        </section>
-      )}
+      {type === 'prose' &&
+        (() => {
+          const h2 = headings.filter((h) => h.level === 'H2');
+          const h3s = headings.filter((h) => h.level === 'H3');
+          const isFleetProse = h2.length === 1 && h2[0].text.includes('Luxury Vehicles') && h3s.length >= 2;
+          if (isFleetProse) {
+            const intro = paragraphs[0] ?? '';
+            const caps = paragraphs.slice(1);
+            return (
+              <section class="py-20 bg-ink">
+                <div class={CONTAINER}>
+                  <div class="text-center mb-12">
+                    <span class="text-gold uppercase text-xs font-bold tracking-[0.2em]">Our Fleet</span>
+                    <h2 class="font-serif-display text-3xl md:text-4xl font-bold mt-3">{h2[0].text}</h2>
+                    {intro && <p class="text-white/60 max-w-[640px] mx-auto mt-4">{intro}</p>}
+                  </div>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {h3s.map((h, idx) => {
+                      const img = images[idx];
+                      // 6 vehicles but only 5 caps in source (Black Chrysler has none); map accordingly
+                      const isBlackChrysler = h.text.toLowerCase().includes('black chrysler');
+                      const capIdx = caps.length < h3s.length && !isBlackChrysler && idx > 1 ? idx - 1 : idx;
+                      const rawCap = isBlackChrysler ? '' : (caps[capIdx] ?? '');
+                      const isCap = rawCap.startsWith('Up to');
+                      return (
+                        <div class="dlx-card group flex flex-col items-center text-center rounded-xl overflow-hidden">
+                          <div class="dlx-imgwrap w-full overflow-hidden border border-line mb-5 transition-all duration-300 group-hover:border-gold group-hover:shadow-[0_18px_40px_rgba(212,175,55,0.12)]">
+                            <img src={fleetImage(img?.src ?? '', idx)} alt={img?.alt || h.text} loading="lazy" width="480" height="320" class="w-full h-[220px] object-cover block" />
+                          </div>
+                          <h3 class="card-title font-serif-display text-xl text-white mb-1">{h.text}</h3>
+                          {isCap && <p class="text-gold text-sm font-semibold">{rawCap}</p>}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              </section>
+            );
+          }
+          return (
+            <section class="py-16">
+              <div class={`${CONTAINER} ${paragraphs.length <= 2 ? 'max-w-[860px]' : ''}`}>
+                {headings.map((h) =>
+                  h.level === 'H1' ? (
+                    <h1 class="font-serif-display text-3xl md:text-4xl font-bold text-white mb-6">{h.text}</h1>
+                  ) : (
+                    <h2 class={HEADING + ' mb-5 mt-6 first:mt-0'}>{h.text}</h2>
+                  )
+                )}
+                {paragraphs.map((p) => <p class="text-white/70 leading-[1.85] mb-5">{p}</p>)}
+                {(sec.lists ?? []).map((l) => (
+                  <ul class={`text-white/70 leading-[1.9] mb-5 ml-5 list-disc ${l.items.length > 8 ? 'columns-2 gap-10' : ''}`}>
+                    {l.items.map((item) => <li>{item}</li>)}
+                  </ul>
+                ))}
+                {renderButtons()}
+              </div>
+            </section>
+          );
+        })()}
     </>
   );
 })}

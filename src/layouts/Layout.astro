@@ -141,6 +141,23 @@ const localBusinessSchema = {
     <!-- Footer -->
     <Footer />
     <script is:inline src="/scripts/v5-animations.js"></script>
+    <script is:inline>
+      (function(){
+        function ac(el){
+          var to=parseInt(el.dataset.to||'0',10),suf=el.dataset.suffix||'',dur=1500,st=performance.now();
+          function tick(now){
+            var p=Math.min(1,(now-st)/dur),v=Math.floor((1-Math.pow(1-p,3))*to);
+            el.textContent=v.toLocaleString()+suf;
+            if(p<1)requestAnimationFrame(tick);else el.textContent=to.toLocaleString()+suf;
+          }
+          requestAnimationFrame(tick);
+        }
+        var io=new IntersectionObserver(function(ents){
+          ents.forEach(function(e){ if(e.isIntersecting){ ac(e.target); io.unobserve(e.target); }});
+        },{threshold:0.3});
+        document.querySelectorAll('.count-up').forEach(function(el){ io.observe(el); });
+      })();
+    </script>
   </body>
 </html>
 

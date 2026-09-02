@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 import { fleetList } from '../../data/fleet';
 
 const inputBase =
@@ -12,7 +14,7 @@ export default function ReservationForm() {
     phone: '',
     fleetType: '',
     occasion: '',
-    date: '',
+    date: null as Date | null,
     passengers: '',
     hours: '',
     requests: '',
@@ -56,7 +58,7 @@ export default function ReservationForm() {
           phone: formData.phone,
           fleetType: formData.fleetType,
           occasion: formData.occasion,
-          date: formData.date,
+          date: formData.date ? formData.date.toISOString().split('T')[0] : '',
           passengers: formData.passengers,
           hours: formData.hours,
           message: formData.requests,
@@ -123,7 +125,31 @@ export default function ReservationForm() {
             </div>
             <div>
               <label htmlFor="date" className={labelBase}>Date of Service *</label>
-              <input type="date" name="date" id="date" value={formData.date} onChange={handleChange} className={inputBase} required />
+              <DatePicker
+                selected={formData.date}
+                onChange={(d: Date | null) => setFormData((prev) => ({ ...prev, date: d }))}
+                placeholderText="Select a date"
+                minDate={new Date()}
+                dateFormat="MM/dd/yyyy"
+                className={inputBase}
+                wrapperClassName="w-full block [&_input]:w-full"
+                calendarClassName="dark-calendar"
+                required
+                id="date"
+                name="date"
+              />
+              <style>{`
+                .dark-calendar { background: #141414 !important; border: 1px solid #2a2a2a !important; border-radius: 0.75rem !important; overflow: hidden; }
+                .dark-calendar .react-datepicker__header { background: #1a1a1a !important; border-bottom: 1px solid #2a2a2a !important; }
+                .dark-calendar .react-datepicker__current-month, .dark-calendar .react-datepicker__day-name { color: #E8C87A !important; }
+                .dark-calendar .react-datepicker__day { color: #e5e5e5 !important; }
+                .dark-calendar .react-datepicker__day:hover { background: rgba(232,200,122,0.15) !important; color: #E8C87A !important; }
+                .dark-calendar .react-datepicker__day--selected, .dark-calendar .react-datepicker__day--keyboard-selected { background: #E8C87A !important; color: #000 !important; }
+                .dark-calendar .react-datepicker__day--disabled { color: #555 !important; }
+                .dark-calendar .react-datepicker__navigation-icon::before { border-color: #E8C87A !important; }
+                .react-datepicker-wrapper { display: block !important; width: 100%; }
+                .react-datepicker__input-container { display: block !important; }
+              `}</style>
             </div>
             <div>
               <label htmlFor="passengers" className={labelBase}>Estimated Passengers *</label>

@@ -1,0 +1,15 @@
+---
+const items = ["Bachelor & Bachelorette", "Concerts & Sports", "Airport", "Birthdays", "Weddings", "Quinceañeras", "Prom", "Corporate Events"];
+const doubled = [...items, ...items];
+---
+
+<div class="dlx-mq">
+  <div class="dlx-mq-track">
+    {doubled.map((label) => (
+      <>
+        <span class="shrink-0 font-serif-display text-[17px] tracking-[0.02em] text-gold/90">{label}</span>
+        <span class="flex h-1.5 w-1.5 shrink-0 rounded-full bg-gold shadow-[0_0_6px_rgba(212,175,55,0.6)]" aria-hidden="true"></span>
+      </>
+    ))}
+  </div>
+</div>

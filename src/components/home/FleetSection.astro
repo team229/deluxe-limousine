@@ -1,11 +1,11 @@
 ---
 const fleet = [
-  { name: "Black Chrysler 300 Limo", img: "/cbm-assets/deluxe-limousine/inline-images/inline-be707992c9c7.jpg", desc: "Our Select Choice For All Events", href: "/limo-service-orange-county/" },
-  { name: "White Chrysler 300 Limo", img: "/cbm-assets/deluxe-limousine/inline-images/inline-242d37c19555.jpg", desc: "Ideal for weddings and Parties", href: "/limousine-service/" },
-  { name: "Executive SUV Service", img: "/cbm-assets/deluxe-limousine/inline-images/inline-66abc4808baf.jpg", desc: "Need A Ride To The Airport?", href: "/black-car-service/" },
-  { name: "Lincoln MKT Limo", img: "/cbm-assets/deluxe-limousine/inline-images/inline-6b55fadc6404.jpg", desc: "An Alternative Preferred Limo", href: "/limousine-service/" },
-  { name: "Mercedes Sprinter", img: "/cbm-assets/deluxe-limousine/inline-images/inline-65576183c6b5.jpg", desc: "Mercedes Sprinter For Corporate Events", href: "/sprinter-limo/" },
-  { name: "Party Bus", img: "/cbm-assets/deluxe-limousine/inline-images/inline-0367dc25fbcf.jpg", desc: "The Party Begins When You Step In The Bus", href: "/party-bus-rental/" },
+  { name: "Black Chrysler 300 Limo", cap: "UP TO 10", img: "/cbm-assets/deluxe-limousine/inline-images/inline-be707992c9c7.jpg", desc: "Our Select Choice For All Events", href: "/limo-service-orange-county/" },
+  { name: "White Chrysler 300 Limo", cap: "UP TO 12", img: "/cbm-assets/deluxe-limousine/inline-images/inline-242d37c19555.jpg", desc: "Ideal for weddings and Parties", href: "/limousine-service/" },
+  { name: "Executive SUV Service", cap: "UP TO 6", img: "/cbm-assets/deluxe-limousine/inline-images/inline-66abc4808baf.jpg", desc: "Need A Ride To The Airport?", href: "/black-car-service/" },
+  { name: "Lincoln MKT Limo", cap: "UP TO 10", img: "/cbm-assets/deluxe-limousine/inline-images/inline-6b55fadc6404.jpg", desc: "An Alternative Preferred Limo", href: "/limousine-service/" },
+  { name: "Mercedes Sprinter", cap: "UP TO 14", img: "/cbm-assets/deluxe-limousine/inline-images/inline-65576183c6b5.jpg", desc: "Mercedes Sprinter For Corporate Events", href: "/sprinter-limo/" },
+  { name: "Party Bus", cap: "UP TO 20", img: "/cbm-assets/deluxe-limousine/inline-images/inline-0367dc25fbcf.jpg", desc: "The Party Begins When You Step In The Bus", href: "/party-bus-rental/" },
 ];
 ---
 
@@ -26,16 +26,17 @@ const fleet = [
     </div>
   </div>
 
-  <div class="mx-auto mt-12 grid max-w-[1400px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  <div class="mx-auto mt-12 grid max-w-[1400px] grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
     {fleet.map((c) => (
-      <div class="flex flex-col rounded-xl border border-white/10 bg-[#0a0a0a] p-5 transition-colors hover:border-gold/40">
-        <a href={c.href} class="block overflow-hidden rounded-lg">
-          <img src={c.img} alt={c.name} loading="lazy" class="aspect-[350/200] w-full rounded-lg object-cover" />
+      <div class="flex flex-col text-center">
+        <a href={c.href} class="dlx-card relative block overflow-hidden rounded-md">
+          <img src={c.img} alt={c.name} loading="lazy" class="aspect-[350/200] w-full rounded-md object-cover" />
+          <span class="absolute left-3 top-3 z-[2] rounded-[2px] border border-gold/30 bg-black/75 px-4 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-gold backdrop-blur-sm">{c.cap}</span>
         </a>
-        <h5 class="mt-5 mb-3 text-[17px] font-semibold text-white"><a href={c.href} class="no-underline hover:text-gold">{c.name}</a></h5>
-        <div class="mb-3 h-px w-full bg-white/10"></div>
-        <p class="mb-5 text-[14px] text-white/60">{c.desc}</p>
-        <a href="tel:7143139173" class="mt-auto inline-block rounded-md border border-white/30 px-6 py-3 text-center text-[13px] font-bold uppercase tracking-[0.12em] text-white transition-colors hover:border-gold hover:bg-gold hover:text-black">
+        <h3 class="mt-6 font-serif-display text-[26px] font-bold leading-tight text-white"><a href={c.href} class="no-underline hover:text-gold">{c.name}</a></h3>
+        <div class="mx-auto mt-4 h-px w-full max-w-[340px] bg-gold/60"></div>
+        <p class="mx-auto mt-4 max-w-[300px] text-[13px] leading-relaxed text-white/70">{c.desc}</p>
+        <a href="tel:7143139173" class="mt-6 block w-full rounded-[2px] bg-gradient-to-r from-[#b8932e] via-[#d4af37] to-[#e8c87a] px-6 py-3.5 text-center text-[12px] font-bold uppercase tracking-[0.08em] text-black transition-all hover:brightness-110">
           Book Now
         </a>
       </div>
