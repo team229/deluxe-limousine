@@ -7,15 +7,45 @@ interface GalleryItem {
   image: string;
 }
 
+const base = '/cbm-assets/deluxe-limousine/gallery';
+
 const items: GalleryItem[] = [
-  { id: 1, title: 'SUV Stretch Hummer Limousine', category: 'fleet', image: '/cbm-assets/deluxe-limousine/hummer-limo.jpeg' },
-  { id: 2, title: 'Lincoln MKT Stretch Limo', category: 'fleet', image: '/images/2022/09/Deluxe-Limousine-Service-adds-1-6-1-1.png' },
-  { id: 3, title: 'Executive Mercedes Sprinter', category: 'fleet', image: '/images/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4-2.png' },
-  { id: 4, title: 'Lincoln MKT Town Car Detail', category: 'fleet', image: '/images/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4.png' },
-  { id: 5, title: 'Classic Wedding Rollout', category: 'weddings', image: '/images/2022/09/Deluxe-Limousine-Service-adds-1-6.png' },
-  { id: 6, title: 'Coastal Tour Shuttle', category: 'events', image: '/images/2026/07/Whats-Driving-Orange-Countys-Shift-Toward-Limousine-Travel.webp' },
-  { id: 7, title: 'LAX Terminal Shuttle Ride', category: 'airport', image: '/images/2022/09/Deluxe-Limousine-Service-adds-sprinter-1-4.png' },
-  { id: 8, title: 'Wedding Reception Transfer', category: 'weddings', image: '/images/2022/09/Deluxe-Limousine-Service-adds-1-6-1-1.png' },
+  // Fleet
+  { id: 1, title: 'Black Chrysler 300', category: 'fleet', image: `${base}/black-chrysler-300-new-background.png` },
+  { id: 2, title: 'Black Chrysler Limousine', category: 'fleet', image: `${base}/black-chrysler-limousine.jpg` },
+  { id: 3, title: 'Black Party Bus', category: 'fleet', image: `${base}/black-party-bus.webp` },
+  { id: 4, title: 'White Chrysler 300 Stretch', category: 'fleet', image: `${base}/white-chrysler-300-stretch-limo.png` },
+  { id: 5, title: 'White Chrysler Stretch', category: 'fleet', image: `${base}/white-chrysler-300-stretch.png` },
+  { id: 6, title: 'White Party Bus', category: 'fleet', image: `${base}/white-party-bus.webp` },
+  { id: 7, title: 'Deluxe Lincoln MKT', category: 'fleet', image: `${base}/deluxe-lincoln-mkt.png` },
+  { id: 8, title: 'MKT Stretch Limousine', category: 'fleet', image: `${base}/mkt-stretch-limousine.png` },
+  { id: 9, title: 'Mercedes Sprinter', category: 'fleet', image: `${base}/mercedes-spritner.jpg` },
+  { id: 10, title: 'Full Fleet Lineup', category: 'fleet', image: `${base}/limo-fleet.png` },
+  { id: 11, title: 'Limousine Interior', category: 'fleet', image: `${base}/limousine-interior.jpg` },
+  { id: 12, title: 'Party Bus Interior', category: 'fleet', image: `${base}/party-bus-interior.webp` },
+  { id: 13, title: 'White Chrysler Interior', category: 'fleet', image: `${base}/white-chrysler-300-interior.jpg` },
+  { id: 14, title: 'Storefront', category: 'fleet', image: `${base}/storefront-photo.jpg` },
+  // Weddings
+  { id: 15, title: 'Wedding Arrival', category: 'weddings', image: `${base}/wedding-arrival-deluxe-yelp.jpg` },
+  { id: 16, title: 'Golden Hour Wedding', category: 'weddings', image: `${base}/golden-hour.png` },
+  { id: 17, title: 'Red Carpet Welcome', category: 'weddings', image: `${base}/red-carpet-walk-deluxe.jpg` },
+  { id: 18, title: 'Red Carpet Invitation', category: 'weddings', image: `${base}/red-carpet-invitation-deluxe-yelp.jpg` },
+  { id: 19, title: 'Rose Interior', category: 'weddings', image: `${base}/rose-interior-deluxe-yelp.jpg` },
+  { id: 20, title: 'Pristine Interior', category: 'weddings', image: `${base}/pristine-interior-deluxeyelp.jpg` },
+  { id: 21, title: 'Quinceanera Arrival', category: 'weddings', image: `${base}/quinceanera-arrival-deluxe-yelp.jpg` },
+  { id: 22, title: 'Quinceanera Family', category: 'weddings', image: `${base}/quinceanera-family-deluxeyelp.jpg` },
+  // Airport
+  { id: 23, title: 'Airport SUV Service', category: 'airport', image: `${base}/blackcar-suv-airport-service.jpg` },
+  // Events
+  { id: 24, title: 'Birthday Queen', category: 'events', image: `${base}/birthday-queen-deluxe-yelp.jpg` },
+  { id: 25, title: 'Concert Pregame', category: 'events', image: `${base}/concert-pregame-deluxe.jpg` },
+  { id: 26, title: 'Girls Night Out', category: 'events', image: `${base}/girls-night-deluxe.jpg` },
+  { id: 27, title: 'Limo Selfie', category: 'events', image: `${base}/limo-selfie-deluxe.jpg` },
+  { id: 28, title: 'Night Pickup', category: 'events', image: `${base}/night-pickup-deluxe-yelp.jpg` },
+  { id: 29, title: 'Prom Night', category: 'events', image: `${base}/prom-night-deluxe.jpg` },
+  { id: 30, title: 'Homecoming', category: 'events', image: `${base}/homecoming.png` },
+  { id: 31, title: 'Homecoming 2', category: 'events', image: `${base}/homecoming-2.png` },
+  { id: 32, title: 'Homecoming 3', category: 'events', image: `${base}/homecoming-3.png` },
 ];
 
 const categories = [

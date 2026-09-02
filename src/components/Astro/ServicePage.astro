@@ -71,6 +71,7 @@ const airports = page.airports ?? [];
   )}
 
   <!-- OUR FULL FLEET -->
+  {!(page as any).hideFleet && (
   <section id="fleet" class="py-20 bg-ink">
     <div class={CONTAINER}>
       <div class="text-center mb-12">
@@ -92,6 +93,7 @@ const airports = page.airports ?? [];
       </div>
     </div>
   </section>
+  )}
 
   <!-- PROSE / ABOUT -->
   {page.proseTitle && (

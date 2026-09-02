@@ -23,7 +23,7 @@
       ...document.querySelectorAll('section .grid > div'),
     ];
     const uniq = [...new Set(targets)];
-    const filtered = uniq.filter(el=> !(el.closest('header') || el.closest('footer')));
+    const filtered = uniq.filter(el=> !(el.closest('header') || el.closest('footer') || el.closest('[data-no-reveal]')));
     if(RM || !('IntersectionObserver' in window)){
       filtered.forEach(t=>t.classList.add('dlx-rv','dlx-in'));
     } else {
