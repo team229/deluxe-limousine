@@ -1,6 +1,6 @@
 ---
 title: "Ride in Style: The Popularity of Sprinter Limo Services for Anaheim Travelers"
-date: 2026-08-22
+date: 2026-08-26
 description: "Sprinter Limo Service Anaheim offers luxury, comfort, and spaciousness for groups of all sizes. Perfect for airport transfers, weddings, wine tours, corporate events, and more."
 featuredImage: "/images/2026/08/sprinter-limo-service-anaheim.webp"
 category: "blog"
