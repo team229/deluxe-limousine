@@ -1,6 +1,6 @@
 ---
 title: "Wedding Party Shuttle Orange County | Stress-Free Transportation"
-date: 2026-08-22
+date: 2026-08-24
 description: "Book a reliable wedding party shuttle Orange County couples trust for getting the bridal party, guests, and family safely between venues on the big day."
 featuredImage: "/images/2026/08/wedding-party-shuttle-orange-county.webp"
 category: "blog"
