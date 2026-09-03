@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import PostLayout from '../../layouts/PostLayout.astro';
+import FaqAccordion from '../../components/React/FaqAccordion.tsx';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -12,8 +13,15 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+const faqs = post.data.faqs ?? [];
 ---
 
 <PostLayout frontmatter={post.data}>
   <Content />
+  {faqs.length > 0 && (
+    <div class="mt-12">
+      <h2 class="text-white font-serif-display text-2xl mb-6">Frequently Asked Questions</h2>
+      <FaqAccordion client:load items={faqs} />
+    </div>
+  )}
 </PostLayout>
