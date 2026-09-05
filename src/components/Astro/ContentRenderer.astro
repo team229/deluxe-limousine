@@ -68,6 +68,13 @@ function headingText(headings: { level: string; text: string }[], center = false
   const node = headings.map((h) => h.text).join(' ');
   return node;
 }
+
+function linkify(text: string) {
+  const escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, href) =>
+    `<a href="${href}" class="text-gold hover:text-gold-soft underline underline-offset-4 transition-colors">${label}</a>`
+  );
+}
 ---
 
 {sections.map((sec, i) => {
@@ -108,7 +115,7 @@ function headingText(headings: { level: string; text: string }[], center = false
                 <h2 class={HEADING + ' max-w-[760px] mx-auto'} set:html={h.text} />
               )
             )}
-            {paragraphs.slice(0, 2).map((p) => <p class="text-white/75 max-w-[720px] mx-auto mt-5 leading-[1.75]">{p}</p>)}
+            {paragraphs.slice(0, 2).map((p) => <p class="text-white/75 max-w-[720px] mx-auto mt-5 leading-[1.75]" set:html={linkify(p)} />)}
             {renderButtons(true)}
           </div>
         </section>
@@ -148,7 +155,7 @@ function headingText(headings: { level: string; text: string }[], center = false
         <section class="py-20 bg-ink-soft">
           <div class={CONTAINER}>
             {headings.slice(0, 1).map((h) => <h2 class={HEADING + ' text-center'} set:html={h.text} />)}
-            <p class="text-white/60 text-center max-w-[640px] mx-auto mt-4">{paragraphs[0]}</p>
+            <p class="text-white/60 text-center max-w-[640px] mx-auto mt-4" set:html={linkify(paragraphs[0])} />
             <div class="flex flex-wrap justify-center gap-4 mt-10">
               {(sec.cards ?? []).map((c) => (
                 <a href="/contact-us/" class="flex items-center gap-2.5 px-5 py-3 rounded-full border border-gold/30 bg-ink-raised text-white/85 hover:border-gold hover:text-gold transition-all duration-300 no-underline">
@@ -209,7 +216,7 @@ function headingText(headings: { level: string; text: string }[], center = false
           <div class="absolute inset-0 bg-black/75"></div>
           <div class={`${CONTAINER} relative z-10 text-center`}>
             {headings.map((h) => <h2 class={HEADING + ' text-center'} set:html={h.text} />)}
-            {paragraphs.map((p) => <p class="text-white/80 max-w-[700px] mx-auto mt-5 leading-[1.75]">{p}</p>)}
+            {paragraphs.map((p) => <p class="text-white/80 max-w-[700px] mx-auto mt-5 leading-[1.75]" set:html={linkify(p)} />)}
             {renderButtons(true)}
           </div>
         </section>
@@ -230,7 +237,7 @@ function headingText(headings: { level: string; text: string }[], center = false
         <section class="py-20 bg-ink-soft border-t border-line">
           <div class={`${CONTAINER} text-center`}>
             {headings.map((h) => <h2 class={HEADING} set:html={h.text} />)}
-            {paragraphs.map((p) => <p class="text-white/65 max-w-[640px] mx-auto mt-5 leading-[1.75]">{p}</p>)}
+            {paragraphs.map((p) => <p class="text-white/65 max-w-[640px] mx-auto mt-5 leading-[1.75]" set:html={linkify(p)} />)}
             {renderButtons(true)}
           </div>
         </section>
@@ -254,7 +261,7 @@ function headingText(headings: { level: string; text: string }[], center = false
           <div class={`${CONTAINER} grid grid-cols-1 lg:grid-cols-2 gap-12 items-start`}>
             <div>
               {headings.map((h) => <h2 class={HEADING} set:html={h.text} />)}
-              {paragraphs.map((p) => <p class="text-white/70 leading-[1.8] mt-4">{p}</p>)}
+              {paragraphs.map((p) => <p class="text-white/70 leading-[1.8] mt-4" set:html={linkify(p)} />)}
             </div>
             <div class="bg-ink-raised border border-line rounded-xl p-6 md:p-8">
               <ReservationForm client:visible />
@@ -292,7 +299,7 @@ function headingText(headings: { level: string; text: string }[], center = false
                   <div class="text-center mb-12">
                     <span class="text-gold uppercase text-xs font-bold tracking-[0.2em]">Our Fleet</span>
                     <h2 class="font-serif-display text-3xl md:text-4xl font-bold mt-3">{h2[0].text}</h2>
-                    {intro && <p class="text-white/60 max-w-[640px] mx-auto mt-4">{intro}</p>}
+                    {intro && <p class="text-white/60 max-w-[640px] mx-auto mt-4" set:html={linkify(intro)} />}
                   </div>
                   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {h3s.map((h, idx) => {
@@ -327,7 +334,7 @@ function headingText(headings: { level: string; text: string }[], center = false
                     <h2 class={HEADING + ' mb-5 mt-6 first:mt-0'}>{h.text}</h2>
                   )
                 )}
-                {paragraphs.map((p) => <p class="text-white/70 leading-[1.85] mb-5">{p}</p>)}
+                {paragraphs.map((p) => <p class="text-white/70 leading-[1.85] mb-5" set:html={linkify(p)} />)}
                 {(sec.lists ?? []).map((l) => (
                   <ul class={`text-white/70 leading-[1.9] mb-5 ml-5 list-disc ${l.items.length > 8 ? 'columns-2 gap-10' : ''}`}>
                     {l.items.map((item) => <li>{item}</li>)}
