@@ -68,8 +68,8 @@ export const servicePages: Record<string, ServicePage> = {
     proseTitle: 'Mercedes Sprinter Limo Service Anaheim',
     proseSubheading: 'Sprinter Limousine Service',
     proseIntro: [
-      'Are you looking for a Sprinter Van Limo, well we got the perfect vehicle for your airport and corporate travel. Our Mercedes Sprinter is very comfortable and spacious. Deluxe Limousine Service offers Sprinter Limo Rental in Anaheim and Orange County with the added comfort and luxury.',
-      'Whether you need a Limousine for a special event, a night out, or to visit one of your favorite attractions, we have the best vehicle for you. Our spacious and luxurious Sprinter is perfect for Weddings, Airport Transportation, Corporate Events, Wine Tasting, Party Bus, Birthday, Prom, Quinceañera, and more — offering the flexibility and style you expect from a premium luxury vehicle.',
+      'Are you looking for a Sprinter Van Limo, well we got the perfect vehicle for your airport and [corporate event limo service](/corporates-event-limo-service/) travel. Our Mercedes Sprinter is very comfortable and spacious. Deluxe Limousine Service offers [Sprinter Limo Rental in Anaheim](/anaheim/sprinter-limo-service/) and Orange County with the added comfort and luxury.',
+      'Whether you need a [Limousine for a special event](/orange/limousine-service/), a night out, or to visit one of your favorite attractions, we have the best vehicle for you. Our spacious and luxurious Sprinter is perfect for Weddings, Airport Transportation, Corporate Events, Wine Tasting, Party Bus, Birthday, Prom, Quinceañera, and more — offering the flexibility and style you expect from a premium luxury vehicle.',
       'Deluxe Limousine Service offers outstanding service while offering affordable prices. In addition, our fleet of luxury vehicles are clean, comfortable and are suitable for any special occasion.',
     ],
     servicesHeading: 'Sprinter Limo Services',
@@ -89,7 +89,7 @@ export const servicePages: Record<string, ServicePage> = {
     heroSubtitle: 'Private Luxury Transportation',
     heroBg: '/cbm-assets/deluxe-limousine/black-car-service.jpeg',
     heroIntro: [
-      'We offer Luxury SUV Service, Black Car Service, Executive Car Service, Sprinter Limo, Party Bus, Hummer Limo, and Stretch Limo. Experience the ease of executive luxury transportation.',
+      'We offer Luxury SUV Service, Black Car Service, Executive Car Service, Sprinter Limo, Party Bus, Hummer Limo, and Stretch Limo. Experience the ease of executive luxury transportation. For meetings and conferences, our [corporate limo service Orange County](/orange/corporate-limo-service/) and [corporate event limo service](/corporates-event-limo-service/) keep executives on schedule, while [Santa Ana limo service](/santa-ana/limo-service/) covers every SNA and LAX transfer.',
     ],
     heading: 'Our Full Fleet',
     intro: 'From the Black Chrysler 300 to the Party Bus, choose the perfect vehicle for you.',
@@ -109,7 +109,8 @@ export const servicePages: Record<string, ServicePage> = {
     heroSubtitle: 'Extended Hummer Limousine',
     heroBg: '/cbm-assets/deluxe-limousine/hummer-limo-hero.png',
     heroIntro: [
-      'Extended Hummer Limo Service Anaheim is one of our most popular limos. It is perfect for proms because of the large spacious interior, premium sound system, and party atmosphere.',
+      '[Extended Hummer Limo Service in Anaheim](/anaheim/hummer-limo-service/) is one of our most popular limos. It is perfect for proms because of the large spacious interior, premium sound system, and party atmosphere.',
+      'Renting a [Hummer Limo in Orange County](/orange/hummer-limo-rental/) or a [party bus in Anaheim](/anaheim/party-bus-rental/) takes any celebration to the next level.',
     ],
     heading: 'Our Full Fleet',
     intro: 'From the Black Chrysler 300 to the Party Bus, choose the perfect vehicle for you.',
@@ -129,7 +130,8 @@ export const servicePages: Record<string, ServicePage> = {
     heroSubtitle: 'The Ultimate Party Experience',
     heroBg: '/images/2026/07/cities-3.png',
     heroIntro: [
-      'Party bus rental is the most requested limo in our fleet. Built on the history of being an ultimate entertainment limousine, our party buses bring the nightlife to you.',
+      '[Party bus rental](/anaheim/party-bus-rental/) is the most requested limo in our fleet. Built on the history of being an ultimate entertainment limousine, our party buses bring the nightlife to you.',
+      'Groups planning a [bachelor party limo rental in Anaheim](/anaheim/bachelor-party-limo-rental/) or a [Hummer limo service near Anaheim](/anaheim/hummer-limo-service/) love our high-capacity buses.',
     ],
     heading: 'Our Full Fleet',
     intro: 'From the Black Chrysler 300 to the Party Bus, choose the perfect vehicle for you.',
@@ -149,7 +151,7 @@ export const servicePages: Record<string, ServicePage> = {
     heroSubtitle: 'Modern Luxury Limousine',
     heroBg: '/images/2026/05/Chrsyler-Limousine-.png',
     heroIntro: [
-      'Our Chrysler 300 limo service in Orange County is one of our most popular choices for elegant transportation. With seating for up to 10 passengers, it is perfect for weddings, nights out, and corporate events.',
+      'Our Chrysler 300 [limo service in Orange County](/orange/limousine-service/) is one of our most popular choices for elegant transportation. With seating for up to 10 passengers, it is perfect for [wedding limo service in Orange County](/orange/wedding-limo-service/), nights out, and [corporate events](/orange/corporate-limo-service/).',
     ],
     heading: 'Our Full Fleet',
     intro: 'From the Black Chrysler 300 to the Party Bus, choose the perfect vehicle for you.',
@@ -180,8 +182,8 @@ export const servicePages: Record<string, ServicePage> = {
     proseSubheading: 'Party Transportation',
     proseIntro: [
       'Planning a party is about creating memories — not worrying about parking, designated drivers, or coordinating multiple rideshares. Our Party Limo Service is designed to keep your group together from the first pickup to the final drop-off.',
-      'Choose from our luxury Party Buses, Hummer Stretch Limos, and Sprinter Vans — each equipped with premium sound, club-style lighting, leather lounge seating, and chilled refreshments. Every vehicle is professionally cleaned and inspected before every trip.',
-      'We serve birthday parties, bachelor and bachelorette parties, holiday gatherings, reunion parties, and more across Anaheim, Irvine, Newport Beach, and all of Orange County. Custom decorations and themed lighting are available upon request.',
+      'Choose from our luxury Party Buses, [Hummer Stretch Limos](/orange/hummer-limo-rental/), and [Sprinter Vans](/anaheim/sprinter-limo-service/) — each equipped with premium sound, club-style lighting, leather lounge seating, and chilled refreshments. Every vehicle is professionally cleaned and inspected before every trip.',
+      'We serve birthday parties, [bachelor and bachelorette parties](/orange/bachelorette-party-bus/), holiday gatherings, reunion parties, and more across Anaheim, Irvine, Newport Beach, and all of Orange County. Custom decorations and themed lighting are available upon request.',
     ],
     servicesHeading: 'Party Services We Offer',
     services: ['Birthday Party Transportation', 'Bachelor Party Transportation', 'Bachelorette Party Transportation', 'Holiday Party Transfers', 'House Party Shuttle Service', 'Nightclub & Bar Crawls', 'Concert Party Buses', 'Sporting Event Parties', 'Graduation Parties', 'Anniversary Parties', 'Quinceañera & Sweet 16', 'Retirement Parties', 'Reunion Transportation', 'Private Venue Parties', 'Themed Party Transfers', 'Group Night Out', 'Wine & Brewery Party Tours', 'Corporate Parties', 'Pool Parties', 'Karaoke Night Transfers'],
@@ -212,7 +214,7 @@ export const servicePages: Record<string, ServicePage> = {
     hideFleet: true,
     heroIntro: [
       'Birthdays deserve more than a dinner reservation — they deserve a celebration on wheels. Deluxe Limousine Service makes birthdays of every age special, from sweet 16s to milestone 50ths and beyond, with luxury vehicles, red carpet service, and professional chauffeurs.',
-      'Whether it is a surprise birthday party, a wine tour with friends, or a family gathering at Disneyland, we provide safe, stylish, and punctual transportation across Anaheim and Orange County. Custom birthday decorations are complimentary.',
+      'Whether it is a surprise birthday party, a wine tour with friends, or a family gathering at Disneyland, we provide safe, stylish, and punctual transportation across Anaheim and Orange County. Custom birthday decorations are complimentary. Larger birthday crews can also book a [Hummer Limo in Orange County](/orange/hummer-limo-rental/) or a [limousine service in Anaheim](/anaheim/limousine-service/).',
     ],
     stats: defaultStats,
     heading: 'Our Full Fleet',
@@ -221,7 +223,7 @@ export const servicePages: Record<string, ServicePage> = {
     proseSubheading: 'Birthday Transportation',
     proseIntro: [
       'A birthday only comes once a year — make it count. Our Birthday Limo Service brings the celebration to the road with party-ready vehicles, personalized decorations, and a chauffeur who ensures everything runs smoothly.',
-      'From intimate rides for two to party buses for 30, we have the perfect vehicle for your guest list. Our stretch limos, SUVs, and Sprinters are fully air-conditioned, immaculately detailed, and stocked with refreshments. Add birthday banners, balloons, and themed lighting at no extra charge.',
+      'From intimate rides for two to [party buses in Anaheim](/anaheim/party-bus-rental/) for 30, we have the perfect vehicle for your guest list. Our stretch limos, SUVs, and Sprinters are fully air-conditioned, immaculately detailed, and stocked with refreshments. Add birthday banners, balloons, and themed lighting at no extra charge.',
       'We handle birthday transfers to restaurants, venues, theme parks, wineries, nightclubs, and surprise party locations throughout Orange County. Parents booking for teens can rely on our strict safety policies and real-time dispatch updates.',
     ],
     servicesHeading: 'Birthday Services We Offer',
@@ -253,7 +255,7 @@ export const servicePages: Record<string, ServicePage> = {
     hideFleet: true,
     heroIntro: [
       'Skip the shuttle queues, surge pricing, and parking headaches. Deluxe Limousine Service provides punctual, comfortable, and reliable airport rides to and from LAX, John Wayne (SNA), Long Beach (LGB), Ontario (ONT), and San Diego (SAN).',
-      'Our professional chauffeurs track your flight in real time, assist with luggage, and ensure you arrive relaxed — whether you are catching an early morning flight or landing late at night. Fixed, transparent pricing with no hidden fees.',
+      'Our professional chauffeurs track your flight in real time, assist with luggage, and ensure you arrive relaxed — whether you are catching an early morning flight or landing late at night. Fixed, transparent pricing with no hidden fees. From [limousine service in Anaheim](/anaheim/limousine-service/) to [Santa Ana limo service](/santa-ana/limo-service/), we cover every Orange County airport transfer.',
     ],
     stats: defaultStats,
     heading: 'Our Full Fleet',
@@ -263,7 +265,7 @@ export const servicePages: Record<string, ServicePage> = {
     proseIntro: [
       'Airport travel should be the easiest part of your trip. Our Airport Ride service eliminates the stress of navigating Orange County freeways, airport parking structures, and unpredictable traffic — your chauffeur handles it all.',
       'We offer curbside pickup, meet-and-greet service inside the terminal with a name sign, luggage assistance, and flight tracking that automatically adjusts for delays or early arrivals. Every vehicle is late-model, climate-controlled, and equipped with phone chargers and bottled water.',
-      'Serving leisure travelers, corporate executives, and families from Anaheim, Irvine, Newport Beach, and beyond. Available 24/7, including holidays and red-eyes. Corporate accounts with monthly invoicing are available.',
+      'Serving leisure travelers, corporate executives, and families from Anaheim, Irvine, Newport Beach, and beyond. Available 24/7, including holidays and red-eyes. Corporate accounts with monthly invoicing are available. We also provide [corporate limo service in Orange County](/orange/corporate-limo-service/) for executive travel.',
     ],
     servicesHeading: 'Airport Services We Offer',
     services: ['LAX Airport Transfers', 'John Wayne Airport (SNA) Transfers', 'Long Beach Airport (LGB) Transfers', 'Ontario Airport (ONT) Transfers', 'San Diego Airport (SAN) Transfers', 'Curbside Pickup & Drop-off', 'Meet-and-Greet Service', 'Flight Tracking & Delay Adjustments', 'Luggage Assistance', 'Corporate Airport Rides', 'Group Airport Shuttles', 'Executive Airport Transfers', 'Family Airport Transportation', 'International Flight Pickups', 'Early Morning & Red-Eye Flights', 'One-Way & Round-Trip Airport Rides', 'Hotel to Airport Transfers', 'Cruise Port Transfers', 'Private Airport Charters', 'Fixed-Rate Airport Pricing'],

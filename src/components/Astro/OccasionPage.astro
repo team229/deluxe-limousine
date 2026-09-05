@@ -5,6 +5,13 @@ import type { OccasionPage } from '../../data/occasion-pages';
 const CONTAINER = 'mx-auto w-full max-w-[1240px] px-5';
 const { page } = Astro.props;
 
+function linkify(text: string) {
+  const escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, href) =>
+    `<a href="${href}" class="text-gold hover:text-gold-soft underline underline-offset-4 transition-colors">${label}</a>`
+  );
+}
+
 // Split sections: features (has 3 cards), steps (2 cards), faq (question cards)
 const features = page.sections.find((s) => /Crafted|Built|Hottest|Designed/i.test(s.title) && s.cards.length >= 3);
 const steps = page.sections.find((s) => /Coverage|Packages|Tailored/i.test(s.title) && s.cards.length === 2);
@@ -33,7 +40,7 @@ const iconSvg: Record<string, string> = {
           <span class="text-gold">←</span> Back to Occasions
         </a>
         <h1 class="font-serif-display text-[clamp(2rem,4.5vw,3.4rem)] text-white leading-[1.15]">{page.header}</h1>
-        <p class="text-white/70 leading-[1.85] mt-6">{page.heroP}</p>
+        <p class="text-white/70 leading-[1.85] mt-6" set:html={linkify(page.heroP)} />
         <div class="flex gap-4 flex-wrap mt-8">
           <a href="tel:7143139173" class="inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline bg-gold text-black border border-gold shadow-[0_8px_25px_rgba(212,175,55,0.2)] hover:-translate-y-px hover:bg-gold-soft">☎ Call (714) 313-9173</a>
           <a href="/contact-us/" class="inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline border border-gold text-gold bg-transparent hover:bg-gold hover:text-black">Request a Quote</a>
@@ -60,7 +67,7 @@ const iconSvg: Record<string, string> = {
                 <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" set:html={iconSvg[icons[i % icons.length]]} />
               </div>
               <h3 class="font-serif-display text-white text-xl mb-3">{card.title}</h3>
-              <p class="text-white/70 text-sm leading-[1.7]">{card.desc}</p>
+              <p class="text-white/70 text-sm leading-[1.7]" set:html={linkify(card.desc)} />
             </div>
           ))}
         </div>
@@ -82,7 +89,7 @@ const iconSvg: Record<string, string> = {
               <div class="px-8 pt-7 pb-5">
                 <span class="text-gold uppercase tracking-[0.12em] text-xs font-bold">0{i + 1}</span>
                 <h3 class="font-serif-display text-white text-2xl mt-2">{card.title}</h3>
-                <p class="text-white/70 text-sm leading-[1.75] mt-4">{card.desc}</p>
+                <p class="text-white/70 text-sm leading-[1.75] mt-4" set:html={linkify(card.desc)} />
               </div>
               <div class="h-1 bg-linear-to-r from-gold to-transparent"></div>
             </div>
@@ -121,7 +128,7 @@ const iconSvg: Record<string, string> = {
       <div class={CONTAINER}>
         <div class="max-w-[760px] mx-auto bg-ink-raised border border-gold/30 rounded-2xl px-8 md:px-12 py-12 text-center">
           <h2 class="font-serif-display text-3xl md:text-4xl font-bold">{page.ctaTitle}</h2>
-          {page.ctaText && <p class="text-white/70 leading-[1.8] mt-5">{page.ctaText}</p>}
+          {page.ctaText && <p class="text-white/70 leading-[1.8] mt-5" set:html={linkify(page.ctaText)} />}
           <div class="flex gap-4 justify-center flex-wrap mt-8">
             {page.ctaButtons.map((b) => (
               <a href={b.href.startsWith('tel') ? b.href : b.href} class={b.href.startsWith('tel')

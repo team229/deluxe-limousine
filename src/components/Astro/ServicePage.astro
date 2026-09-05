@@ -6,6 +6,13 @@ import type { ServicePage } from '../../data/service-pages';
 
 const CONTAINER = 'mx-auto w-full max-w-[1240px] px-5';
 
+function linkify(text: string) {
+  const escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, href) =>
+    `<a href="${href}" class="text-gold hover:text-gold-soft underline underline-offset-4 transition-colors">${label}</a>`
+  );
+}
+
 const { page } = Astro.props;
 
 interface Vehicle { name: string; tagline: string; image: string; link: string }
@@ -48,7 +55,7 @@ const airports = page.airports ?? [];
       </h1>
       {page.heroSubtitle && <p class="text-gold uppercase tracking-[0.25em] text-sm font-semibold mt-4">{page.heroSubtitle}</p>}
       <div class="w-24 h-px bg-gold mx-auto my-6"></div>
-      {page.heroIntro.map((p) => <p class="text-white/85 max-w-[760px] mx-auto mt-5 leading-[1.8]">{p}</p>)}
+      {page.heroIntro.map((p) => <p class="text-white/85 max-w-[760px] mx-auto mt-5 leading-[1.8]" set:html={linkify(p)} />)}
       <div class="flex gap-4 justify-center flex-wrap mt-9">
         <a href="#quote" class="inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline bg-gold text-black border border-gold shadow-[0_8px_25px_rgba(212,175,55,0.2)] hover:-translate-y-px hover:bg-gold-soft">Get a Free Quote</a>
         <a href="#fleet" class="inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline border border-gold text-gold bg-transparent hover:bg-gold hover:text-black">View Our Fleet</a>
@@ -77,7 +84,7 @@ const airports = page.airports ?? [];
       <div class="text-center mb-12">
         <span class="text-gold uppercase text-xs font-bold tracking-[0.2em]">Our Fleet</span>
         <h2 class="font-serif-display text-3xl md:text-4xl font-bold mt-2">{page.heading}</h2>
-        {page.intro && <p class="text-white/65 mt-4 leading-relaxed max-w-[640px] mx-auto">{page.intro}</p>}
+        {page.intro && <p class="text-white/65 mt-4 leading-relaxed max-w-[640px] mx-auto" set:html={linkify(page.intro)} />}
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
         {vehicles.map((v) => (
@@ -101,7 +108,7 @@ const airports = page.airports ?? [];
       <div class={`${CONTAINER} max-w-[900px]`}>
         <span class="text-gold uppercase text-xs font-bold tracking-[0.2em]">{page.proseSubheading ?? 'About This Service'}</span>
         <h2 class="font-serif-display text-3xl md:text-4xl font-bold mt-3">{page.proseTitle}</h2>
-        {page.proseIntro?.map((p) => <p class="text-white/70 leading-[1.9] mt-5">{p}</p>)}
+        {page.proseIntro?.map((p) => <p class="text-white/70 leading-[1.9] mt-5" set:html={linkify(p)} />)}
       </div>
     </section>
   )}
@@ -132,7 +139,7 @@ const airports = page.airports ?? [];
       <div class={`${CONTAINER} grid grid-cols-1 lg:grid-cols-2 gap-12 items-center`}>
         <div>
           <h2 class="font-serif-display text-3xl md:text-4xl font-bold">{page.highlight.title}</h2>
-          <p class="text-white/70 leading-[1.85] mt-5">{page.highlight.text}</p>
+          <p class="text-white/70 leading-[1.85] mt-5" set:html={linkify(page.highlight.text)} />
           <a href="#quote" class="inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline bg-gold text-black border border-gold shadow-[0_8px_25px_rgba(212,175,55,0.2)] hover:-translate-y-px hover:bg-gold-soft mt-8">Book Now</a>
         </div>
         <img src={page.highlight.image} alt={page.highlight.title} loading="lazy" class="w-full rounded-xl border border-line" />
@@ -203,7 +210,7 @@ const airports = page.airports ?? [];
     <section class="py-20 bg-ink-soft border-t border-line text-center">
       <div class={CONTAINER}>
         <h2 class="font-serif-display text-3xl md:text-4xl font-bold">{page.ctaTitle}</h2>
-        {page.ctaText && <p class="text-white/70 max-w-[640px] mx-auto leading-[1.8] mt-5">{page.ctaText}</p>}
+        {page.ctaText && <p class="text-white/70 max-w-[640px] mx-auto leading-[1.8] mt-5" set:html={linkify(page.ctaText)} />}
         <a href="tel:7143139173" class="inline-flex items-center justify-center gap-2 rounded-lg px-8 py-4 text-base font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline bg-gold text-black border border-gold shadow-[0_8px_25px_rgba(212,175,55,0.2)] hover:-translate-y-px hover:bg-gold-soft mt-8">Call (714) 313-9173</a>
       </div>
     </section>
