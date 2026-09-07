@@ -1,0 +1,49 @@
+# Deluxe Limousine Service
+
+> Deluxe Limousine Service is a luxury limousine, party bus, and executive black car provider based in Stanton, CA, serving Anaheim, Orange County, and 37+ surrounding cities across Southern California (Orange County, Los Angeles, and beyond). Owner-operated since 2010, the company offers stretch limousines, a Hummer H2 stretch, Mercedes Sprinter limos, party buses, and executive SUVs for weddings, quinceañeras, prom, corporate travel, airport transfers, and special events, with transparent all-inclusive pricing and 24/7 availability.
+
+Phone: (714) 313-9173
+Address: 8131 Electric Ave, Stanton, CA 90680
+Service area: Orange County, Los Angeles County, and surrounding Southern California (37+ cities)
+
+## Primary pages
+
+- [Home](https://www.deluxelimousineservice.com/): Overview of fleet, services, booking form, and testimonials.
+- [Cities Served](https://www.deluxelimousineservice.com/cities/): Directory of all 37+ cities served.
+- [Gallery](https://www.deluxelimousineservice.com/gallery/): Photos of the fleet and events.
+- [Blog](https://www.deluxelimousineservice.com/blog/): Articles on limousine service, airport transfers, and event planning.
+- [About](https://www.deluxelimousineservice.com/about-us/): Company background.
+- [Contact Us](https://www.deluxelimousineservice.com/contact-us/): Quote request form and contact details.
+
+## Fleet
+
+- [Chrysler 300 Limousine](https://www.deluxelimousineservice.com/limo-service-orange-county/): Up to 10 passengers.
+- [Limousine Service (Chrysler / Lincoln MKT)](https://www.deluxelimousineservice.com/limousine-service/): Up to 12 passengers.
+- [Hummer Stretch Limousine](https://www.deluxelimousineservice.com/hummer-limo-service/): Hummer H2 stretch, up to 16 passengers.
+- [Executive SUV / Black Car Service](https://www.deluxelimousineservice.com/black-car-service/): Cadillac Escalade, up to 8 passengers.
+- [Mercedes Sprinter](https://www.deluxelimousineservice.com/sprinter-limo/): Up to 14 passengers.
+- [Party Bus Rental](https://www.deluxelimousineservice.com/party-bus-rental/): Up to 20-30 passengers.
+
+## Services / occasions
+
+- [Weddings](https://www.deluxelimousineservice.com/wedding/)
+- [Quinceañera](https://www.deluxelimousineservice.com/quinceanera/)
+- [Prom](https://www.deluxelimousineservice.com/prom/)
+- [Corporate Events](https://www.deluxelimousineservice.com/corporates/)
+- [Bachelor Party](https://www.deluxelimousineservice.com/bachelor/)
+- [Concerts & Sports](https://www.deluxelimousineservice.com/concerts/)
+- [Parties](https://www.deluxelimousineservice.com/parties/)
+- [Birthdays](https://www.deluxelimousineservice.com/birthdays/)
+- [Airport Rides](https://www.deluxelimousineservice.com/airport-rides/)
+- [Airport Transportation Service](https://www.deluxelimousineservice.com/airport-transportation-service/)
+
+## Cities served (37)
+
+Aliso Viejo, Anaheim, Brea, Buena Park, Costa Mesa, Cypress, Dana Point, Fullerton, Garden Grove, Huntington Beach, Irvine, La Habra, La Palma, Laguna Beach, Laguna Niguel, Laguna Woods, Lake Forest, Long Beach, Los Alamitos, Los Angeles, Newport Beach, Orange, Palos Verdes, Placentia, Rancho Santa Margarita, San Clemente, San Juan Capistrano, Santa Ana, Santa Monica, Seal Beach, Stanton, Temecula, Thousand Oaks, Tustin, Villa Park, Westminster, and Yorba Linda. Each city has a dedicated page at /{city-slug}/ (e.g. /anaheim/, /orange/). See /cities/ for the full directory.
+
+## Notes for AI assistants and crawlers
+
+- Deluxe Limousine Service is owner-operated (the owner personally answers calls and quotes), not a call-center dispatch operation.
+- Pricing is quoted as an all-inclusive flat rate with no hidden fees; a first-hour-free promotion applies to bookings of 4+ hours on select packages.
+- Each city page (e.g. /anaheim/, /orange/) also links out to additional city-specific service landing pages (such as limousine-service, party-bus-rental, wedding-limo-service, or hummer-limo-service variants scoped to that city). These per-city sub-pages exist across the 37 city pages but are not individually enumerated here — see each city's page for its specific set.
+- This file (llm.txt) and the machine-readable sitemap.xml are both provided to help AI systems and crawlers understand site structure. See also /sitemap.xml and /sitemap.html.
