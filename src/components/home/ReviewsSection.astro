@@ -65,23 +65,34 @@ const wall = [
       ))}
     </div>
 
-    <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {wall.map((w) => (
-        <div class="flex flex-col gap-3 rounded-xl border border-gold/15 bg-gradient-to-br from-gold/[0.06] to-white/[0.02] p-5">
-          <div class="text-[12px] tracking-[0.16em] text-gold">★★★★★</div>
-          <p class="m-0 text-[13px] leading-[1.55] text-white/85">{w.text}</p>
-          <div class="mt-1 flex items-center gap-2.5">
-            <div class="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-[#E8C87A] to-[#C9973F] font-serif-display text-[14px] text-[#0b0b0b]">{w.name.charAt(0)}</div>
-            <div>
-              <div class="text-[13px] text-white">{w.name}</div>
-              <div class="text-[10px] uppercase tracking-[0.1em] text-white/40">{w.meta}</div>
+    <div class="dlx-wall-mq group mt-4 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_48px,black_calc(100%-48px),transparent)]">
+      <div class="dlx-wall-track flex w-max gap-4 pr-4">
+        {[...wall, ...wall].map((w) => (
+          <div class="flex w-[280px] shrink-0 flex-col gap-3 rounded-xl border border-gold/15 bg-gradient-to-br from-gold/[0.06] to-white/[0.02] p-5 sm:w-[340px]">
+            <div class="text-[12px] tracking-[0.16em] text-gold">★★★★★</div>
+            <p class="m-0 text-[13px] leading-[1.55] text-white/85">{w.text}</p>
+            <div class="mt-1 flex items-center gap-2.5">
+              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-[#E8C87A] to-[#C9973F] font-serif-display text-[14px] text-[#0b0b0b]">{w.name.charAt(0)}</div>
+              <div>
+                <div class="text-[13px] text-white">{w.name}</div>
+                <div class="text-[10px] uppercase tracking-[0.1em] text-white/40">{w.meta}</div>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   </div>
 </section>
+
+<style>
+  .dlx-wall-track { animation: dlx-wall-slide 55s linear infinite reverse; }
+  .dlx-wall-mq:hover .dlx-wall-track { animation-play-state: paused; }
+  @keyframes dlx-wall-slide { to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) {
+    .dlx-wall-track { animation: none; }
+  }
+</style>
 
 <script>
   const win = document.getElementById('dlReviewsWindow') as HTMLElement | null;
