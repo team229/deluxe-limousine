@@ -28,9 +28,11 @@ export default function FaqAccordion({ items }: FaqAccordionProps) {
             }`}
           >
             <button
+              id={`faq-question-${index}`}
+              aria-expanded={isOpen}
+              aria-controls={`faq-panel-${index}`}
               className="w-full flex items-center justify-between gap-4 text-left px-5 py-4 bg-transparent border-none cursor-pointer"
               onClick={() => toggleIndex(index)}
-              aria-expanded={isOpen}
             >
               <span className="text-white text-[0.95rem] font-medium font-sans-body">{item.question}</span>
               <svg
@@ -47,6 +49,9 @@ export default function FaqAccordion({ items }: FaqAccordionProps) {
               </svg>
             </button>
             <div
+              id={`faq-panel-${index}`}
+              role="region"
+              aria-labelledby={`faq-question-${index}`}
               className={`grid transition-[grid-template-rows] duration-300 ${
                 isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
               }`}

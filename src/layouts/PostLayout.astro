@@ -1,29 +1,81 @@
 ---
 import Layout from './Layout.astro';
 
+interface FaqItem {
+  question: string;
+  answer: string;
+}
+
 interface Props {
   frontmatter: {
     title: string;
     date: string;
     description: string;
     featuredImage?: string;
+    featuredImageAlt?: string;
     slug: string;
   }
+  url?: string;
+  faqs?: FaqItem[];
 }
 
-const { frontmatter } = Astro.props;
+const { frontmatter, url, faqs } = Astro.props;
 const formattedDate = new Date(frontmatter.date).toLocaleDateString('en-US', {
   year: 'numeric',
   month: 'long',
   day: 'numeric'
 });
+const imageAlt = frontmatter.featuredImageAlt ?? frontmatter.title;
+const pageUrl = url ?? `https://deluxelimousineservice.com/blog/${frontmatter.slug}`;
+
+const blogPostingSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": pageUrl
+  },
+  "headline": frontmatter.title,
+  "description": frontmatter.description,
+  "datePublished": frontmatter.date,
+  "dateModified": frontmatter.date,
+  "image": frontmatter.featuredImage
+    ? `https://deluxelimousineservice.com${frontmatter.featuredImage}`
+    : undefined,
+  "author": {
+    "@type": "Organization",
+    "name": "Deluxe Limousine Service",
+    "url": "https://deluxelimousineservice.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Deluxe Limousine Service",
+    "url": "https://deluxelimousineservice.com"
+  }
+};
+
+const faqSchema = faqs && faqs.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(f => ({
+    "@type": "Question",
+    "name": f.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": f.answer
+    }
+  }))
+} : null;
 ---
 
 <Layout 
   title={`${frontmatter.title} | Deluxe Limousine Service Blog`} 
   description={frontmatter.description}
   image={frontmatter.featuredImage}
+  url={pageUrl}
 >
+  <script type="application/ld+json" set:html={JSON.stringify(blogPostingSchema)} />
+  {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
   <article class="py-24 bg-ink">
     <div class="mx-auto w-full max-w-[800px] px-5">
       <a href="/blog" class="inline-flex items-center gap-2 text-gold hover:text-white text-[0.85rem] font-medium uppercase tracking-[0.05em] mb-16 no-underline transition-colors">
@@ -38,7 +90,7 @@ const formattedDate = new Date(frontmatter.date).toLocaleDateString('en-US', {
 
       {frontmatter.featuredImage && (
         <div class="mb-14 rounded-xl overflow-hidden border border-line shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
-          <img src={frontmatter.featuredImage} alt={frontmatter.title} class="w-full h-auto max-h-[480px] object-cover block" />
+          <img src={frontmatter.featuredImage} alt={imageAlt} class="w-full h-auto max-h-[480px] object-cover block" />
         </div>
       )}
 
@@ -57,4 +109,3 @@ const formattedDate = new Date(frontmatter.date).toLocaleDateString('en-US', {
     </div>
   </article>
 </Layout>
-
