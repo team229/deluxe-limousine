@@ -1,154 +1,142 @@
 ---
-const reviews = [
-  { initials: "EI", name: "Eli Isho", meta: "Verified Client", text: "Excellent experience with Deluxe Limousine Service. Sal was professional, punctual, and made the entire process easy from booking to drop-off. The Chrysler 300 stretch limousine was spotless, comfortable, and perfect for our event." },
-  { initials: "JR", name: "Joel Romero", meta: "Verified Client", text: "I had a great experience with this limo service. Booking was easy and everything went smoothly. The driver Sal arrived 10 minutes early, helped with our bags, and the car was spotless inside. Sal was friendly and very professional." },
-  { initials: "SJ", name: "Sena Ji", meta: "Local Guide", text: "Amazing experience! I needed this limo service for a bachelorette party with my girlfriends. The chauffeur was respectful and kind. The limo itself was luxurious and clean. My friends and I felt safe during the ride." },
-  { initials: "ED", name: "Edward", meta: "Verified Client", text: "Absolutely outstanding experience with this Orange County limousine service! Sal went above and beyond to make our ride smooth, professional, and luxurious from start to finish. The limo was spotless and arrived perfectly on time." },
-  { initials: "MK", name: "Majeda Khlaifat", meta: "Verified Client", text: "We used Deluxe Limousine Service for my daughter's birthday, and the experience was fantastic. Sal was easy to communicate with, answered all of our questions, and made sure everything was perfectly taken care of ahead of time." },
-  { initials: "SA", name: "Sabrina Ayoub", meta: "Verified Client", text: "DELUXE service without the DELUXE prices. You can't beat that! Overall, had a great experience with this company. We did a little wine tasting for my 30th and Sal the driver was fantastic and very professional." },
-  { initials: "RH", name: "Rema Hilo", meta: "Verified Client", text: "Great service, very punctual and the limo was very nice. Highly recommend. Thank you Sal for making my son's day very memorable and helping create an absolute lifelong memory for our family." },
+// Vertical infinite review wall — matches screenshot: 3-column masonry, slow upward auto-scroll
+type Review = { text: string; name: string; label: string; initial: string };
+
+const col1: Review[] = [
+  { text: "We booked transportation for homecoming in Brea and had a great experience. The limo was clean, the driver on time, and the kids had a great night.", name: "Tyler H.", label: "Homecoming · Brea", initial: "T" },
+  { text: "We needed a car for a business meeting in Irvine and wanted something professional for our guests. Driver was on time and the service was exactly what we needed.", name: "Jennifer A.", label: "Business · Irvine", initial: "J" },
+  { text: "We had family in town for a reunion in Buena Park and rented a limo so everyone could travel together. Great driver and a clean, comfortable ride.", name: "Karen M.", label: "Reunion · Buena Park", initial: "K" },
+  { text: "Booked a limo for a concert in Anaheim with friends. Made the night so much easier — no parking, no traffic stress, just a great time.", name: "Brian C.", label: "Concert · Anaheim", initial: "B" },
+  { text: "Our prom night was unforgettable. The Hummer limo was spotless and the chauffeur kept the vibe perfect the whole night.", name: "Marco T.", label: "Prom · Fullerton", initial: "M" },
+  { text: "Used Deluxe for client airport transfers. Always on time, professional, and the black car was immaculate.", name: "Priya S.", label: "Corporate · Irvine", initial: "P" },
 ];
 
-const wall = [
-  { name: "Emily R.", meta: "Wedding · Anaheim", text: "We booked Deluxe for our wedding in Anaheim and had a really good experience. The limo was beautiful, our driver showed up early, and everything went smoothly." },
-  { name: "Jessica L.", meta: "Birthday · Yorba Linda", text: "I rented a limo for my birthday in Yorba Linda and everything was great. The booking process was easy and the driver was on time. We had a lot of fun riding around Orange County." },
-  { name: "Marco T.", meta: "Prom · Fullerton", text: "Our prom night was unforgettable. The Hummer limo was spotless and the chauffeur kept the vibe perfect the whole night. Highly recommend Deluxe." },
-  { name: "Priya S.", meta: "Corporate · Irvine", text: "Used Deluxe for client airport transfers. Always on time, professional, and the black car was immaculate. Our go-to for executive travel now." },
-  { name: "David K.", meta: "Wine Tour · Temecula", text: "Booked the Sprinter for a wine tour with friends. Sal handled the routing, we just relaxed. Best way to spend a day in OC." },
-  { name: "Nina R.", meta: "Quinceañera · Santa Ana", text: "They made my daughter's quinceañera transport so special. Red carpet, decorations, and a driver who genuinely cared. Thank you Deluxe!" },
+const col2: Review[] = [
+  { text: "Got a limo for a girls night out in Garden Grove and it was so much fun. Everyone rode together and no one had to worry about driving. Booking was really easy.", name: "Natalie C.", label: "Girls Night · Garden Grove", initial: "N" },
+  { text: "We took a limousine from Orange County to LA for a sports event. Great having the whole group together and no parking to deal with. The ride home was especially nice.", name: "Kevin M.", label: "Sports Event · OC - LA", initial: "K" },
+  { text: "We rented a limousine for my son's graduation in Orange. It was decorated so nicely and the driver was wonderful with the kids.", name: "Angela D.", label: "Graduation · Orange", initial: "A" },
+  { text: "Excellent experience with Deluxe Limousine Service. Sal was professional, punctual, and made the entire process easy from booking to drop-off.", name: "Eli Isho", label: "Verified Client", initial: "E" },
+  { text: "We booked Deluxe for our wedding in Anaheim and had a really good experience. The limo was beautiful, our driver showed up early, and everything went smoothly.", name: "Emily R.", label: "Wedding · Anaheim", initial: "E" },
+  { text: "Absolutely outstanding experience! Sal went above and beyond to make our ride smooth, professional, and luxurious from start to finish.", name: "Edward", label: "Verified Client", initial: "E" },
+];
+
+const col3: Review[] = [
+  { text: "We used Deluxe for a bachelorette party in Laguna Beach. The limousine was perfect for our group and our driver was very friendly. Would use them again.", name: "Steven R.", label: "Bachelorette · Laguna Beach", initial: "S" },
+  { text: "I booked a limousine for a proposal in Laguna Beach and everything went to plan. The driver was very accommodating and helped make the night really special.", name: "Lauren P.", label: "Proposal · Laguna Beach", initial: "L" },
+  { text: "We booked a limousine for a school dance in Anaheim. The kids had a blast and the driver was very professional. Everything went smoothly.", name: "Diane S.", label: "School Dance · Anaheim", initial: "D" },
+  { text: "Amazing experience! I needed this limo service for a bachelorette party with my girlfriends. The limo itself was luxurious and clean.", name: "Sena Ji", label: "Local Guide", initial: "S" },
+  { text: "We used Deluxe for my daughter's birthday, and the experience was fantastic. Sal was easy to communicate with and made sure everything was taken care of.", name: "Majeda K.", label: "Birthday · Yorba Linda", initial: "M" },
+  { text: "DELUXE service without the DELUXE prices. You can't beat that! Sal the driver was fantastic and very professional.", name: "Sabrina A.", label: "Verified Client", initial: "S" },
 ];
 ---
 
 <section class="relative overflow-hidden border-t border-white/5 bg-black text-white">
-  <div class="pointer-events-none absolute inset-0" style="background-image:repeating-linear-gradient(0deg,transparent,transparent 38px,rgba(255,255,255,0.01) 38px,rgba(255,255,255,0.01) 40px),repeating-linear-gradient(90deg,transparent,transparent 38px,rgba(255,255,255,0.01) 38px,rgba(255,255,255,0.01) 40px);"></div>
+  <div class="pointer-events-none absolute inset-0 opacity-40" style="background-image:repeating-linear-gradient(0deg,transparent,transparent 38px,rgba(255,255,255,0.012) 38px,rgba(255,255,255,0.012) 40px),repeating-linear-gradient(90deg,transparent,transparent 38px,rgba(255,255,255,0.012) 38px,rgba(255,255,255,0.012) 40px);"></div>
 
-  <div class="relative z-[1] mx-auto flex max-w-[1200px] flex-col gap-10 px-6 py-20">
-    <div class="mx-auto flex max-w-[800px] flex-col items-center gap-5 text-center">
-      <div class="flex flex-col items-center gap-3">
-        <h2 class="m-0 font-serif-display text-[30px] font-bold leading-[1.3] text-white sm:text-[42px]">
-          Unmatched luxury travel, endorsed and <span class="text-gold">top-rated on Google</span>
-        </h2>
-        <a target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.08em] text-gold transition-colors hover:text-gold-soft" href="https://www.google.com/search?q=Deluxe+Limousine+Service+Anaheim+reviews">
-          <span>View all our Google Reviews</span>
-          <svg viewBox="0 0 24 24" class="h-3.5 w-3.5 fill-none stroke-current stroke-[2] stroke-linecap-round stroke-linejoin-round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"></path></svg>
-        </a>
-      </div>
-      <div class="flex items-center justify-center gap-4">
-        <button id="dlRevPrev" aria-label="Previous Review" class="flex h-12 w-12 items-center justify-center rounded-full border-[1.5px] border-white/20 bg-white/[0.03] transition-colors hover:border-gold hover:bg-gold/10">
-          <svg viewBox="0 0 24 24" class="h-[22px] w-[22px] fill-none stroke-white stroke-[2] stroke-linecap-round stroke-linejoin-round"><path d="M15 18l-6-6 6-6"></path></svg>
-        </button>
-        <button id="dlRevNext" aria-label="Next Review" class="flex h-12 w-12 items-center justify-center rounded-full border-[1.5px] border-white/20 bg-white/[0.03] transition-colors hover:border-gold hover:bg-gold/10">
-          <svg viewBox="0 0 24 24" class="h-[22px] w-[22px] fill-none stroke-white stroke-[2] stroke-linecap-round stroke-linejoin-round"><path d="M9 18l6-6-6-6"></path></svg>
-        </button>
-      </div>
+  <div class="relative z-[1] mx-auto max-w-[1280px] px-5 py-14 sm:px-6 sm:py-20">
+    <!-- Header — exact as screenshot -->
+    <div class="mx-auto max-w-[760px] text-center">
+      <p class="m-0 text-[11px] font-semibold uppercase tracking-[0.32em] text-[#c8a84a]">In their words</p>
+      <h2 class="mt-3 font-serif-display text-[30px] font-normal leading-[1.15] text-white sm:text-[44px]">More from our clients</h2>
+      <p class="mx-auto mt-3 max-w-[560px] text-[13px] leading-[1.6] text-white/45 sm:text-[13.5px]">Feedback shared with us directly by clients across Orange County</p>
     </div>
 
-    <div id="dlReviewsWindow" class="flex gap-6 overflow-x-auto pb-3 [scrollbar-width:none]">
-      {[...reviews, ...reviews].map((r) => (
-        <div class="flex w-[320px] shrink-0 flex-col justify-between gap-6 rounded-[14px] border border-white/[0.08] bg-white/[0.03] p-7 transition-colors hover:border-gold/25 sm:w-[360px]">
-          <div class="flex flex-col gap-4">
-            <div class="flex gap-1">
-              {[0,1,2,3,4].map(() => (
-                <svg viewBox="0 0 12 12" class="h-4 w-4" fill="#d4af37"><path d="M6 1l1.4 2.8L10.5 4 8.3 6l.6 3.2L6 7.8 3.1 9.2 3.7 6 1.5 4l3.1-.2z"></path></svg>
-              ))}
-            </div>
-            <p class="m-0 text-[15px] leading-[1.6] text-white/85">"{r.text}"</p>
-          </div>
-          <div class="flex items-center gap-3.5 border-t border-white/[0.06] pt-5">
-            <div class="flex h-11 w-11 items-center justify-center rounded-full border border-gold/40 bg-gold/15 text-[16px] font-bold text-gold">{r.initials}</div>
-            <div class="flex flex-col gap-0.5 text-left">
-              <span class="text-[15px] font-semibold text-white">{r.name}</span>
-              <span class="text-[11px] uppercase tracking-[0.05em] text-white/40">{r.meta}</span>
-            </div>
+    <!-- Vertical marquee wall -->
+    <div class="reviews-wall relative mt-10 h-[560px] overflow-hidden sm:mt-12 sm:h-[640px] lg:h-[680px]" style="-webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 7%, black 92%, transparent 100%); mask-image: linear-gradient(to bottom, transparent 0%, black 7%, black 92%, transparent 100%);">
+      <div class="grid h-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-5">
+        <!-- Column 1 -->
+        <div class="reviews-col overflow-hidden">
+          <div class="reviews-track flex flex-col gap-4 lg:gap-5">
+            {[...col1, ...col1].map((r) => (
+              <article class="relative flex flex-col gap-3 rounded-[10px] border border-[rgba(212,175,55,0.13)] bg-[#0e0c09] px-5 py-5 sm:px-[22px] sm:py-[22px]">
+                <div class="text-[11px] tracking-[0.18em] text-[#c8a84a]">★★★★★</div>
+                <p class="m-0 text-[13.2px] leading-[1.65] text-white/80">{r.text}</p>
+                <div class="mt-1 flex items-center gap-3 border-t border-white/[0.04] pt-4">
+                  <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#E8C87A] to-[#C9973F] font-sans-body text-[13px] font-bold leading-none text-[#1a1300]">{r.initial}</div>
+                  <div class="min-w-0">
+                    <div class="text-[13px] font-semibold leading-none text-white">{r.name}</div>
+                    <div class="mt-1 text-[10px] font-medium uppercase tracking-[0.09em] text-white/35">{r.label}</div>
+                  </div>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
-      ))}
+
+        <!-- Column 2 — slightly offset timing for depth -->
+        <div class="reviews-col hidden overflow-hidden md:block">
+          <div class="reviews-track reviews-track--slow flex flex-col gap-4 lg:gap-5">
+            {[...col2, ...col2].map((r) => (
+              <article class="relative flex flex-col gap-3 rounded-[10px] border border-[rgba(212,175,55,0.13)] bg-[#0e0c09] px-5 py-5 sm:px-[22px] sm:py-[22px]">
+                <div class="text-[11px] tracking-[0.18em] text-[#c8a84a]">★★★★★</div>
+                <p class="m-0 text-[13.2px] leading-[1.65] text-white/80">{r.text}</p>
+                <div class="mt-1 flex items-center gap-3 border-t border-white/[0.04] pt-4">
+                  <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#E8C87A] to-[#C9973F] font-sans-body text-[13px] font-bold leading-none text-[#1a1300]">{r.initial}</div>
+                  <div class="min-w-0">
+                    <div class="text-[13px] font-semibold leading-none text-white">{r.name}</div>
+                    <div class="mt-1 text-[10px] font-medium uppercase tracking-[0.09em] text-white/35">{r.label}</div>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="reviews-col hidden overflow-hidden lg:block">
+          <div class="reviews-track reviews-track--alt flex flex-col gap-4 lg:gap-5">
+            {[...col3, ...col3].map((r) => (
+              <article class="relative flex flex-col gap-3 rounded-[10px] border border-[rgba(212,175,55,0.13)] bg-[#0e0c09] px-5 py-5 sm:px-[22px] sm:py-[22px]">
+                <div class="text-[11px] tracking-[0.18em] text-[#c8a84a]">★★★★★</div>
+                <p class="m-0 text-[13.2px] leading-[1.65] text-white/80">{r.text}</p>
+                <div class="mt-1 flex items-center gap-3 border-t border-white/[0.04] pt-4">
+                  <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#E8C87A] to-[#C9973F] font-sans-body text-[13px] font-bold leading-none text-[#1a1300]">{r.initial}</div>
+                  <div class="min-w-0">
+                    <div class="text-[13px] font-semibold leading-none text-white">{r.name}</div>
+                    <div class="mt-1 text-[10px] font-medium uppercase tracking-[0.09em] text-white/35">{r.label}</div>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom fade for extra softness (fallback for browsers without mask) -->
+      <div class="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black to-transparent lg:h-28"></div>
+      <div class="pointer-events-none absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-black to-transparent"></div>
     </div>
 
-    <div class="dlx-wall-mq group mt-4 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_48px,black_calc(100%-48px),transparent)]">
-      <div class="dlx-wall-track flex w-max gap-4 pr-4">
-        {[...wall, ...wall].map((w) => (
-          <div class="flex w-[280px] shrink-0 flex-col gap-3 rounded-xl border border-gold/15 bg-gradient-to-br from-gold/[0.06] to-white/[0.02] p-5 sm:w-[340px]">
-            <div class="text-[12px] tracking-[0.16em] text-gold">★★★★★</div>
-            <p class="m-0 text-[13px] leading-[1.55] text-white/85">{w.text}</p>
-            <div class="mt-1 flex items-center gap-2.5">
-              <div class="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-[#E8C87A] to-[#C9973F] font-serif-display text-[14px] text-[#0b0b0b]">{w.name.charAt(0)}</div>
-              <div>
-                <div class="text-[13px] text-white">{w.name}</div>
-                <div class="text-[10px] uppercase tracking-[0.1em] text-white/40">{w.meta}</div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+    <div class="mt-6 flex justify-center">
+      <a target="_blank" rel="noopener" href="https://www.google.com/search?q=Deluxe+Limousine+Service+Anaheim+reviews" class="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.14em] text-[#c8a84a] transition-colors hover:text-[#e8c87a]">
+        <span>View all Google Reviews</span>
+        <svg viewBox="0 0 24 24" class="h-3.5 w-3.5 fill-none stroke-current stroke-[2] stroke-linecap-round stroke-linejoin-round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"></path></svg>
+      </a>
     </div>
   </div>
 </section>
 
 <style>
-  .dlx-wall-track { animation: dlx-wall-slide 55s linear infinite reverse; }
-  .dlx-wall-mq:hover .dlx-wall-track { animation-play-state: paused; }
-  @keyframes dlx-wall-slide { to { transform: translateX(-50%); } }
+  .reviews-track {
+    animation: reviews-up 52s linear infinite;
+    will-change: transform;
+  }
+  .reviews-track--slow {
+    animation-duration: 64s;
+    animation-delay: -8s;
+  }
+  .reviews-track--alt {
+    animation-duration: 58s;
+    animation-delay: -18s;
+  }
+  .reviews-wall:hover .reviews-track {
+    animation-play-state: paused;
+  }
+  @keyframes reviews-up {
+    from { transform: translateY(0); }
+    to { transform: translateY(-50%); }
+  }
   @media (prefers-reduced-motion: reduce) {
-    .dlx-wall-track { animation: none; }
+    .reviews-track { animation: none; }
   }
 </style>
-
-<script>
-  const win = document.getElementById('dlReviewsWindow') as HTMLElement | null;
-  const prev = document.getElementById('dlRevPrev');
-  const next = document.getElementById('dlRevNext');
-  if (win) {
-    const card = win.firstElementChild as HTMLElement | null;
-    const step = () => (card?.offsetWidth ?? 344) + 24;
-    const halfScroll = () => win.scrollWidth / 2;
-    let raf: number | null = null;
-    let paused = false;
-    let lastTime = 0;
-    const speed = 0.35; // px per ms — smooth continuous drift (~1 card / sec)
-
-    const tick = (now: number) => {
-      if (!paused && !document.hidden) {
-        const dt = lastTime ? now - lastTime : 0;
-        win.scrollLeft += speed * (dt || 16);
-        if (win.scrollLeft >= halfScroll()) {
-          win.scrollLeft -= halfScroll();
-        }
-      }
-      lastTime = now;
-      raf = requestAnimationFrame(tick);
-    };
-
-    const start = () => { if (raf === null) { lastTime = 0; raf = requestAnimationFrame(tick); } };
-    const stop = () => { if (raf !== null) { cancelAnimationFrame(raf); raf = null; } };
-
-    // Seamless: if user scrolls manually near the end, wrap without jump
-    win.addEventListener('scroll', () => {
-      if (win.scrollLeft >= halfScroll()) win.scrollLeft -= halfScroll();
-      else if (win.scrollLeft <= 0 && win.scrollLeft < 1) {
-        // allow natural scroll at start — no wrap needed when scrolling left past 0
-      }
-    }, { passive: true });
-
-    prev?.addEventListener('click', () => {
-      paused = true;
-      const target = win.scrollLeft - step();
-      win.scrollTo({ left: target < 0 ? halfScroll() + target : target, behavior: 'smooth' });
-      setTimeout(() => { paused = false; }, 600);
-    });
-    next?.addEventListener('click', () => {
-      paused = true;
-      win.scrollBy({ left: step(), behavior: 'smooth' });
-      setTimeout(() => { paused = false; }, 600);
-    });
-
-    win.addEventListener('mouseenter', () => { paused = true; });
-    win.addEventListener('mouseleave', () => { paused = false; });
-    win.addEventListener('touchstart', () => { paused = true; }, { passive: true });
-    win.addEventListener('touchend', () => setTimeout(() => { paused = false; }, 1200), { passive: true });
-    win.addEventListener('focusin', () => { paused = true; });
-    win.addEventListener('focusout', () => { paused = false; });
-
-    start();
-  }
-</script>
