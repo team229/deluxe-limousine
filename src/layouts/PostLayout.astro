@@ -9,6 +9,7 @@ interface FaqItem {
 interface Props {
   frontmatter: {
     title: string;
+    metaTitle?: string;
     date: string;
     description: string;
     featuredImage?: string;
@@ -69,7 +70,7 @@ const faqSchema = faqs && faqs.length > 0 ? {
 ---
 
 <Layout 
-  title={`${frontmatter.title} | Deluxe Limousine Service Blog`} 
+  title={frontmatter.metaTitle ?? `${frontmatter.title} | Deluxe Limousine Service Blog`} 
   description={frontmatter.description}
   image={frontmatter.featuredImage}
   url={pageUrl}
