@@ -75,3 +75,18 @@
     @apply bg-gold text-black;
   }
 }
+
+/* Blog post markdown headings — force visible + display serif on the dark
+   ink background. Unlayered so it wins over Tailwind/Typography cascade
+   layers (`--tw-prose-headings` palette) and keeps H2/H3+ legible even if
+   a prose/invert variable fails to resolve. Sizes/weights still come from
+   the typography plugin. */
+article .prose h1,
+article .prose h2,
+article .prose h3,
+article .prose h4,
+article .prose h5,
+article .prose h6 {
+  color: #ffffff;
+  font-family: var(--font-serif-display);
+}
