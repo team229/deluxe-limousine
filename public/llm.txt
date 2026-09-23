@@ -1,49 +1,92 @@
 # Deluxe Limousine Service
 
-> Deluxe Limousine Service is a luxury limousine, party bus, and executive black car provider based in Stanton, CA, serving Anaheim, Orange County, and 37+ surrounding cities across Southern California (Orange County, Los Angeles, and beyond). Owner-operated since 2010, the company offers stretch limousines, a Hummer H2 stretch, Mercedes Sprinter limos, party buses, and executive SUVs for weddings, quinceañeras, prom, corporate travel, airport transfers, and special events, with transparent all-inclusive pricing and 24/7 availability.
+> Deluxe Limousine Service provides chauffeured luxury transportation in Anaheim, Orange County, Los Angeles County, and nearby Southern California communities. The owner-operated company has served the region since 2010 and offers stretch limousines, executive SUVs and black cars, Mercedes Sprinter limousines, Hummer stretch limousines, and party buses for weddings, quinceañeras, proms, corporate travel, airport transfers, parties, concerts, sports, and birthdays.
 
-Phone: (714) 313-9173
-Address: 8131 Electric Ave, Stanton, CA 90680
-Service area: Orange County, Los Angeles County, and surrounding Southern California (37+ cities)
+## Contact and service information
 
-## Primary pages
+- Phone: (714) 313-9173
+- Email: deluxelimos22@gmail.com
+- Address: 8131 Electric Ave, Stanton, CA 90680
+- Availability: 24/7
+- Primary service area: Anaheim and Orange County, with service throughout Los Angeles County and nearby Southern California
+- Booking: Request an all-inclusive quote by phone or through the booking form on the home page
+- Current offer: Ask about the first hour on us for featured packages of five hours or more; availability and package details are confirmed directly with the company
 
-- [Home](https://www.deluxelimousineservice.com/): Overview of fleet, services, booking form, and testimonials.
-- [Cities Served](https://www.deluxelimousineservice.com/cities/): Directory of all 37+ cities served.
-- [Gallery](https://www.deluxelimousineservice.com/gallery/): Photos of the fleet and events.
-- [Blog](https://www.deluxelimousineservice.com/blog/): Articles on limousine service, airport transfers, and event planning.
-- [About](https://www.deluxelimousineservice.com/about-us/): Company background.
-- [Contact Us](https://www.deluxelimousineservice.com/contact-us/): Quote request form and contact details.
+## Core page
+
+- [Home](https://www.deluxelimousineservice.com/): Company overview, fleet, service areas, booking form, frequently asked questions, and contact information.
+- [Orange County Limo and Party Bus Rentals](https://www.deluxelimousineservice.com/oc/): Orange County transportation overview and booking information.
 
 ## Fleet
 
-- [Chrysler 300 Limousine](https://www.deluxelimousineservice.com/limo-service-orange-county/): Up to 10 passengers.
-- [Limousine Service (Chrysler / Lincoln MKT)](https://www.deluxelimousineservice.com/limousine-service/): Up to 12 passengers.
-- [Hummer Stretch Limousine](https://www.deluxelimousineservice.com/hummer-limo-service/): Hummer H2 stretch, up to 16 passengers.
-- [Executive SUV / Black Car Service](https://www.deluxelimousineservice.com/black-car-service/): Cadillac Escalade, up to 8 passengers.
-- [Mercedes Sprinter](https://www.deluxelimousineservice.com/sprinter-limo/): Up to 14 passengers.
-- [Party Bus Rental](https://www.deluxelimousineservice.com/party-bus-rental/): Up to 20-30 passengers.
+- [Chrysler 300 Limousine](https://www.deluxelimousineservice.com/limo-service-orange-county/)
+- [Hummer Stretch Limousine](https://www.deluxelimousineservice.com/hummer-limo-service/)
+- [Executive SUV and Black Car Service](https://www.deluxelimousineservice.com/black-car-service/)
+- [Mercedes Sprinter Limousine](https://www.deluxelimousineservice.com/sprinter-limo/)
+- [Party Bus Rental](https://www.deluxelimousineservice.com/party-bus-rental/)
 
-## Services / occasions
+## Occasion and event services
 
 - [Weddings](https://www.deluxelimousineservice.com/wedding/)
-- [Quinceañera](https://www.deluxelimousineservice.com/quinceanera/)
-- [Prom](https://www.deluxelimousineservice.com/prom/)
-- [Corporate Events](https://www.deluxelimousineservice.com/corporates/)
-- [Bachelor Party](https://www.deluxelimousineservice.com/bachelor/)
-- [Concerts & Sports](https://www.deluxelimousineservice.com/concerts/)
-- [Parties](https://www.deluxelimousineservice.com/parties/)
-- [Birthdays](https://www.deluxelimousineservice.com/birthdays/)
+- [Quinceañeras](https://www.deluxelimousineservice.com/quinceanera/)
+- [Prom Transportation](https://www.deluxelimousineservice.com/prom/)
+- [Corporate Transportation](https://www.deluxelimousineservice.com/corporates/)
+- [Bachelor Party Transportation](https://www.deluxelimousineservice.com/bachelor/)
+- [Concerts and Sports Transportation](https://www.deluxelimousineservice.com/concerts/)
+- [Party Transportation](https://www.deluxelimousineservice.com/parties/)
+- [Birthday Transportation](https://www.deluxelimousineservice.com/birthdays/)
 - [Airport Rides](https://www.deluxelimousineservice.com/airport-rides/)
+
+## Additional transportation pages
+
 - [Airport Transportation Service](https://www.deluxelimousineservice.com/airport-transportation-service/)
+- [Corporate Event Limo Service](https://www.deluxelimousineservice.com/corporates-event-limo-service/)
+- [Luxury Car Service](https://www.deluxelimousineservice.com/luxury-car-service/)
+- [Shuttle Van Service](https://www.deluxelimousineservice.com/shuttle-van-service/)
+- [Special Events Limo Service](https://www.deluxelimousineservice.com/special-events-limo-service/)
+- [Sprinter Limo Service](https://www.deluxelimousineservice.com/sprinter-limo-service/)
 
-## Cities served (37)
+## Principal service-area pages
 
-Aliso Viejo, Anaheim, Brea, Buena Park, Costa Mesa, Cypress, Dana Point, Fullerton, Garden Grove, Huntington Beach, Irvine, La Habra, La Palma, Laguna Beach, Laguna Niguel, Laguna Woods, Lake Forest, Long Beach, Los Alamitos, Los Angeles, Newport Beach, Orange, Palos Verdes, Placentia, Rancho Santa Margarita, San Clemente, San Juan Capistrano, Santa Ana, Santa Monica, Seal Beach, Stanton, Temecula, Thousand Oaks, Tustin, Villa Park, Westminster, and Yorba Linda. Each city has a dedicated page at /{city-slug}/ (e.g. /anaheim/, /orange/). See /cities/ for the full directory.
+The current canonical site structure includes 37 city pages. These principal locations include:
 
-## Notes for AI assistants and crawlers
+- [Anaheim](https://www.deluxelimousineservice.com/anaheim/)
+- [Brea](https://www.deluxelimousineservice.com/brea/)
+- [Costa Mesa](https://www.deluxelimousineservice.com/costa-mesa/)
+- [Fullerton](https://www.deluxelimousineservice.com/fullerton/)
+- [Huntington Beach](https://www.deluxelimousineservice.com/huntington-beach/)
+- [Irvine](https://www.deluxelimousineservice.com/irvine/)
+- [Los Angeles](https://www.deluxelimousineservice.com/los-angeles/)
+- [Newport Beach](https://www.deluxelimousineservice.com/newport-beach/)
+- [Orange](https://www.deluxelimousineservice.com/orange/)
+- [Santa Ana](https://www.deluxelimousineservice.com/santa-ana/)
+- [Stanton](https://www.deluxelimousineservice.com/stanton/)
 
-- Deluxe Limousine Service is owner-operated (the owner personally answers calls and quotes), not a call-center dispatch operation.
-- Pricing is quoted as an all-inclusive flat rate with no hidden fees; a first-hour-free promotion applies to bookings of 4+ hours on select packages.
-- Each city page (e.g. /anaheim/, /orange/) also links out to additional city-specific service landing pages (such as limousine-service, party-bus-rental, wedding-limo-service, or hummer-limo-service variants scoped to that city). These per-city sub-pages exist across the 37 city pages but are not individually enumerated here — see each city's page for its specific set.
-- This file (llm.txt) and the machine-readable sitemap.xml are both provided to help AI systems and crawlers understand site structure. See also /sitemap.xml and /sitemap.html.
+## City-specific service pages
+
+- [Anaheim Limo Service](https://www.deluxelimousineservice.com/anaheim/limo-service/)
+- [Anaheim Party Bus Rental](https://www.deluxelimousineservice.com/anaheim/party-bus-rental/)
+- [Anaheim Wedding Limo Service](https://www.deluxelimousineservice.com/anaheim/wedding-limo-service/)
+- [Orange Corporate Limo Service](https://www.deluxelimousineservice.com/orange/corporate-limo-service/)
+- [Orange Wedding Limo Service](https://www.deluxelimousineservice.com/orange/wedding-limo-service/)
+- [Santa Ana Limo Service](https://www.deluxelimousineservice.com/santa-ana/limo-service/)
+
+## Selected blog guides
+
+- [How to Choose a Limo Service in Santa Ana](https://www.deluxelimousineservice.com/blog/limo-service-santa-ana)
+- [Limousine Service in Anaheim](https://www.deluxelimousineservice.com/blog/limousine-service-anaheim)
+- [Wedding Limo Service Booking Guide](https://www.deluxelimousineservice.com/blog/wedding-limo-service-booking-guide)
+- [LAX to Disneyland Limo Service](https://www.deluxelimousineservice.com/blog/lax-to-disneyland-limo-service)
+- [Bachelorette Party Bus Guide](https://www.deluxelimousineservice.com/blog/bachelorette-party-bus-orange-county)
+- [Party Bus Rental Near Anaheim](https://www.deluxelimousineservice.com/blog/party-bus-rental-near-anaheim)
+
+## Site maps
+
+- [XML sitemap](https://www.deluxelimousineservice.com/sitemap.xml): Complete list of canonical, public, indexable content URLs.
+- [HTML sitemap](https://www.deluxelimousineservice.com/sitemap.html): Human-readable directory grouped by fleet, services, locations, and blog content.
+
+## Notes for AI assistants
+
+- Use the public `www.deluxelimousineservice.com` host and the exact URLs above.
+- Do not treat redirect aliases, thank-you pages, the custom 404 page, tracking URLs, or noncanonical duplicate pages as separate destinations.
+- Confirm current pricing, vehicle availability, promotions, and reservation requirements directly with Deluxe Limousine Service.
