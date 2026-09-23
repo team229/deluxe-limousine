@@ -12,9 +12,14 @@
 - Booking: Request an all-inclusive quote by phone or through the booking form on the home page
 - Current offer: Ask about the first hour on us for featured packages of five hours or more; availability and package details are confirmed directly with the company
 
-## Core page
+## Core pages
 
 - [Home](https://www.deluxelimousineservice.com/): Company overview, fleet, service areas, booking form, frequently asked questions, and contact information.
+- [About Us](https://www.deluxelimousineservice.com/about-us/): Company background and service overview.
+- [Blog](https://www.deluxelimousineservice.com/blog/): Luxury transportation guides and travel articles.
+- [Cities Served](https://www.deluxelimousineservice.com/cities/): Directory of public city pages.
+- [Contact Us](https://www.deluxelimousineservice.com/contact-us/): Contact details and quote request information.
+- [Gallery](https://www.deluxelimousineservice.com/gallery/): Fleet and event photography.
 - [Orange County Limo and Party Bus Rentals](https://www.deluxelimousineservice.com/oc/): Orange County transportation overview and booking information.
 
 ## Fleet
@@ -73,12 +78,12 @@ The current canonical site structure includes 37 city pages. These principal loc
 
 ## Selected blog guides
 
-- [How to Choose a Limo Service in Santa Ana](https://www.deluxelimousineservice.com/blog/limo-service-santa-ana)
-- [Limousine Service in Anaheim](https://www.deluxelimousineservice.com/blog/limousine-service-anaheim)
-- [Wedding Limo Service Booking Guide](https://www.deluxelimousineservice.com/blog/wedding-limo-service-booking-guide)
-- [LAX to Disneyland Limo Service](https://www.deluxelimousineservice.com/blog/lax-to-disneyland-limo-service)
-- [Bachelorette Party Bus Guide](https://www.deluxelimousineservice.com/blog/bachelorette-party-bus-orange-county)
-- [Party Bus Rental Near Anaheim](https://www.deluxelimousineservice.com/blog/party-bus-rental-near-anaheim)
+- [How to Choose a Limo Service in Santa Ana](https://www.deluxelimousineservice.com/blog/limo-service-santa-ana/)
+- [Limousine Service in Anaheim](https://www.deluxelimousineservice.com/blog/limousine-service-anaheim/)
+- [Wedding Limo Service Booking Guide](https://www.deluxelimousineservice.com/blog/wedding-limo-service-booking-guide/)
+- [LAX to Disneyland Limo Service](https://www.deluxelimousineservice.com/blog/lax-to-disneyland-limo-service/)
+- [Bachelorette Party Bus Guide](https://www.deluxelimousineservice.com/blog/bachelorette-party-bus-orange-county/)
+- [Party Bus Rental Near Anaheim](https://www.deluxelimousineservice.com/blog/party-bus-rental-near-anaheim/)
 
 ## Site maps
 

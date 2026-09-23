@@ -25,11 +25,11 @@ const label = category.charAt(0).toUpperCase() + category.slice(1);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{label} | Deluxe Limousine Service Blog</title>
     <meta name="description" content={`Browse ${label.toLowerCase()} articles from the Deluxe Limousine Service blog. Guides, news and tips for luxury limousine travel in Orange County.`} />
-    <link rel="canonical" href={`https://deluxelimousineservice.com/blog/category/${category}/`} />
+    <link rel="canonical" href={`https://www.deluxelimousineservice.com/blog/category/${category}/`} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={`${label} | Deluxe Limousine Service Blog`} />
     <meta property="og:description" content={`Browse ${label.toLowerCase()} articles from the Deluxe Limousine Service blog.`} />
-    <meta property="og:url" content={`https://deluxelimousineservice.com/blog/category/${category}/`} />
+    <meta property="og:url" content={`https://www.deluxelimousineservice.com/blog/category/${category}/`} />
     <meta property="og:site_name" content="Deluxe Limousine Service" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={`${label} | Deluxe Limousine Service Blog`} />
@@ -67,10 +67,10 @@ const label = category.charAt(0).toUpperCase() + category.slice(1);
               <div class="p-6 flex flex-col flex-1">
                 <span class="text-gold text-xs font-semibold uppercase tracking-[0.05em] mb-2">{formattedDate}</span>
                 <h3 class="font-serif-display text-lg leading-snug mb-3">
-                  <a href={`/blog/${post.id}`} class="text-white hover:text-gold no-underline transition-colors">{post.data.title}</a>
+                  <a href={`/blog/${post.id}/`} class="text-white hover:text-gold no-underline transition-colors">{post.data.title}</a>
                 </h3>
                 <p class="text-white/60 text-sm flex-1 line-clamp-3">{post.data.description}</p>
-                <a href={`/blog/${post.id}`} class="text-gold text-sm font-semibold no-underline mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">Read Article →</a>
+                <a href={`/blog/${post.id}/`} class="text-gold text-sm font-semibold no-underline mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">Read Article →</a>
               </div>
             </article>
           );

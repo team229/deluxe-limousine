@@ -16,10 +16,20 @@ const {
   title = "Limousine Service Anaheim & Orange County | Deluxe Limousine Service",
   description = "Looking for the best Limousine Service Anaheim? Deluxe Limousine Service offers a luxury fleet, pro chauffeurs & affordable rates. Call now for a free quote.",
   image = "/cbm-assets/deluxe-limousine/hummer-limo.jpeg",
-  url = "https://deluxelimousineservice.com",
+  url,
   city = "",
   service = ""
 } = Astro.props;
+
+const siteUrl = "https://www.deluxelimousineservice.com/";
+const currentPath = Astro.url.pathname === "/"
+  ? "/"
+  : `${Astro.url.pathname.replace(/\/+$/, "")}/`;
+const requestedPath = url ? new URL(url, siteUrl).pathname : currentPath;
+const canonicalPath = requestedPath === "/"
+  ? "/"
+  : `${requestedPath.replace(/\/+$/, "")}/`;
+const canonicalUrl = new URL(canonicalPath.replace(/^\//, ''), siteUrl).href;
 
 // Programmatic Schema Markup for local SEO
 const localBusinessSchema = {
@@ -27,8 +37,8 @@ const localBusinessSchema = {
   "@type": "LimousineService",
   "name": "Deluxe Limousine Service",
   "image": image,
-  "@id": "https://deluxelimousineservice.com/#website",
-  "url": "https://deluxelimousineservice.com",
+  "@id": `${siteUrl}#website`,
+  "url": siteUrl,
   "telephone": "714-313-9173",
   "priceRange": "$$$",
   "address": {
@@ -86,18 +96,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- SEO Meta Tags -->
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={url} />
+    <link rel="canonical" href={canonicalUrl} />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={url} />
+    <meta property="og:url" content={canonicalUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={image} />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={url} />
+    <meta property="twitter:url" content={canonicalUrl} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={image} />

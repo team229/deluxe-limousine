@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 const faqs = post.data.faqs ?? [];
-const postUrl = `https://deluxelimousineservice.com/blog/${post.id}`;
+const postUrl = `https://www.deluxelimousineservice.com/blog/${post.id}/`;
 ---
 
 <PostLayout frontmatter={post.data} url={postUrl} faqs={faqs}>
