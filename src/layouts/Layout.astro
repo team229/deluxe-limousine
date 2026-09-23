@@ -8,6 +8,7 @@ interface Props {
   description?: string;
   image?: string;
   url?: string;
+  robots?: string;
   city?: string;
   service?: string;
 }
@@ -17,6 +18,7 @@ const {
   description = "Looking for the best Limousine Service Anaheim? Deluxe Limousine Service offers a luxury fleet, pro chauffeurs & affordable rates. Call now for a free quote.",
   image = "/cbm-assets/deluxe-limousine/hummer-limo.jpeg",
   url,
+  robots = "index, follow",
   city = "",
   service = ""
 } = Astro.props;
@@ -96,6 +98,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- SEO Meta Tags -->
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
     <link rel="canonical" href={canonicalUrl} />
 
     <!-- Open Graph / Facebook -->
