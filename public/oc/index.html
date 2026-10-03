@@ -36,7 +36,7 @@
     "url": "https://www.deluxelimousineservice.com/oc/",
     "telephone": "+17143139173",
     "email": "deluxelimos22@gmail.com",
-    "address": { "@type": "PostalAddress", "addressLocality": "Anaheim", "addressRegion": "CA", "postalCode": "92801", "addressCountry": "US" },
+    "address": { "@type": "PostalAddress", "streetAddress": "8131 Electric Ave", "addressLocality": "Stanton", "addressRegion": "CA", "postalCode": "90680", "addressCountry": "US" },
     "areaServed": ["Anaheim","Orange County","Santa Ana","Irvine","Garden Grove","Huntington Beach","Newport Beach","Costa Mesa","Fullerton","Buena Park","Yorba Linda","Brea","Los Angeles"],
     "priceRange": "$$",
     "openingHours": "Mo-Su 00:00-24:00",
@@ -523,6 +523,7 @@
     }
     .form-trust i { color: var(--gold); flex-shrink: 0; }
     .form-free-hour { text-align: center; font-size: 11.5px; color: var(--gold); margin-top: 10px; font-weight: 600; letter-spacing: 1px; }
+    .form-privacy { text-align: center; font-size: 10.5px; color: rgba(255,255,255,0.45); margin-top: 9px; letter-spacing: 0.4px; }
     .form-status { display: none; font-family: 'Montserrat', sans-serif; font-size: 13px; margin-top: 12px; text-align: center; line-height: 1.5; }
     .form-status.success { color: #7BE3A0; display: block; }
     .form-status.error { color: #FF8A8A; display: block; }
@@ -833,10 +834,16 @@
   <div class="lux-ticker">
     <div class="lux-ticker-track">
       <span class="lux-ticker-item"><span class="lux-ticker-star">✦</span> Lock In Your Free Hour!</span>
+      <span class="lux-ticker-item"><span class="lux-ticker-star">✦</span> Chilled Sodas &amp; Refreshments</span>
+      <span class="lux-ticker-item"><span class="lux-ticker-star">✦</span> VIP Red Carpet Service</span>
+      <span class="lux-ticker-item"><span class="lux-ticker-star">✦</span> Custom Birthday Decorations</span>
       <span class="lux-ticker-item"><span class="lux-ticker-star">✦</span> 🎃 Halloween Nights: Flat Rates — No Surge</span>
       <span class="lux-ticker-item"><span class="lux-ticker-star">✦</span> Homecoming Group Rates — Book Your Squad</span>
       <span class="lux-ticker-item"><span class="lux-ticker-star">✦</span> Scary Farm · HHN · Oogie Boogie Arrivals</span>
       <span class="lux-ticker-item"><span class="lux-ticker-star">✦</span> Lock In Your Free Hour!</span>
+      <span class="lux-ticker-item"><span class="lux-ticker-star">✦</span> Chilled Sodas &amp; Refreshments</span>
+      <span class="lux-ticker-item"><span class="lux-ticker-star">✦</span> VIP Red Carpet Service</span>
+      <span class="lux-ticker-item"><span class="lux-ticker-star">✦</span> Custom Birthday Decorations</span>
       <span class="lux-ticker-item"><span class="lux-ticker-star">✦</span> 🎃 Halloween Nights: Flat Rates — No Surge</span>
       <span class="lux-ticker-item"><span class="lux-ticker-star">✦</span> Homecoming Group Rates — Book Your Squad</span>
       <span class="lux-ticker-item"><span class="lux-ticker-star">✦</span> Scary Farm · HHN · Oogie Boogie Arrivals</span>
@@ -907,9 +914,17 @@
               <input type="tel" id="phone" name="phone" placeholder="(714) 000-0000" required autocomplete="tel" inputmode="tel">
             </div>
             <div class="form-group">
-              <label for="email">Email *</label>
-              <input type="email" id="email" name="email" placeholder="you@email.com" required autocomplete="email" inputmode="email">
+              <label for="email">Email (optional)</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" autocomplete="email" inputmode="email">
             </div>
+          </div>
+          <div class="form-group">
+            <label for="replyMethod">How Should We Reply? *</label>
+            <select id="replyMethod" name="replyMethod" required>
+              <option value="Call" selected>Call Me</option>
+              <option value="Text">Text Me</option>
+              <option value="Email">Email Me</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="fleetType">Vehicle Needed *</label>
@@ -949,6 +964,7 @@
             <span><i data-lucide="clock" class="icon-sm"></i> Replies in minutes</span>
           </div>
           <p class="form-free-hour">✔ Ask about 1 FREE hour on qualifying rentals</p>
+          <p class="form-privacy">🔒 No spam — used only to quote you. Ever.</p>
         </form>
       </div>
 
@@ -978,6 +994,10 @@
           <div class="stat-item">
             <div class="stat-number">4.9★</div>
             <div class="stat-label">Average Rating</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">2010</div>
+            <div class="stat-label">Est. Since</div>
           </div>
         </div>
       </div>
@@ -1129,6 +1149,7 @@
         <div class="section-label" style="justify-content:center;">This Fall</div>
         <h2 class="section-title">Ride in Style to <em>Halloween &amp; Homecoming</em></h2>
         <p class="section-sub" style="margin-left:auto;margin-right:auto;">Flat-rate nights — no surge pricing, ever. Gate drop-off, exit pickup, chauffeur waits.</p>
+        <p style="text-align:center;color:var(--gold);font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin:16px 0 0;">🎃 Scary Farm ends Oct 31 — Saturday slots going fast. Lock in your flat rate.</p>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;">
         <div style="background:var(--dark2);border:1px solid rgba(200,168,75,0.25);border-radius:14px;padding:26px 24px;display:flex;flex-direction:column;gap:10px;">
@@ -1557,7 +1578,7 @@
       <div style="text-align:center;margin-bottom:46px;">
         <div class="section-label" style="justify-content:center;">Find Us</div>
         <h2 class="section-title">Our <em>Location</em></h2>
-        <p class="section-sub" style="margin-left:auto;margin-right:auto;">Proudly based in Anaheim, serving all of Orange County</p>
+        <p class="section-sub" style="margin-left:auto;margin-right:auto;">Proudly based in Stanton, serving all of Orange County</p>
       </div>
       <div class="location-wrap">
         <div class="location-info">
@@ -1565,7 +1586,7 @@
             <div class="location-icon"><i data-lucide="map-pin" class="icon-lg"></i></div>
             <div class="location-detail-text">
               <strong>Address</strong>
-              <span>Anaheim, CA 92801<br>Orange County, CA</span>
+              <span>8131 Electric Ave<br>Stanton, CA 90680</span>
             </div>
           </div>
           <div class="location-detail">
@@ -1610,7 +1631,7 @@
           <a href="#quote-form" class="btn-primary btn-large"><i data-lucide="message-square-quote" class="icon-md"></i> Get My Free Quote</a>
           <a href="tel:7143139173" class="btn-secondary btn-large"><i data-lucide="phone" class="icon-md"></i> Call (714) 313-9173</a>
         </div>
-        <p style="color:rgba(255,255,255,0.35);font-size:12px;margin-top:32px;letter-spacing:1px;">Available 24/7 · Licensed &amp; Bonded · Serving Anaheim, CA 92801 &amp; All of Orange County</p>
+        <p style="color:rgba(255,255,255,0.35);font-size:12px;margin-top:32px;letter-spacing:1px;">Available 24/7 · Licensed &amp; Bonded · Serving Stanton, CA 90680 &amp; All of Orange County</p>
       </div>
     </div>
   </section>
@@ -1622,7 +1643,7 @@
       <a class="footer-phone" href="tel:7143139173">(714) 313-9173</a>
     </div>
     <div style="text-align:center;padding-top:20px;border-top:1px solid rgba(200,168,75,0.1);margin-top:20px;">
-      <p class="footer-copy">© 2026 Deluxe Limousine Service · Anaheim, CA 92801 · All Rights Reserved</p>
+      <p class="footer-copy">© 2026 Deluxe Limousine Service · Stanton, CA 90680 · All Rights Reserved</p>
     </div>
   </footer>
 
@@ -1687,6 +1708,8 @@
 
         var parts = [];
         parts.push('Phone: ' + document.getElementById('phone').value.trim());
+        var reply = document.getElementById('replyMethod').value;
+        if (reply) parts.push('Reply Method: ' + reply);
         var fleet = document.getElementById('fleetType').value;
         if (fleet) parts.push('Fleet: ' + fleet);
         var date = document.getElementById('eventDate').value;
