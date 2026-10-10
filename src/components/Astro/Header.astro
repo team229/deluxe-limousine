@@ -1,10 +1,11 @@
 ---
 import { NAV_LINK, MOBILE_LINK } from '../../styles/utils';
 const tickerItems = [
-  'Lock In Your Free Hour!',
-  'Chilled Sodas & Refreshments',
-  'VIP Red Carpet Service',
-  'Custom Birthday Decorations',
+  { label: 'Homecoming Limo — 1st Hour Free', href: '/homecoming-limo-anaheim/' },
+  { label: 'Halloween Party Bus — Now Booking', href: '/halloween-party-bus-oc/' },
+  { label: 'Oktoberfest Transport HB', href: '/oktoberfest-transport-huntington-beach/' },
+  { label: 'Chilled Sodas & Refreshments', href: '/#booking' },
+  { label: 'VIP Red Carpet Service', href: '/#booking' },
 ];
 
 const fleetLinks = [
@@ -42,10 +43,10 @@ const navLinks = [
     <div class="inline-flex animate-ticker">
       {[0, 1].map(() =>
         tickerItems.map((item) => (
-          <span class="inline-flex items-center gap-2 px-10 text-[13px] font-bold tracking-[1.5px] uppercase text-[#050505] whitespace-nowrap">
+          <a href={item.href} class="inline-flex items-center gap-2 px-10 text-[13px] font-bold tracking-[1.5px] uppercase text-[#050505] whitespace-nowrap hover:underline">
             <span class="text-[10px]">&#10022;</span>
-            {item}
-          </span>
+            {item.label}
+          </a>
         ))
       )}
     </div>
