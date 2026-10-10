@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FaqAccordion from '../components/React/FaqAccordion.tsx';
+
+const faqs = [
+  {
+    question: "Can we bring alcohol on the Halloween party bus?",
+    answer: "Yes, for passengers 21+. We provide coolers, ice, and glassware. All-in pricing confirmed upfront."
+  },
+  {
+    question: "How many people fit on a party bus?",
+    answer: "Our party buses accommodate up to ~30 passengers depending on the vehicle. We can also coordinate multiple vehicles."
+  },
+  {
+    question: "Is Halloween transportation available last minute?",
+    answer: "We try to accommodate last-minute requests when vehicles are available. Call early for best selection."
+  },
+  {
+    question: "Do you have a safety policy for Halloween rides?",
+    answer: "Yes — zero-tolerance for underage drinking/substances. Licensed chauffeurs, insured, all-in pricing."
+  }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } }))
+};
+---
+
+<Layout title="Halloween Party Bus Orange County | Safe Group Rides & Limos" description="Halloween party bus Orange County. Safe rides, keep group together, avoid parking/DUIs. All-in pricing. Call (714) 313-9173." url="https://www.deluxelimousineservice.com/halloween-party-bus-oc/" image="/images/2026/10/halloween-party-bus-oc.webp">
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <main class="bg-ink text-white">
+    <section class="py-20 px-5">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="font-serif-display text-4xl lg:text-5xl leading-tight">Halloween Party Bus Rental Orange County – Keep Your Group Together & Ride Safely</h1>
+          <p class="mt-6 text-white/80 leading-relaxed">Avoid parking, surge rides, and DUIs this Halloween. Ride together in a luxury party bus or limo with a professional chauffeur. All-in pricing, no surprises.</p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="tel:7143139173" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gold text-black font-semibold hover:bg-gold-soft transition">Call (714) 313-9173</a>
+            <a href="/contact-us/" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gold text-gold hover:bg-gold hover:text-black transition">Get Free Quote</a>
+          </div>
+          <div class="mt-6 text-sm text-white/70"><strong class="text-gold">Halloween Group Special:</strong> Split the cost with your crew — ask for details.</div>
+        </div>
+        <div class="rounded-xl overflow-hidden border border-line shadow-xl">
+          <img src="/images/2026/10/halloween-party-bus-oc.webp" alt="Halloween party bus Orange County" class="w-full h-auto object-cover" />
+        </div>
+      </div>
+    </section>
+    <section class="py-16 px-5 bg-ink-soft border-y border-line">
+      <div class="mx-auto max-w-[800px]">
+        <h2 class="font-serif-display text-3xl mb-6">Frequently Asked Questions</h2>
+        <FaqAccordion client:load items={faqs} />
+      </div>
+    </section>
+  </main>
+</Layout>

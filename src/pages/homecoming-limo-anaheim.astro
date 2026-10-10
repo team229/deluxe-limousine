@@ -1,0 +1,107 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FaqAccordion from '../components/React/FaqAccordion.tsx';
+
+const faqs = [
+  {
+    question: "When should we book our homecoming limo in Anaheim?",
+    answer: "We recommend booking 4–6 weeks ahead for homecoming. Anaheim high schools tend to book early, so reserving as soon as you know your date secures your preferred vehicle."
+  },
+  {
+    question: "Are parents allowed to ride along?",
+    answer: "Yes. Many parents choose to ride along or coordinate pickup/drop-off. We work directly with parents to create a written itinerary."
+  },
+  {
+    question: "What vehicles work best for homecoming groups?",
+    answer: "Stretch limos are great for couples/small groups. Hummer limos and party buses work best for larger friend groups (10–30) who want to ride together."
+  },
+  {
+    question: "Is your homecoming limo service safe for teens?",
+    answer: "Yes. All chauffeurs are licensed, background-checked, and professional. We enforce a strict no-substance policy and provide all-in pricing with no surprises."
+  },
+  {
+    question: "Do you offer the free hour for homecoming bookings?",
+    answer: "Yes — ask about our 'first hour on us' offer on featured packages of 5+ hours when you call or request a quote."
+  }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(f => ({
+    "@type": "Question",
+    "name": f.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": f.answer
+    }
+  }))
+};
+---
+
+<Layout
+  title="Homecoming Limo Rental Anaheim | Safe Limo & Party Bus Orange County"
+  description="Homecoming limo rental Anaheim. Safe, licensed chauffeurs, all-in pricing, free hour on 5+ hrs. Hummer limos, party buses, Sprinters. Call (714) 313-9173."
+  url="https://www.deluxelimousineservice.com/homecoming-limo-anaheim/"
+  image="/images/2026/10/homecoming-limo-anaheim.webp"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <main class="bg-ink text-white">
+    <section class="py-20 px-5">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="font-serif-display text-4xl lg:text-5xl leading-tight">Homecoming Limo Rental Anaheim – Safe, Stylish Rides for OC High Schools</h1>
+          <p class="mt-6 text-white/80 leading-relaxed">Give your group a safe, stylish ride for homecoming. Deluxe Limousine Service provides licensed, insured chauffeurs, all-in pricing, and the right vehicle for your crew. Ride together, skip parking headaches, and arrive in style.</p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="tel:7143139173" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gold text-black font-semibold hover:bg-gold-soft transition">Call (714) 313-9173</a>
+            <a href="/contact-us/" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gold text-gold hover:bg-gold hover:text-black transition">Get Free Quote</a>
+          </div>
+          <div class="mt-6 text-sm text-white/70">
+            <strong class="text-gold">Homecoming Special:</strong> Ask about 1st hour FREE on featured packages of 5+ hours.
+          </div>
+        </div>
+        <div class="rounded-xl overflow-hidden border border-line shadow-xl">
+          <img src="/images/2026/10/homecoming-limo-anaheim.webp" alt="Homecoming limo rental Anaheim - luxury stretch limousine" class="w-full h-auto object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5 bg-ink-soft border-y border-line">
+      <div class="mx-auto max-w-[1200px]">
+        <h2 class="font-serif-display text-3xl mb-8">Why Choose Deluxe for Homecoming</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-3">Safe & Parent-Approved</h3>
+            <p class="text-white/70">TCP-licensed, insured, background-checked chauffeurs with strict no-substance policy.</p>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-3">All-In Pricing</h3>
+            <p class="text-white/70">Upfront quotes with no hidden fees. Know exactly what you pay before booking.</p>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-3">Right Vehicle for Your Group</h3>
+            <p class="text-white/70">Stretch limos, Hummer limos, Mercedes Sprinters, and party buses to fit any crew size.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5">
+      <div class="mx-auto max-w-[800px]">
+        <h2 class="font-serif-display text-3xl mb-6">Frequently Asked Questions</h2>
+        <FaqAccordion client:load items={faqs} />
+      </div>
+    </section>
+
+    <section class="py-16 px-5 bg-ink-soft border-t border-line">
+      <div class="mx-auto max-w-[900px] text-center">
+        <h2 class="font-serif-display text-3xl mb-4">Lock In Your Homecoming Ride</h2>
+        <p class="text-white/70 mb-8">Call now to check availability for your school’s homecoming date.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="tel:7143139173" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gold text-black font-semibold hover:bg-gold-soft transition">Call (714) 313-9173</a>
+          <a href="/contact-us/" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gold text-gold hover:bg-gold hover:text-black transition">Request Free Quote</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

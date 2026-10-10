@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FaqAccordion from '../components/React/FaqAccordion.tsx';
+
+const faqs = [
+  { question: "Do you provide transportation to Oktoberfest Huntington Beach?", answer: "Yes. We offer hourly rentals and custom pickups/dropoffs for groups attending Oktoberfest in Huntington Beach." },
+  { question: "How many people can you transport?", answer: "From stretch limos (6–10) to party buses (up to ~30). Multiple vehicles available for larger groups." },
+  { question: "Is parking an issue in HB?", answer: "Yes — avoid $40+ parking fees and rideshare surges. Ride together and get dropped off/picked up on your schedule." },
+  { question: "How far ahead should we book?", answer: "Book 3–4 weeks ahead for Oktoberfest weekends; earlier is better as dates fill." }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } }))
+};
+---
+
+<Layout title="Oktoberfest Transportation Huntington Beach | Limo & Party Bus" description="Oktoberfest transportation Huntington Beach. Avoid parking, ride together. Limos & party buses. All-in pricing. Call (714) 313-9173." url="https://www.deluxelimousineservice.com/oktoberfest-transport-huntington-beach/" image="/images/2026/10/oktoberfest-transport-huntington-beach.webp">
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <main class="bg-ink text-white">
+    <section class="py-20 px-5">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="font-serif-display text-4xl lg:text-5xl leading-tight">Oktoberfest Transportation Huntington Beach – Avoid Parking & Ride Together</h1>
+          <p class="mt-6 text-white/80 leading-relaxed">Skip Huntington Beach parking fees and surge pricing. Keep your group together with a professional chauffeur in a stretch limo, Hummer, Sprinter, or party bus.</p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="tel:7143139173" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gold text-black font-semibold hover:bg-gold-soft transition">Call (714) 313-9173</a>
+            <a href="/contact-us/" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gold text-gold hover:bg-gold hover:text-black transition">Get Free Quote</a>
+          </div>
+          <div class="mt-6 text-sm text-white/70"><strong class="text-gold">Oktoberfest Group Special:</strong> Ask about hourly packages for your crew.</div>
+        </div>
+        <div class="rounded-xl overflow-hidden border border-line shadow-xl">
+          <img src="/images/2026/10/oktoberfest-transport-huntington-beach.webp" alt="Oktoberfest transportation Huntington Beach" class="w-full h-auto object-cover" />
+        </div>
+      </div>
+    </section>
+    <section class="py-16 px-5 bg-ink-soft border-y border-line">
+      <div class="mx-auto max-w-[800px]">
+        <h2 class="font-serif-display text-3xl mb-6">Frequently Asked Questions</h2>
+        <FaqAccordion client:load items={faqs} />
+      </div>
+    </section>
+  </main>
+</Layout>
