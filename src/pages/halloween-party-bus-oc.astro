@@ -1,56 +1,169 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import FaqAccordion from '../components/React/FaqAccordion.tsx';
+import ReservationForm from '../components/React/ReservationForm.tsx';
 
 const faqs = [
   {
-    question: "Can we bring alcohol on the Halloween party bus?",
-    answer: "Yes, for passengers 21+. We provide coolers, ice, and glassware. All-in pricing confirmed upfront."
+    question: "How much does a Halloween party bus cost in Orange County?",
+    answer: "Halloween party bus rentals in Orange County typically run 4 to 6 hour minimums on Oct 30–31, with all-in pricing covering chauffeur, fuel, and standard fees. Split across 15 to 30 passengers, per-person cost is often lower than surge-priced rideshares doing multiple trips. Call (714) 313-9173 for an exact upfront quote for your date."
   },
   {
-    question: "How many people fit on a party bus?",
-    answer: "Our party buses accommodate up to ~30 passengers depending on the vehicle. We can also coordinate multiple vehicles."
+    question: "Can we bring alcohol on the Halloween party bus?",
+    answer: "Passengers 21+ may bring alcohol aboard — we provide coolers, ice, and glassware. We enforce a strict zero-tolerance policy for underage drinking: valid ID required, and any violation ends the ride with no refund. All-in pricing is confirmed in writing before you book."
+  },
+  {
+    question: "How many people fit on a Halloween party bus?",
+    answer: "Our party buses hold 20 to 30 passengers depending on the vehicle, with wrap-around leather seating so the whole crew stays together. Smaller groups of 8 to 14 fit a Hummer limo or Mercedes Sprinter. Need more room? We coordinate multiple vehicles with synced pickup times."
+  },
+  {
+    question: "Do you do multi-stop Halloween bar crawls?",
+    answer: "Yes — most Halloween bookings are multi-stop: dinner, 2 to 4 bars or parties in Huntington Beach, Newport, Costa Mesa or Downtown Santa Ana, then home. We map the most efficient route, wait curbside between stops, and you never hunt for a new ride or pay surge pricing."
   },
   {
     question: "Is Halloween transportation available last minute?",
-    answer: "We try to accommodate last-minute requests when vehicles are available. Call early for best selection."
+    answer: "Oct 30–31 sells out every year. We hold limited backup inventory and try to accommodate last-minute requests, but vehicle choice shrinks fast. Book by mid-October for the best selection — call now and we will tell you honestly what is left."
   },
   {
-    question: "Do you have a safety policy for Halloween rides?",
-    answer: "Yes — zero-tolerance for underage drinking/substances. Licensed chauffeurs, insured, all-in pricing."
+    question: "Why book a party bus instead of rideshares on Halloween?",
+    answer: "Three reasons: safety (one sober professional chauffeur all night), cost (one all-in price split across the group beats 6+ surge rides), and togetherness (no split Ubers, no lost friends, no parking fees in HB or Newport). Your ride waits for you — you never wait for it."
   }
 ];
 
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } }))
+  "mainEntity": faqs.map((f) => ({
+    "@type": "Question",
+    "name": f.question,
+    "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+  }))
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Halloween Party Bus Rental Orange County",
+  "provider": {
+    "@type": "LimousineService",
+    "name": "Deluxe Limousine Service",
+    "telephone": "714-313-9173",
+    "address": { "@type": "PostalAddress", "addressLocality": "Anaheim", "addressRegion": "CA", "postalCode": "92801", "addressCountry": "US" }
+  },
+  "areaServed": ["Anaheim", "Huntington Beach", "Newport Beach", "Costa Mesa", "Irvine", "Santa Ana", "Fullerton"],
+  "description": "Halloween party bus and limo rental in Orange County. Multi-stop bar crawls, sober chauffeur, all-in pricing, 20-30 passenger party buses."
 };
 ---
 
-<Layout title="Halloween Party Bus Orange County | Safe Group Rides & Limos" description="Halloween party bus Orange County. Safe rides, keep group together, avoid parking/DUIs. All-in pricing. Call (714) 313-9173." url="https://www.deluxelimousineservice.com/halloween-party-bus-oc/" image="/images/2026/10/halloween-party-bus-oc.webp">
+<Layout
+  title="Halloween Party Bus Orange County | Limo Rental"
+  description="Halloween party bus rental in Orange County. Multi-stop crawls, sober chauffeur, all-in pricing. 20-30 pax buses & Hummer limos. Call now."
+  url="https://www.deluxelimousineservice.com/halloween-party-bus-oc/"
+  image="/images/2026/10/halloween-party-bus-oc.webp"
+  city="Anaheim"
+  service="Halloween Party Bus Rental"
+>
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
   <main class="bg-ink text-white">
     <section class="py-20 px-5">
       <div class="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
-          <h1 class="font-serif-display text-4xl lg:text-5xl leading-tight">Halloween Party Bus Rental Orange County – Keep Your Group Together & Ride Safely</h1>
-          <p class="mt-6 text-white/80 leading-relaxed">Avoid parking, surge rides, and DUIs this Halloween. Ride together in a luxury party bus or limo with a professional chauffeur. All-in pricing, no surprises.</p>
+          <p class="text-gold text-xs font-bold uppercase tracking-[0.15em] mb-4">Orange County · Oct 30–31 — Now Booking</p>
+          <h1 class="font-serif-display text-4xl lg:text-5xl leading-tight">Halloween Party Bus Rental in Orange County</h1>
+          <p class="mt-6 text-white/80 leading-relaxed">
+            Keep your whole crew together on the biggest party night of fall. Deluxe Limousine Service runs
+            Halloween <a href="/party-bus-rental/" class="text-gold hover:text-gold-soft underline underline-offset-4">party bus rentals</a> and
+            <a href="/hummer-limo-service/" class="text-gold hover:text-gold-soft underline underline-offset-4">Hummer limos</a> across
+            Huntington Beach, Newport, Costa Mesa, and Anaheim — one sober chauffeur, multi-stop routing,
+            club lighting and sound on board, and all-in pricing confirmed upfront. No surge, no parking lots, no DUIs.
+          </p>
           <div class="mt-8 flex flex-wrap gap-4">
             <a href="tel:7143139173" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gold text-black font-semibold hover:bg-gold-soft transition">Call (714) 313-9173</a>
-            <a href="/contact-us/" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gold text-gold hover:bg-gold hover:text-black transition">Get Free Quote</a>
+            <a href="#quote" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gold text-gold hover:bg-gold hover:text-black transition">Get Free Quote</a>
           </div>
-          <div class="mt-6 text-sm text-white/70"><strong class="text-gold">Halloween Group Special:</strong> Split the cost with your crew — ask for details.</div>
+          <div class="mt-6 rounded-lg border border-gold/30 bg-gold/10 px-4 py-3 text-sm text-white/80">
+            <strong class="text-gold">Halloween Group Special:</strong> split the all-in price across 15–30 passengers — ask for per-person math when you call.
+          </div>
         </div>
         <div class="rounded-xl overflow-hidden border border-line shadow-xl">
-          <img src="/images/2026/10/halloween-party-bus-oc.webp" alt="Halloween party bus Orange County" class="w-full h-auto object-cover" />
+          <img src="/images/2026/10/halloween-party-bus-oc.webp" alt="Halloween party bus rental Orange County — group bar crawl bus with chauffeur" class="w-full h-auto object-cover" width="1200" height="800" fetchpriority="high" />
         </div>
       </div>
     </section>
+
+    <section class="px-5 pb-4">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-2 lg:grid-cols-4 gap-3 text-center text-xs">
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">Sober Chauffeur</strong><span class="text-white/60">All night, all stops</span></div>
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">All-In Pricing</strong><span class="text-white/60">No surge, no surprises</span></div>
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">Multi-Stop</strong><span class="text-white/60">Bars, parties &amp; home</span></div>
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">20–30 Pax</strong><span class="text-white/60">One vehicle, whole crew</span></div>
+      </div>
+    </section>
+
     <section class="py-16 px-5 bg-ink-soft border-y border-line">
+      <div class="mx-auto max-w-[1200px]">
+        <h2 class="font-serif-display text-3xl mb-4">Why a Party Bus Wins on Halloween</h2>
+        <p class="text-white/70 max-w-[800px] mb-8">Halloween in HB and Newport means $40+ parking, 2x rideshare surges, and split groups. One bus solves all three — and the party starts the moment you board with premium sound, lasers, and flat-screens.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-3">The Designated Ride</h3>
+            <p class="text-white/70 text-sm leading-relaxed">Licensed, insured chauffeur stays with your group all night. Costumes, coolers, and friends all travel together — nobody drives, nobody gets lost.</p>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-3">Bar-Crawl Routing</h3>
+            <p class="text-white/70 text-sm leading-relaxed">We plan 2–5 stop loops — dinner, Main St HB, Newport bars, DTSA parties — and wait curbside. Same driver, same bus, zero rebooking. Also see our <a href="/parties/" class="text-gold underline underline-offset-4">night-out party packages</a>.</p>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-3">Club on Wheels</h3>
+            <p class="text-white/70 text-sm leading-relaxed">High-output sound, LED ceilings, leather lounge seating, ice and glassware. Bring a playlist — the ride between stops is part of the night.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5">
+      <div class="mx-auto max-w-[1200px]">
+        <h2 class="font-serif-display text-3xl mb-4">Pick Your Halloween Ride</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-ink-raised border border-line rounded-xl p-6"><h3 class="font-semibold text-lg mb-2">Party Bus (20–30 pax)</h3><p class="text-white/70 text-sm">Best for full crews. Stand, mingle, and ride together. The Halloween default.</p><a href="/anaheim/party-bus-rental/" class="text-gold text-sm underline underline-offset-4 mt-3 inline-block">See party buses</a></div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6"><h3 class="font-semibold text-lg mb-2">Hummer Limo (up to 20)</h3><p class="text-white/70 text-sm">Statement arrival for costume groups that want maximum presence.</p><a href="/orange/hummer-limo-rental/" class="text-gold text-sm underline underline-offset-4 mt-3 inline-block">See Hummer limo</a></div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6"><h3 class="font-semibold text-lg mb-2">Sprinter (10–14 pax)</h3><p class="text-white/70 text-sm">Agile for tight HB streets and smaller crews. Easy hop on/off.</p><a href="/sprinter-limo/" class="text-gold text-sm underline underline-offset-4 mt-3 inline-block">See Sprinter</a></div>
+        </div>
+        <h2 class="font-serif-display text-2xl mt-12 mb-4">Popular Halloween Routes</h2>
+        <div class="flex flex-wrap gap-2 text-sm">
+          {["Huntington Beach Main St", "Newport Beach", "Costa Mesa", "Downtown Santa Ana", "Fullerton", "Anaheim GardenWalk", "Irvine Spectrum"].map((c) => (
+            <span class="rounded-full border border-line bg-ink-raised px-4 py-1.5 text-white/70">{c}</span>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section id="quote" class="py-16 px-5 bg-ink-soft border-y border-line">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="font-serif-display text-3xl mb-4">Check Oct 30–31 Availability</h2>
+          <p class="text-white/70 mb-6">Halloween sells out — send your date, headcount, and stops for an all-in quote. Or skip the form: <a href="tel:7143139173" class="text-gold underline underline-offset-4">Call (714) 313-9173</a>.</p>
+          <ul class="text-sm text-white/70 space-y-2">
+            <li>✓ 21+ alcohol welcome (ID checked, coolers + ice included)</li>
+            <li>✓ Zero-tolerance underage policy — in writing</li>
+            <li>✓ Curbside wait between every stop</li>
+          </ul>
+        </div>
+        <div class="rounded-xl border border-line bg-ink-raised p-6">
+          <ReservationForm client:load />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5">
       <div class="mx-auto max-w-[800px]">
-        <h2 class="font-serif-display text-3xl mb-6">Frequently Asked Questions</h2>
+        <h2 class="font-serif-display text-3xl mb-6">Halloween Party Bus FAQs</h2>
         <FaqAccordion client:load items={faqs} />
+        <div class="flex flex-wrap justify-center gap-4 mt-10">
+          <a href="tel:7143139173" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gold text-black font-semibold hover:bg-gold-soft transition">Call (714) 313-9173</a>
+          <a href="#quote" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gold text-gold hover:bg-gold hover:text-black transition">Request Free Quote</a>
+        </div>
       </div>
     </section>
   </main>

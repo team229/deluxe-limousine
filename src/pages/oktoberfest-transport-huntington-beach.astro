@@ -1,44 +1,157 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import FaqAccordion from '../components/React/FaqAccordion.tsx';
+import ReservationForm from '../components/React/ReservationForm.tsx';
 
 const faqs = [
-  { question: "Do you provide transportation to Oktoberfest Huntington Beach?", answer: "Yes. We offer hourly rentals and custom pickups/dropoffs for groups attending Oktoberfest in Huntington Beach." },
-  { question: "How many people can you transport?", answer: "From stretch limos (6–10) to party buses (up to ~30). Multiple vehicles available for larger groups." },
-  { question: "Is parking an issue in HB?", answer: "Yes — avoid $40+ parking fees and rideshare surges. Ride together and get dropped off/picked up on your schedule." },
-  { question: "How far ahead should we book?", answer: "Book 3–4 weeks ahead for Oktoberfest weekends; earlier is better as dates fill." }
+  {
+    question: "Do you provide transportation to Oktoberfest in Huntington Beach?",
+    answer: "Yes. We run hourly limo and party bus service for Oktoberfest Huntington Beach groups — pickup anywhere in Orange County, front-area drop-off near the venue, and scheduled return. Multi-hour packages beat parking plus surge rideshares for any group over 8."
+  },
+  {
+    question: "How much does Oktoberfest transportation cost?",
+    answer: "Hourly all-in packages depend on vehicle and hours — most Oktoberfest groups book 4 to 6 hours. Split across 10 to 30 passengers, per-person cost typically undercuts HB event parking plus round-trip rideshares. Call (714) 313-9173 for an exact upfront quote."
+  },
+  {
+    question: "What vehicles fit Oktoberfest groups?",
+    answer: "Groups of 6 to 10 fit a stretch limo, 10 to 20 fit a Hummer limo or Mercedes Sprinter, and 20 to 30 fit a party bus. Larger clubs and corporate groups can run multiple vehicles with synced timing. All include coolers, ice, premium sound, and a professional chauffeur."
+  },
+  {
+    question: "Can we do brewery stops before or after Oktoberfest?",
+    answer: "Absolutely — most groups add 1 to 2 brewery or dinner stops in Huntington Beach, Costa Mesa, or Long Beach. We map the route, wait curbside, and keep the same driver all day. Ask about our custom itineraries when you request a quote."
+  },
+  {
+    question: "Is parking really that bad at HB Oktoberfest?",
+    answer: "Yes — event weekends mean $30 to $50+ lot fees, long walks, and post-event rideshare surges with 30+ minute waits. One chauffeured vehicle drops you close, waits on call, and brings everyone home together with no one driving after drinking."
+  },
+  {
+    question: "How far ahead should we book Oktoberfest transport?",
+    answer: "Book 3 to 4 weeks ahead for Oktoberfest weekends — Saturdays sell out first. Mid-week and Sunday availability lasts longer. After the festival ends, this page redirects to our year-round party bus rental."
+  }
 ];
 
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } }))
+  "mainEntity": faqs.map((f) => ({
+    "@type": "Question",
+    "name": f.question,
+    "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+  }))
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Oktoberfest Transportation Huntington Beach",
+  "provider": {
+    "@type": "LimousineService",
+    "name": "Deluxe Limousine Service",
+    "telephone": "714-313-9173",
+    "address": { "@type": "PostalAddress", "addressLocality": "Anaheim", "addressRegion": "CA", "postalCode": "92801", "addressCountry": "US" }
+  },
+  "areaServed": ["Huntington Beach", "Costa Mesa", "Newport Beach", "Anaheim", "Long Beach", "Irvine"],
+  "description": "Oktoberfest group transportation in Huntington Beach. Hourly limo, Hummer, Sprinter and party bus packages with chauffeur and all-in pricing."
 };
 ---
 
-<Layout title="Oktoberfest Transportation Huntington Beach | Limo & Party Bus" description="Oktoberfest transportation Huntington Beach. Avoid parking, ride together. Limos & party buses. All-in pricing. Call (714) 313-9173." url="https://www.deluxelimousineservice.com/oktoberfest-transport-huntington-beach/" image="/images/2026/10/oktoberfest-transport-huntington-beach.webp">
+<Layout
+  title="Oktoberfest Transportation Huntington Beach | Party Bus"
+  description="Oktoberfest transportation in Huntington Beach. Hourly limos & party buses, skip $40+ parking, ride together. All-in pricing. Call now."
+  url="https://www.deluxelimousineservice.com/oktoberfest-transport-huntington-beach/"
+  image="/images/2026/10/oktoberfest-transport-huntington-beach.webp"
+  city="Huntington Beach"
+  service="Oktoberfest Transportation"
+>
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
   <main class="bg-ink text-white">
     <section class="py-20 px-5">
       <div class="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
-          <h1 class="font-serif-display text-4xl lg:text-5xl leading-tight">Oktoberfest Transportation Huntington Beach – Avoid Parking & Ride Together</h1>
-          <p class="mt-6 text-white/80 leading-relaxed">Skip Huntington Beach parking fees and surge pricing. Keep your group together with a professional chauffeur in a stretch limo, Hummer, Sprinter, or party bus.</p>
+          <p class="text-gold text-xs font-bold uppercase tracking-[0.15em] mb-4">Huntington Beach · Oktoberfest Season</p>
+          <h1 class="font-serif-display text-4xl lg:text-5xl leading-tight">Oktoberfest Transportation in Huntington Beach</h1>
+          <p class="mt-6 text-white/80 leading-relaxed">
+            Skip the $40+ parking lots and post-event rideshare lines. Deluxe Limousine Service runs hourly
+            <a href="/party-bus-rental/" class="text-gold hover:text-gold-soft underline underline-offset-4">party buses</a>,
+            <a href="/hummer-limo-service/" class="text-gold hover:text-gold-soft underline underline-offset-4">Hummer limos</a>, Sprinters,
+            and stretch limos for Oktoberfest groups — pickup anywhere in OC, drop-off near the venue, scheduled return,
+            all-in pricing. Add brewery or dinner stops in HB, Costa Mesa, or Long Beach on the same booking.
+          </p>
           <div class="mt-8 flex flex-wrap gap-4">
             <a href="tel:7143139173" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gold text-black font-semibold hover:bg-gold-soft transition">Call (714) 313-9173</a>
-            <a href="/contact-us/" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gold text-gold hover:bg-gold hover:text-black transition">Get Free Quote</a>
+            <a href="#quote" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gold text-gold hover:bg-gold hover:text-black transition">Get Free Quote</a>
           </div>
-          <div class="mt-6 text-sm text-white/70"><strong class="text-gold">Oktoberfest Group Special:</strong> Ask about hourly packages for your crew.</div>
+          <div class="mt-6 rounded-lg border border-gold/30 bg-gold/10 px-4 py-3 text-sm text-white/80">
+            <strong class="text-gold">Oktoberfest Group Special:</strong> hourly packages for 8–30 passengers — ask for per-person math.
+          </div>
         </div>
         <div class="rounded-xl overflow-hidden border border-line shadow-xl">
-          <img src="/images/2026/10/oktoberfest-transport-huntington-beach.webp" alt="Oktoberfest transportation Huntington Beach" class="w-full h-auto object-cover" />
+          <img src="/images/2026/10/oktoberfest-transport-huntington-beach.webp" alt="Oktoberfest transportation Huntington Beach — party bus group shuttle with chauffeur" class="w-full h-auto object-cover" width="1200" height="800" fetchpriority="high" />
         </div>
       </div>
     </section>
+
+    <section class="px-5 pb-4">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-2 lg:grid-cols-4 gap-3 text-center text-xs">
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">Skip $40+ Parking</strong><span class="text-white/60">Drop-off near venue</span></div>
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">Hourly Packages</strong><span class="text-white/60">4–6 hr typical</span></div>
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">Brewery Stops</strong><span class="text-white/60">HB, Costa Mesa, LB</span></div>
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">All-In Pricing</strong><span class="text-white/60">No surge, ever</span></div>
+      </div>
+    </section>
+
     <section class="py-16 px-5 bg-ink-soft border-y border-line">
+      <div class="mx-auto max-w-[1200px]">
+        <h2 class="font-serif-display text-3xl mb-4">How Oktoberfest Day Runs</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-3">1. Pickup Together</h3>
+            <p class="text-white/70 text-sm leading-relaxed">One loop through your neighborhood — Anaheim, Irvine, Costa Mesa, or HB. Coolers and ice on board from minute one.</p>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-3">2. Venue + Side Stops</h3>
+            <p class="text-white/70 text-sm leading-relaxed">Oktoberfest main event plus optional brewery or dinner stops. Chauffeur waits curbside — see <a href="/parties/" class="text-gold underline underline-offset-4">party itineraries</a> for ideas.</p>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-3">3. Scheduled Return</h3>
+            <p class="text-white/70 text-sm leading-relaxed">Pre-set pickup time, same driver, everyone home together. No surge, no split rides, no DD rotation.</p>
+          </div>
+        </div>
+        <h2 class="font-serif-display text-2xl mt-12 mb-4">Vehicles for Oktoberfest Groups</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-ink-raised border border-line rounded-xl p-6"><h3 class="font-semibold text-lg mb-2">Party Bus (20–30)</h3><p class="text-white/70 text-sm">Clubs, corporate groups, big friend circles.</p><a href="/anaheim/party-bus-rental/" class="text-gold text-sm underline underline-offset-4 mt-3 inline-block">See party buses</a></div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6"><h3 class="font-semibold text-lg mb-2">Hummer / Sprinter (10–20)</h3><p class="text-white/70 text-sm">Mid-size crews, agile in HB traffic.</p><a href="/sprinter-limo/" class="text-gold text-sm underline underline-offset-4 mt-3 inline-block">See Sprinter</a></div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6"><h3 class="font-semibold text-lg mb-2">Stretch Limo (6–10)</h3><p class="text-white/70 text-sm">Couples and small VIP groups.</p><a href="/hummer-limo-service/" class="text-gold text-sm underline underline-offset-4 mt-3 inline-block">See limos</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quote" class="py-16 px-5">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="font-serif-display text-3xl mb-4">Check Oktoberfest Availability</h2>
+          <p class="text-white/70 mb-6">Saturdays sell out — send your date, headcount, and pickup city for an hourly all-in quote. Or <a href="tel:7143139173" class="text-gold underline underline-offset-4">call (714) 313-9173</a>.</p>
+          <div class="flex flex-wrap gap-2 text-sm">
+            {["Huntington Beach", "Costa Mesa", "Newport Beach", "Anaheim", "Irvine", "Long Beach", "Seal Beach"].map((c) => (
+              <span class="rounded-full border border-line bg-ink-raised px-4 py-1.5 text-white/70">{c}</span>
+            ))}
+          </div>
+        </div>
+        <div class="rounded-xl border border-line bg-ink-raised p-6">
+          <ReservationForm client:load />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5 bg-ink-soft border-t border-line">
       <div class="mx-auto max-w-[800px]">
-        <h2 class="font-serif-display text-3xl mb-6">Frequently Asked Questions</h2>
+        <h2 class="font-serif-display text-3xl mb-6">Oktoberfest Transportation FAQs</h2>
         <FaqAccordion client:load items={faqs} />
+        <div class="flex flex-wrap justify-center gap-4 mt-10">
+          <a href="tel:7143139173" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gold text-black font-semibold hover:bg-gold-soft transition">Call (714) 313-9173</a>
+          <a href="#quote" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gold text-gold hover:bg-gold hover:text-black transition">Request Free Quote</a>
+        </div>
       </div>
     </section>
   </main>
