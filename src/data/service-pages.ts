@@ -107,7 +107,7 @@ export const servicePages: Record<string, ServicePage> = {
     heroTitle: 'Hummer Limo Service Anaheim',
     heroWord: 'Limo',
     heroSubtitle: 'Extended Hummer Limousine',
-    heroBg: '/cbm-assets/deluxe-limousine/hummer-limo-hero.png',
+    heroBg: '/cbm-assets/deluxe-limousine/hummer-limo-hero.webp',
     heroIntro: [
       '[Extended Hummer Limo Service in Anaheim](/anaheim/hummer-limo-service/) is one of our most popular limos. It is perfect for proms because of the large spacious interior, premium sound system, and party atmosphere.',
       'Renting a [Hummer Limo in Orange County](/orange/hummer-limo-rental/) or a [party bus in Anaheim](/anaheim/party-bus-rental/) takes any celebration to the next level.',

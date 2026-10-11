@@ -32,7 +32,7 @@ faqs:
 
 Flying into LAX is the part of a Disneyland trip that deserves a plan. You clear baggage claim with the kids, the stroller, and a luggage cart, and then come the decisions: rental-car shuttle or rideshare queue, parking structure or pickup lane, an hour in traffic or two. Deluxe Limousine Service removes that entire decision. Our LAX to Disneyland limo service is a private, chauffeured transfer that meets you inside the terminal, handles the bags, and drives you straight to your Anaheim hotel on a flat, transparent rate.
 
-We're an Orange County limousine company based in Stanton, minutes from the Disneyland Resort, providing airport transfers to and from LAX, John Wayne (SNA), Long Beach (LGB), and Ontario (ONT) since 2010. This page covers exactly how the service works: what's included, which vehicles fit your group, the route and timing, and how to book.
+We're an Orange County limousine company based in Stanton, minutes from the Disneyland Resort, providing airport transfers to and from LAX, John Wayne (SNA), Long Beach (LGB), and Ontario (ONT) since 2002. This page covers exactly how the service works: what's included, which vehicles fit your group, the route and timing, and how to book.
 
 ## How Our LAX to Disneyland Limo Service Works
 
@@ -194,7 +194,7 @@ We've covered the practical side of airport service before: our guide to [LAX li
 
 ## Why Deluxe Limousine Service for Your Disneyland Trip
 
-Deluxe Limousine Service has provided chauffeured transportation across Anaheim and Orange County since 2010. We're based at 8131 Electric Ave in Stanton — minutes from the Disneyland Resort, not on the other side of the county — and our 24/7 dispatch line means no one is calling a third party at 4am to cover your pickup.
+Deluxe Limousine Service has provided chauffeured transportation across Anaheim and Orange County since 2002. We're based at 8131 Electric Ave in Stanton — minutes from the Disneyland Resort, not on the other side of the county — and our 24/7 dispatch line means no one is calling a third party at 4am to cover your pickup.
 
 The details are where airport service lives or dies: our chauffeurs know the LAX terminal layouts, the arrivals loop, and the drop-off points at the Anaheim resort hotels. We operate our own vehicles with our own licensed chauffeurs, and our rates are flat and transparent, which makes an airport transfer easy to budget for. The full picture of our [LAX airport rides from Anaheim](/airport-rides/) is on the airport services page, and our [cities page](/cities/) covers everywhere we operate across Orange County.
 

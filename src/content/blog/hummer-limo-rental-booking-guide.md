@@ -179,7 +179,7 @@ Book a [Hummer limo rental](/orange/hummer-limo-rental/) when the group is large
 
 ## Reserve a Hummer Stretch in Anaheim and Orange County
 
-Deluxe Limousine Service has provided chauffeured transportation across Anaheim and Orange County since 2010. The fleet includes the [Hummer stretch limousine](/hummer-limo-service/) alongside Chrysler 300 stretch limos, Mercedes Sprinters, executive SUVs, and [party buses](/party-bus-rental/). Reservations include red carpet service and complimentary chilled refreshments, and featured packages of five hours or more include a complimentary first hour.
+Deluxe Limousine Service has provided chauffeured transportation across Anaheim and Orange County since 2002. The fleet includes the [Hummer stretch limousine](/hummer-limo-service/) alongside Chrysler 300 stretch limos, Mercedes Sprinters, executive SUVs, and [party buses](/party-bus-rental/). Reservations include red carpet service and complimentary chilled refreshments, and featured packages of five hours or more include a complimentary first hour.
 
 - Call: (714) 313-9173
 - Location: 8131 Electric Ave, Stanton, CA 90680

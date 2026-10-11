@@ -196,7 +196,7 @@ Book early for peak dates, verify the TCP license before you pay a deposit, and 
 
 ## Plan Your Wedding Transportation With Deluxe Limousine Service
 
-Deluxe Limousine Service has provided chauffeured transportation across Anaheim and Orange County since 2010, with a fleet that includes [stretch limousines](/limo-service-orange-county/), executive SUVs, [Mercedes Sprinters](/sprinter-limo/), and [party buses](/party-bus-rental/). Reservations include red carpet service and complimentary chilled refreshments, and featured packages of five hours or more include a complimentary first hour. Peak wedding dates have limited availability, so booking three to six months ahead is recommended.
+Deluxe Limousine Service has provided chauffeured transportation across Anaheim and Orange County since 2002, with a fleet that includes [stretch limousines](/limo-service-orange-county/), executive SUVs, [Mercedes Sprinters](/sprinter-limo/), and [party buses](/party-bus-rental/). Reservations include red carpet service and complimentary chilled refreshments, and featured packages of five hours or more include a complimentary first hour. Peak wedding dates have limited availability, so booking three to six months ahead is recommended.
 
 Learn more about [wedding limousine packages](/wedding/) or arrange a [wedding party shuttle in Orange County](/orange/wedding-party-shuttle/).
 

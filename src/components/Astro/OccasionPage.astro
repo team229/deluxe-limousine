@@ -23,6 +23,16 @@ const faqSec = faq ?? page.sections[2];
 
 const faqItems = (faqSec?.cards ?? []).map((c) => ({ question: c.title, answer: c.desc }));
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqItems.map((f) => ({
+    "@type": "Question",
+    "name": f.question,
+    "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+  }))
+};
+
 const icons = ['car', 'user', 'clock'];
 const iconSvg: Record<string, string> = {
   car: '<path d="M5 16l1.5-4.5A2 2 0 0 1 8.4 10h7.2a2 2 0 0 1 1.9 1.5L19 16"/><circle cx="7.5" cy="16.5" r="1.5"/><circle cx="16.5" cy="16.5" r="1.5"/><rect x="3" y="16" width="18" height="3" rx="1"/>',
@@ -31,7 +41,8 @@ const iconSvg: Record<string, string> = {
 };
 ---
 
-<Layout title={`${page.header} | Deluxe Limousine Service`} description={page.heroP.slice(0, 155)} url={`https://www.deluxelimousineservice.com/${page.slug}/`}>
+<Layout title={page.metaTitle ?? `${page.header} | Deluxe Limousine Service`} description={page.metaDescription ?? page.heroP.slice(0, 155)} url={`https://www.deluxelimousineservice.com/${page.slug}/`}>
+  {faqItems.length >= 1 && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
   <!-- HERO -->
   <section class="py-20 bg-ink">
     <div class={`${CONTAINER} grid grid-cols-1 lg:grid-cols-2 gap-12 items-center`}>
@@ -39,7 +50,7 @@ const iconSvg: Record<string, string> = {
         <a href="/" class="inline-flex items-center gap-2 no-underline text-white/60 hover:text-gold text-[0.8rem] font-medium uppercase tracking-[0.1em] mb-5 transition-colors">
           <span class="text-gold">←</span> Back to Occasions
         </a>
-        <h1 class="font-serif-display text-[clamp(2rem,4.5vw,3.4rem)] text-white leading-[1.15]">{page.header}</h1>
+        <h1 class="font-serif-display text-[clamp(2rem,4.5vw,3.4rem)] text-white leading-[1.15]">{page.h1 ?? page.header}</h1>
         <p class="text-white/70 leading-[1.85] mt-6" set:html={linkify(page.heroP)} />
         <div class="flex gap-4 flex-wrap mt-8">
           <a href="tel:7143139173" class="inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 text-sm font-semibold tracking-wide transition-all duration-300 cursor-pointer no-underline bg-gold text-black border border-gold shadow-[0_8px_25px_rgba(212,175,55,0.2)] hover:-translate-y-px hover:bg-gold-soft">☎ Call (714) 313-9173</a>
