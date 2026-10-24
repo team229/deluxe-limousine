@@ -700,9 +700,9 @@
     .location-detail-text strong { display: block; font-size: 15px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
     .location-detail-text span { font-size: 14px; color: var(--gray); line-height: 1.6; }
     .map-frame-wrap { position: relative; overflow: hidden; }
-    .map-frame-wrap::before { content: ''; position: absolute; top: -8px; left: -8px; right: 8px; bottom: 8px; border: 1px solid rgba(200,168,75,0.25); pointer-events: none; z-index: 0; }
-    .map-frame-wrap iframe { position: relative; z-index: 1; width: calc(100% + 200px); height: 480px; margin-left: -200px; margin-top: -60px; border: 0; display: block; filter: grayscale(30%) contrast(1.05); pointer-events: none; }
-    /* Block all interaction (and the "Open in Maps" control) on the embedded map */
+    .map-frame-wrap::before { content: ''; position: absolute; top: -8px; left: -8px; right: 8px; bottom: 8px; border: 1px solid rgba(200,168,75,0.25); pointer-events: none; z-index: 2; }
+    .map-frame-wrap iframe { position: relative; z-index: 1; width: 100%; height: 420px; border: 0; display: block; filter: grayscale(30%) contrast(1.05); pointer-events: none; }
+    /* Click barrier so the embedded map stays non-interactive */
     .map-frame-wrap::after { content: ''; position: absolute; inset: 0; z-index: 3; background: transparent; }
 
     /* ── RESPONSIVE ── */
@@ -797,7 +797,7 @@
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-K9Z52WK9');</script>
+  })(window,document,'script','dataLayer','GTM-TDPPGSHZ');</script>
   <!-- End Google Tag Manager -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <style>
@@ -832,7 +832,7 @@
 <body dir="ltr" spellcheck="false">
 
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9Z52WK9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDPPGSHZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- LUXURY TICKER -->
@@ -1527,7 +1527,7 @@
           <a href="tel:7143139173" class="btn-primary" style="margin-top:12px;display:inline-flex;"><i data-lucide="phone" class="icon-md"></i> Call for a Free Quote</a>
         </div>
         <div class="map-frame-wrap">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d850381.7839699022!2d-118.96324472671222!3d33.63632773911848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd2928ea3c3fdb%3A0xded2b51a21205ae5!2sDeluxe%20Limousine%20Service!5e0!3m2!1sen!2sin!4v1776250750196!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Deluxe Limousine Service location on Google Maps"></iframe>
+          <iframe src="https://maps.google.com/maps?q=33.805012,-117.993050&amp;z=11&amp;output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Deluxe Limousine Service location on Google Maps"></iframe>
         </div>
       </div>
     </div>
