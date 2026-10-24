@@ -116,5 +116,21 @@ const hoursOptions = ["3 hours","4 hours","5 hours — most popular","6 hours","
   :global(.flatpickr-day.today:hover) { background: rgba(232,200,122,0.15) !important; }
   :global(.flatpickr-day.disabled) { color: #555 !important; }
   :global(.numInputWrapper:hover) { background: rgba(232,200,122,0.1) !important; }
-  :global(.flatpickr-prev-month:hover svg), :global(.flatpickr-next-month:hover svg) { fill: #E8C87A !important; }
+  :global(.flatpickr-prev-month svg),
+  :global(.flatpickr-next-month svg) {
+    fill: #ffffff !important;
+  }
+  :global(.flatpickr-prev-month),
+  :global(.flatpickr-next-month) {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+  }
+  :global(.flatpickr-prev-month:hover svg),
+  :global(.flatpickr-next-month:hover svg) {
+    fill: #E8C87A !important;
+  }
+  :global(.flatpickr-prev-month:hover),
+  :global(.flatpickr-next-month:hover) {
+    color: #E8C87A !important;
+  }
 </style>
