@@ -823,6 +823,35 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-K9Z52WK9');</script>
   <!-- End Google Tag Manager -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <style>
+    .flatpickr-calendar {
+      background: #141414 !important;
+      border: 1px solid #2a2a2a !important;
+      border-radius: 0.75rem !important;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.7) !important;
+    }
+    .flatpickr-months { background: #1a1a1a !important; }
+    .flatpickr-month { color: #E8C87A !important; }
+    .flatpickr-weekdays { background: #1a1a1a !important; }
+    span.flatpickr-weekday { color: #E8C87A !important; }
+    .flatpickr-day { color: #e5e5e5 !important; }
+    .flatpickr-day:hover { background: rgba(232,200,122,0.15) !important; border-color: transparent !important; color: #E8C87A !important; }
+    .flatpickr-day.selected { background: #E8C87A !important; border-color: #E8C87A !important; color: #000 !important; }
+    .flatpickr-day.today { border-color: rgba(232,200,122,0.4) !important; }
+    .flatpickr-day.today:hover { background: rgba(232,200,122,0.15) !important; }
+    .flatpickr-day.disabled { color: #555 !important; }
+    .numInputWrapper:hover { background: rgba(232,200,122,0.1) !important; }
+    .flatpickr-prev-month svg,
+    .flatpickr-next-month svg { fill: #ffffff !important; }
+    .flatpickr-prev-month,
+    .flatpickr-next-month { color: #ffffff !important; fill: #ffffff !important; }
+    .flatpickr-prev-month:hover svg,
+    .flatpickr-next-month:hover svg { fill: #E8C87A !important; }
+    .flatpickr-prev-month:hover,
+    .flatpickr-next-month:hover { color: #E8C87A !important; }
+    #eventDate { cursor: pointer; }
+  </style>
 </head>
 <body dir="ltr" spellcheck="false">
 
@@ -938,7 +967,7 @@
           </div>
           <div class="form-group">
             <label for="eventDate">Event Date</label>
-            <input type="date" id="eventDate" name="eventDate" autocomplete="bday">
+            <input type="text" id="eventDate" name="eventDate" placeholder="Select Date" autocomplete="off" readonly>
           </div>
           <div class="form-group">
             <label for="eventType">Event (optional)</label>
@@ -1839,6 +1868,21 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     if (window.lucide) { lucide.createIcons(); }
+  </script>
+
+  <!-- EVENT DATE PICKER (matches main landing page) -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    (function () {
+      var el = document.getElementById('eventDate');
+      if (!el || !window.flatpickr) return;
+      flatpickr(el, {
+        dateFormat: 'M j, Y',
+        minDate: 'today',
+        disableMobile: true,
+        allowInput: false
+      });
+    })();
   </script>
 </body>
 </html>
