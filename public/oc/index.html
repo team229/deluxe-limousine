@@ -49,23 +49,6 @@
     "sameAs": ["https://share.google/UTbcoCGpuqGgM4rfV"]
   }
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      { "@type": "Question", "name": "How far in advance should I book a limo?", "acceptedAnswer": { "@type": "Answer", "text": "We recommend booking 1-2 weeks in advance for standard events, and 4-8 weeks ahead for weddings, proms, and holidays. We also accommodate last-minute bookings whenever availability allows." } },
-      { "@type": "Question", "name": "How many people can fit in the party bus?", "acceptedAnswer": { "@type": "Answer", "text": "Our Deluxe Party Bus comfortably accommodates up to 30 passengers with full standing room, premium LED lighting, a dance pole, and a high-end sound system. Our Hummer Limo comfortably fits 14-20, and our stretch Chrysler fits up to 10. We'll help match the right vehicle to your group size." } },
-      { "@type": "Question", "name": "Do you offer a free hour promotion?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We currently offer a 1 FREE Hour special on select bookings! Just ask when you call or fill out our quote form. Subject to availability." } },
-      { "@type": "Question", "name": "Are your drivers licensed and insured?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. Every chauffeur holds a valid California commercial driver's license, undergoes background checks, and is professionally trained. Our entire fleet is fully licensed, bonded, and insured." } },
-      { "@type": "Question", "name": "Is alcohol allowed in the limousine or party bus?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Alcoholic beverages are permitted for passengers aged 21 and over. All vehicles include a beverage bar or cooler. BYOB is welcome; pre-stocked beverages available upon request." } },
-      { "@type": "Question", "name": "What areas do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "We serve Anaheim, all of Orange County, Los Angeles, SNA (John Wayne) Airport, LAX Airport, and destinations like Temecula Wine Country, SOFI Stadium, and Disneyland." } },
-      { "@type": "Question", "name": "Do you offer deals for Halloween events like Knott's Scary Farm or Halloween Horror Nights?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We run flat-rate Halloween packages to Knott's Scary Farm (Sept 17-Oct 31), Universal Studios Hollywood's Halloween Horror Nights (Sept 3-Nov 1), and Oogie Boogie Bash at Disney California Adventure (select nights through Oct 31). We drop you at the gate, wait, and pick you up at the exit when the night ends — with no surge pricing, ever. Ask about our 1 FREE hour offer on qualifying rentals." } },
-      { "@type": "Question", "name": "Can you drive us to Universal Studios Hollywood or Disneyland for Halloween?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. We provide chauffeured rides to Universal Studios Hollywood and the Disneyland Resort all year, including Halloween nights. A chauffeur waits with the vehicle so you arrive on time and leave on your schedule — no parking fees, no designated-driver worries." } },
-      { "@type": "Question", "name": "Do you have homecoming group specials?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our Homecoming flat-rate puts the whole squad on one party bus for less than separate rideshares. Parents can book the ride, the chauffeur waits, and everyone gets home safe after the dance and afterparty." } }
-    ]
-  }
-  </script>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -708,19 +691,6 @@
     .float-text { background: var(--dark2); color: var(--white); border: 1px solid rgba(200,168,75,0.3); }
     .float-text:hover { border-color: var(--gold); color: var(--gold); transform: translateX(-4px); }
 
-    /* ── FAQ ── */
-    #faq { background: var(--dark); }
-    .faq-header { text-align: center; margin-bottom: 50px; }
-    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; max-width: 1100px; margin: 0 auto; }
-    .faq-item { background: var(--dark2); border: 1px solid rgba(200,168,75,0.1); overflow: hidden; transition: border-color 0.3s; }
-    .faq-item:hover { border-color: rgba(200,168,75,0.3); }
-    .faq-question { width: 100%; background: none; border: none; padding: 24px 28px; display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer; text-align: left; font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 600; color: var(--white); transition: color 0.3s; }
-    .faq-question:hover { color: var(--gold); }
-    .faq-icon { font-size: 22px; color: var(--gold); flex-shrink: 0; transition: transform 0.35s ease; font-weight: 300; line-height: 1; }
-    .faq-item.open .faq-icon { transform: rotate(45deg); }
-    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s; padding: 0 28px; }
-    .faq-item.open .faq-answer { max-height: 300px; padding: 0 28px 24px; }
-    .faq-answer p { font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.75; border-top: 1px solid rgba(200,168,75,0.12); padding-top: 16px; }
 
     /* ── GOOGLE MAP ── */
     #location { background: var(--black); }
@@ -729,13 +699,14 @@
     .location-icon { width: 44px; height: 44px; background: rgba(200,168,75,0.12); border: 1px solid rgba(200,168,75,0.3); display: flex; align-items: center; justify-content: center; color: var(--gold); flex-shrink: 0; }
     .location-detail-text strong { display: block; font-size: 15px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
     .location-detail-text span { font-size: 14px; color: var(--gray); line-height: 1.6; }
-    .map-frame-wrap { position: relative; }
+    .map-frame-wrap { position: relative; overflow: hidden; }
     .map-frame-wrap::before { content: ''; position: absolute; top: -8px; left: -8px; right: 8px; bottom: 8px; border: 1px solid rgba(200,168,75,0.25); pointer-events: none; z-index: 0; }
-    .map-frame-wrap iframe { position: relative; z-index: 1; width: 100%; height: 420px; border: 0; display: block; filter: grayscale(30%) contrast(1.05); }
+    .map-frame-wrap iframe { position: relative; z-index: 1; width: calc(100% + 200px); height: 480px; margin-left: -200px; margin-top: -60px; border: 0; display: block; filter: grayscale(30%) contrast(1.05); pointer-events: none; }
+    /* Block all interaction (and the "Open in Maps" control) on the embedded map */
+    .map-frame-wrap::after { content: ''; position: absolute; inset: 0; z-index: 3; background: transparent; }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 1024px) {
-      .faq-grid { grid-template-columns: 1fr; }
       .location-wrap { grid-template-columns: 1fr; gap: 40px; }
       .hero-content { grid-template-columns: 1fr; grid-template-areas: "left" "form" "extras"; padding-top: 80px; gap: 36px; }
       .hero-form-card { max-width: 600px; justify-self: center; width: 100%; }
@@ -797,8 +768,6 @@
       .slider-btn.prev { left: 10px; }
       .slider-btn.next { right: 10px; }
       .slide-caption { font-size: 11px; }
-      .faq-question { font-size: 15px; padding: 20px 22px; }
-      .faq-answer p { font-size: 14px; }
       .location-detail-text span { font-size: 14px; }
       .form-status { font-size: 14px; }
     }
@@ -1517,136 +1486,6 @@
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section id="faq">
-    <div class="container">
-      <div class="faq-header">
-        <div class="section-label" style="justify-content:center;">Got Questions?</div>
-        <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
-        <p class="section-sub" style="margin-left:auto;margin-right:auto;">Everything you need to know before you book</p>
-      </div>
-      <div class="faq-grid">
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            How far in advance should I book a limo?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>We recommend booking at least 1-2 weeks in advance for standard events, and 4-8 weeks ahead for weddings, proms, and holidays. That said, we do accommodate last-minute bookings whenever availability allows. Call us at (714) 313-9173 and we'll do our best.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            What areas do you serve?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>We proudly serve Anaheim, all of Orange County, Los Angeles, SNA (John Wayne) Airport, LAX Airport, and popular destinations like Temecula Wine Country, SOFI Stadium, Disneyland, and beyond. If you're not sure whether we cover your route, just give us a call.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Is alcohol allowed in the limousine or party bus?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes. Alcoholic beverages are permitted for passengers aged 21 and over in our vehicles. All of our vehicles include a beverage bar or cooler. We ask that all passengers drink responsibly. BYOB is welcome; we can also arrange for pre-stocked beverages upon request.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            What is your cancellation policy?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Cancellations made more than 7 days before your reservation receive a full refund. Cancellations within 72 hours of the scheduled service may be subject to a cancellation fee. Please contact us as soon as possible if your plans change. We're always happy to reschedule when we can.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Are your drivers licensed and insured?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Absolutely. Every chauffeur at Deluxe Limousine Service holds a valid California commercial driver's license, undergoes background checks, and is professionally trained. Our entire fleet is fully licensed, bonded, and insured for your complete peace of mind.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Do you offer airport meet-and-greet service?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes! Our drivers track your flight in real time and adjust pickup times for any delays. We offer curbside pickup or full meet-and-greet with a name sign inside the terminal at SNA, LAX, and other SoCal airports. Your comfort and punctuality are our top priorities.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            How many people can fit in the party bus?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Our Deluxe Party Bus comfortably accommodates up to 30 passengers with full standing room, premium LED lighting, a dance pole, and a high-end sound system. Our Hummer Limo comfortably fits 14-20, and our stretch Chrysler fits up to 10. We'll help match the right vehicle to your group size.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Do you offer deals for Halloween events like Knott's Scary Farm or Halloween Horror Nights?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes! We run flat-rate Halloween packages to <strong>Knott's Scary Farm</strong> (Sept 17-Oct 31), <strong>Halloween Horror Nights at Universal Studios Hollywood</strong> (Sept 3-Nov 1), and <strong>Oogie Boogie Bash at Disney California Adventure</strong> (select nights through Oct 31). We drop you at the gate, wait, and pick you up at the exit when the night ends — with <strong style="color:var(--gold)">no surge pricing, ever</strong>. Family-friendly daytime runs are available too. Ask about our 1 FREE hour offer on qualifying rentals.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Can you drive us to Universal Studios Hollywood or Disneyland for Halloween?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Absolutely. We provide chauffeured rides to Universal Studios Hollywood and the Disneyland Resort all year, including Halloween nights. A chauffeur waits with the vehicle so you arrive on time and leave on your schedule — no parking fees, no designated-driver worries. Sprinter, Hummer, stretch limo, and party bus options are available depending on your group size.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Do you have homecoming group specials?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes. Our Homecoming flat-rate puts the whole squad on one party bus for less than separate rideshares. Parents can book the ride, the chauffeur waits, and everyone gets home safe after the dance and afterparty. Call us for the current group rate — (714) 313-9173.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Can I decorate the vehicle for a special occasion?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes! We welcome tasteful decorations for weddings, quinceañeras, birthdays, and more. We ask that no confetti, silly string, or permanent fixtures are used. Balloons, ribbons, and floral arrangements are all welcome. Let us know ahead of time and we can even help coordinate a surprise setup.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            What is included in the rental price?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>All rentals include a professional licensed chauffeur, complimentary bottled water, a pre-inspected and detailed vehicle, and fuel. Gratuity, tolls, and parking are not included unless otherwise agreed upon. We provide transparent, upfront pricing with no hidden fees. Guaranteed.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
-            Do you offer a free hour promotion?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes. We currently offer a <strong style="color:var(--gold)">1 FREE Hour</strong> special on select bookings! Just ask about it when you call or fill out our quote form. This offer is available for qualifying events and is subject to availability. Don't wait, contact us today to lock in your deal.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- LOCATION & GOOGLE MAP -->
   <section id="location">
     <div class="container">
@@ -1830,16 +1669,6 @@
           });
       });
     })();
-  </script>
-
-  <!-- FAQ TOGGLE SCRIPT -->
-  <script>
-    function toggleFaq(btn) {
-      var item = btn.parentElement;
-      var wasOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item.open').forEach(function (el) { el.classList.remove('open'); });
-      if (!wasOpen) item.classList.add('open');
-    }
   </script>
 
   <!-- EXPERIENCE SLIDER SCRIPT -->
