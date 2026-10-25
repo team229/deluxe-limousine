@@ -924,14 +924,6 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="replyMethod">How Should We Reply? *</label>
-            <select id="replyMethod" name="replyMethod" required>
-              <option value="Call" selected>Call Me</option>
-              <option value="Text">Text Me</option>
-              <option value="Email">Email Me</option>
-            </select>
-          </div>
-          <div class="form-group">
             <label for="fleetType">Vehicle Needed *</label>
             <select id="fleetType" name="fleetType" required>
               <option value="" disabled selected>Select Fleet Type</option>
@@ -1622,8 +1614,6 @@
 
         var parts = [];
         parts.push('Phone: ' + document.getElementById('phone').value.trim());
-        var reply = document.getElementById('replyMethod').value;
-        if (reply) parts.push('Reply Method: ' + reply);
         var fleet = document.getElementById('fleetType').value;
         if (fleet) parts.push('Fleet: ' + fleet);
         var date = document.getElementById('eventDate').value;
