@@ -204,4 +204,4 @@ You'll spend plenty of time planning park days, dining reservations, and everyth
 
 One phone call, one flat number, a chauffeur watching your flight, and a car that fits the family and the luggage — that's the whole pitch. If you want the grand entrance, the Chrysler 300 stretch, the Hummer, and the party bus are parked for that too.
 
-Call Deluxe Limousine Service at (714) 313-9173, or request a quote through our [contact page](/contact-us/), and you'll have your LAX to Disneyland transfer confirmed in writing. We're awake anyway — the dispatch line runs 24/7, and your flight doesn't care what time zone you think you're in.
+Call Deluxe Limousine Service at (714) 313-9173, or request a quote through our [contact page](/contact-us/), and you'll have your LAX to Disneyland transfer confirmed in writing. We're awake anyway — the dispatch line runs 24/7, and your flight doesn't care what time zone you think you're in. For the days after you check in, the [Disneyland limo service guide](/blog/disneyland-limo-service/) covers hotel drops, mid-day returns, and late exits.

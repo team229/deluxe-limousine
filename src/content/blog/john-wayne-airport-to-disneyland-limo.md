@@ -182,4 +182,4 @@ The cheap quote is usually cheap because something is missing, and the something
 
 The airport ride is the part of a Disneyland trip you can settle in a five-minute call. Flight number, group size, bag count, hotel. We confirm the vehicle and the flat rate in writing before you book.
 
-Call Deluxe Limousine Service at **(714) 313-9173**, or send the details through the [contact page](/contact-us/). We're an Orange County operator running this route since 2002 out of Stanton, minutes from the resort, with 24/7 dispatch. If you're comparing us with a rideshare, the difference shows up at baggage claim, not in the app.
+Call Deluxe Limousine Service at **(714) 313-9173**, or send the details through the [contact page](/contact-us/). We're an Orange County operator running this route since 2002 out of Stanton, minutes from the resort, with 24/7 dispatch. If you're comparing us with a rideshare, the difference shows up at baggage claim, not in the app. Once you're checked in, our [Disneyland limo service guide](/blog/disneyland-limo-service/) covers the park-day side: hotel drops, the mid-day return, and the exit after the fireworks.
