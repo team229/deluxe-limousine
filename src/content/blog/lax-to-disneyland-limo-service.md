@@ -196,7 +196,7 @@ We've covered the practical side of airport service before: our guide to [LAX li
 
 Deluxe Limousine Service has provided chauffeured transportation across Anaheim and Orange County since 2002. We're based at 8131 Electric Ave in Stanton — minutes from the Disneyland Resort, not on the other side of the county — and our 24/7 dispatch line means no one is calling a third party at 4am to cover your pickup.
 
-The details are where airport service lives or dies: our chauffeurs know the LAX terminal layouts, the arrivals loop, and the drop-off points at the Anaheim resort hotels. We operate our own vehicles with our own licensed chauffeurs, and our rates are flat and transparent, which makes an airport transfer easy to budget for. The full picture of our [LAX airport rides from Anaheim](/airport-rides/) is on the airport services page, and our [cities page](/cities/) covers everywhere we operate across Orange County.
+The details are where airport service lives or dies: our chauffeurs know the LAX terminal layouts, the arrivals loop, and the drop-off points at the Anaheim resort hotels. We operate our own vehicles with our own licensed chauffeurs, and our rates are flat and transparent, which makes an airport transfer easy to budget for. The full picture of our [LAX airport rides from Anaheim](/airport-rides/) is on the airport services page, and our [cities page](/cities/) covers everywhere we operate across Orange County. If you're flying into John Wayne instead, that shorter run is covered in our [SNA to Disneyland guide](/blog/john-wayne-airport-to-disneyland-limo/).
 
 ## Ready to Book the Easy Part of Your Disneyland Trip?
 
