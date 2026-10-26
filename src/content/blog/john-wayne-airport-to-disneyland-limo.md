@@ -38,7 +38,6 @@ faqs:
     answer: "Yes. Dispatch runs 24/7, and a 5am pickup for a 7am departure is a normal request. Tell us the flight number when you book and we will work the pickup time backwards from it, then adjust the day of travel if the schedule moves."
 ---
 
-# Getting From John Wayne Airport to Disneyland by Limo: A Local Operator's Guide
 
 John Wayne Airport sits about 14 miles from Disneyland Resort in Anaheim, which is typically 20 to 30 minutes by car. A chauffeured transfer runs point to point: flight tracking, a driver who meets you at baggage claim, luggage help, and a flat rate confirmed before you book.
 
