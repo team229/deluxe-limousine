@@ -185,4 +185,4 @@ Deluxe Limousine Service has provided chauffeured transportation across Anaheim 
 - Location: 8131 Electric Ave, Stanton, CA 90680
 - Availability: 24/7 dispatch
 
-Share your date, group size, and addresses through the [contact page](/contact-us/) and you will get a quote with the vehicle confirmed for your route.
+Share your date, group size, and addresses through the [contact page](/contact-us/) and you will get a quote with the vehicle confirmed for your route. For what those hours cost in this market, see the [Orange County limo rental cost guide](/blog/limo-rental-orange-county-cost/).

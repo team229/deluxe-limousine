@@ -183,3 +183,34 @@ The cheap quote is usually cheap because something is missing, and the something
 The airport ride is the part of a Disneyland trip you can settle in a five-minute call. Flight number, group size, bag count, hotel. We confirm the vehicle and the flat rate in writing before you book.
 
 Call Deluxe Limousine Service at **(714) 313-9173**, or send the details through the [contact page](/contact-us/). We're an Orange County operator running this route since 2002 out of Stanton, minutes from the resort, with 24/7 dispatch. If you're comparing us with a rideshare, the difference shows up at baggage claim, not in the app. Once you're checked in, our [Disneyland limo service guide](/blog/disneyland-limo-service/) covers the park-day side: hotel drops, the mid-day return, and the exit after the fireworks.
+
+
+## Frequently asked questions
+
+### How far is John Wayne Airport from Disneyland?
+
+About 14 miles from curb to hotel door. The drive is typically 20 to 30 minutes in normal traffic, and longer on weekday afternoons when I-5 north is heavy through Santa Ana and Anaheim.
+
+### How much does a limo from SNA to Disneyland cost?
+
+Rates are quoted per vehicle for your trip, not published as a menu, because vehicle class, date, time, passenger count, bag count and stops all move the number. You get a flat rate confirmed in writing before you book, and a delayed flight does not change it. Call (714) 313-9173 for an exact figure.
+
+### Where does the chauffeur meet us at SNA?
+
+At baggage claim, with a name sign. John Wayne Airport runs Terminal A, B and C on one arrivals level, so baggage claim is a short walk from the doors. The chauffeur takes the luggage cart, walks you out, and brings the car around from the Ground Transportation Center.
+
+### Can a stretch limousine hold our suitcases?
+
+Usually not all of them. In our experience a 10-passenger stretch takes roughly three large cases, because the trunk was built for weekend bags rather than a week of Disney luggage. Treat that as a working guide, not a guarantee. Groups flying with checked bags are better off in the SUV or the Sprinter.
+
+### Do you provide car seats and boosters for kids?
+
+Yes. Give us the ages and weights at booking and the seats are installed before pickup at SNA. California law requires the right restraint for the child's age and size, and the chauffeur will not move until every child is properly buckled.
+
+### Is it faster to fly into SNA or LAX for Disneyland?
+
+SNA is closer, so if flight times and fares are close, SNA wins. The transfer is about 14 miles against roughly 35 from LAX. LAX carries more nonstops and is sometimes cheaper, but plan on 45 to 90 minutes in the car afterward. Long Beach sits between the two at roughly 18 miles.
+
+### Do you handle early-morning and red-eye pickups?
+
+Yes. Dispatch runs 24/7, and a 5am pickup for a 7am departure is a normal request. Tell us the flight number when you book and we will work the pickup time backwards from it, then adjust the day of travel if the schedule moves.
