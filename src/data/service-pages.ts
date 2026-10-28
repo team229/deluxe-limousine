@@ -132,6 +132,7 @@ export const servicePages: Record<string, ServicePage> = {
     heroIntro: [
       '[Party bus rental](/anaheim/party-bus-rental/) is the most requested limo in our fleet. Built on the history of being an ultimate entertainment limousine, our party buses bring the nightlife to you.',
       'Groups planning a [bachelor party limo rental in Anaheim](/anaheim/bachelor-party-limo-rental/) or a [Hummer limo service near Anaheim](/anaheim/hummer-limo-service/) love our high-capacity buses.',
+      'Booking for the last week of December? Our [New Year\'s Eve party bus booking timeline](/blog/new-years-eve-limo-orange-county/) covers what sells out first and how to handle the midnight pickup.',
     ],
     heading: 'Our Full Fleet',
     intro: 'From the Black Chrysler 300 to the Party Bus, choose the perfect vehicle for you.',

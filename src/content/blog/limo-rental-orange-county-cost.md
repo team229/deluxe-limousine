@@ -192,3 +192,5 @@ We have run chauffeured cars out of Stanton since 2002, across 24 Orange County 
 **Is an airport transfer cheaper by the hour or by the trip?** By the trip, almost always. A four-hour minimum at $90 an hour is $360 before gratuity, and that is four hours of a car you may only need for one. Hourly only makes sense when the vehicle stays with you between stops.
 
 All rates above were published by other operators on 28 October 2026. They will move. Check current pricing before you commit a budget.
+
+If your date is in December, the rate is the easy part. The [December and New Year's Eve booking timeline](/blog/new-years-eve-limo-orange-county/) covers what sells out, in what order, and why the 6pm to 8pm slot on 31 December goes before anything else.
