@@ -204,4 +204,4 @@ Learn more about [wedding limousine packages](/wedding/) or arrange a [wedding p
 - Location: 8131 Electric Ave, Stanton, CA 90680
 - Availability: 24/7 dispatch
 
-[Request a quote through the contact page](/contact-us) with your date, venue addresses, and guest count. If you want to see how the hourly numbers get built before you call, our [Orange County limo rental cost guide](/blog/limo-rental-orange-county-cost/) shows the published rates and the arithmetic.
+[Request a quote through the contact page](/contact-us) with your date, venue addresses, and guest count. If you want to see how the hourly numbers get built before you call, our [Orange County limo rental cost guide](/blog/limo-rental-orange-county-cost/) shows the published rates and the arithmetic. Still deciding between a stretch and a Sprinter for the party? The [vehicle sizing guide](/blog/which-limo-do-i-need/) has the capacity numbers we actually book against.

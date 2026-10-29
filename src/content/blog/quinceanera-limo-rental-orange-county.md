@@ -207,4 +207,4 @@ Deluxe Limousine Service provides [quinceañera limo rental](/quinceanera/), [Sp
 - Location: 8131 Electric Ave, Stanton, CA 90680
 - Availability: 24/7 dispatch, serving Orange County and surrounding areas
 
-Call today to check vehicle availability and lock in her quinceañera date.
+Call today to check vehicle availability and lock in her quinceañera date. Not sure whether the court fits in a Sprinter or needs the party bus? The [vehicle sizing guide](/blog/which-limo-do-i-need/) has the capacity chart we book against.

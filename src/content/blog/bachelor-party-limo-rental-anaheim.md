@@ -109,4 +109,4 @@ Choose the vehicle by headcount, book 8 hours if you can, and map your stops in 
 
 ## Plan Your Bachelor Party Ride
 
-Ready to reserve a luxury limousine service Anaheim groups can rely on? Call Deluxe Limousine Service at (714) 313-9173 or review the [bachelor party limo rental in Anaheim page](/anaheim/bachelor-party-limo-rental/)). You can also [request a quote online](/contact-us/)) with your date, headcount, and route.
+Ready to reserve a luxury limousine service Anaheim groups can rely on? Call Deluxe Limousine Service at (714) 313-9173 or review the [bachelor party limo rental in Anaheim page](/anaheim/bachelor-party-limo-rental/). You can also [request a quote online](/contact-us/) with your date, headcount, and route. If the group is landing between two vehicle sizes, the [vehicle sizing guide](/blog/which-limo-do-i-need/) shows what each one actually carries.
