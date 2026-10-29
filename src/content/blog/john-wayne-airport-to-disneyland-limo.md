@@ -137,7 +137,7 @@ Booth materials are the other half of it. A stretch limo trunk will not take a f
 
 Work the arrival backwards from the moment you're standing at baggage claim, not from wheels down. Carry-on only at SNA, call it ten minutes from the door. Checked bags, closer to twenty or thirty, and longer on a full Southwest arrival into Terminal C.
 
-For the return leg, our usual guidance is to have the car at your hotel about two hours before a domestic departure, with more built in for international flights, checked bags or a holiday. SNA security is typically quicker than LAX. That's our observation from running this route, not a promise. A 7am flight means a 5am pickup, which is a normal request on our [airport transfer service](/airport-transportation-service/).
+For the return leg, our usual guidance is to have the car at your hotel about two hours before a domestic departure, with more built in for international flights, checked bags or a holiday. SNA security is typically quicker than LAX. That's our observation from running this route, not a promise. A 7am flight means a 5am pickup, which is a normal request on our [airport transfer service](/airport-transportation-service/). If you want the arithmetic behind that two hours rather than the rule of thumb, the [airport departure timing guide](/blog/what-time-to-leave-for-the-airport-orange-county/) works it backwards from wheels-up.
 
 Landing between 3pm and 6pm on a weekday? Add fifteen minutes to whatever the map says. I-5 north through Anaheim does what it does.
 
