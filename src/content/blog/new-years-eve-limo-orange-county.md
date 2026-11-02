@@ -43,6 +43,8 @@ The fleet does not grow in December. Same vehicles in the last week of the year 
 
 Then 31 December lands on a Thursday, and 1 January 2027 is a Friday, so for most offices the next day is closed. That does not shorten the night. It lengthens it.
 
+The other December booking that fills the same weeks is a [Christmas lights tour](/blog/christmas-lights-tour-limo-orange-county/), which runs on weeknights at 6pm rather than on the 31st. Different booking, same limited fleet.
+
 Demand does not fill a night evenly either. Two waves: outbound between 6pm and 8pm, and the return between 12:15am and 1:30am. A vehicle free at 4pm on 31 December is not available at 7pm, and the gap between a dinner booking and a return is too short to resell. A full fleet can look half empty at four and have nothing at seven.
 
 So book early is incomplete advice. Book early for a block, because the block is what runs out.

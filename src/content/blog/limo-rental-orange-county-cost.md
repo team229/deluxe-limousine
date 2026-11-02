@@ -194,3 +194,5 @@ We have run chauffeured cars out of Stanton since 2002, across 24 Orange County 
 All rates above were published by other operators on 28 October 2026. They will move. Check current pricing before you commit a budget.
 
 If your date is in December, the rate is the easy part. The [December and New Year's Eve booking timeline](/blog/new-years-eve-limo-orange-county/) covers what sells out, in what order, and why the 6pm to 8pm slot on 31 December goes before anything else.
+
+A long booking changes the arithmetic in a different way. An eight hour day out to Temecula wine country is priced like two four hour bookings, and the [Temecula wine tour timeline](/blog/temecula-wine-tour-from-orange-county/) shows where the hours actually go.
