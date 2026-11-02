@@ -1,0 +1,299 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FaqAccordion from '../components/React/FaqAccordion.tsx';
+import ReservationForm from '../components/React/ReservationForm.tsx';
+
+const faqs = [
+  {
+    question: "How much does holiday party transportation cost in Orange County?",
+    answer: "Most Orange County holiday party bookings are 4 to 6 hour charters with all-in pricing that covers the chauffeur, fuel, tolls and standard fees. Split across 14 to 30 guests, the per-person cost is usually lower than 10 separate rideshares at surge prices — and nobody has to stay sober to drive. Call (714) 313-9173 for an exact upfront quote for your date and headcount."
+  },
+  {
+    question: "How many guests can you move for a company holiday party?",
+    answer: "A party bus holds 20 to 30 guests, a Hummer stretch limo holds up to 16, a Mercedes Sprinter holds 10 to 14, and an executive SUV holds up to 7. For larger company parties we run multiple coordinated vehicles with staggered pickup times so everyone arrives within the same 15 minutes."
+  },
+  {
+    question: "Do you do one-way or round-trip holiday party shuttles?",
+    answer: "Both. Most groups book round trip so the vehicle waits and brings everyone home, but we also run scheduled shuttles that loop between the office, hotel and venue throughout the evening. For larger teams, looping shuttles are usually the cheapest way to move 40 or more people."
+  },
+  {
+    question: "Can we bring alcohol on the vehicle for a holiday party?",
+    answer: "Guests 21 and over may bring beer, wine and spirits aboard. We provide coolers, ice and glassware. We enforce a strict zero-tolerance policy for underage drinking — valid ID is required, and any violation ends the ride with no refund. Many corporate accounts prefer a no-alcohol policy, which we are happy to enforce on request."
+  },
+  {
+    question: "Do you provide holiday party transportation on weeknights?",
+    answer: "Yes. Weeknight bookings in December are actually the best value — Thursday and Tuesday company parties are common, and vehicles are far easier to secure than on a Friday or Saturday. We run 24/7 through December, including Christmas Eve and New Year's Eve."
+  },
+  {
+    question: "Can you handle multiple pickup locations for employees?",
+    answer: "Yes. Give us the pickup list and we build an efficient route with realistic time buffers. For teams spread across Anaheim, Irvine, Costa Mesa and Newport, we usually recommend two vehicles or a shuttle loop rather than one long pickup run, so nobody is waiting in the car for an hour."
+  },
+  {
+    question: "Do you offer corporate billing and invoicing?",
+    answer: "Yes. Approved corporate accounts receive itemized invoices with trip logs and passenger counts, and we support net-30 terms on request. We can also provide a certificate of insurance naming your company or venue as additionally insured — just ask when you book."
+  },
+  {
+    question: "How far in advance should we book for December?",
+    answer: "Book by early November for the best vehicle choice. December Fridays and Saturdays are committed first, and the 6 to 8 PM arrival window goes before anything else. If you are booking inside December, still call — we hold limited backup vehicles and will tell you honestly what is available."
+  }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map((f) => ({
+    "@type": "Question",
+    "name": f.question,
+    "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+  }))
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Holiday Party Transportation Orange County",
+  "serviceType": "Holiday party limo, party bus and shuttle transportation",
+  "provider": {
+    "@type": "LimousineService",
+    "name": "Deluxe Limousine Service",
+    "telephone": "+1-714-313-9173",
+    "url": "https://www.deluxelimousineservice.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8131 Electric Ave",
+      "addressLocality": "Stanton",
+      "addressRegion": "CA",
+      "postalCode": "90680",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": ["Anaheim", "Irvine", "Costa Mesa", "Santa Ana", "Newport Beach", "Huntington Beach", "Fullerton", "Orange County"],
+  "description": "Holiday party transportation across Orange County. Limos, Sprinters and party buses for 10-30 guests, plus coordinated multi-vehicle shuttles for larger company parties. All-in pricing, professional chauffeurs.",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "url": "https://www.deluxelimousineservice.com/holiday-party-transportation/"
+  }
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.deluxelimousineservice.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Holiday Party Transportation", "item": "https://www.deluxelimousineservice.com/holiday-party-transportation/" }
+  ]
+};
+---
+
+<Layout
+  title="Holiday Party Transportation Orange County | Limo & Party Bus"
+  description="Holiday party transportation in Orange County. Limos, Sprinters and party buses for 10-30 guests, plus multi-vehicle shuttles for big company parties. All-in pricing — call (714) 313-9173."
+  url="https://www.deluxelimousineservice.com/holiday-party-transportation/"
+  image="/images/2026/08/corporate-event-limo-service.webp"
+  city="Irvine"
+  service="Holiday Party Transportation"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <main class="bg-ink text-white">
+    <section class="py-20 px-5">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-gold text-xs font-bold uppercase tracking-[0.15em] mb-4">Orange County · December — Weeknights Too</p>
+          <h1 class="font-serif-display text-4xl lg:text-5xl leading-tight">Holiday Party Transportation in Orange County</h1>
+          <p class="mt-6 text-white/80 leading-relaxed">
+            Get the whole team to the party and home safe — one vehicle, one professional chauffeur, one all-in price. Deluxe Limousine Service runs holiday <a href="/party-bus-rental/" class="text-gold hover:text-gold-soft underline underline-offset-4">party buses</a>, <a href="/hummer-limo-service/" class="text-gold hover:text-gold-soft underline underline-offset-4">Hummer limos</a>, <a href="/sprinter-limo/" class="text-gold hover:text-gold-soft underline underline-offset-4">Mercedes Sprinters</a> and <a href="/black-car-service/" class="text-gold hover:text-gold-soft underline underline-offset-4">executive SUVs</a> for company parties, office dinners and neighborhood celebrations across Anaheim, Irvine, Costa Mesa, Newport Beach and the rest of OC — from 10 guests to 100.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="tel:7143139173" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gold text-black font-semibold hover:bg-gold-soft transition">Call (714) 313-9173</a>
+            <a href="#quote" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gold text-gold hover:bg-gold hover:text-black transition">Get Free Quote</a>
+          </div>
+          <div class="mt-6 rounded-lg border border-gold/30 bg-gold/10 px-4 py-3 text-sm text-white/80">
+            <strong class="text-gold">Corporate note:</strong> itemized invoices, net-30 terms and certificates of insurance available on approved accounts.
+          </div>
+        </div>
+        <div class="rounded-xl overflow-hidden border border-line shadow-xl">
+          <img src="/images/2026/08/corporate-event-limo-service.webp" alt="Holiday party transportation in Orange County — chauffeured luxury SUV outside an office building" class="w-full h-auto object-cover" width="1024" height="683" fetchpriority="high" />
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 pb-4">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-2 lg:grid-cols-4 gap-3 text-center text-xs">
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">No One Drives</strong><span class="text-white/60">Professional chauffeur</span></div>
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">All-In Pricing</strong><span class="text-white/60">Confirmed upfront</span></div>
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">10–30 Guests</strong><span class="text-white/60">Per vehicle</span></div>
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">Weeknights Too</strong><span class="text-white/60">Best December value</span></div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5 bg-ink-soft border-y border-line">
+      <div class="mx-auto max-w-[1200px]">
+        <h2 class="font-serif-display text-3xl mb-4">Why Companies Book a Vehicle Instead of Rideshares</h2>
+        <p class="text-white/70 max-w-[840px] mb-8">
+          A December company party has three problems that rideshares make worse: everyone arrives at different times,
+          someone ends up driving after two drinks, and the 10 PM exodus becomes a twenty-minute scramble in the rain.
+          One chauffeured vehicle fixes all three in a single invoice.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-3">Everyone Arrives Together</h3>
+            <p class="text-white/70 text-sm leading-relaxed">One pickup point, one departure time. No trickle-in, no "running late, start without me," and no empty seats at the table you paid for. For client-facing dinners this is the difference between a professional evening and a chaotic one.</p>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-3">Nobody Drives Home</h3>
+            <p class="text-white/70 text-sm leading-relaxed">Your chauffeur works the night sober and stays with the vehicle. Colleagues can actually enjoy the party without drawing lots for a designated driver — and your company is not the one whose employee got a DUI at the office party.</p>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-3">One Invoice, No Surprises</h3>
+            <p class="text-white/70 text-sm leading-relaxed">The quote covers chauffeur, fuel, tolls and standard fees, and we confirm it in writing before the date. Expense it once, with a trip log, instead of reconciling twenty surge-priced receipts in January.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5">
+      <div class="mx-auto max-w-[1200px]">
+        <h2 class="font-serif-display text-3xl mb-4">Match the Vehicle to Your Guest Count</h2>
+        <p class="text-white/70 max-w-[820px] mb-8">Tell us the headcount and the vibe and we will recommend the right vehicle — or run a coordinated fleet if you are past 30.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="font-semibold text-lg mb-1">Executive SUV</h3>
+            <p class="text-gold text-xs uppercase tracking-[0.12em] mb-3">Up to 7 guests</p>
+            <p class="text-white/70 text-sm">Best for executives, client dinners and small leadership teams. Discreet, quiet, unmarked on request.</p>
+            <a href="/black-car-service/" class="text-gold text-sm underline underline-offset-4 mt-3 inline-block">See executive SUV</a>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="font-semibold text-lg mb-1">Mercedes Sprinter</h3>
+            <p class="text-gold text-xs uppercase tracking-[0.12em] mb-3">10–14 guests</p>
+            <p class="text-white/70 text-sm">The sweet spot for a department night out. Stand-up headroom, lounge seating, easy for tight restaurant valets.</p>
+            <a href="/sprinter-limo/" class="text-gold text-sm underline underline-offset-4 mt-3 inline-block">See Sprinters</a>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="font-semibold text-lg mb-1">Hummer Limo</h3>
+            <p class="text-gold text-xs uppercase tracking-[0.12em] mb-3">Up to 16 guests</p>
+            <p class="text-white/70 text-sm">Statement arrival with wrap-around seating, LED ceiling and a sound system built for a party.</p>
+            <a href="/hummer-limo-service/" class="text-gold text-sm underline underline-offset-4 mt-3 inline-block">See Hummer limo</a>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="font-semibold text-lg mb-1">Party Bus</h3>
+            <p class="text-gold text-xs uppercase tracking-[0.12em] mb-3">20–30 guests</p>
+            <p class="text-white/70 text-sm">The default for full-team parties. Stand, mingle and ride together with club lighting and premium audio.</p>
+            <a href="/party-bus-rental/" class="text-gold text-sm underline underline-offset-4 mt-3 inline-block">See party buses</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5 bg-ink-soft border-y border-line">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="rounded-xl overflow-hidden border border-line shadow-xl">
+          <img src="/images/2026/10/limo-sizes-group-transport-orange-county.webp" alt="Group holiday party transportation options in Orange County — limo, Sprinter and party bus" class="w-full h-auto object-cover" width="1600" height="900" loading="lazy" />
+        </div>
+        <div>
+          <h2 class="font-serif-display text-3xl mb-4">Two Ways to Run the Night</h2>
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-semibold text-lg mb-2 text-gold">1. Dedicated Charter</h3>
+              <p class="text-white/70 text-sm leading-relaxed">The vehicle belongs to your group for the whole booking — office pickup, venue, any after-party, then home. The chauffeur waits curbside at every stop. Best for 10 to 30 guests and the simplest option to price and plan.</p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg mb-2 text-gold">2. Scheduled Shuttle Loop</h3>
+              <p class="text-white/70 text-sm leading-relaxed">A vehicle loops between the office, hotel and venue on a published timetable all evening, so guests come and go on their own schedule. Cheapest per head for 40+ people, and the standard choice for larger company parties and hotel blocks.</p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg mb-2 text-gold">3. Multivehicle Fleet</h3>
+              <p class="text-white/70 text-sm leading-relaxed">For 50 to 100 guests we run several vehicles with a dispatcher coordinating arrivals, so everyone lands within the same window. We have handled fleets of 10 to 30 vehicles for multi-day corporate events.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5">
+      <div class="mx-auto max-w-[1200px]">
+        <h2 class="font-serif-display text-3xl mb-4">Popular Holiday Party Venues We Drive To</h2>
+        <p class="text-white/70 max-w-[820px] mb-6">We know the drop-off points, the loading zones and the valet situation at the venues OC companies book most in December.</p>
+        <div class="flex flex-wrap gap-2 text-sm">
+          {["Disneyland Resort & Downtown Disney", "Anaheim Convention Center", "Irvine Spectrum", "South Coast Plaza", "Newport Beach & Balboa", "The Resort at Pelican Hill", "Hotel Irvine", "Costa Mesa & The Camp", "Downtown Santa Ana (DTSA)", "Huntington Beach & Pacific City", "Laguna Beach", "Fullerton"].map((c) => (
+            <span class="rounded-full border border-line bg-ink-raised px-4 py-1.5 text-white/70">{c}</span>
+          ))}
+        </div>
+        <p class="mt-8 text-sm text-white/60">
+          Planning a full company calendar? See our
+          <a href="/corporates/" class="text-gold underline underline-offset-4">corporate transportation</a>,
+          <a href="/airport-rides/" class="text-gold underline underline-offset-4">airport transfers</a> and
+          <a href="/concerts/" class="text-gold underline underline-offset-4">event transportation</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-16 px-5 bg-ink-soft border-y border-line">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="font-serif-display text-3xl mb-4">What's Included</h2>
+          <ul class="space-y-3 text-sm text-white/75">
+            <li>✓ Chauffeur, fuel, tolls and standard fees in one all-in quote</li>
+            <li>✓ Licensed, background-checked chauffeur who works the night sober</li>
+            <li>✓ Curbside wait at every stop — office, venue, after-party</li>
+            <li>✓ Coolers, ice and glassware for 21+ guests</li>
+            <li>✓ Itemized invoice with trip log for expense reporting</li>
+            <li>✓ Net-30 terms and certificates of insurance on approved accounts</li>
+            <li>✓ Multi-vehicle coordination with a dedicated dispatcher</li>
+            <li>✓ Fleet fully licensed, bonded and insured</li>
+          </ul>
+        </div>
+        <div class="rounded-xl overflow-hidden border border-line shadow-xl">
+          <img src="/images/2026/09/party-bus-rental-near-anaheim.webp" alt="Party bus interior for a holiday company party in Orange County" class="w-full h-auto object-cover" width="1600" height="900" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section id="quote" class="py-16 px-5">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="font-serif-display text-3xl mb-4">Get Your December Quote</h2>
+          <p class="text-white/70 mb-6">
+            Send your date, guest count and pickup location for an all-in quote — or skip the form and
+            <a href="tel:7143139173" class="text-gold underline underline-offset-4">call (714) 313-9173</a>.
+          </p>
+          <ul class="text-sm text-white/70 space-y-2">
+            <li>✓ 21+ alcohol welcome (ID checked, coolers and ice included)</li>
+            <li>✓ Zero-tolerance underage policy, in writing</li>
+            <li>✓ Quotes returned within minutes during business hours</li>
+            <li>✓ December Fridays and Saturdays book first</li>
+          </ul>
+          <p class="mt-8 text-sm text-white/60">
+            Combining the party with a lights tour? See
+            <a href="/christmas-lights-tour-oc/" class="text-gold underline underline-offset-4">Christmas lights tours</a>
+            and
+            <a href="/new-years-eve-limo-oc/" class="text-gold underline underline-offset-4">New Year's Eve limos</a>.
+          </p>
+        </div>
+        <div class="rounded-xl border border-line bg-ink-raised p-6">
+          <ReservationForm client:load />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5 bg-ink-soft border-y border-line">
+      <div class="mx-auto max-w-[820px]">
+        <h2 class="font-serif-display text-3xl mb-6">Holiday Party Transportation FAQs</h2>
+        <FaqAccordion client:load items={faqs} />
+        <div class="flex flex-wrap justify-center gap-4 mt-10">
+          <a href="tel:7143139173" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gold text-black font-semibold hover:bg-gold-soft transition">Call (714) 313-9173</a>
+          <a href="#quote" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gold text-gold hover:bg-gold hover:text-black transition">Request Free Quote</a>
+        </div>
+        <p class="text-center text-sm text-white/50 mt-10">
+          Browse all
+          <a href="/limo-service-orange-county/" class="text-gold underline underline-offset-4">Orange County limo service</a>
+          or check our
+          <a href="/parties/" class="text-gold underline underline-offset-4">party packages</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+</Layout>

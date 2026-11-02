@@ -1,0 +1,278 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FaqAccordion from '../components/React/FaqAccordion.tsx';
+import ReservationForm from '../components/React/ReservationForm.tsx';
+
+const faqs = [
+  {
+    question: "How much does a New Year's Eve limo cost in Orange County?",
+    answer: "New Year's Eve limos in Orange County typically run 5 to 8 hour minimums with all-in pricing that covers the chauffeur, fuel, tolls and standard fees. December 31 is the single most requested date of the year, so per-hour rates are higher than a normal Saturday. Split across 10 to 30 passengers, the per-person cost is usually less than surge-priced rideshares across four or five stops. Call (714) 313-9173 for an exact upfront quote on your date."
+  },
+  {
+    question: "When should I book a New Year's Eve limo?",
+    answer: "Book by mid-November for the best vehicle selection. December 31 inventory in Orange County is committed months ahead, and the 8 to 11 PM window is the first to go because that is when most dinner reservations start. If you are reading this in December, still call — we hold limited backup vehicles and will tell you honestly what is left."
+  },
+  {
+    question: "Do you drive on New Year's Eve, and is the chauffeur sober?",
+    answer: "Yes. Every New Year's Eve chauffeur is a licensed, background-checked professional who works the night sober — that is the entire point of hiring us. We do not permit passengers to drive, and we enforce a zero-tolerance policy for underage drinking. Valid ID is required for anyone drinking on board."
+  },
+  {
+    question: "Can we drink alcohol in the limo on New Year's Eve?",
+    answer: "Passengers 21 and over may bring champagne, wine and spirits aboard. We provide coolers, ice and glassware, and many packages include a complimentary sparkling cider or champagne toast at midnight. Underage drinking is grounds for ending the ride with no refund."
+  },
+  {
+    question: "How many people fit in a New Year's Eve party bus?",
+    answer: "Our party buses hold 20 to 30 passengers with wrap-around lounge seating so your whole group rides together. Groups of 10 to 16 fit a Hummer stretch limo, 8 to 14 fit a Mercedes Sprinter, and up to 10 fit a stretch Chrysler. For larger groups we run multiple vehicles with synchronized pickup and drop-off times."
+  },
+  {
+    question: "Can the limo wait while we are at dinner and the countdown?",
+    answer: "Yes — NYE bookings are normally one continuous charter: pickup at home, dinner, the countdown event, then a safe ride home. Your chauffeur stays with the vehicle, waits curbside at every stop, and is there when you come out. No rebooking, no surge pricing at 12:30 AM."
+  },
+  {
+    question: "Which Orange County venues do you drive to on New Year's Eve?",
+    answer: "We cover the whole county: Disneyland Resort and Anaheim GardenWalk, Downtown Santa Ana, Huntington Beach and Pacific City, Newport Beach and Balboa, Costa Mesa, Irvine Spectrum, Laguna Beach, Fullerton, and private house parties and hotels throughout OC. We also run into Los Angeles and Long Beach on request."
+  },
+  {
+    question: "What happens if our plans change on New Year's Eve?",
+    answer: "Tell your chauffeur or dispatcher and we adjust the route inside your booked hours. Because the vehicle is dedicated to your group for the night, extra stops usually cost nothing beyond the time. Additional hours can be added on the night, subject to availability."
+  }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map((f) => ({
+    "@type": "Question",
+    "name": f.question,
+    "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+  }))
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "New Year's Eve Limo Rental Orange County",
+  "serviceType": "New Year's Eve limousine and party bus transportation",
+  "provider": {
+    "@type": "LimousineService",
+    "name": "Deluxe Limousine Service",
+    "telephone": "+1-714-313-9173",
+    "url": "https://www.deluxelimousineservice.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8131 Electric Ave",
+      "addressLocality": "Stanton",
+      "addressRegion": "CA",
+      "postalCode": "90680",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": ["Anaheim", "Santa Ana", "Huntington Beach", "Newport Beach", "Costa Mesa", "Irvine", "Fullerton", "Laguna Beach", "Orange County"],
+  "description": "New Year's Eve limo and party bus rental across Orange County. Sober professional chauffeur, multi-stop routing, all-in pricing, 10-30 passengers.",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/LimitedAvailability",
+    "priceCurrency": "USD",
+    "url": "https://www.deluxelimousineservice.com/new-years-eve-limo-oc/"
+  }
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.deluxelimousineservice.com/" },
+    { "@type": "ListItem", "position": 2, "name": "New Year's Eve Limo OC", "item": "https://www.deluxelimousineservice.com/new-years-eve-limo-oc/" }
+  ]
+};
+---
+
+<Layout
+  title="New Year's Eve Limo Orange County | NYE Limo & Party Bus"
+  description="New Year's Eve limo rental in Orange County. Sober chauffeur, multi-stop dinner & countdown routing, all-in pricing, 10-30 passengers. Dec 31 is booking fast — call (714) 313-9173."
+  url="https://www.deluxelimousineservice.com/new-years-eve-limo-oc/"
+  image="/images/2026/10/new-years-eve-limo-orange-county-booking-timeline.webp"
+  city="Anaheim"
+  service="New Year's Eve Limo Rental"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <main class="bg-ink text-white">
+    <section class="py-20 px-5">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-gold text-xs font-bold uppercase tracking-[0.15em] mb-4">Orange County · December 31 — Booking Fast</p>
+          <h1 class="font-serif-display text-4xl lg:text-5xl leading-tight">New Year's Eve Limo Rental in Orange County</h1>
+          <p class="mt-6 text-white/80 leading-relaxed">
+            Dinner at 8, the countdown at midnight, and a safe ride home after — one vehicle, one sober chauffeur, one all-in price. Deluxe Limousine Service runs New Year's Eve <a href="/party-bus-rental/" class="text-gold hover:text-gold-soft underline underline-offset-4">party buses</a>, <a href="/hummer-limo-service/" class="text-gold hover:text-gold-soft underline underline-offset-4">Hummer stretch limos</a> and <a href="/sprinter-limo/" class="text-gold hover:text-gold-soft underline underline-offset-4">Mercedes Sprinters</a> across Anaheim, Huntington Beach, Newport Beach, Costa Mesa, Santa Ana and the rest of OC. Call now and we will price your night upfront — no surge at 12:30 AM, no designated driver, no parking garages.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="tel:7143139173" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gold text-black font-semibold hover:bg-gold-soft transition">Call (714) 313-9173</a>
+            <a href="#quote" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gold text-gold hover:bg-gold hover:text-black transition">Get Free Quote</a>
+          </div>
+          <div class="mt-6 rounded-lg border border-gold/30 bg-gold/10 px-4 py-3 text-sm text-white/80">
+            <strong class="text-gold">NYE note:</strong> December 31 sells out first — the 8–11 PM window goes before anything else. Ask about the complimentary midnight toast.
+          </div>
+        </div>
+        <div class="rounded-xl overflow-hidden border border-line shadow-xl">
+          <img src="/images/2026/10/new-years-eve-limo-orange-county-booking-timeline.webp" alt="New Year's Eve limo rental in Orange County with fireworks over the city skyline" class="w-full h-auto object-cover" width="1600" height="900" fetchpriority="high" />
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 pb-4">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-2 lg:grid-cols-4 gap-3 text-center text-xs">
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">Sober Chauffeur</strong><span class="text-white/60">All night, all stops</span></div>
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">All-In Pricing</strong><span class="text-white/60">No midnight surge</span></div>
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">Multi-Stop</strong><span class="text-white/60">Dinner, party &amp; home</span></div>
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">10–30 Guests</strong><span class="text-white/60">One vehicle, whole group</span></div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5 bg-ink-soft border-y border-line">
+      <div class="mx-auto max-w-[1200px]">
+        <h2 class="font-serif-display text-3xl mb-4">Why Book a NYE Limo Instead of Rideshares</h2>
+        <p class="text-white/70 max-w-[820px] mb-8">
+          New Year's Eve is the worst night of the year to rely on a rideshare. Surge pricing multiplies at exactly
+          midnight, drivers cancel, and a four-stop night turns into four separate scramble-for-a-car moments. One
+          chauffeured vehicle solves all of it — and everyone travels together.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-3">A Sober Driver, Guaranteed</h3>
+            <p class="text-white/70 text-sm leading-relaxed">New Year's Eve is the busiest DUI night in California. Your chauffeur works the night sober, is licensed and insured, and stays with your group from first pickup to last drop-off — so nobody in your party is ever behind the wheel.</p>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-3">One Price, Locked In</h3>
+            <p class="text-white/70 text-sm leading-relaxed">Your quote is confirmed in writing before December 31 with chauffeur, fuel, tolls and standard fees included. There is no 12:30 AM multiplier, no cleaning surprise, and no per-stop charge inside your booked hours.</p>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-3">Everyone Stays Together</h3>
+            <p class="text-white/70 text-sm leading-relaxed">No split Ubers, no lost friends, no "we'll meet you there." Your group boards once, arrives together, and leaves together. For a house party or a dinner reservation of 12, that alone is worth the booking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="rounded-xl overflow-hidden border border-line shadow-xl">
+          <img src="/images/2026/04/Deluxe-Party-Bus.webp" alt="Group in formal attire raising champagne glasses beside a limousine on New Year's Eve" class="w-full h-auto object-cover" width="1600" height="900" loading="lazy" />
+        </div>
+        <div>
+          <h2 class="font-serif-display text-3xl mb-4">A Typical New Year's Eve Charter</h2>
+          <p class="text-white/70 mb-6">
+            Most OC New Year's Eve bookings run one continuous 6 to 8 hour charter. Here is the shape of a night we
+            plan most often — yours is built around your reservation times.
+          </p>
+          <ol class="space-y-4 text-sm">
+            <li class="flex gap-4"><span class="text-gold font-bold shrink-0 w-16">7:00 PM</span><span class="text-white/75">Pickup at home or hotel. Red carpet out, chilled refreshments stocked, playlist already on.</span></li>
+            <li class="flex gap-4"><span class="text-gold font-bold shrink-0 w-16">8:00 PM</span><span class="text-white/75">Dinner reservation. Chauffeur waits curbside — no circling, no rebooking, no valet fee.</span></li>
+            <li class="flex gap-4"><span class="text-gold font-bold shrink-0 w-16">10:30 PM</span><span class="text-white/75">Second stop: a party, a bar, or a friend's house. We map the route and wait between stops.</span></li>
+            <li class="flex gap-4"><span class="text-gold font-bold shrink-0 w-16">11:45 PM</span><span class="text-white/75">Arrive at the countdown venue with time to spare. Midnight toast on board if you prefer to stay in.</span></li>
+            <li class="flex gap-4"><span class="text-gold font-bold shrink-0 w-16">12:30 AM</span><span class="text-white/75">The car is already there. No surge, no wait, no cold walk to a pickup pin.</span></li>
+            <li class="flex gap-4"><span class="text-gold font-bold shrink-0 w-16">1:00 AM</span><span class="text-white/75">Everyone dropped at their own door, in order, safely home.</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5 bg-ink-soft border-y border-line">
+      <div class="mx-auto max-w-[1200px]">
+        <h2 class="font-serif-display text-3xl mb-4">Pick Your New Year's Eve Ride</h2>
+        <p class="text-white/70 max-w-[820px] mb-8">Choose by headcount and by how much you want the ride itself to be part of the night.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="font-semibold text-lg mb-2">Party Bus (20–30 pax)</h3>
+            <p class="text-white/70 text-sm">Best for big groups. Stand, mingle and ride together with club lighting and a serious sound system. The NYE default for 15+.</p>
+            <a href="/party-bus-rental/" class="text-gold text-sm underline underline-offset-4 mt-3 inline-block">See party buses</a>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="font-semibold text-lg mb-2">Hummer Limo (up to 16)</h3>
+            <p class="text-white/70 text-sm">Maximum presence for a statement arrival. Wrap-around seating, LED ceiling, and room for the whole crew's coats.</p>
+            <a href="/hummer-limo-service/" class="text-gold text-sm underline underline-offset-4 mt-3 inline-block">See Hummer limo</a>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="font-semibold text-lg mb-2">Sprinter or Stretch (8–14)</h3>
+            <p class="text-white/70 text-sm">Easier on tight residential streets and restaurant valets. Ideal for a couples' dinner-and-countdown night.</p>
+            <a href="/sprinter-limo/" class="text-gold text-sm underline underline-offset-4 mt-3 inline-block">See Sprinters</a>
+          </div>
+        </div>
+        <h2 class="font-serif-display text-2xl mt-12 mb-4">Popular New Year's Eve Routes</h2>
+        <div class="flex flex-wrap gap-2 text-sm">
+          {["Anaheim & Disneyland Resort", "Downtown Santa Ana", "Huntington Beach & Pacific City", "Newport Beach & Balboa", "Costa Mesa", "Irvine Spectrum", "Laguna Beach", "Fullerton", "Long Beach", "Downtown LA"].map((c) => (
+            <span class="rounded-full border border-line bg-ink-raised px-4 py-1.5 text-white/70">{c}</span>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="font-serif-display text-3xl mb-4">What's Included on December 31</h2>
+          <ul class="space-y-3 text-sm text-white/75">
+            <li>✓ Licensed, background-checked chauffeur who works the night sober</li>
+            <li>✓ Chauffeur, fuel, tolls and standard fees in one all-in quote</li>
+            <li>✓ Curbside wait at every stop — dinner, party, countdown</li>
+            <li>✓ Coolers, ice and glassware for 21+ passengers</li>
+            <li>✓ Complimentary midnight toast on qualifying packages</li>
+            <li>✓ Fleet fully licensed, bonded and insured</li>
+            <li>✓ 24/7 dispatch you can reach while you are out</li>
+            <li>✓ Vehicle detailed and stocked before every pickup</li>
+          </ul>
+          <p class="mt-6 text-sm text-white/60">
+            Booking for a wedding or a corporate night instead? See
+            <a href="/wedding/" class="text-gold underline underline-offset-4">wedding limousines</a> and
+            <a href="/corporates/" class="text-gold underline underline-offset-4">corporate transportation</a>.
+          </p>
+        </div>
+        <div class="rounded-xl overflow-hidden border border-line shadow-xl">
+          <img src="/images/2026/09/hummer-limo-rental-orange-county.webp" alt="Limousine interior with leather seating, amber lighting and champagne glasses at night" class="w-full h-auto object-cover" width="1600" height="900" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section id="quote" class="py-16 px-5 bg-ink-soft border-y border-line">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="font-serif-display text-3xl mb-4">Check December 31 Availability</h2>
+          <p class="text-white/70 mb-6">
+            Send your headcount, pickup city and reservation times for an all-in quote — or skip the form and
+            <a href="tel:7143139173" class="text-gold underline underline-offset-4">call (714) 313-9173</a>.
+          </p>
+          <ul class="text-sm text-white/70 space-y-2">
+            <li>✓ 21+ alcohol welcome (ID checked, coolers and ice included)</li>
+            <li>✓ Zero-tolerance underage policy, in writing</li>
+            <li>✓ Quotes returned within minutes during business hours</li>
+            <li>✓ Deposit locks your vehicle and your time slot</li>
+          </ul>
+        </div>
+        <div class="rounded-xl border border-line bg-ink-raised p-6">
+          <ReservationForm client:load />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5">
+      <div class="mx-auto max-w-[820px]">
+        <h2 class="font-serif-display text-3xl mb-6">New Year's Eve Limo FAQs</h2>
+        <FaqAccordion client:load items={faqs} />
+        <div class="flex flex-wrap justify-center gap-4 mt-10">
+          <a href="tel:7143139173" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gold text-black font-semibold hover:bg-gold-soft transition">Call (714) 313-9173</a>
+          <a href="#quote" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gold text-gold hover:bg-gold hover:text-black transition">Request Free Quote</a>
+        </div>
+        <p class="text-center text-sm text-white/50 mt-10">
+          Planning the whole holiday season? See our
+          <a href="/holiday-party-transportation/" class="text-gold underline underline-offset-4">holiday party transportation</a>
+          and
+          <a href="/christmas-lights-tour-oc/" class="text-gold underline underline-offset-4">Christmas lights tours</a>,
+          or browse
+          <a href="/limo-service-orange-county/" class="text-gold underline underline-offset-4">limo service across Orange County</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+</Layout>

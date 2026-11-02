@@ -1,0 +1,276 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FaqAccordion from '../components/React/FaqAccordion.tsx';
+import ReservationForm from '../components/React/ReservationForm.tsx';
+
+const faqs = [
+  {
+    question: "What is a Christmas lights tour in Orange County?",
+    answer: "A Christmas lights tour is a chauffeured drive through the best-decorated neighborhoods and waterfront displays in Orange County. You get picked up at home, ride in a heated limo or party bus with your own playlist and hot cocoa, stop for photos where it is safe to do so, and get dropped back home. It is typically booked as a 2 to 4 hour experience for families, couples or friend groups."
+  },
+  {
+    question: "How much does a Christmas lights tour cost?",
+    answer: "Christmas lights tours in Orange County usually run 2 to 4 hour charters with all-in pricing covering the chauffeur, fuel and standard fees. Splitting a 4 hour tour across 10 to 14 people often works out cheaper per person than driving yourselves and paying for parking and gas. Call (714) 313-9173 for an upfront quote for your date and group size."
+  },
+  {
+    question: "Which neighborhoods and displays do you visit?",
+    answer: "The most requested stops are the Balboa Island and Balboa Peninsula displays in Newport Beach, the Newport Harbor Christmas Boat Parade in December, Corona del Mar, Huntington Beach's Pier and Pacific City area, the historic neighborhoods of Orange and Old Towne, Fullerton, and the large residential light displays around Anaheim Hills and Yorba Linda. We build the route around what is actually lit on your date."
+  },
+  {
+    question: "Can we see the Newport Beach Christmas Boat Parade?",
+    answer: "Yes — the Boat Parade is one of the most requested add-ons and runs for five nights in mid-December. We drop you at a waterfront viewing point, wait, and pick you up afterwards. Because parade traffic is heavy, we recommend booking the 5 to 9 PM window and letting us handle the parking entirely."
+  },
+  {
+    question: "Is a Christmas lights tour good for kids?",
+    answer: "It is one of the best family bookings of the year. Children stay warm and buckled in, there is no parking lot walk in the cold, and you can bring snacks, hot cocoa and blankets. Car seats and booster seats are available on request — just tell us the ages when you book."
+  },
+  {
+    question: "How long should we book for a lights tour?",
+    answer: "Two hours covers one tight neighborhood loop. Three hours is the most popular choice and covers two areas with a photo stop. Four hours lets you add the Newport Boat Parade or a dinner stop. Most groups book 3 hours, and we will tell you honestly if your wish list needs more time."
+  },
+  {
+    question: "Can we bring drinks and food on the tour?",
+    answer: "Yes. Hot cocoa, coffee, snacks and desserts are all welcome, and we provide coolers, ice and glassware. Guests 21 and over may bring wine or champagne. We enforce a strict zero-tolerance policy for underage drinking, and valid ID is required for anyone drinking on board."
+  },
+  {
+    question: "How far in advance should we book a Christmas lights tour?",
+    answer: "Book by mid-November for December weekend dates. The 6 to 9 PM window on Fridays and Saturdays is the first to sell out, and the week of the Newport Boat Parade is the single busiest period of the month. Weeknight tours are easier to secure and just as well lit."
+  }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map((f) => ({
+    "@type": "Question",
+    "name": f.question,
+    "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+  }))
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Christmas Lights Tour Orange County",
+  "serviceType": "Chauffeured Christmas lights tour and holiday light display transportation",
+  "provider": {
+    "@type": "LimousineService",
+    "name": "Deluxe Limousine Service",
+    "telephone": "+1-714-313-9173",
+    "url": "https://www.deluxelimousineservice.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8131 Electric Ave",
+      "addressLocality": "Stanton",
+      "addressRegion": "CA",
+      "postalCode": "90680",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": ["Newport Beach", "Balboa Island", "Corona del Mar", "Huntington Beach", "Orange", "Fullerton", "Anaheim Hills", "Yorba Linda", "Irvine", "Orange County"],
+  "description": "Chauffeured Christmas lights tours across Orange County. Balboa Island, Newport Harbor Boat Parade, Huntington Beach and the best decorated neighborhoods — 2 to 4 hour tours for families, couples and groups.",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "url": "https://www.deluxelimousineservice.com/christmas-lights-tour-oc/"
+  }
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.deluxelimousineservice.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Christmas Lights Tour OC", "item": "https://www.deluxelimousineservice.com/christmas-lights-tour-oc/" }
+  ]
+};
+---
+
+<Layout
+  title="Christmas Lights Tour Orange County | Limo & Party Bus"
+  description="Chauffeured Christmas lights tours in Orange County. Balboa Island, Newport Harbor Boat Parade, Huntington Beach & the best-lit neighborhoods. 2-4 hour tours — call (714) 313-9173."
+  url="https://www.deluxelimousineservice.com/christmas-lights-tour-oc/"
+  image="/images/2026/11/christmas-lights-tour-orange-county.webp"
+  city="Newport Beach"
+  service="Christmas Lights Tour"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <main class="bg-ink text-white">
+    <section class="py-20 px-5">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-gold text-xs font-bold uppercase tracking-[0.15em] mb-4">Orange County · All December — Now Booking</p>
+          <h1 class="font-serif-display text-4xl lg:text-5xl leading-tight">Christmas Lights Tour in Orange County</h1>
+          <p class="mt-6 text-white/80 leading-relaxed">
+            Cruise OC's best-lit neighborhoods with your own holiday playlist on, hot cocoa in hand and a professional chauffeur doing the driving. Deluxe Limousine Service runs Christmas lights tours through Balboa Island, the Newport Harbor Boat Parade, Huntington Beach, Old Towne Orange, Anaheim Hills and Yorba Linda in heated <a href="/party-bus-rental/" class="text-gold hover:text-gold-soft underline underline-offset-4">party buses</a>, <a href="/sprinter-limo/" class="text-gold hover:text-gold-soft underline underline-offset-4">Mercedes Sprinters</a> and <a href="/hummer-limo-service/" class="text-gold hover:text-gold-soft underline underline-offset-4">stretch limos</a> — two to four hours, all-in pricing, no parking lots in the cold.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="tel:7143139173" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gold text-black font-semibold hover:bg-gold-soft transition">Call (714) 313-9173</a>
+            <a href="#quote" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gold text-gold hover:bg-gold hover:text-black transition">Get Free Quote</a>
+          </div>
+          <div class="mt-6 rounded-lg border border-gold/30 bg-gold/10 px-4 py-3 text-sm text-white/80">
+            <strong class="text-gold">Boat Parade nights:</strong> mid-December sells out first. Book the 5–9 PM window and we handle the parking.
+          </div>
+        </div>
+        <div class="rounded-xl overflow-hidden border border-line shadow-xl">
+          <img src="/images/2026/11/christmas-lights-tour-orange-county.webp" alt="Christmas lights tour in an Orange County neighborhood — chauffeured luxury van among decorated houses" class="w-full h-auto object-cover" width="1600" height="900" fetchpriority="high" />
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 pb-4">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-2 lg:grid-cols-4 gap-3 text-center text-xs">
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">2–4 Hours</strong><span class="text-white/60">You pick the route</span></div>
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">Heated Cabin</strong><span class="text-white/60">No cold parking walks</span></div>
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">Bring Cocoa</strong><span class="text-white/60">Coolers &amp; glassware</span></div>
+        <div class="rounded-lg border border-line bg-ink-soft px-3 py-3"><strong class="block text-gold">Family Friendly</strong><span class="text-white/60">Car seats on request</span></div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5 bg-ink-soft border-y border-line">
+      <div class="mx-auto max-w-[1200px]">
+        <h2 class="font-serif-display text-3xl mb-4">Why Tour the Lights in a Chauffeured Vehicle</h2>
+        <p class="text-white/70 max-w-[840px] mb-8">
+          Driving yourself to see Christmas lights sounds simple until you are circling Balboa Island for a parking
+          space in the dark, or trying to keep three kids buckled while you look for an address. A lights tour flips
+          that: someone else drives, everyone rides together, and the evening is about the lights instead of logistics.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-3">Everyone Looks, Nobody Drives</h3>
+            <p class="text-white/70 text-sm leading-relaxed">The whole group faces the lights, not the road. No one is navigating one-handed, no one misses a display because they were watching traffic, and the driver knows which streets are worth turning down.</p>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-3">No Parking, No Cold</h3>
+            <p class="text-white/70 text-sm leading-relaxed">Balboa Island in December has almost no parking. We drop you at the best viewing points, wait, and move on — with a heated cabin to come back to instead of a ten-minute walk in a wet parking lot.</p>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-3">Make It the Event</h3>
+            <p class="text-white/70 text-sm leading-relaxed">Bring cocoa, cookies and a playlist. Add dinner before or after. Families turn it into a tradition, couples use it as a date night, and friend groups use it as the December catch-up that actually happens.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="font-serif-display text-3xl mb-4">The Route Everyone Books</h2>
+          <p class="text-white/70 mb-6">A three-hour tour, built around what actually lights up. Yours is adjusted for your pickup city and which night you ride.</p>
+          <ol class="space-y-4 text-sm">
+            <li class="flex gap-4"><span class="text-gold font-bold shrink-0 w-16">6:00 PM</span><span class="text-white/75">Pickup at home. Cocoa stocked, blankets out, holiday playlist already playing.</span></li>
+            <li class="flex gap-4"><span class="text-gold font-bold shrink-0 w-16">6:30 PM</span><span class="text-white/75">Balboa Island loop — the densest concentration of decorated homes in the county. We drive slow and stop for photos where it is safe.</span></li>
+            <li class="flex gap-4"><span class="text-gold font-bold shrink-0 w-16">7:15 PM</span><span class="text-white/75">Balboa Peninsula and the harbor front, with the boat parade route if it is running that night.</span></li>
+            <li class="flex gap-4"><span class="text-gold font-bold shrink-0 w-16">8:00 PM</span><span class="text-white/75">Corona del Mar and the coast, then inland toward a second cluster of large residential displays.</span></li>
+            <li class="flex gap-4"><span class="text-gold font-bold shrink-0 w-16">9:00 PM</span><span class="text-white/75">Drop-off at home. Optional dinner or dessert stop if you booked four hours.</span></li>
+          </ol>
+        </div>
+        <div class="rounded-xl overflow-hidden border border-line shadow-xl">
+          <img src="/images/2026/04/Deluxe-Party-Bus.webp" alt="Luxury party bus for a Christmas lights tour in Orange County" class="w-full h-auto object-cover" width="1600" height="900" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5 bg-ink-soft border-y border-line">
+      <div class="mx-auto max-w-[1200px]">
+        <h2 class="font-serif-display text-3xl mb-4">Where We Take You</h2>
+        <p class="text-white/70 max-w-[820px] mb-6">The best displays move a little each year. We check what is lit before your date and build the drive around it.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+          <div class="bg-ink-raised border border-line rounded-xl p-5">
+            <h3 class="font-semibold text-gold mb-1">Balboa Island &amp; Peninsula</h3>
+            <p class="text-white/70">Newport Beach. The classic OC lights drive — decorated cottages, harbor views and the Balboa Island ferry area.</p>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-5">
+            <h3 class="font-semibold text-gold mb-1">Newport Harbor Boat Parade</h3>
+            <p class="text-white/70">Mid-December, five nights. We drop you at a waterfront viewing point, wait, and collect you after.</p>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-5">
+            <h3 class="font-semibold text-gold mb-1">Corona del Mar &amp; Crystal Cove</h3>
+            <p class="text-white/70">Coastal drives with ocean on one side and lit homes on the other — quieter than Balboa and just as pretty.</p>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-5">
+            <h3 class="font-semibold text-gold mb-1">Huntington Beach</h3>
+            <p class="text-white/70">Pier, Pacific City and the downtown blocks, plus the residential streets just inland of PCH.</p>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-5">
+            <h3 class="font-semibold text-gold mb-1">Old Towne Orange &amp; Fullerton</h3>
+            <p class="text-white/70">Historic neighborhoods with big front yards and heavy decorating — good for an inland route with a dinner stop.</p>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-5">
+            <h3 class="font-semibold text-gold mb-1">Anaheim Hills &amp; Yorba Linda</h3>
+            <p class="text-white/70">Large hillside homes and epic residential displays. Best paired with a 4-hour booking because of the drive time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5">
+      <div class="mx-auto max-w-[1200px]">
+        <h2 class="font-serif-display text-3xl mb-4">Pick Your Tour Vehicle</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="font-semibold text-lg mb-2">Sprinter (10–14)</h3>
+            <p class="text-white/70 text-sm">The best all-rounder for a lights tour. Stand-up headroom, big windows, easy on narrow island streets.</p>
+            <a href="/sprinter-limo/" class="text-gold text-sm underline underline-offset-4 mt-3 inline-block">See Sprinters</a>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="font-semibold text-lg mb-2">Stretch Limo (up to 10)</h3>
+            <p class="text-white/70 text-sm">The classic date-night or small-family choice. Warm cabin, mood lighting, and a proper entrance at dinner afterwards.</p>
+            <a href="/limo-service-orange-county/" class="text-gold text-sm underline underline-offset-4 mt-3 inline-block">See stretch limos</a>
+          </div>
+          <div class="bg-ink-raised border border-line rounded-xl p-6">
+            <h3 class="font-semibold text-lg mb-2">Party Bus (20–30)</h3>
+            <p class="text-white/70 text-sm">For big families and friend groups. Stand, move between windows, and keep the cocoa and cookies going all tour.</p>
+            <a href="/party-bus-rental/" class="text-gold text-sm underline underline-offset-4 mt-3 inline-block">See party buses</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quote" class="py-16 px-5 bg-ink-soft border-y border-line">
+      <div class="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="font-serif-display text-3xl mb-4">Book Your Lights Tour</h2>
+          <p class="text-white/70 mb-6">
+            Send your date, group size and pickup city for an all-in quote — or skip the form and
+            <a href="tel:7143139173" class="text-gold underline underline-offset-4">call (714) 313-9173</a>.
+          </p>
+          <ul class="text-sm text-white/70 space-y-2">
+            <li>✓ Car seats and boosters available on request</li>
+            <li>✓ Hot cocoa, snacks and 21+ drinks welcome on board</li>
+            <li>✓ Photo stops at safe viewing points</li>
+            <li>✓ Boat Parade nights book first — mid-December</li>
+          </ul>
+          <p class="mt-8 text-sm text-white/60">
+            Also booking this season:
+            <a href="/new-years-eve-limo-oc/" class="text-gold underline underline-offset-4">New Year's Eve limos</a> and
+            <a href="/holiday-party-transportation/" class="text-gold underline underline-offset-4">holiday party transportation</a>.
+          </p>
+        </div>
+        <div class="rounded-xl border border-line bg-ink-raised p-6">
+          <ReservationForm client:load />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-5">
+      <div class="mx-auto max-w-[820px]">
+        <h2 class="font-serif-display text-3xl mb-6">Christmas Lights Tour FAQs</h2>
+        <FaqAccordion client:load items={faqs} />
+        <div class="flex flex-wrap justify-center gap-4 mt-10">
+          <a href="tel:7143139173" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gold text-black font-semibold hover:bg-gold-soft transition">Call (714) 313-9173</a>
+          <a href="#quote" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gold text-gold hover:bg-gold hover:text-black transition">Request Free Quote</a>
+        </div>
+        <p class="text-center text-sm text-white/50 mt-10">
+          Explore more
+          <a href="/limo-service-orange-county/" class="text-gold underline underline-offset-4">Orange County limo service</a>,
+          <a href="/wedding/" class="text-gold underline underline-offset-4">wedding limousines</a> and
+          <a href="/birthdays/" class="text-gold underline underline-offset-4">birthday transportation</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+</Layout>
