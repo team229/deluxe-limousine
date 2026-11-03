@@ -3,6 +3,8 @@ title: "Graduation Limo Service Orange County: Two Bookings, Not One"
 metaTitle: "Graduation Limo Service Orange County | Grad Night"
 date: 2026-11-03
 description: "Graduation day in Orange County is two bookings, not one: a short daytime ceremony run and a long grad night. How each works, and what to reserve."
+featuredImage: "/images/2026/11/graduation-limo-service-orange-county.webp"
+featuredImageAlt: "White Chrysler 300 stretch limousine waiting under a lit hotel porte-cochere with palm trees at dusk"
 slug: "graduation-limo-service-orange-county"
 category: "blog"
 author: "Saliba"

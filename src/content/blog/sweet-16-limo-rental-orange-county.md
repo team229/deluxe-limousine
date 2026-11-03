@@ -3,6 +3,8 @@ title: "Sweet 16 Limo Rental Orange County: What Parents Miss"
 metaTitle: "Sweet 16 Limo Rental Orange County | Parent Guide"
 date: 2026-11-03
 description: "A parent's guide to a sweet 16 limo rental in Orange County: a guest list that moves, who supervises in the car, the photo window, and the 11pm return."
+featuredImage: "/images/2026/11/sweet-16-limo-rental-orange-county.webp"
+featuredImageAlt: "Black Chrysler 300 stretch limousine parked on paving in front of a lit hotel entrance with palm trees"
 slug: "sweet-16-limo-rental-orange-county"
 category: "blog"
 author: "Saliba"
