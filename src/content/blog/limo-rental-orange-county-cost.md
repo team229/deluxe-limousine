@@ -177,20 +177,6 @@ Call (714) 313-9173. Dispatch answers around the clock. Have these ready and it 
 
 We have run chauffeured cars out of Stanton since 2002, across 24 Orange County cities. On featured packages of five hours or more, the first hour is on us, which is a policy and not a rate. Use the Get a Free Quote button below and we will come back with a figure for your date.
 
-## Straight answers
-
-**How much does a limo cost for 4 hours?** Four hours costs $360 at the sedan end, which is 4 x $90 an hour as published on wantlimo.com, and $800 for a 45-passenger party bus at 4 x $200, before gratuity. Add 20% gratuity and the band becomes $432 to $960. These are rates operators published on 28 October 2026, not a quote from any one company.
-
-**Is gratuity included in a limo quote?** Sometimes. Some operators fold a service charge into the total and others add 15% to 20% at the end, so ask for the all-in figure with gratuity included, in writing. On a $750 booking, 20% is $150, which is the difference between a headline rate and a real quote.
-
-**How many hours do you have to book a limo for?** Four hours is the common minimum for limousines and party buses in Orange County, and wantlimo.com states it in its own FAQ on 28 October 2026. It is not universal, so confirm it with the operator you book. Airport transfers usually skip the minimum because they are priced per trip.
-
-**Why is a party bus more expensive than a stretch limo?** Capacity and running cost. A 45-passenger party bus is published at $200 an hour on wantlimo.com against $100 an hour for a Lincoln MKT stretch that carries 9 passengers, both read on 28 October 2026. More vehicle, more fuel, more insurance, and a $200 bathroom fee printed against that bus.
-
-**Is a limo deposit refundable?** Some operators refund against a notice period and some do not. genesislimoservice.com states in its FAQ that its deposit is non-refundable. Get the cancellation window and the refund rule in writing before you pay, and keep the email.
-
-**Is an airport transfer cheaper by the hour or by the trip?** By the trip, almost always. A four-hour minimum at $90 an hour is $360 before gratuity, and that is four hours of a car you may only need for one. Hourly only makes sense when the vehicle stays with you between stops.
-
 All rates above were published by other operators on 28 October 2026. They will move. Check current pricing before you commit a budget.
 
 If your date is in December, the rate is the easy part. The [December and New Year's Eve booking timeline](/blog/new-years-eve-limo-orange-county/) covers what sells out, in what order, and why the 6pm to 8pm slot on 31 December goes before anything else.

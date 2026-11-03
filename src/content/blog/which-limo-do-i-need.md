@@ -140,32 +140,6 @@ Five facts produce a correct quote. Leave one out and you get a guess.
 
 Most bookings that go sideways start with a headcount that was two people optimistic. The customer is not lying. They counted the people who said yes in the group chat, and then four more showed up.
 
-## Frequently asked questions
-
-### How many people fit in a 12 passenger limo?
-
-Twelve people fit in a 12-passenger stretch if everyone sits still and travels light. For a night out with coats, bags and a couple of stops, plan on nine. Groups of 10 to 14 should look at the Sprinter, which seats 14.
-
-### What size limo do I need for 15 people?
-
-Fifteen people do not fit in one Sprinter, which seats 14. Book the 30-seat party bus, or split into two vehicles if the group is quiet or the route is tight. For most groups of 15, the party bus is the simpler answer.
-
-### Is a party bus cheaper than two limos?
-
-Often it is cheaper per person. A party bus carries up to 30 seated and runs on one chauffeur, one hourly minimum and one pickup, while two limos double the minimum and the stops. Divide each quote by your headcount and compare the per-person figure.
-
-### Can a limo fit in a normal driveway?
-
-Sometimes. A stretch limo is long and low, so a steep driveway can scrape it and a narrow street with parked cars can block the turn. Tell dispatch the address and the slope, and the chauffeur can meet you at the curb instead.
-
-### Do children count toward limo capacity?
-
-Yes. Every person in the vehicle counts toward capacity, including infants and toddlers, and children usually travel with more gear. Give dispatch the number of adults and the number of children when you book.
-
-### What if our group is one or two people over?
-
-Move up a vehicle or take two. A 13th person on a 12-passenger stretch means someone is standing or sitting on a lap, which is not a plan for a night out. Tell dispatch the real count and they will size it.
-
 ## Book the right size the first time
 
 Dispatch answers the phone 24 hours a day at **(714) 313-9173**. We are at 8131 Electric Ave in Stanton and we run chauffeured vehicles across 24 Orange County cities, from Anaheim and Irvine to Newport Beach and Laguna.

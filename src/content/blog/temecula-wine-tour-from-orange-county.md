@@ -138,32 +138,6 @@ Seven things, and the day works.
 - **The food plan.** Lunch stop, picnic, or nothing at all.
 - **Anything being celebrated.** It changes the vehicle, not the route.
 
-## Frequently asked questions
-
-### How long is a Temecula wine tour from Orange County?
-
-Plan for eight hours from pickup to drop-off. Figure an hour to ninety minutes out and ninety minutes to two hours back, which leaves about five hours in Temecula Valley. Three tastings and a proper lunch fit that window. A fourth only works if you skip lunch.
-
-### Do we need reservations at Temecula wineries?
-
-For a group, yes. Many wineries take groups by reservation and many require one above a certain party size, though the rule is set by each venue. Call the wineries before you book the vehicle. A group arriving unannounced is the most common way a wine tour starts badly.
-
-### Can we bring our own food and drinks?
-
-It depends on the winery. Some tasting rooms sell food, some let you bring a picnic, and some allow neither, so ask when you reserve. Food in the vehicle is a separate question, so tell dispatch what you are carrying.
-
-### How many wineries can we visit in one day?
-
-Three, for most groups. A tasting runs about an hour, lunch takes another, and each transfer eats ten to twenty minutes. Groups that book five usually reach three and spend the gaps apologising.
-
-### What time should we leave for a Temecula wine tour?
-
-Leave Orange County between 9 and 10am for an eight hour day. A 9am pickup puts you in the valley around 10:15 and home around 5. Leaving at 10:30 puts the whole drive home inside the northbound build-up.
-
-### Is a party bus or a Sprinter better for a wine tour?
-
-It depends on the group and the mood. A party bus gives you room to stand and move around, which suits a loud celebration. A Sprinter is quieter, easier to park at a winery, and better for a group that wants to talk.
-
 ## Book the day, not just the car
 
 Call dispatch at **(714) 313-9173** with your date, your headcount and your first pickup address. We run Temecula alongside [24 Orange County cities](/cities/) and the rest of our [limousine service in Orange County](/limo-service-orange-county/), seven days a week, with dispatch on the phone around the clock. On featured packages of five hours or more, the first hour is included. That is a policy, not a rate.

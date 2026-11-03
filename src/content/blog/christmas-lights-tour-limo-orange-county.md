@@ -124,32 +124,6 @@ A group that wants to walk every stop is buying the wrong thing. A car is not a 
 
 Two other cases. A group treating it as a bar crawl with lights in the background: that is a [party bus night](/party-bus-rental/). And a group that wants a narrator and the history of each neighborhood: book a walking tour. We drive. We know the streets. We are not a guide.
 
-## Questions people ask before booking
-
-### When do Christmas lights go up in Orange County?
-
-Displays start appearing in late November and most are up by early December in the areas people tour. Homeowners set their own timing, so confirm what is decorated in the area you want before you book. It changes every year.
-
-### How long is a Christmas lights tour?
-
-Two hours covers one area properly, or two if they are close. Three hours covers three areas with a bathroom stop. Four hours is a lot of sitting for young children. Most families do better shorter.
-
-### Is a party bus or a Sprinter better for a lights tour?
-
-A Sprinter, in most cases. The streets with the lights are narrow, often one-way, and short on turning space. In our experience a full-size bus often cannot complete some of those turns, and a Sprinter usually can. Save the bus for a group that wants the bus itself as the venue.
-
-### Can we bring drinks on a Christmas lights limo?
-
-Cocoa, coffee and soft drinks, yes. Alcohol depends on the operator and the vehicle, so ask at booking rather than assuming. The legal drinking age in California is 21, and it applies inside the car.
-
-### What time should we start a lights tour?
-
-Between 5:30pm and 6:30pm, on a weeknight. That gets you into the first area before the evening traffic builds, keeps younger children awake, and leaves room for a second stop.
-
-### Are the Balboa Island lights up every year?
-
-The island decorates most years, but homeowners opt in and out, and the streets worth driving change. Check the current season before you book. Any list from a previous December is a guide, not a schedule.
-
 ## Book the night, not the list
 
 A good lights tour is not the one that hits the most streets. It is the one where nobody is cold, nobody is lost, and the car is waiting where you agreed.

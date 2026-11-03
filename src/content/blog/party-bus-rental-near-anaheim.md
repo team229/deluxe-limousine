@@ -17,7 +17,7 @@ Splitting a large group across several cars or rideshares almost always means so
 
 ## Popular Occasions in and Around Anaheim
 
-Anaheim sits at the center of some of Southern California's liveliest entertainment. Groups often book a bus for [concerts and hockey games at Honda Center](/concerts/), baseball at Angel Stadium, or conventions downtown. Birthdays, [bachelor and bachelorette parties](/bachelor/), [proms](/prom/), [quinceañeras](/quinceanera/), and graduation nights are also common reasons to reserve a ride.
+Anaheim sits at the center of some of Southern California's liveliest entertainment. Groups often book a bus for [concerts and hockey games at Honda Center](/concerts/), baseball at Angel Stadium, or conventions downtown. Birthdays, [bachelor and bachelorette parties](/bachelor/), [proms](/prom/), [quinceañeras](/quinceanera/), and [graduation nights](/blog/graduation-limo-service-orange-county/) are also common reasons to reserve a ride.
 
 The location makes day trips easy too. Beach cities like [Huntington Beach](/huntington-beach/) and [Newport Beach](/newport-beach/) are a short drive away, and wine country in [Temecula](/temecula/) makes a popular full-day outing for adult groups.
 

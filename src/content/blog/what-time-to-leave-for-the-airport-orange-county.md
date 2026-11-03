@@ -180,32 +180,6 @@ If you are not sure what time to set the pickup for, give us the flight number a
 
 Our [airport transportation service](/airport-transportation-service/) covers SNA, LAX, LGB, ONT and the rest, and we serve [24 Orange County cities](/cities/). Dispatch is on the phone around the clock.
 
-## Frequently asked questions
-
-### How early should I get to John Wayne Airport?
-
-For a domestic flight from SNA, be inside the terminal 75 to 90 minutes before wheels-up if you are checking a bag, which covers the bag cutoff, security and the walk to the gate. TSA's general advice is two hours before a domestic departure. Use that two hour figure if you are flying international, checking several bags, or travelling on a holiday weekend.
-
-### Is it faster to fly into SNA or LAX?
-
-Flying into SNA is faster if you are staying in Orange County. The airport is about 15 miles from central Orange County and small enough to walk in minutes. LAX is about 35 miles away, more from south county, and the terminal loop and freeway traffic can add an hour or more on a normal weekday.
-
-### What time should I leave for a 6am flight from Irvine?
-
-From Irvine, leave about 4:20am for a 6am domestic flight from SNA, and about 3:10am for the same flight from LAX. The gate closes at 5:45am, you want to be at it by 5:30, security runs about 30 minutes at SNA and 55 at LAX, a checked bag takes 20, and the drive is roughly 25 minutes to SNA and 65 to LAX. Verify live traffic before you go, because one closure changes the answer.
-
-### Does a limo wait if my flight is delayed?
-
-On airport pickups, dispatch tracks the flight number, so a delayed arrival moves the pickup with it. Give the flight number when you book, not the time you expect to land. For departures, the pickup time is yours to set, so build the buffer in before you book rather than asking the driver to make it up.
-
-### How early should I leave for an international flight from LAX?
-
-Plan on being inside the terminal three hours before departure, which is what TSA advises for international travel. Airlines commonly set a longer checked-bag cutoff for international itineraries, and document checks at the counter take longer. From central Orange County that usually means leaving about four hours before wheels-up, give or take twenty minutes.
-
-### Do I need a different departure time for a red-eye?
-
-Yes, because the airport changes. SNA does not run a full overnight departure schedule the way LAX does, so late-night flights usually mean LAX. Roads are clearer at that hour, but the drive is longer and the terminal is busier than people expect. Leave earlier than the empty freeway suggests.
-
 ## Set the pickup time once, correctly
 
 The number you want is not on your confirmation email. It comes from your wheels-up time, your airport, your bag count and the hour you are driving through the county.

@@ -208,3 +208,5 @@ Deluxe Limousine Service provides [quinceañera limo rental](/quinceanera/), [Sp
 - Availability: 24/7 dispatch, serving Orange County and surrounding areas
 
 Call today to check vehicle availability and lock in her quinceañera date. Not sure whether the court fits in a Sprinter or needs the party bus? The [vehicle sizing guide](/blog/which-limo-do-i-need/) has the capacity chart we book against.
+
+Planning a sweet 16 instead? It is a different night with different problems, and the [sweet 16 parent guide](/blog/sweet-16-limo-rental-orange-county/) covers the guest list, the photo window and the 11pm return.

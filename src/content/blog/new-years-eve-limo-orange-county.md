@@ -133,32 +133,6 @@ Sometimes the answer is no.
 - A group that cannot agree on one departure time. That is two cars, not one bus and an argument.
 - One venue, eight minutes away, and the night happens inside it. Book the return trip, not six hours.
 
-## Questions we get in December
-
-**How far in advance should I book a limo for New Year's Eve?**
-
-Nine to ten weeks is the comfortable window, which puts late October in the frame for 31 December 2026. Large vehicles and Saturday nights go first. Early December still works, from what is left.
-
-**Is New Year's Eve more expensive for a limo?**
-
-The date sets the rate, so 31 December usually prices above a quiet Tuesday. Ask for a flat figure for your date in writing, and ask whether a holiday minimum sits on top.
-
-**Can we drink in the limo?**
-
-Confirm it at booking, because the rules differ by operator and by vehicle. The legal drinking age in California is 21, and that applies inside the car. Where alcohol is allowed, operators usually attach conditions: what may be brought aboard, whether glass is permitted, whether IDs are checked, and what happens if the conditions are broken. Our vehicles carry ice and stocked refreshments, and the chauffeur drives sober.
-
-**How many people fit in a limo in December?**
-
-Take the posted capacity and subtract one or two seats. Coats and handbags take the rest. A 12-passenger stretch is a 10-person ride in December, a 14-passenger Sprinter is 12, a six-passenger SUV is five. On the 30-passenger party bus, plan on 26.
-
-**What time should the limo pick us up on New Year's Eve?**
-
-Work backwards from the booking, not forwards from the party. The 6pm to 8pm outbound window is the busiest of the night, so an earlier or later start is easier to find. Build the return around 12:30am.
-
-**Can the limo wait while we are inside?**
-
-Yes. The meter runs while the car waits, so decide in advance. On 31 December ask what sits behind your slot, because if anything does, the vehicle cannot extend.
-
 ## Booking before the calendar decides for you
 
 Call (714) 313-9173. Dispatch answers around the clock, including at 1am on 1 January. Have the date, the start time, every address in order, and a headcount in coats.
