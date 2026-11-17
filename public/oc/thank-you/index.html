@@ -3,6 +3,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, follow">
   <title>Thank You | Deluxe Limousine Service – Anaheim &amp; Orange County</title>
+  <!-- Google Analytics 4 (matches main site property) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-60LYY8SLJY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-60LYY8SLJY', { 'anonymize_ip': true });
+  </script>
+  <script>
+    // Fire generate_lead once per completed form submission.
+    // The landing page sets dl_lead_pending before redirecting here.
+    (function () {
+      var fired = false;
+      function fire() {
+        if (fired) return;
+        try {
+          if (sessionStorage.getItem('dl_lead_pending') !== '1') return;
+          sessionStorage.removeItem('dl_lead_pending');
+        } catch (e) { return; }
+        fired = true;
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'quote_form_submit', eventCategory: 'Lead', eventAction: 'Quote Form', eventLabel: 'oc-thank-you' });
+        if (typeof gtag === 'function') {
+          gtag('event', 'generate_lead', { event_category: 'Lead', event_label: 'OC Quote Form' });
+        }
+      }
+      // give gtag.js a moment to initialise, then fire
+      window.addEventListener('load', function () { setTimeout(fire, 2000); });
+    })();
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
