@@ -1,7 +1,7 @@
 ---
 title: "Christmas Lights Tour Orange County: How to Get It Right"
 metaTitle: "Christmas Lights Tour Orange County | Timing and Routes"
-date: 2026-11-02
+date: 2026-11-05
 description: "Plan a Christmas lights tour in Orange County that works: the right week, the right areas, and a vehicle narrow enough for the streets you actually drive."
 featuredImage: "/images/2026/11/christmas-lights-tour-orange-county.webp"
 featuredImageAlt: "Black luxury passenger van parked on a quiet residential street at night, houses and palm trees wrapped in warm lights"

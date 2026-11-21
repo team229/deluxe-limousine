@@ -1,7 +1,7 @@
 ---
 title: "Brewery Tour in Orange County: The Short-Hop Problem"
 metaTitle: "Brewery Tour in Orange County: Short Hops, One Car"
-date: 2026-11-19
+date: 2026-11-25
 description: "A brewery tour in Orange County is a stack of five to fifteen minute drives, not one long road. A dispatcher on districts, timing, food and headcounts."
 featuredImage: "/images/2026/11/brewery-tour-orange-county.webp"
 featuredImageAlt: "White Chrysler 300 stretch limousine parked in front of a lit resort entrance with palm trees at dusk"

@@ -1,7 +1,7 @@
 ---
 title: "Luxury Resort Transportation in Orange County: Four Bookings, Not One"
 metaTitle: "Luxury Resort Transportation in Orange County: 4 Bookings"
-date: 2026-11-26
+date: 2026-11-27
 description: "A resort stay is four bookings, not one: arrival, dinner car, day out and departure. What decides each, and when a car for the week is not worth it."
 featuredImage: "/images/2026/11/luxury-resort-transportation-orange-county.webp"
 featuredImageAlt: "White Chrysler 300 stretch limousine with both rear doors open on a coastal hotel driveway at sunset, ocean and palm trees behind"

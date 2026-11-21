@@ -1,7 +1,7 @@
 ---
 title: "Anniversary Limo Service Orange County: The Timing Problem"
 metaTitle: "Anniversary and Proposal Limo Orange County | Deluxe"
-date: 2026-11-12
+date: 2026-11-20
 description: "An anniversary or proposal limo in Orange County is a sequence of timed events. How the sunset, the table, the ring and the drive actually line up."
 featuredImage: "/images/2026/11/anniversary-proposal-limo-orange-county.webp"
 featuredImageAlt: "White Chrysler 300 stretch limousine parked on the coast road at sunset, ocean and palm trees behind it"
