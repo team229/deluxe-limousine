@@ -2,24 +2,43 @@
 // Seasonal homepage section for Christmas 2026. Safe to remove after January.
 ---
 
-<section class="border-t border-gold/20 bg-gradient-to-br from-[#0d0d0d] via-[#141007] to-[#0d0d0d] text-white">
-  <div class="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-10 px-6 py-16 lg:grid-cols-2 lg:gap-14 lg:py-20">
-    <div class="relative order-2 lg:order-1">
-      <div class="overflow-hidden rounded-2xl border border-gold/20 shadow-[0_20px_60px_rgba(0,0,0,0.55)]">
+<section class="relative overflow-hidden border-b border-gold/20 bg-gradient-to-br from-[#160e08] via-[#0d0b09] to-[#1a1107] text-white">
+  <div class="pointer-events-none absolute -right-24 -top-24 size-[26rem] rounded-full bg-gold/[0.06] blur-3xl" aria-hidden="true"></div>
+
+  <div class="relative mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-10 px-5 py-14 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14 lg:py-20">
+    <div class="relative -mx-5 sm:mx-0">
+      <div class="relative aspect-video w-full overflow-hidden rounded-none border-y border-gold/20 sm:rounded-2xl sm:border">
         <img
           src="/images/2026/11/christmas-lights-tour-orange-county.webp"
-          alt="Limousine on a Christmas lights tour through an Orange County neighborhood"
+          alt="Black Sprinter on a palm-lined Orange County street lined with lit Christmas trees and houses"
           width="1600"
           height="900"
           loading="lazy"
           class="h-full w-full object-cover"
         />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#120c06]/70 via-transparent to-[#120c06]/10" aria-hidden="true"></div>
+        <div class="pointer-events-none absolute inset-0" style="background:radial-gradient(ellipse at 70% 40%,transparent 45%,rgba(10,7,4,0.45) 100%)" aria-hidden="true"></div>
+        <div class="absolute left-4 top-4 flex items-center gap-2 rounded bg-black/75 px-3 py-1.5 backdrop-blur sm:left-5 sm:top-5">
+          <svg viewBox="0 0 24 24" class="h-3.5 w-3.5 text-gold" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4" stroke-linecap="round" />
+            <circle cx="12" cy="12" r="3" />
+          </svg>
+          <span class="text-[10px] font-bold uppercase tracking-[0.14em] text-gold sm:text-[11px]">December 25, 2026</span>
+        </div>
       </div>
-      <span class="absolute left-5 top-5 rounded bg-black/75 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.14em] text-gold">December 2026</span>
+      <div class="absolute -bottom-4 right-4 hidden h-20 w-20 rounded-full border border-gold/25 bg-[#160e08] p-3 shadow-xl sm:block" aria-hidden="true">
+        <svg viewBox="0 0 64 64" class="h-full w-full text-gold/70" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M32 6 38 20 53 18 45 30 55 41 40 42 32 57 24 42 9 41 19 30 11 18 26 20Z" stroke-linejoin="round" />
+          <circle cx="32" cy="32" r="6" />
+        </svg>
+      </div>
     </div>
 
-    <div class="order-1 flex flex-col gap-5 lg:order-2">
-      <span class="inline-flex w-fit items-center rounded-full border border-gold/40 bg-gold/10 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.18em] text-gold">Christmas Travel</span>
+    <div class="flex flex-col gap-5">
+      <div class="flex items-center gap-3">
+        <span class="h-px w-8 bg-gold/60" aria-hidden="true"></span>
+        <span class="text-[11px] font-bold uppercase tracking-[0.18em] text-gold">Christmas Travel</span>
+      </div>
       <h2 class="font-serif-display text-[34px] font-bold leading-[1.12] text-white sm:text-[44px]">
         Christmas 2026, <span class="text-gold italic">Arrive Together</span>
       </h2>
